@@ -1,0 +1,20 @@
+[
+  {
+    "particao": "treino_interno",
+    "n": 144697,
+    "mes_min": 1,
+    "mes_max": 9,
+    "furtos": 81128,
+    "roubos": 63569,
+    "keys_sha256": "bc0477356a5cea818e9675a34db5d14989dc5b354a5cf1837ba8082baf6ff2fb"
+  },
+  {
+    "particao": "validacao_interna",
+    "n": 45427,
+    "mes_min": 10,
+    "mes_max": 12,
+    "furtos": 25293,
+    "roubos": 20134,
+    "keys_sha256": "f85ee407520d4456035fa208031980b527277fd33c4d3f7bc81cb941666277e8"
+  }
+]

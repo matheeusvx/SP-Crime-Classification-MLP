@@ -1,0 +1,40 @@
+from final5.common import *
+
+def create():
+    OUT.mkdir(parents=True,exist_ok=True);preserve()
+    criteria={'method':'Platt: regressao logistica sobre logit(p) clip[1e-7,1-1e-7]',
+      'fit':'2024-01 a 2024-06','assessment':'2024-07 a 2024-12','classifier_frozen':True,
+      'logistic':{'C':1000000.0,'solver':'lbfgs','max_iter':1000,'tol':1e-10,'random_state':42},
+      'adoption_all_required':{'brier_absolute_improvement_min':.001,'log_loss_absolute_improvement_min':.002,
+        'ece10_max_worsening':.002,'ece20_max_worsening':.002,'macro_f1_max_loss':.005,'recall_roubo_max_loss':.01,
+        'positive_slope':True,'quarter_brier_max_worsening':.0005,'quarter_log_loss_max_worsening':.001},
+      'no_refit_calibrator_after_decision':True,'threshold':.5,'test_year':2025,'test_expected_rows':156168,
+      'bootstrap':{'method':'IID nao parametrico das categorias conjuntas (y,pred), equivalente a reamostrar BOs para metricas de matriz','replicates':10000,'seed':12345,'CI_percentiles':[2.5,97.5]},
+      'test_evaluation_count':1,'model_selection':'B64_full_s42 fixado pelo usuario; nenhuma nova arquitetura/semente'}
+    p=OUT/'protocolo_previo.json'
+    if p.exists():
+        if {k:v for k,v in read('protocolo_previo.json').items() if k!='registered_at'}!=criteria:raise ValueError('Protocolo existente difere; nao sobrescrever')
+        return
+    json_write(p,criteria|{'registered_at':now()})
+    (ROOT/'docs/protocolo_teste_final.md').write_text('''# Protocolo do teste final — registrado antes da calibracao e de 2025
+
+Modelo fixado pelo usuario: B64_full_s42, Dense64, semente42, tres epocas. Nao retreinar, escolher outra semente ou usar2025 para decidir qualquer parametro. Manter quatro atributos, preprocessador original correspondente, aliases de local, frequencia50 e threshold0,5.
+
+Antes do teste: conferir hashes experimentais; copiar bytes para models/final; reproduzir todas as previsoes de2024 e suas metricas; verificar esquema e inferencia. Em seguida, decidir a calibracao somente em2024, congelar modelo/preprocessador/configuracao/calibrador selecionado/contrato/codigo e registrar manifesto e hashes. Executar os57 testes anteriores e os testes finais previos. Somente se aprovados, abrir2025 para uma unica inferencia planejada. O registro de inicio impede repeticoes silenciosas. Uma falha exige investigacao documentada; nao autoriza escolher resultado melhor.
+
+## Criterios de calibracao predefinidos
+
+Uma unica regressao logistica de Platt sobre logit da sigmoid, clip1e-7; C=1e6, lbfgs, max_iter1000, tol1e-10, random_state42. Ajuste Jan–Jun/2024, avaliacao Jul–Dez/2024. A rede nao muda. Adotar somente se TODOS forem atendidos no segundo semestre: reduzir Brier em pelo menos0,001 e Log Loss em0,002; ECE10 e ECE20 nao pioram mais que0,002; Macro F1 nao perde mais que0,005; recall de roubo nao perde mais que0,01; inclinacao positiva; em Q3 e Q4, Brier nao piora mais que0,0005 e Log Loss0,001. Nao buscar thresholds nem outro calibrador apos observar resultados. Se rejeitado, manter sigmoid original e nao criar calibrador.joblib em models/final. Se adotado, manter o calibrador ajustado em H1, sem reajustar usando H2.
+
+2024 ja participou da selecao e exploracao de arquiteturas; essa analise e de desenvolvimento e nao uma avaliacao independente de todas as decisoes. A decisao e registrada antes de2025.
+
+## Avaliacao final
+
+156.168 BOs esperados de2025, por ano do fato. Revalidar alinhamento por chave/indice contra a base analitica, rotulos e municipio, sem alterar dados. Executar o pipeline congelado em lotes256. Referencia: classe majoritaria e prevalencia calculadas exclusivamente no treino2023. Calcular accuracy, precision/recall/F1 de ambas as classes, Macro F1, balanced accuracy, matriz, Brier, Log Loss e ECE10/20 (bins uniformes [0,1], ultimo inclui1). Diagnosticos por mes, tipo de local, bairros frequentes/raros/novos e ausencias; sem registros individuais publicos. Destaques de grupo: n>=200 e pelo menos30 exemplos de cada classe.
+
+IC95% para accuracy, Macro F1, balanced accuracy e recall de roubo: 10.000 replicas IID nao parametricas da distribuicao conjunta das quatro celulas (y,pred), via multinomial, seed12345; percentis2,5/97,5. Para metricas dependentes so da matriz, e equivalente a reamostrar BOs. Intervalos condicionais ao pipeline congelado, sem incerteza de treinamento/selecoes e sem corrigir dependencia residual ou multiplicidade dos subgrupos. Nao afirmar causalidade ou previsao de crime futuro.
+
+Salvar previsoes individuais apenas localmente em pasta privada ignorada pelo Git; testes posteriores recalculam resultados dessas previsoes, sem nova inferencia em2025. Notebook le resultados e nao treina nem reavalia. Encerrar na Etapa5, sem HTTP/frontend/dashboard.
+''',encoding='utf-8')
+    print('Protocolo e criterios registrados antes de calibrar ou avaliar 2025.',flush=True)
+if __name__=='__main__':create()

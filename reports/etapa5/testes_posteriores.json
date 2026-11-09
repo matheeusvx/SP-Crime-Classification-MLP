@@ -1,0 +1,15 @@
+{
+  "phase": "post",
+  "executed_at": "2026-11-09T22:48:12.391418+00:00",
+  "manifest_sha256": "b992412335c69623bdf63c9341cefaa82e0a81ae73d7d32e110f2498faa8c532",
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_modelo_final.FinalPost",
+      "executados": 8,
+      "falhas": 0,
+      "erros": 0,
+      "sucesso": true
+    }
+  ]
+}

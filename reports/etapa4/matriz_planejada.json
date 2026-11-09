@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "id": "A0",
+      "features": [
+        "mes",
+        "dia_semana",
+        "tipo_local",
+        "bairro"
+      ],
+      "min_count": 50,
+      "local_alias": false,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Referencia baseline sob validacao interna",
+      "factor": "referencia"
+    },
+    {
+      "id": "A1",
+      "features": [
+        "mes",
+        "dia_semana",
+        "bairro"
+      ],
+      "min_count": 50,
+      "local_alias": false,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Dependencia de possivel proxy de local",
+      "factor": "retirar tipo_local"
+    },
+    {
+      "id": "A2",
+      "features": [
+        "mes",
+        "dia_semana",
+        "tipo_local"
+      ],
+      "min_count": 50,
+      "local_alias": false,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Dependencia de geografia categorica",
+      "factor": "retirar bairro"
+    },
+    {
+      "id": "A3",
+      "features": [
+        "dia_semana",
+        "tipo_local",
+        "bairro"
+      ],
+      "min_count": 50,
+      "local_alias": false,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Mes pode ter contribuicao pequena e extrapolacao dificil",
+      "factor": "retirar mes"
+    },
+    {
+      "id": "A4_10",
+      "features": [
+        "mes",
+        "dia_semana",
+        "tipo_local",
+        "bairro"
+      ],
+      "min_count": 10,
+      "local_alias": false,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Menor agrupamento preserva heterogeneidade dos bairros",
+      "factor": "frequencia minima 10"
+    },
+    {
+      "id": "A4_100",
+      "features": [
+        "mes",
+        "dia_semana",
+        "tipo_local",
+        "bairro"
+      ],
+      "min_count": 100,
+      "local_alias": false,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Agrupamento mais forte reduz cardinalidade e variancia",
+      "factor": "frequencia minima 100"
+    },
+    {
+      "id": "A5",
+      "features": [
+        "mes",
+        "dia_semana",
+        "tipo_local",
+        "bairro"
+      ],
+      "min_count": 50,
+      "local_alias": true,
+      "units": [
+        64
+      ],
+      "dropout": 0.0,
+      "l2": 0.0,
+      "lr": 0.001,
+      "hypothesis": "Equivalencia exclusiva de acentuacao melhora contrato sem recodificar OUTROS",
+      "factor": "alias de acentuacao de local"
+    }
+  ],
+  "internal_train": "2023-01-01 a 2023-09-30",
+  "internal_validation": "2023-10-01 a 2023-12-31",
+  "selection_metric": "macro_f1",
+  "representation_tolerance": 0.002,
+  "representation_recall_tolerance": 0.02,
+  "representation_tiebreak": "sem tipo_local, sem mes, menor dimension; somente dentro da tolerancia e recall",
+  "architecture_units": [
+    [
+      32
+    ],
+    [
+      64
+    ],
+    [
+      64,
+      32
+    ]
+  ],
+  "optional_128_64": "nao executar: limitar orcamento e investigar regularizacao antes de capacidade maior",
+  "regularization": [
+    {
+      "dropout": 0.1,
+      "l2": 0.0
+    },
+    {
+      "dropout": 0.0,
+      "l2": 0.0001
+    }
+  ],
+  "learning_rate_condition": "0.0005 so se quatro oscilacoes consecutivas de val_loss acima de 0.01; caso contrario nao executar",
+  "common": {
+    "lr": 0.001,
+    "batch_size": 256,
+    "max_epochs": 30,
+    "patience": 5,
+    "restore_best_weights": true,
+    "threshold": 0.5,
+    "seed": 42,
+    "batch_order_seed": 42
+  },
+  "stability_seeds": [
+    42,
+    7,
+    123
+  ],
+  "stability_configurations": 2,
+  "candidate_rule": "Top 2 internos por Macro F1, recall e simplicidade; alternativa de arquitetura diferente se a ate 0.005 do primeiro",
+  "refit_rule": "Epocas fixas = mediana arredondada das melhores epocas internas (3 sementes se disponiveis), sem Early Stopping em 2024",
+  "refit_configurations": "A0 novo protocolo; A1 sensibilidade proxy; tres arquiteturas B; top 2 do C com tres sementes; deduplicar configuracoes identicas",
+  "A5_reuse": "Se matrizes internas identicas a A0, reutilizar pesos A0 e avaliar contrato de inferencia; nao repetir treino redundante",
+  "no_test_2025": true,
+  "no_calibrator": true,
+  "no_web": true
+}

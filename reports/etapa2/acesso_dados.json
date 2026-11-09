@@ -1,0 +1,29 @@
+{
+  "training_years": [
+    2023
+  ],
+  "fit_preprocessor_years": [
+    2023
+  ],
+  "prediction_years": [
+    2023,
+    2024
+  ],
+  "evaluation_years": [
+    2023,
+    2024
+  ],
+  "test_year": 2025,
+  "test_prediction_count": 0,
+  "test_transformed_count": 0,
+  "test_usage": "apenas verificacoes estruturais de integridade",
+  "features": [
+    "mes",
+    "dia_semana",
+    "tipo_local",
+    "bairro"
+  ],
+  "threshold_fixed": 0.5,
+  "hyperparameter_search": false,
+  "architectures_trained": 1
+}

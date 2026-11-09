@@ -1,0 +1,58 @@
+{
+  "validacao": {
+    "n": 158895,
+    "furtos": 92055,
+    "roubos": 66840,
+    "tn": 68328,
+    "fp": 23727,
+    "fn": 25962,
+    "tp": 40878,
+    "accuracy": 0.6872840555083546,
+    "macro_f1": 0.6776641034482787,
+    "balanced_accuracy": 0.6769159034481669,
+    "precision_roubo": 0.6327374042256791,
+    "recall_roubo": 0.6115798922800718,
+    "f1_roubo": 0.6219787743923314
+  },
+  "architecture": {
+    "input": 299,
+    "units": [
+      64,
+      1
+    ],
+    "params": 19265
+  },
+  "threshold": 0.5,
+  "years": [
+    2023,
+    2024
+  ],
+  "ece_10": 0.020581202021013947,
+  "ece_20": 0.020828606930706053,
+  "brier": 0.2009063087680951,
+  "log_loss": 0.5846715435989691,
+  "prob_roubo_media": 0.4358602464199066,
+  "prevalencia_roubo": 0.42065514962711226,
+  "brier_constante_prevalencia_treino": 0.24408854027279436,
+  "permutation": {
+    "sample_size": 30000,
+    "sampling_seed": 314159,
+    "repeats": 5,
+    "same_sample_baseline": {
+      "n": 30000,
+      "furtos": 17373,
+      "roubos": 12627,
+      "tn": 12949,
+      "fp": 4424,
+      "fn": 4982,
+      "tp": 7645,
+      "accuracy": 0.6864666666666667,
+      "macro_f1": 0.6763499352672344,
+      "balanced_accuracy": 0.6754003123806933,
+      "precision_roubo": 0.6334410473112934,
+      "recall_roubo": 0.6054486417993189,
+      "f1_roubo": 0.6191286038224814
+    },
+    "limitations": "Marginal, nao causal; quebra dependencias e produz combinacoes artificiais; DP entre permutacoes nao e IC populacional."
+  }
+}

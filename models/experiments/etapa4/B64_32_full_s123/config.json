@@ -1,0 +1,163 @@
+{
+  "id": "B64_32",
+  "run_id": "B64_32_full_s123",
+  "scope": "full",
+  "seed": 123,
+  "signature": "d9b3c561e5c3cd9a2f628443877a501bda31a1a75cd92b3b2b3abfef1fbbbd4e",
+  "config": {
+    "features": [
+      "mes",
+      "dia_semana",
+      "tipo_local",
+      "bairro"
+    ],
+    "min_count": 50,
+    "local_alias": true,
+    "units": [
+      64,
+      32
+    ],
+    "dropout": 0.0,
+    "l2": 0.0,
+    "lr": 0.001
+  },
+  "hypothesis": "Reajuste de candidato congelado na validacao interna",
+  "factor": "protocolo completo 2023 com epocas fixas",
+  "date": "2026-11-09T22:21:32.482577+00:00",
+  "train_n": 190124,
+  "validation_n": 158895,
+  "train_keys_hash": "d7cacb4c96e4f3c8c2f4667e5967c3da662e732706f080493969e476ab30b7e9",
+  "validation_keys_hash": "69ec0ffa84050a72179f4a328a11546e342b3a201b4349c19f36920668ffc68a",
+  "train_years": [
+    2023
+  ],
+  "validation_years": [
+    2024
+  ],
+  "environment_path": "reports/etapa4/ambiente.json",
+  "input_dimension": 299,
+  "parameters": 21313,
+  "epochs_ran": 3,
+  "best_epoch": 3,
+  "fixed_epoch_budget": 3,
+  "early_stopping_validation_year": null,
+  "training_seconds": 3.663345399982063,
+  "total_seconds": 7.445284999994328,
+  "threshold": 0.5,
+  "batch_size": 256,
+  "batch_order_seed": 42,
+  "train_metrics": {
+    "n": 190124,
+    "furtos": 106421,
+    "roubos": 83703,
+    "tn": 78669,
+    "fp": 27752,
+    "fn": 29120,
+    "tp": 54583,
+    "accuracy": 0.7008689066083188,
+    "macro_f1": 0.6959897620243427,
+    "balanced_accuracy": 0.6956638355468792,
+    "precision_roubo": 0.6629379972065342,
+    "recall_roubo": 0.6521032698947469,
+    "f1_roubo": 0.6574759994700008,
+    "precision_furto": 0.7298425627846997,
+    "recall_furto": 0.7392244011990114,
+    "f1_furto": 0.7345035245786845,
+    "fpr": 0.26077559880098855,
+    "fnr": 0.34789673010525307,
+    "brier": 0.1949015361636342,
+    "log_loss": 0.5710280162758348,
+    "high_conf_errors": 681,
+    "high_conf_fn": 681,
+    "ece10": 0.01570679013999047
+  },
+  "validation_metrics": {
+    "n": 158895,
+    "furtos": 92055,
+    "roubos": 66840,
+    "tn": 65292,
+    "fp": 26763,
+    "fn": 23641,
+    "tp": 43199,
+    "accuracy": 0.6827842285786211,
+    "macro_f1": 0.6765307462190074,
+    "balanced_accuracy": 0.6777881195546297,
+    "precision_roubo": 0.6174637660444241,
+    "recall_roubo": 0.6463046080191502,
+    "f1_roubo": 0.6315550942237687,
+    "precision_furto": 0.7341706678061012,
+    "recall_furto": 0.7092716310901092,
+    "f1_furto": 0.7215063982142462,
+    "fpr": 0.29072836890989084,
+    "fnr": 0.3536953919808498,
+    "brier": 0.20244899962105847,
+    "log_loss": 0.5881890739141952,
+    "high_conf_errors": 661,
+    "high_conf_fn": 659,
+    "ece10": 0.03632237782689599
+  },
+  "preprocess_train": {
+    "rows": 190124,
+    "dimension": 299,
+    "retained_bairros": 247,
+    "min_count": 50,
+    "mes": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "dia_semana": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "tipo_local": {
+      "missing": 14031,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "bairro": {
+      "missing": 633,
+      "unknown": 0,
+      "rare_bucket": 14244
+    }
+  },
+  "preprocess_validation": {
+    "rows": 158895,
+    "dimension": 299,
+    "retained_bairros": 247,
+    "min_count": 50,
+    "mes": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "dia_semana": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "tipo_local": {
+      "missing": 4653,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "bairro": {
+      "missing": 521,
+      "unknown": 355,
+      "rare_bucket": 13028
+    }
+  },
+  "data_hashes": {
+    "base_modelagem": "37e1c75e1306374ed016c2d2d4111bcd2f529cd5a084c6e71e9d2c9a2ca9f1cd",
+    "metadados_modelagem": "993f7b866cceae16474903bdadacc389869bbc955b5f10967d5f83b6911a617c",
+    "ocorrencias_elegiveis": "ee05731ea42ae9467c347ce04b0ae4300eb83938d27617b99017d381846d962a"
+  },
+  "plan_hash": "010706b3a597ae15bcdebeb23278272fc490db1a9fa4656f9e21ec421916eb19",
+  "reused_from": null,
+  "preprocessor_path": "models/experiments/etapa4/B64_32_full_s123/preprocessador.joblib",
+  "model_path": "models/experiments/etapa4/B64_32_full_s123/modelo.keras",
+  "prediction_path": "models/experiments/etapa4/B64_32_full_s123/predicoes_validacao.npz",
+  "status": "completed",
+  "reload_max_abs_diff": 0.0
+}

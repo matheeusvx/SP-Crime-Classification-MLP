@@ -1,0 +1,39 @@
+{
+  "class_from_train": 0,
+  "probability_from_train": 0.44025478109023586,
+  "test_labels_used_to_choose_class": false,
+  "metrics": {
+    "n": 156168,
+    "furtos": 99607,
+    "roubos": 56561,
+    "tn": 99607,
+    "fp": 0,
+    "fn": 56561,
+    "tp": 0,
+    "accuracy": 0.6378195276881308,
+    "precision_roubo": 0.0,
+    "recall_roubo": 0.0,
+    "f1_roubo": 0.0,
+    "precision_furto": 0.6378195276881308,
+    "recall_furto": 1.0,
+    "f1_furto": 0.7788642361450494,
+    "macro_f1": 0.3894321180725247,
+    "balanced_accuracy": 0.5,
+    "brier": 0.23710137547904034,
+    "log_loss": 0.6672432761165397,
+    "high_conf_errors": 0,
+    "high_conf_fn": 0,
+    "ece10": 0.0780743087783663,
+    "ece20": 0.0780743087783663,
+    "confusion_matrix": [
+      [
+        99607,
+        0
+      ],
+      [
+        56561,
+        0
+      ]
+    ]
+  }
+}

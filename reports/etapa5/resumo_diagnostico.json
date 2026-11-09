@@ -1,0 +1,9 @@
+{
+  "prob_roubo_mean": 0.4431444713649885,
+  "roubo_prevalence": 0.3621804723118693,
+  "mean_confidence_errors": 0.6456437470771571,
+  "predicted_furtos": 92289,
+  "predicted_roubos": 63879,
+  "n_errors": 48700,
+  "high_conf_predictions": 8359
+}

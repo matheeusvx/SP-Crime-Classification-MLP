@@ -1,0 +1,29 @@
+{
+  "features_order": [
+    "mes",
+    "dia_semana",
+    "tipo_local",
+    "bairro"
+  ],
+  "types": {
+    "mes": "inteiro 1..12 ou None",
+    "dia_semana": "inteiro 0..6, segunda=0, ou None",
+    "tipo_local": "str ou None",
+    "bairro": "str ou None"
+  },
+  "extra_fields": "rejeitar",
+  "normalization": "Objeto experimental original: NFC, espacos/maiusculas, aliases de bairro ativos no treino e acentuacao univoca de local",
+  "missing": "categoria explicita; avisar quando sem suporte no treino",
+  "unknown_local": "categoria ausente com aviso",
+  "unknown_or_rare_bairro": "bucket raro com aviso",
+  "numeric_bairro_text": "normalizacao original para ausente com aviso, numero tipado e rejeitado",
+  "output": [
+    "classe_estimada",
+    "codigo_classe",
+    "probabilidade_furto",
+    "probabilidade_roubo",
+    "versao_modelo",
+    "probabilidades_calibradas",
+    "avisos"
+  ]
+}

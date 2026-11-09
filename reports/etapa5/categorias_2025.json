@@ -1,0 +1,26 @@
+{
+  "rows": 156168,
+  "dimension": 299,
+  "retained_bairros": 247,
+  "min_count": 50,
+  "mes": {
+    "missing": 0,
+    "unknown": 0,
+    "rare_bucket": 0
+  },
+  "dia_semana": {
+    "missing": 0,
+    "unknown": 0,
+    "rare_bucket": 0
+  },
+  "tipo_local": {
+    "missing": 68,
+    "unknown": 0,
+    "rare_bucket": 0
+  },
+  "bairro": {
+    "missing": 540,
+    "unknown": 389,
+    "rare_bucket": 13375
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "previous_artifacts_preserved": 168,
+  "logical_runs": 25,
+  "fresh_trainings": 23,
+  "verified_reuses": 2,
+  "executed_tests": 57,
+  "failures": 0,
+  "errors": 0,
+  "executed_notebook_cells": 5,
+  "figures_visually_reviewed": 7,
+  "threshold": 0.5,
+  "test_2025_predictions": 0,
+  "test_2025_transformations": 0,
+  "baseline_promoted_or_overwritten": false,
+  "A0_B64_full_seed42_predictions_identical": true
+}

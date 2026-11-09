@@ -1,0 +1,15 @@
+{
+  "entrada": {
+    "mes": 5,
+    "dia_semana": 2,
+    "tipo_local": "VIA PÚBLICA",
+    "bairro": "BELA VISTA"
+  },
+  "saida": {
+    "codigo": 0,
+    "classe": "FURTO",
+    "probabilidade_furto": 0.7717520743608475,
+    "probabilidade_roubo": 0.22824792563915253,
+    "probabilidades_calibradas": false
+  }
+}

@@ -1,0 +1,177 @@
+[
+  {
+    "run_id": "A0_full_s42",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.076 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A0_internal_s42",
+    "hipotese": "Referencia baseline sob validacao interna",
+    "fator": "referencia",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: +0.000 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A1_full_s42",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -3.410 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A1_internal_s42",
+    "hipotese": "Dependencia de possivel proxy de local",
+    "fator": "retirar tipo_local",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -3.306 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A2_internal_s42",
+    "hipotese": "Dependencia de geografia categorica",
+    "fator": "retirar bairro",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -10.219 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A3_internal_s42",
+    "hipotese": "Mes pode ter contribuicao pequena e extrapolacao dificil",
+    "fator": "retirar mes",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: +0.134 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A4_100_internal_s42",
+    "hipotese": "Agrupamento mais forte reduz cardinalidade e variancia",
+    "fator": "frequencia minima 100",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.140 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A4_10_internal_s42",
+    "hipotese": "Menor agrupamento preserva heterogeneidade dos bairros",
+    "fator": "frequencia minima 10",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: +0.057 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "A5_internal_s42",
+    "hipotese": "Equivalencia exclusiva de acentuacao melhora contrato sem recodificar OUTROS",
+    "fator": "alias de acentuacao de local",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: +0.000 pp",
+    "conclusao": "Referencia/reutilizacao sem novo treinamento"
+  },
+  {
+    "run_id": "B32_full_s42",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.021 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B32_internal_s42",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[32]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.509 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_32_full_s123",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.113 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_32_full_s42",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.249 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_32_full_s7",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.167 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_32_internal_s123",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[64, 32]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.336 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_32_internal_s42",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[64, 32]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.115 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_32_internal_s7",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[64, 32]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.282 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_full_s123",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.040 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_full_s42",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.076 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_full_s7",
+    "hipotese": "Reajuste de candidato congelado na validacao interna",
+    "fator": "protocolo completo 2023 com epocas fixas",
+    "interpretacao": "Comparacao em 2024, diferenca contra historico (protocolo diferente): -0.053 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_internal_s123",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[64]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: +0.073 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "B64_internal_s42",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[64]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: +0.000 pp",
+    "conclusao": "Referencia/reutilizacao sem novo treinamento"
+  },
+  {
+    "run_id": "B64_internal_s7",
+    "hipotese": "Efeito da capacidade na mesma representacao",
+    "fator": "[64]",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.006 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "C_dropout_internal_s42",
+    "hipotese": "Dropout reduz sobreajuste",
+    "fator": "dropout .1",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.015 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  },
+  {
+    "run_id": "C_l2_internal_s42",
+    "hipotese": "L2 reduz sobreajuste",
+    "fator": "L2 .0001",
+    "interpretacao": "Comparacao interna em 2023, diferenca de Macro F1 contra A0: -0.119 pp",
+    "conclusao": "Resultado registrado; nao e vencedor definitivo"
+  }
+]

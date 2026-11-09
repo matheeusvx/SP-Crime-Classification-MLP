@@ -1,0 +1,46 @@
+{
+  "n": 158895,
+  "max_abs_difference": 0.0,
+  "metrics": {
+    "n": 158895,
+    "furtos": 92055,
+    "roubos": 66840,
+    "tn": 67058,
+    "fp": 24997,
+    "fn": 25044,
+    "tp": 41796,
+    "accuracy": 0.6850687560967935,
+    "precision_roubo": 0.625754195798961,
+    "recall_roubo": 0.6253141831238779,
+    "f1_roubo": 0.6255341120830933,
+    "precision_furto": 0.7280840806931446,
+    "recall_furto": 0.7284558144587475,
+    "f1_furto": 0.7282699001395548,
+    "macro_f1": 0.676902006111324,
+    "balanced_accuracy": 0.6768849987913127,
+    "brier": 0.20160448847581988,
+    "log_loss": 0.5865684835018611,
+    "high_conf_errors": 609,
+    "high_conf_fn": 601,
+    "ece10": 0.027147106314255275,
+    "ece20": 0.027336733250881193,
+    "confusion_matrix": [
+      [
+        67058,
+        24997
+      ],
+      [
+        25044,
+        41796
+      ]
+    ]
+  },
+  "copied_bytes_equal": true,
+  "source_artifact_hashes": {
+    "models/experiments/etapa4/B64_full_s42/config.json": "35f2ab99f6b6024ab2aff5611fde73cc6f7cd2304def334d4f11f255397e45e1",
+    "models/experiments/etapa4/B64_full_s42/modelo.keras": "dadad1326e6ae58d0f26f7e69638a9283d46863c9ecb7d56e76e037b4940091c",
+    "models/experiments/etapa4/B64_full_s42/predicoes_validacao.npz": "a0dfed77ea8cf36ac3c10e87f899254741a176957096e5c561375f115cd24e6e",
+    "models/experiments/etapa4/B64_full_s42/preprocessador.joblib": "b8b3cd3662505b872b5e6d34296fba53a5b1ce5e065811d128f0423aa050a524"
+  },
+  "checked_at": "2026-11-09T22:42:05.779596+00:00"
+}

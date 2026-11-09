@@ -1,0 +1,5 @@
+{
+  "condition_met": false,
+  "executed": false,
+  "rule": "quatro oscilacoes consecutivas >.01 em val_loss"
+}

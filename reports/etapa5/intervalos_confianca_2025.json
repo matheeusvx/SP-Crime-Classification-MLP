@@ -1,0 +1,33 @@
+{
+  "method": {
+    "method": "IID nao parametrico das categorias conjuntas (y,pred), equivalente a reamostrar BOs para metricas de matriz",
+    "replicates": 10000,
+    "seed": 12345,
+    "CI_percentiles": [
+      2.5,
+      97.5
+    ]
+  },
+  "metrics": {
+    "accuracy": {
+      "lower": 0.6858573779519492,
+      "upper": 0.6904361008657343,
+      "point": 0.6881563444495671
+    },
+    "macro_f1": {
+      "lower": 0.6684991496849999,
+      "upper": 0.6733068989864583,
+      "point": 0.6709329933321986
+    },
+    "balanced_accuracy": {
+      "lower": 0.6740567701407896,
+      "upper": 0.678904255648859,
+      "point": 0.6764937336136738
+    },
+    "recall_roubo": {
+      "lower": 0.6301255700327079,
+      "upper": 0.6381210180819522,
+      "point": 0.6341825639574972
+    }
+  }
+}

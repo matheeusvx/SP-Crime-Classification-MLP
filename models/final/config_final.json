@@ -1,0 +1,57 @@
+{
+  "model_id": "gs-celulares-sp-dense64-v1.0.0",
+  "selected_source": "B64_full_s42",
+  "architecture": {
+    "input": 299,
+    "hidden": [
+      64
+    ],
+    "activations": [
+      "relu",
+      "sigmoid"
+    ],
+    "parameters": 19265
+  },
+  "features": [
+    "mes",
+    "dia_semana",
+    "tipo_local",
+    "bairro"
+  ],
+  "labels": {
+    "0": "FURTO",
+    "1": "ROUBO"
+  },
+  "threshold": 0.5,
+  "epochs": 3,
+  "seed": 42,
+  "batch_order_seed": 42,
+  "batch_size": 256,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "binary_crossentropy",
+  "dropout": 0,
+  "l2": 0,
+  "min_bairro_count": 50,
+  "local_alias": true,
+  "training_years": [
+    2023
+  ],
+  "calibration_adopted": false,
+  "calibrator": null,
+  "majority_class_train": 0,
+  "roubo_prevalence_train": 0.44025478109023586,
+  "evaluation_expected_rows": 156168,
+  "versions": {
+    "tensorflow": "2.20.0",
+    "keras": "3.11.3",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "pyarrow": "26.0.1",
+    "duckdb": "2.0.0"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0"
+}

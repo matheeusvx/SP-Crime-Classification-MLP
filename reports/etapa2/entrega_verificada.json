@@ -1,0 +1,19 @@
+{
+  "artefatos_etapa1_intactos": 76,
+  "arquivos_alterados": [],
+  "celulas_codigo_notebook_executadas": 6,
+  "erros_notebook": 0,
+  "arquivos_entrega_verificados": [
+    "models/mlp_baseline.keras",
+    "models/preprocessador.joblib",
+    "models/config_modelo.json",
+    "reports/relatorio_etapa2.md",
+    "notebooks/02_mlp_baseline.ipynb",
+    "reports/figures/curvas_mlp_baseline.png",
+    "reports/figures/matriz_confusao_baseline.png",
+    "reports/tables/metricas_baseline.csv",
+    "docs/etapa2_reproducao.md"
+  ],
+  "previsoes_2025": 0,
+  "transformacoes_preditivas_2025": 0
+}

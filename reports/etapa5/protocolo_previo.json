@@ -1,0 +1,40 @@
+{
+  "method": "Platt: regressao logistica sobre logit(p) clip[1e-7,1-1e-7]",
+  "fit": "2024-01 a 2024-06",
+  "assessment": "2024-07 a 2024-12",
+  "classifier_frozen": true,
+  "logistic": {
+    "C": 1000000.0,
+    "solver": "lbfgs",
+    "max_iter": 1000,
+    "tol": 1e-10,
+    "random_state": 42
+  },
+  "adoption_all_required": {
+    "brier_absolute_improvement_min": 0.001,
+    "log_loss_absolute_improvement_min": 0.002,
+    "ece10_max_worsening": 0.002,
+    "ece20_max_worsening": 0.002,
+    "macro_f1_max_loss": 0.005,
+    "recall_roubo_max_loss": 0.01,
+    "positive_slope": true,
+    "quarter_brier_max_worsening": 0.0005,
+    "quarter_log_loss_max_worsening": 0.001
+  },
+  "no_refit_calibrator_after_decision": true,
+  "threshold": 0.5,
+  "test_year": 2025,
+  "test_expected_rows": 156168,
+  "bootstrap": {
+    "method": "IID nao parametrico das categorias conjuntas (y,pred), equivalente a reamostrar BOs para metricas de matriz",
+    "replicates": 10000,
+    "seed": 12345,
+    "CI_percentiles": [
+      2.5,
+      97.5
+    ]
+  },
+  "test_evaluation_count": 1,
+  "model_selection": "B64_full_s42 fixado pelo usuario; nenhuma nova arquitetura/semente",
+  "registered_at": "2026-11-09T22:39:24.035154+00:00"
+}

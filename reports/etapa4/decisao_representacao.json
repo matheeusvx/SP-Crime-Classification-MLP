@@ -1,0 +1,34 @@
+{
+  "source_id": "A5",
+  "config": {
+    "features": [
+      "mes",
+      "dia_semana",
+      "tipo_local",
+      "bairro"
+    ],
+    "min_count": 50,
+    "local_alias": true,
+    "units": [
+      64
+    ],
+    "dropout": 0.0,
+    "l2": 0.0,
+    "lr": 0.001
+  },
+  "internal_macro_f1": 0.6808291307405228,
+  "best_internal_macro_f1": 0.6821647478740092,
+  "eligible_ids": [
+    "A0",
+    "A3",
+    "A4_10",
+    "A5"
+  ],
+  "selection_rule": "tolerancia .002 Macro F1 / .02 recall, preferir sem local, sem mes, menor dimensao",
+  "planned_tiebreak_id": "A3",
+  "recall_review_override": true,
+  "review_reason": "Regra qualitativa exigida pelo usuario: ganho inferior a .002 Macro F1 nao compensa perda de recall superior a .02 contra A0. Rever antes do Bloco B, sem acrescentar tentativas.",
+  "A5_alias_rule": "Correspondencia univoca de acentuacao aprendida no treino; matrizes A5 e A0 identicas. Adotado apenas se local presente.",
+  "before_block_B": true,
+  "used_2024": false
+}

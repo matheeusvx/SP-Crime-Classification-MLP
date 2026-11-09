@@ -1,0 +1,25 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "dependencies": {
+    "tensorflow": "2.20.0",
+    "keras": "3.11.3",
+    "scikit-learn": "1.7.2",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "joblib": "1.5.2",
+    "pyarrow": "26.0.1",
+    "duckdb": "2.0.0"
+  },
+  "tensorflow_devices": [
+    {
+      "name": "/physical_device:CPU:0",
+      "type": "CPU"
+    }
+  ],
+  "threads_intra": 4,
+  "threads_inter": 1,
+  "deterministic_ops": true,
+  "batch_order_seed": 42,
+  "oneDNN": false
+}

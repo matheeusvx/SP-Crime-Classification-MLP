@@ -1,0 +1,24 @@
+{
+  "n": 156168,
+  "alignment_mismatches": 0,
+  "overlap_between_years": 0,
+  "unique_keys": 156168,
+  "test_keys_sha256": "4d29e53ff2e51366b42aee2ec9bd3dc7ba1c1f560a3a0876f13fa7bd5ec74edd",
+  "checked_at": "2026-11-09T22:46:16.198632+00:00",
+  "dataset_hashes": {
+    "base_modelagem": "37e1c75e1306374ed016c2d2d4111bcd2f529cd5a084c6e71e9d2c9a2ca9f1cd",
+    "metadados_modelagem": "993f7b866cceae16474903bdadacc389869bbc955b5f10967d5f83b6911a617c",
+    "ocorrencias_elegiveis": "ee05731ea42ae9467c347ce04b0ae4300eb83938d27617b99017d381846d962a"
+  },
+  "manifest_sha256": "b992412335c69623bdf63c9341cefaa82e0a81ae73d7d32e110f2498faa8c532",
+  "frozen_files": {
+    "modelo.keras": "dadad1326e6ae58d0f26f7e69638a9283d46863c9ecb7d56e76e037b4940091c",
+    "preprocessador.joblib": "b8b3cd3662505b872b5e6d34296fba53a5b1ce5e065811d128f0423aa050a524",
+    "config_final.json": "235867fff828c3f7569c21abe4f8df619740ca210794c9981159db4a96d0bb1a",
+    "contrato.json": "c328e0496c4c4a8c2efd51292002a59a3160d09dfa58c83930f6febad58e111b"
+  },
+  "final_hashes_unchanged": true,
+  "pipeline_adjusted_on_test": false,
+  "training_on_2025": false,
+  "test_inference_after_freeze": true
+}

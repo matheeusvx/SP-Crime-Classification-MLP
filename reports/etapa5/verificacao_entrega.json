@@ -1,0 +1,15 @@
+{
+  "model_id": "gs-celulares-sp-dense64-v1.0.0",
+  "preserved_previous_files": 344,
+  "executed_tests": 83,
+  "failures": 0,
+  "errors": 0,
+  "test_inference_passes": 1,
+  "model_or_preprocessor_changed_after_evaluation": false,
+  "calibration_adopted": false,
+  "threshold": 0.5,
+  "executed_notebook_cells": 5,
+  "figures_visually_reviewed": 5,
+  "manifest_sha256": "b992412335c69623bdf63c9341cefaa82e0a81ae73d7d32e110f2498faa8c532",
+  "web_implemented": false
+}

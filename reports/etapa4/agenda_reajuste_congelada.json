@@ -1,0 +1,177 @@
+{
+  "candidates": [
+    {
+      "id": "B64",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "tipo_local",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": true,
+        "units": [
+          64
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "internal_macro_f1_mean": 0.6810523108177357,
+      "internal_macro_f1_sd": 0.00043698433023133464
+    },
+    {
+      "id": "B64_32",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "tipo_local",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": true,
+        "units": [
+          64,
+          32
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "internal_macro_f1_mean": 0.6783852246267759,
+      "internal_macro_f1_sd": 0.0011494860867635192
+    }
+  ],
+  "agenda": [
+    {
+      "id": "B32",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "tipo_local",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": true,
+        "units": [
+          32
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "seeds": [
+        42
+      ]
+    },
+    {
+      "id": "B64",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "tipo_local",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": true,
+        "units": [
+          64
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "internal_macro_f1_mean": 0.6810523108177357,
+      "internal_macro_f1_sd": 0.00043698433023133464,
+      "seeds": [
+        42,
+        7,
+        123
+      ]
+    },
+    {
+      "id": "B64_32",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "tipo_local",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": true,
+        "units": [
+          64,
+          32
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "internal_macro_f1_mean": 0.6783852246267759,
+      "internal_macro_f1_sd": 0.0011494860867635192,
+      "seeds": [
+        42,
+        7,
+        123
+      ]
+    },
+    {
+      "id": "A0",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "tipo_local",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": false,
+        "units": [
+          64
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "seeds": [
+        42
+      ]
+    },
+    {
+      "id": "A1",
+      "config": {
+        "features": [
+          "mes",
+          "dia_semana",
+          "bairro"
+        ],
+        "min_count": 50,
+        "local_alias": false,
+        "units": [
+          64
+        ],
+        "dropout": 0.0,
+        "l2": 0.0,
+        "lr": 0.001
+      },
+      "fixed_epochs": 3,
+      "seeds": [
+        42
+      ]
+    }
+  ],
+  "before_2024_prediction": true,
+  "used_2024_for_budget": false,
+  "protocol": "No further experiments after viewing 2024"
+}

@@ -1,0 +1,150 @@
+{
+  "id": "A1",
+  "run_id": "A1_internal_s42",
+  "scope": "internal",
+  "seed": 42,
+  "signature": "ac66c215c7b926806d7ae00eafd98b8981a8a473f530d12d1df1f142b68dc590",
+  "config": {
+    "features": [
+      "mes",
+      "dia_semana",
+      "bairro"
+    ],
+    "min_count": 50,
+    "local_alias": false,
+    "units": [
+      64
+    ],
+    "dropout": 0.0,
+    "l2": 0.0,
+    "lr": 0.001
+  },
+  "hypothesis": "Dependencia de possivel proxy de local",
+  "factor": "retirar tipo_local",
+  "date": "2026-11-09T22:15:14.220846+00:00",
+  "train_n": 144697,
+  "validation_n": 45427,
+  "train_keys_hash": "bc0477356a5cea818e9675a34db5d14989dc5b354a5cf1837ba8082baf6ff2fb",
+  "validation_keys_hash": "f85ee407520d4456035fa208031980b527277fd33c4d3f7bc81cb941666277e8",
+  "train_years": [
+    2023
+  ],
+  "validation_years": [
+    2023
+  ],
+  "input_dimension": 238,
+  "parameters": 15361,
+  "epochs_ran": 8,
+  "best_epoch": 3,
+  "fixed_epoch_budget": null,
+  "early_stopping_validation_year": 2023,
+  "training_seconds": 8.065414899989264,
+  "total_seconds": 12.471154700004263,
+  "threshold": 0.5,
+  "batch_size": 256,
+  "batch_order_seed": 42,
+  "train_metrics": {
+    "n": 144697,
+    "furtos": 81128,
+    "roubos": 63569,
+    "tn": 61746,
+    "fp": 19382,
+    "fn": 28415,
+    "tp": 35154,
+    "accuracy": 0.6696752524240309,
+    "macro_f1": 0.6581288854044738,
+    "balanced_accuracy": 0.6570494881132443,
+    "precision_roubo": 0.6446017309667009,
+    "recall_roubo": 0.5530053957117463,
+    "f1_roubo": 0.5953007916684306,
+    "precision_furto": 0.6848415612071739,
+    "recall_furto": 0.7610935805147422,
+    "f1_furto": 0.7209569791405169,
+    "fpr": 0.23890641948525787,
+    "fnr": 0.4469946042882537,
+    "brier": 0.21161469808942546,
+    "log_loss": 0.6115762638945641,
+    "high_conf_errors": 50,
+    "high_conf_fn": 50,
+    "ece10": 0.01118368497299152
+  },
+  "validation_metrics": {
+    "n": 45427,
+    "furtos": 25293,
+    "roubos": 20134,
+    "tn": 18226,
+    "fp": 7067,
+    "fn": 8588,
+    "tp": 11546,
+    "accuracy": 0.655381160983556,
+    "macro_f1": 0.6477646199294143,
+    "balanced_accuracy": 0.6470262317238272,
+    "precision_roubo": 0.6203191317896094,
+    "recall_roubo": 0.5734578325221019,
+    "f1_roubo": 0.5959687201589801,
+    "precision_furto": 0.6797195494890729,
+    "recall_furto": 0.7205946309255525,
+    "f1_furto": 0.6995605196998483,
+    "fpr": 0.27940536907444746,
+    "fnr": 0.4265421674778981,
+    "brier": 0.2179361011014396,
+    "log_loss": 0.625952434460412,
+    "high_conf_errors": 3,
+    "high_conf_fn": 3,
+    "ece10": 0.008898434883788175
+  },
+  "preprocess_train": {
+    "rows": 144697,
+    "dimension": 238,
+    "retained_bairros": 215,
+    "min_count": 50,
+    "mes": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "dia_semana": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "bairro": {
+      "missing": 468,
+      "unknown": 0,
+      "rare_bucket": 11910
+    }
+  },
+  "preprocess_validation": {
+    "rows": 45427,
+    "dimension": 238,
+    "retained_bairros": 215,
+    "min_count": 50,
+    "mes": {
+      "missing": 0,
+      "unknown": 45427,
+      "rare_bucket": 0
+    },
+    "dia_semana": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "bairro": {
+      "missing": 165,
+      "unknown": 125,
+      "rare_bucket": 4173
+    }
+  },
+  "data_hashes": {
+    "base_modelagem": "37e1c75e1306374ed016c2d2d4111bcd2f529cd5a084c6e71e9d2c9a2ca9f1cd",
+    "metadados_modelagem": "993f7b866cceae16474903bdadacc389869bbc955b5f10967d5f83b6911a617c",
+    "ocorrencias_elegiveis": "ee05731ea42ae9467c347ce04b0ae4300eb83938d27617b99017d381846d962a"
+  },
+  "plan_hash": "010706b3a597ae15bcdebeb23278272fc490db1a9fa4656f9e21ec421916eb19",
+  "reused_from": null,
+  "preprocessor_path": "models/experiments/etapa4/A1_internal_s42/preprocessador.joblib",
+  "model_path": "models/experiments/etapa4/A1_internal_s42/modelo.keras",
+  "prediction_path": "models/experiments/etapa4/A1_internal_s42/predicoes_validacao.npz",
+  "status": "completed",
+  "reload_max_abs_diff": 0.0
+}

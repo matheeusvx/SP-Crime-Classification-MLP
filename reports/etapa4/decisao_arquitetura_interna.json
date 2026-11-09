@@ -1,0 +1,21 @@
+{
+  "id": "B64",
+  "config": {
+    "features": [
+      "mes",
+      "dia_semana",
+      "tipo_local",
+      "bairro"
+    ],
+    "min_count": 50,
+    "local_alias": true,
+    "units": [
+      64
+    ],
+    "dropout": 0.0,
+    "l2": 0.0,
+    "lr": 0.001
+  },
+  "rule": "Macro F1 ate .002, recall ate .02, preferir menos parametros",
+  "used_2024": false
+}

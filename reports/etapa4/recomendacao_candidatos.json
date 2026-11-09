@@ -1,0 +1,46 @@
+{
+  "principal": {
+    "id": "B64",
+    "architecture": "64",
+    "features": "mes + dia_semana + tipo_local + bairro",
+    "seeds": "123,42,7",
+    "n_seeds": 3,
+    "parameters": 19265,
+    "epochs": 3,
+    "accuracy_mean": 0.6851337885605799,
+    "macro_f1_mean": 0.6770998373293823,
+    "balanced_accuracy_mean": 0.6771576372508551,
+    "recall_roubo_mean": 0.6268950728106922,
+    "precision_roubo_mean": 0.6254587315559528,
+    "brier_mean": 0.20162475894443455,
+    "log_loss_mean": 0.5866907627550542,
+    "macro_f1_sd": 0.00018284214421734156,
+    "macro_delta_historico_pp": -0.05642661188963727
+  },
+  "alternativa": {
+    "id": "B64_32",
+    "architecture": "64→32",
+    "features": "mes + dia_semana + tipo_local + bairro",
+    "seeds": "123,42,7",
+    "n_seeds": 3,
+    "parameters": 21313,
+    "epochs": 3,
+    "accuracy_mean": 0.6819241217995112,
+    "macro_f1_mean": 0.6759000870303581,
+    "balanced_accuracy_mean": 0.677348380929479,
+    "recall_roubo_mean": 0.6485138639537203,
+    "precision_roubo_mean": 0.615777963748298,
+    "brier_mean": 0.20254992628592175,
+    "log_loss_mean": 0.5883962097019787,
+    "macro_f1_sd": 0.0006811888617745396,
+    "macro_delta_historico_pp": -0.17640164179205664
+  },
+  "not_final_selection": true,
+  "used_2025": false,
+  "rule": "Media de 3 sementes, Macro F1 ate .002 e recall ate .02 do melhor; preferir menos parametros; sem novo ajuste apos 2024",
+  "experiment_counts": {
+    "logical_runs": 25,
+    "fresh_trainings": 23,
+    "reused": 2
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "phase": "pre",
+  "executed_at": "2026-11-09T22:45:19.115808+00:00",
+  "manifest_sha256": "b992412335c69623bdf63c9341cefaa82e0a81ae73d7d32e110f2498faa8c532",
+  "passed": true,
+  "suites": [
+    {
+      "suite": "test_integridade",
+      "executados": 8,
+      "falhas": 0,
+      "erros": 0,
+      "sucesso": true
+    },
+    {
+      "suite": "test_ml_pipeline",
+      "executados": 15,
+      "falhas": 0,
+      "erros": 0,
+      "sucesso": true
+    },
+    {
+      "suite": "test_robustez_ml",
+      "executados": 17,
+      "falhas": 0,
+      "erros": 0,
+      "sucesso": true
+    },
+    {
+      "suite": "test_experimentos_ml",
+      "executados": 17,
+      "falhas": 0,
+      "erros": 0,
+      "sucesso": true
+    },
+    {
+      "suite": "test_modelo_final.FinalPre",
+      "executados": 18,
+      "falhas": 0,
+      "erros": 0,
+      "sucesso": true
+    }
+  ]
+}

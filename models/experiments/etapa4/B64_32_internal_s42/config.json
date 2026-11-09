@@ -1,0 +1,162 @@
+{
+  "id": "B64_32",
+  "run_id": "B64_32_internal_s42",
+  "scope": "internal",
+  "seed": 42,
+  "signature": "fc36018987be7287d3fc2cf64d48a8fe47d7acb04f9006b483cfcead011e285f",
+  "config": {
+    "features": [
+      "mes",
+      "dia_semana",
+      "tipo_local",
+      "bairro"
+    ],
+    "min_count": 50,
+    "local_alias": true,
+    "units": [
+      64,
+      32
+    ],
+    "dropout": 0.0,
+    "l2": 0.0,
+    "lr": 0.001
+  },
+  "hypothesis": "Efeito da capacidade na mesma representacao",
+  "factor": "[64, 32]",
+  "date": "2026-11-09T22:18:07.402718+00:00",
+  "train_n": 144697,
+  "validation_n": 45427,
+  "train_keys_hash": "bc0477356a5cea818e9675a34db5d14989dc5b354a5cf1837ba8082baf6ff2fb",
+  "validation_keys_hash": "f85ee407520d4456035fa208031980b527277fd33c4d3f7bc81cb941666277e8",
+  "train_years": [
+    2023
+  ],
+  "validation_years": [
+    2023
+  ],
+  "input_dimension": 267,
+  "parameters": 19265,
+  "epochs_ran": 8,
+  "best_epoch": 3,
+  "fixed_epoch_budget": null,
+  "early_stopping_validation_year": 2023,
+  "training_seconds": 8.863901100005023,
+  "total_seconds": 10.99621230000048,
+  "threshold": 0.5,
+  "batch_size": 256,
+  "batch_order_seed": 42,
+  "train_metrics": {
+    "n": 144697,
+    "furtos": 81128,
+    "roubos": 63569,
+    "tn": 64005,
+    "fp": 17123,
+    "fn": 26164,
+    "tp": 37405,
+    "accuracy": 0.7008438322840141,
+    "macro_f1": 0.690380437491376,
+    "balanced_accuracy": 0.688677102418578,
+    "precision_roubo": 0.6859778462441315,
+    "recall_roubo": 0.5884157372304111,
+    "f1_roubo": 0.6334623233443695,
+    "precision_furto": 0.7098337566125831,
+    "recall_furto": 0.7889384676067449,
+    "f1_furto": 0.7472985516383824,
+    "fpr": 0.2110615323932551,
+    "fnr": 0.4115842627695889,
+    "brier": 0.19510719179285535,
+    "log_loss": 0.571210801623087,
+    "high_conf_errors": 799,
+    "high_conf_fn": 799,
+    "ece10": 0.022129484908484525
+  },
+  "validation_metrics": {
+    "n": 45427,
+    "furtos": 25293,
+    "roubos": 20134,
+    "tn": 18004,
+    "fp": 7289,
+    "fn": 7089,
+    "tp": 13045,
+    "accuracy": 0.6834921962709402,
+    "macro_f1": 0.6796749426541364,
+    "balanced_accuracy": 0.6798632542740926,
+    "precision_roubo": 0.6415363430707189,
+    "recall_roubo": 0.6479090096354425,
+    "f1_roubo": 0.6447069289315014,
+    "precision_furto": 0.7174909337265373,
+    "recall_furto": 0.7118174989127427,
+    "f1_furto": 0.7146429563767713,
+    "fpr": 0.28818250108725735,
+    "fnr": 0.3520909903645575,
+    "brier": 0.20230825886652196,
+    "log_loss": 0.588497260966795,
+    "high_conf_errors": 220,
+    "high_conf_fn": 220,
+    "ece10": 0.014442670844264212
+  },
+  "preprocess_train": {
+    "rows": 144697,
+    "dimension": 267,
+    "retained_bairros": 215,
+    "min_count": 50,
+    "mes": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "dia_semana": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "tipo_local": {
+      "missing": 10566,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "bairro": {
+      "missing": 468,
+      "unknown": 0,
+      "rare_bucket": 11910
+    }
+  },
+  "preprocess_validation": {
+    "rows": 45427,
+    "dimension": 267,
+    "retained_bairros": 215,
+    "min_count": 50,
+    "mes": {
+      "missing": 0,
+      "unknown": 45427,
+      "rare_bucket": 0
+    },
+    "dia_semana": {
+      "missing": 0,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "tipo_local": {
+      "missing": 3465,
+      "unknown": 0,
+      "rare_bucket": 0
+    },
+    "bairro": {
+      "missing": 165,
+      "unknown": 125,
+      "rare_bucket": 4173
+    }
+  },
+  "data_hashes": {
+    "base_modelagem": "37e1c75e1306374ed016c2d2d4111bcd2f529cd5a084c6e71e9d2c9a2ca9f1cd",
+    "metadados_modelagem": "993f7b866cceae16474903bdadacc389869bbc955b5f10967d5f83b6911a617c",
+    "ocorrencias_elegiveis": "ee05731ea42ae9467c347ce04b0ae4300eb83938d27617b99017d381846d962a"
+  },
+  "plan_hash": "010706b3a597ae15bcdebeb23278272fc490db1a9fa4656f9e21ec421916eb19",
+  "reused_from": null,
+  "preprocessor_path": "models/experiments/etapa4/B64_32_internal_s42/preprocessador.joblib",
+  "model_path": "models/experiments/etapa4/B64_32_internal_s42/modelo.keras",
+  "prediction_path": "models/experiments/etapa4/B64_32_internal_s42/predicoes_validacao.npz",
+  "status": "completed",
+  "reload_max_abs_diff": 0.0
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "atributo": "mes",
+    "linhas": 505187,
+    "ausentes": 0,
+    "ausentes_pct": 0.0,
+    "cardinalidade": 12
+  },
+  {
+    "atributo": "dia_semana",
+    "linhas": 505187,
+    "ausentes": 0,
+    "ausentes_pct": 0.0,
+    "cardinalidade": 7
+  },
+  {
+    "atributo": "periodo_fato",
+    "linhas": 505187,
+    "ausentes": 0,
+    "ausentes_pct": 0.0,
+    "cardinalidade": 5
+  },
+  {
+    "atributo": "tipo_local",
+    "linhas": 505187,
+    "ausentes": 18752,
+    "ausentes_pct": 3.7119,
+    "cardinalidade": 28
+  },
+  {
+    "atributo": "bairro",
+    "linhas": 505187,
+    "ausentes": 1691,
+    "ausentes_pct": 0.3347,
+    "cardinalidade": 2328
+  }
+]

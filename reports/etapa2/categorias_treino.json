@@ -1,0 +1,9626 @@
+{
+  "ano_fit": 2023,
+  "categorias": {
+    "mes": [
+      {
+        "categoria": 2,
+        "n": 17908
+      },
+      {
+        "categoria": 3,
+        "n": 17280
+      },
+      {
+        "categoria": 9,
+        "n": 16686
+      },
+      {
+        "categoria": 6,
+        "n": 16402
+      },
+      {
+        "categoria": 5,
+        "n": 15696
+      },
+      {
+        "categoria": 8,
+        "n": 15620
+      },
+      {
+        "categoria": 10,
+        "n": 15370
+      },
+      {
+        "categoria": 7,
+        "n": 15204
+      },
+      {
+        "categoria": 1,
+        "n": 15162
+      },
+      {
+        "categoria": 11,
+        "n": 15152
+      },
+      {
+        "categoria": 12,
+        "n": 14905
+      },
+      {
+        "categoria": 4,
+        "n": 14739
+      }
+    ],
+    "dia_semana": [
+      {
+        "categoria": 5,
+        "n": 31433
+      },
+      {
+        "categoria": 4,
+        "n": 29576
+      },
+      {
+        "categoria": 3,
+        "n": 27505
+      },
+      {
+        "categoria": 2,
+        "n": 27471
+      },
+      {
+        "categoria": 1,
+        "n": 26222
+      },
+      {
+        "categoria": 6,
+        "n": 26172
+      },
+      {
+        "categoria": 0,
+        "n": 21745
+      }
+    ],
+    "tipo_local": [
+      {
+        "categoria": "VIA PÚBLICA",
+        "n": 151663
+      },
+      {
+        "categoria": "TERMINAL/ESTAÇÃO",
+        "n": 17759
+      },
+      {
+        "categoria": null,
+        "n": 14031
+      },
+      {
+        "categoria": "RESIDÊNCIA",
+        "n": 1204
+      },
+      {
+        "categoria": "ESTACIONAMENTO/GARAGEM",
+        "n": 1001
+      },
+      {
+        "categoria": "COMÉRCIO E SERVIÇOS",
+        "n": 908
+      },
+      {
+        "categoria": "RODOVIA/ESTRADA",
+        "n": 597
+      },
+      {
+        "categoria": "RESTAURANTE E AFINS",
+        "n": 578
+      },
+      {
+        "categoria": "LAZER E RECREAÇÃO",
+        "n": 568
+      },
+      {
+        "categoria": "SHOPPING CENTER",
+        "n": 320
+      },
+      {
+        "categoria": "CONDOMÍNIO COMERCIAL",
+        "n": 277
+      },
+      {
+        "categoria": "CONDOMÍNIO RESIDENCIAL",
+        "n": 192
+      },
+      {
+        "categoria": "CENTRO COMERCIAL/EMPRESARIAL",
+        "n": 181
+      },
+      {
+        "categoria": "SAÚDE",
+        "n": 131
+      },
+      {
+        "categoria": "AREA NÃO OCUPADA",
+        "n": 122
+      },
+      {
+        "categoria": "HOSPEDAGEM",
+        "n": 118
+      },
+      {
+        "categoria": "ESCRITÓRIO",
+        "n": 103
+      },
+      {
+        "categoria": "ESTABELECIMENTO DE ENSINO",
+        "n": 98
+      },
+      {
+        "categoria": "ENTIDADE ASSISTENCIAL",
+        "n": 72
+      },
+      {
+        "categoria": "ESTABELECIMENTO BANCÁRIO",
+        "n": 45
+      },
+      {
+        "categoria": "FAVELA",
+        "n": 40
+      },
+      {
+        "categoria": "TEMPLO E AFINS",
+        "n": 27
+      },
+      {
+        "categoria": "SERVIÇOS E BENS PÚBLICOS",
+        "n": 16
+      },
+      {
+        "categoria": "LOCAL CLANDESTINO/ILEGAL",
+        "n": 15
+      },
+      {
+        "categoria": "ESTABELECIMENTO INDUSTRIAL",
+        "n": 14
+      },
+      {
+        "categoria": "INTERNET",
+        "n": 13
+      },
+      {
+        "categoria": "REPARTIÇÃO PÚBLICA",
+        "n": 13
+      },
+      {
+        "categoria": "OUTROS",
+        "n": 12
+      },
+      {
+        "categoria": "UNIDADE RURAL",
+        "n": 6
+      }
+    ],
+    "bairro": [
+      {
+        "categoria": "REPUBLICA",
+        "n": 6226
+      },
+      {
+        "categoria": "BELA VISTA",
+        "n": 6025
+      },
+      {
+        "categoria": "PINHEIROS",
+        "n": 5299
+      },
+      {
+        "categoria": "ITAIM BIBI",
+        "n": 4018
+      },
+      {
+        "categoria": "BOM RETIRO",
+        "n": 3822
+      },
+      {
+        "categoria": "BARRA FUNDA",
+        "n": 3762
+      },
+      {
+        "categoria": "LIBERDADE",
+        "n": 3659
+      },
+      {
+        "categoria": "SE",
+        "n": 3626
+      },
+      {
+        "categoria": "VILA MARIANA",
+        "n": 3601
+      },
+      {
+        "categoria": "CONSOLACAO",
+        "n": 3425
+      },
+      {
+        "categoria": "JARDIM PAULISTA",
+        "n": 3355
+      },
+      {
+        "categoria": "SANTO AMARO",
+        "n": 3196
+      },
+      {
+        "categoria": "SANTANA",
+        "n": 3139
+      },
+      {
+        "categoria": "CAPAO REDONDO",
+        "n": 2932
+      },
+      {
+        "categoria": "CONSOLAÇÃO",
+        "n": 2744
+      },
+      {
+        "categoria": "BRÁS",
+        "n": 2713
+      },
+      {
+        "categoria": "CIDADE DUTRA",
+        "n": 2509
+      },
+      {
+        "categoria": "IPIRANGA",
+        "n": 2303
+      },
+      {
+        "categoria": "BRAS",
+        "n": 2276
+      },
+      {
+        "categoria": "REPÚBLICA",
+        "n": 2051
+      },
+      {
+        "categoria": "CAMPO LIMPO",
+        "n": 2042
+      },
+      {
+        "categoria": "ITAQUERA",
+        "n": 1963
+      },
+      {
+        "categoria": "GRAJAU",
+        "n": 1955
+      },
+      {
+        "categoria": "SANTA CECILIA",
+        "n": 1932
+      },
+      {
+        "categoria": "MOOCA",
+        "n": 1922
+      },
+      {
+        "categoria": "CENTRO",
+        "n": 1909
+      },
+      {
+        "categoria": "JARDIM ANGELA",
+        "n": 1770
+      },
+      {
+        "categoria": "LAPA",
+        "n": 1749
+      },
+      {
+        "categoria": "JABAQUARA",
+        "n": 1724
+      },
+      {
+        "categoria": "CENTRO HISTÓRICO DE SÃO PAULO",
+        "n": 1677
+      },
+      {
+        "categoria": "JD SÃO LUIS",
+        "n": 1612
+      },
+      {
+        "categoria": "PERDIZES",
+        "n": 1515
+      },
+      {
+        "categoria": "MOEMA",
+        "n": 1458
+      },
+      {
+        "categoria": "TATUAPE",
+        "n": 1441
+      },
+      {
+        "categoria": "ITAIM PAULISTA",
+        "n": 1441
+      },
+      {
+        "categoria": "CIDADE ADEMAR",
+        "n": 1394
+      },
+      {
+        "categoria": "PARI",
+        "n": 1387
+      },
+      {
+        "categoria": "VILA SONIA",
+        "n": 1311
+      },
+      {
+        "categoria": "VILA MARIA",
+        "n": 1278
+      },
+      {
+        "categoria": "GUAIANASES",
+        "n": 1251
+      },
+      {
+        "categoria": "VILA ANDRADE",
+        "n": 1248
+      },
+      {
+        "categoria": "CANINDÉ",
+        "n": 1205
+      },
+      {
+        "categoria": "SACOMA",
+        "n": 1195
+      },
+      {
+        "categoria": "SAO MATEUS",
+        "n": 1182
+      },
+      {
+        "categoria": "SAPOPEMBA",
+        "n": 1160
+      },
+      {
+        "categoria": "CIDADE TIRADENTES",
+        "n": 1160
+      },
+      {
+        "categoria": "FREGUESIA DO O",
+        "n": 1157
+      },
+      {
+        "categoria": "CAMPO GRANDE",
+        "n": 1124
+      },
+      {
+        "categoria": "SÉ",
+        "n": 1111
+      },
+      {
+        "categoria": "MORUMBI",
+        "n": 1101
+      },
+      {
+        "categoria": "BRASILANDIA",
+        "n": 1092
+      },
+      {
+        "categoria": "TATUAPÉ",
+        "n": 1091
+      },
+      {
+        "categoria": "VILA GUILHERME",
+        "n": 1045
+      },
+      {
+        "categoria": "LAJEADO",
+        "n": 1035
+      },
+      {
+        "categoria": "PIRITUBA",
+        "n": 1019
+      },
+      {
+        "categoria": "LUZ",
+        "n": 1014
+      },
+      {
+        "categoria": "SAO MIGUEL",
+        "n": 1005
+      },
+      {
+        "categoria": "CAMBUCI",
+        "n": 997
+      },
+      {
+        "categoria": "CAMPOS ELÍSEOS",
+        "n": 978
+      },
+      {
+        "categoria": "TREMEMBE",
+        "n": 964
+      },
+      {
+        "categoria": "BUTANTA",
+        "n": 946
+      },
+      {
+        "categoria": "SAUDE",
+        "n": 943
+      },
+      {
+        "categoria": "CAMPO BELO",
+        "n": 929
+      },
+      {
+        "categoria": "INTERLAGOS",
+        "n": 929
+      },
+      {
+        "categoria": "PEDREIRA",
+        "n": 923
+      },
+      {
+        "categoria": "VILA CURUCA",
+        "n": 914
+      },
+      {
+        "categoria": "VILA PRUDENTE",
+        "n": 893
+      },
+      {
+        "categoria": "BELEM",
+        "n": 855
+      },
+      {
+        "categoria": "PENHA",
+        "n": 810
+      },
+      {
+        "categoria": "JARAGUA",
+        "n": 787
+      },
+      {
+        "categoria": "JARDIM COLINA",
+        "n": 785
+      },
+      {
+        "categoria": "CASA VERDE",
+        "n": 765
+      },
+      {
+        "categoria": "TUCURUVI",
+        "n": 763
+      },
+      {
+        "categoria": "ARTUR ALVIM",
+        "n": 753
+      },
+      {
+        "categoria": "VILA MATILDE",
+        "n": 716
+      },
+      {
+        "categoria": "CERQUEIRA CÉSAR",
+        "n": 668
+      },
+      {
+        "categoria": "VILA LEOPOLDINA",
+        "n": 660
+      },
+      {
+        "categoria": "IGUATEMI",
+        "n": 657
+      },
+      {
+        "categoria": "ERMELINO MATARAZZO",
+        "n": 650
+      },
+      {
+        "categoria": null,
+        "n": 631
+      },
+      {
+        "categoria": "PARQUE DO CARMO",
+        "n": 627
+      },
+      {
+        "categoria": "VILA FORMOSA",
+        "n": 613
+      },
+      {
+        "categoria": "ARICANDUVA",
+        "n": 610
+      },
+      {
+        "categoria": "JOSE BONIFACIO",
+        "n": 608
+      },
+      {
+        "categoria": "BUTANTÃ",
+        "n": 599
+      },
+      {
+        "categoria": "LIMAO",
+        "n": 595
+      },
+      {
+        "categoria": "RIO PEQUENO",
+        "n": 588
+      },
+      {
+        "categoria": "CANGAIBA",
+        "n": 587
+      },
+      {
+        "categoria": "JARDIM PAULISTANO",
+        "n": 587
+      },
+      {
+        "categoria": "CIDADE LIDER",
+        "n": 586
+      },
+      {
+        "categoria": "ÁGUA BRANCA",
+        "n": 583
+      },
+      {
+        "categoria": "SOCORRO",
+        "n": 582
+      },
+      {
+        "categoria": "SAO LUCAS",
+        "n": 579
+      },
+      {
+        "categoria": "CACHOEIRINHA",
+        "n": 573
+      },
+      {
+        "categoria": "SAO RAFAEL",
+        "n": 560
+      },
+      {
+        "categoria": "VILA BUARQUE",
+        "n": 542
+      },
+      {
+        "categoria": "VILA JACUI",
+        "n": 540
+      },
+      {
+        "categoria": "VILA OLÍMPIA",
+        "n": 540
+      },
+      {
+        "categoria": "VILA MEDEIROS",
+        "n": 528
+      },
+      {
+        "categoria": "PARELHEIROS",
+        "n": 519
+      },
+      {
+        "categoria": "RAPOSO TAVARES",
+        "n": 504
+      },
+      {
+        "categoria": "ALTO DE PINHEIROS",
+        "n": 489
+      },
+      {
+        "categoria": "AGUA RASA",
+        "n": 471
+      },
+      {
+        "categoria": "JACANA",
+        "n": 453
+      },
+      {
+        "categoria": "JARDIM HELENA",
+        "n": 450
+      },
+      {
+        "categoria": "VILA CAMPANELA",
+        "n": 408
+      },
+      {
+        "categoria": "VILA NOVA CONCEIÇÃO",
+        "n": 408
+      },
+      {
+        "categoria": "PERUS",
+        "n": 405
+      },
+      {
+        "categoria": "PARAÍSO",
+        "n": 405
+      },
+      {
+        "categoria": "PONTE RASA",
+        "n": 397
+      },
+      {
+        "categoria": "INDIANÓPOLIS",
+        "n": 397
+      },
+      {
+        "categoria": "CARRAO",
+        "n": 388
+      },
+      {
+        "categoria": "GUAIANAZES",
+        "n": 384
+      },
+      {
+        "categoria": "CIDADE MONÇÕES",
+        "n": 384
+      },
+      {
+        "categoria": "MANDAQUI",
+        "n": 370
+      },
+      {
+        "categoria": "PARQUE ARTUR ALVIM",
+        "n": 368
+      },
+      {
+        "categoria": "SAO DOMINGOS",
+        "n": 364
+      },
+      {
+        "categoria": "SANTA EFIGÊNIA",
+        "n": 353
+      },
+      {
+        "categoria": "VÁRZEA DA BARRA FUNDA",
+        "n": 320
+      },
+      {
+        "categoria": "SANTA IFIGÊNIA",
+        "n": 289
+      },
+      {
+        "categoria": "JAGUARE",
+        "n": 285
+      },
+      {
+        "categoria": "VILA GERTRUDES",
+        "n": 282
+      },
+      {
+        "categoria": "VILA GOMES CARDIM",
+        "n": 277
+      },
+      {
+        "categoria": "CIDADE ANTÔNIO ESTEVÃO DE CARVALHO",
+        "n": 270
+      },
+      {
+        "categoria": "ANHANGUERA",
+        "n": 264
+      },
+      {
+        "categoria": "JARDIM SÃO LUÍS",
+        "n": 258
+      },
+      {
+        "categoria": "LAPA DE BAIXO",
+        "n": 240
+      },
+      {
+        "categoria": "RESIDENCIAL TAIPAS",
+        "n": 227
+      },
+      {
+        "categoria": "PARADA INGLESA",
+        "n": 220
+      },
+      {
+        "categoria": "PARQUE DO LAGO",
+        "n": 214
+      },
+      {
+        "categoria": "SÃO MIGUEL PAULISTA",
+        "n": 213
+      },
+      {
+        "categoria": "VILA CARMOSINA",
+        "n": 199
+      },
+      {
+        "categoria": "PLANALTO PAULISTA",
+        "n": 196
+      },
+      {
+        "categoria": "SUMAREZINHO",
+        "n": 193
+      },
+      {
+        "categoria": "VILA CLEMENTINO",
+        "n": 186
+      },
+      {
+        "categoria": "BROOKLIN",
+        "n": 182
+      },
+      {
+        "categoria": "VILA DA SAÚDE",
+        "n": 173
+      },
+      {
+        "categoria": "VILA ROMANA",
+        "n": 172
+      },
+      {
+        "categoria": "PACAEMBU",
+        "n": 171
+      },
+      {
+        "categoria": "PENHA DE FRANÇA",
+        "n": 170
+      },
+      {
+        "categoria": "PARQUE IBIRAPUERA",
+        "n": 170
+      },
+      {
+        "categoria": "VILA PREL",
+        "n": 169
+      },
+      {
+        "categoria": "MIRANDÓPOLIS",
+        "n": 169
+      },
+      {
+        "categoria": "CIDADE SÃO MATEUS",
+        "n": 166
+      },
+      {
+        "categoria": "JARDIM LEONOR",
+        "n": 164
+      },
+      {
+        "categoria": "JARDIM TRÊS MARIAS",
+        "n": 156
+      },
+      {
+        "categoria": "CHÁCARA CALIFÓRNIA",
+        "n": 154
+      },
+      {
+        "categoria": "VILA MADALENA",
+        "n": 152
+      },
+      {
+        "categoria": "JARDIM UMUARAMA",
+        "n": 152
+      },
+      {
+        "categoria": "HIGIENÓPOLIS",
+        "n": 152
+      },
+      {
+        "categoria": "VILA REGENTE FEIJÓ",
+        "n": 150
+      },
+      {
+        "categoria": "JAGUARA",
+        "n": 143
+      },
+      {
+        "categoria": "LIMÃO",
+        "n": 142
+      },
+      {
+        "categoria": "POMPEIA",
+        "n": 141
+      },
+      {
+        "categoria": "JARDIM AVENIDA",
+        "n": 138
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL JOSÉ BONIFÁCIO",
+        "n": 134
+      },
+      {
+        "categoria": "AMERICANÓPOLIS",
+        "n": 132
+      },
+      {
+        "categoria": "QUINTA DA PAINEIRA",
+        "n": 131
+      },
+      {
+        "categoria": "SUMARÉ",
+        "n": 131
+      },
+      {
+        "categoria": "PARQUE BRASIL",
+        "n": 128
+      },
+      {
+        "categoria": "CARANDIRU",
+        "n": 127
+      },
+      {
+        "categoria": "JAGUARÉ",
+        "n": 126
+      },
+      {
+        "categoria": "CHÁCARA ITAIM",
+        "n": 124
+      },
+      {
+        "categoria": "VILA PROGREDIOR",
+        "n": 118
+      },
+      {
+        "categoria": "JURUBATUBA",
+        "n": 118
+      },
+      {
+        "categoria": "BROOKLIN PAULISTA",
+        "n": 114
+      },
+      {
+        "categoria": "JARDIM ADUTORA",
+        "n": 114
+      },
+      {
+        "categoria": "CAPÃO REDONDO",
+        "n": 114
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZINHA (ZONA LESTE)",
+        "n": 112
+      },
+      {
+        "categoria": "CIDADE MÃE DO CÉU",
+        "n": 110
+      },
+      {
+        "categoria": "VILA HELIOPOLIS",
+        "n": 109
+      },
+      {
+        "categoria": "JARDIM DAS ACÁCIAS",
+        "n": 108
+      },
+      {
+        "categoria": "QUARTA PARADA",
+        "n": 106
+      },
+      {
+        "categoria": "CIDADE ANTÔNIO ESTÊVÃO DE CARVALHO",
+        "n": 106
+      },
+      {
+        "categoria": "PARQUE BRISTOL",
+        "n": 104
+      },
+      {
+        "categoria": "ACLIMAÇÃO",
+        "n": 101
+      },
+      {
+        "categoria": "SANTA CECÍLIA",
+        "n": 100
+      },
+      {
+        "categoria": "VILA ALMEIDA",
+        "n": 99
+      },
+      {
+        "categoria": "CIDADE PATRIARCA",
+        "n": 97
+      },
+      {
+        "categoria": "VILA MONUMENTO",
+        "n": 96
+      },
+      {
+        "categoria": "VILA ALBERTINA",
+        "n": 94
+      },
+      {
+        "categoria": "JARDIM DAS FLORES",
+        "n": 93
+      },
+      {
+        "categoria": "VILA CONGONHAS",
+        "n": 93
+      },
+      {
+        "categoria": "JARDIM PAULISTANO (ZONA NORTE)",
+        "n": 92
+      },
+      {
+        "categoria": "CIDADE LÍDER",
+        "n": 92
+      },
+      {
+        "categoria": "VILA CORDEIRO",
+        "n": 91
+      },
+      {
+        "categoria": "VILA SANTA CATARINA",
+        "n": 91
+      },
+      {
+        "categoria": "VILA MARIETA",
+        "n": 88
+      },
+      {
+        "categoria": "CHÁCARA SEIS DE OUTUBRO",
+        "n": 88
+      },
+      {
+        "categoria": "BELENZINHO",
+        "n": 88
+      },
+      {
+        "categoria": "JARDIM DAS ACACIAS",
+        "n": 88
+      },
+      {
+        "categoria": "JARDIM PRUDÊNCIA",
+        "n": 87
+      },
+      {
+        "categoria": "PARQUE PAINEIRAS",
+        "n": 86
+      },
+      {
+        "categoria": "JARDIM MARAJOARA",
+        "n": 86
+      },
+      {
+        "categoria": "PARQUE INDUSTRIAL TOMAS EDSON",
+        "n": 84
+      },
+      {
+        "categoria": "VILA CARRAO",
+        "n": 84
+      },
+      {
+        "categoria": "JARDIM SÃO JANUÁRIO",
+        "n": 84
+      },
+      {
+        "categoria": "JARDIM ARPOADOR",
+        "n": 83
+      },
+      {
+        "categoria": "PARQUE NOVO MUNDO",
+        "n": 83
+      },
+      {
+        "categoria": "ÁGUA FUNDA",
+        "n": 81
+      },
+      {
+        "categoria": "PARQUE EDU CHAVES",
+        "n": 80
+      },
+      {
+        "categoria": "JARDIM BOA VISTA (ZONA OESTE)",
+        "n": 78
+      },
+      {
+        "categoria": "FREGUESIA DO Ó",
+        "n": 77
+      },
+      {
+        "categoria": "JARDIM AIMORÉ",
+        "n": 76
+      },
+      {
+        "categoria": "JARDIM PEDRA BRANCA",
+        "n": 76
+      },
+      {
+        "categoria": "VILA SOUZA",
+        "n": 75
+      },
+      {
+        "categoria": "VILA MOINHO VELHO",
+        "n": 74
+      },
+      {
+        "categoria": "JARDIM REGINA",
+        "n": 74
+      },
+      {
+        "categoria": "VILA PIRAJUSSARA",
+        "n": 73
+      },
+      {
+        "categoria": "VILA HAMBURGUESA",
+        "n": 72
+      },
+      {
+        "categoria": "PARQUE FERNANDA",
+        "n": 72
+      },
+      {
+        "categoria": "CIDADE NOVA HELIÓPOLIS",
+        "n": 72
+      },
+      {
+        "categoria": "JARDIM MIRIAM",
+        "n": 71
+      },
+      {
+        "categoria": "PARQUE SANTO ANTÔNIO",
+        "n": 71
+      },
+      {
+        "categoria": "PONTE PEQUENA",
+        "n": 69
+      },
+      {
+        "categoria": "VILA JACUÍ",
+        "n": 69
+      },
+      {
+        "categoria": "COLÔNIA (ZONA LESTE)",
+        "n": 68
+      },
+      {
+        "categoria": "VILA SANTANA",
+        "n": 68
+      },
+      {
+        "categoria": "IMIRIM",
+        "n": 68
+      },
+      {
+        "categoria": "JARDIM ATALIBA LEONEL",
+        "n": 67
+      },
+      {
+        "categoria": "PARQUE BOA ESPERANÇA",
+        "n": 67
+      },
+      {
+        "categoria": "VILA DOM PEDRO I",
+        "n": 67
+      },
+      {
+        "categoria": "JARDIM COTINHA",
+        "n": 67
+      },
+      {
+        "categoria": "JARDIM MARILU",
+        "n": 66
+      },
+      {
+        "categoria": "JARDIM ARICANDUVA",
+        "n": 66
+      },
+      {
+        "categoria": "BRASILÂNDIA",
+        "n": 64
+      },
+      {
+        "categoria": "CHÁCARA SANTO ANTÔNIO (ZONA SUL)",
+        "n": 64
+      },
+      {
+        "categoria": "VILA NORMA",
+        "n": 62
+      },
+      {
+        "categoria": "VILA MARACANA",
+        "n": 62
+      },
+      {
+        "categoria": "JARDIM SÃO PAULO",
+        "n": 62
+      },
+      {
+        "categoria": "JARDIM SÃO PAULO(ZONA NORTE)",
+        "n": 60
+      },
+      {
+        "categoria": "NOSSA SENHORA DO O",
+        "n": 60
+      },
+      {
+        "categoria": "VILA NOVA CACHOEIRINHA",
+        "n": 59
+      },
+      {
+        "categoria": "CURSINO",
+        "n": 59
+      },
+      {
+        "categoria": "SACOMÃ",
+        "n": 59
+      },
+      {
+        "categoria": "VILA CALIFORNIA",
+        "n": 58
+      },
+      {
+        "categoria": "JARDIM NOSSA SENHORA DO CARMO",
+        "n": 58
+      },
+      {
+        "categoria": "VILA JARAGUÁ",
+        "n": 57
+      },
+      {
+        "categoria": "PARQUE DA MOOCA",
+        "n": 56
+      },
+      {
+        "categoria": "JARDIM ORIENTAL",
+        "n": 56
+      },
+      {
+        "categoria": "JARAGUÁ",
+        "n": 56
+      },
+      {
+        "categoria": "VILA ANASTÁCIO",
+        "n": 56
+      },
+      {
+        "categoria": "VILA BARBOSA",
+        "n": 56
+      },
+      {
+        "categoria": "JARDIM IGUATEMI",
+        "n": 55
+      },
+      {
+        "categoria": "JARDIM MARCEL",
+        "n": 53
+      },
+      {
+        "categoria": "VILA DAS BELEZAS",
+        "n": 53
+      },
+      {
+        "categoria": "JARDIM DAS OLIVEIRAS",
+        "n": 52
+      },
+      {
+        "categoria": "VILA RIO BRANCO",
+        "n": 52
+      },
+      {
+        "categoria": "JARDIM VERA CRUZ(ZONA LESTE)",
+        "n": 52
+      },
+      {
+        "categoria": "JARDIM BRASIL (ZONA NORTE)",
+        "n": 52
+      },
+      {
+        "categoria": "VILA SUZANA",
+        "n": 52
+      },
+      {
+        "categoria": "JARDIM VISTA LINDA",
+        "n": 51
+      },
+      {
+        "categoria": "VILA PIRITUBA",
+        "n": 51
+      },
+      {
+        "categoria": "VILA INDEPENDENCIA",
+        "n": 50
+      },
+      {
+        "categoria": "JARDIM PIRITUBA",
+        "n": 50
+      },
+      {
+        "categoria": "CANGAÍBA",
+        "n": 50
+      },
+      {
+        "categoria": "VILA DIVINA PASTORA",
+        "n": 50
+      },
+      {
+        "categoria": "VILA PERUS",
+        "n": 49
+      },
+      {
+        "categoria": "JARDIM LUZITANIA",
+        "n": 49
+      },
+      {
+        "categoria": "VILA FIAT LUX",
+        "n": 49
+      },
+      {
+        "categoria": "JARDIM SYDNEY",
+        "n": 49
+      },
+      {
+        "categoria": "PARQUE BOLOGNE",
+        "n": 48
+      },
+      {
+        "categoria": "JARDIM MIRAGAIA",
+        "n": 48
+      },
+      {
+        "categoria": "VILA AMERICANA",
+        "n": 48
+      },
+      {
+        "categoria": "PARADA XV DE NOVEMBRO",
+        "n": 48
+      },
+      {
+        "categoria": "VILA PRINCESA ISABEL",
+        "n": 48
+      },
+      {
+        "categoria": "VÁRZEA DE BAIXO",
+        "n": 47
+      },
+      {
+        "categoria": "JARDIM AMERICA",
+        "n": 47
+      },
+      {
+        "categoria": "JARDIM JAPAO",
+        "n": 46
+      },
+      {
+        "categoria": "PARQUE SAO RAFAEL",
+        "n": 46
+      },
+      {
+        "categoria": "JARDIM EUROPA",
+        "n": 46
+      },
+      {
+        "categoria": "VILA MARIA BAIXA",
+        "n": 45
+      },
+      {
+        "categoria": "VILA ALPINA",
+        "n": 45
+      },
+      {
+        "categoria": "IBIRAPUERA",
+        "n": 45
+      },
+      {
+        "categoria": "VILA PEREIRA BARRETO",
+        "n": 45
+      },
+      {
+        "categoria": "ELDORADO",
+        "n": 45
+      },
+      {
+        "categoria": "PARQUE BOTURUSSU",
+        "n": 44
+      },
+      {
+        "categoria": "JARDINS",
+        "n": 44
+      },
+      {
+        "categoria": "VILA ARICANDUVA",
+        "n": 44
+      },
+      {
+        "categoria": "LIMOEIRO",
+        "n": 44
+      },
+      {
+        "categoria": "JARDIM SORAIA",
+        "n": 44
+      },
+      {
+        "categoria": "VILA ANTONIETA",
+        "n": 43
+      },
+      {
+        "categoria": "JARDIM UNIVERSIDADE PINHEIROS",
+        "n": 43
+      },
+      {
+        "categoria": "JARDIM SAPOPEMBA",
+        "n": 42
+      },
+      {
+        "categoria": "VILA SOCORRO",
+        "n": 42
+      },
+      {
+        "categoria": "ALTO DA LAPA",
+        "n": 41
+      },
+      {
+        "categoria": "LAGEADO",
+        "n": 41
+      },
+      {
+        "categoria": "JARDIM SAO RAFAEL",
+        "n": 41
+      },
+      {
+        "categoria": "PARQUE INDEPENDENCIA",
+        "n": 41
+      },
+      {
+        "categoria": "JARDIM SANTO ELIAS",
+        "n": 41
+      },
+      {
+        "categoria": "JARDIM RODOLFO PIRANI",
+        "n": 41
+      },
+      {
+        "categoria": "VILA EMA",
+        "n": 41
+      },
+      {
+        "categoria": "JOSÉ BONIFÁCIO",
+        "n": 41
+      },
+      {
+        "categoria": "JARDIM SAO SEBASTIAO",
+        "n": 40
+      },
+      {
+        "categoria": "PARQUE IPE",
+        "n": 40
+      },
+      {
+        "categoria": "JARDIM ÂNGELA (ZONA SUL)",
+        "n": 40
+      },
+      {
+        "categoria": "BALNEÁRIO SÃO FRANCISCO",
+        "n": 40
+      },
+      {
+        "categoria": "JARDIM MIRANTE",
+        "n": 40
+      },
+      {
+        "categoria": "CIDADE SATÉLITE SANTA BÁRBARA",
+        "n": 39
+      },
+      {
+        "categoria": "JARDIM ANDARAI",
+        "n": 39
+      },
+      {
+        "categoria": "VILA RÉ",
+        "n": 39
+      },
+      {
+        "categoria": "JARDIM PEREIRA LEITE",
+        "n": 39
+      },
+      {
+        "categoria": "VILA NANCY",
+        "n": 39
+      },
+      {
+        "categoria": "JARDIM DAS GRAÇAS",
+        "n": 39
+      },
+      {
+        "categoria": "LAUZANE PAULISTA",
+        "n": 39
+      },
+      {
+        "categoria": "CIDADE JÚLIA",
+        "n": 38
+      },
+      {
+        "categoria": "CHÁCARA INGLESA",
+        "n": 38
+      },
+      {
+        "categoria": "VILA JAGUARA",
+        "n": 38
+      },
+      {
+        "categoria": "JARDIM CIDADE PIRITUBA",
+        "n": 38
+      },
+      {
+        "categoria": "JARDIM IRIS",
+        "n": 38
+      },
+      {
+        "categoria": "JARDIM MATARAZZO",
+        "n": 38
+      },
+      {
+        "categoria": "CIDADE JARDIM",
+        "n": 38
+      },
+      {
+        "categoria": "VILA MARIA ALTA",
+        "n": 37
+      },
+      {
+        "categoria": "FAZENDA DA JUTA",
+        "n": 37
+      },
+      {
+        "categoria": "JARDIM MORUMBI",
+        "n": 37
+      },
+      {
+        "categoria": "JARDIM VISTA ALEGRE",
+        "n": 37
+      },
+      {
+        "categoria": "PARQUE PAULISTANO",
+        "n": 36
+      },
+      {
+        "categoria": "CIDADE AUXILIADORA",
+        "n": 36
+      },
+      {
+        "categoria": "PARQUE RESIDENCIAL COCAIA",
+        "n": 36
+      },
+      {
+        "categoria": "BALNEÁRIO MAR PAULISTA",
+        "n": 35
+      },
+      {
+        "categoria": "VILA MASCOTE",
+        "n": 35
+      },
+      {
+        "categoria": "VILA EMIR",
+        "n": 35
+      },
+      {
+        "categoria": "PARQUE JABAQUARA",
+        "n": 35
+      },
+      {
+        "categoria": "VILA NHOCUNÉ",
+        "n": 35
+      },
+      {
+        "categoria": "CIDADE NOVA SÃO MIGUEL",
+        "n": 35
+      },
+      {
+        "categoria": "JARDIM NORONHA",
+        "n": 35
+      },
+      {
+        "categoria": "JARDIM CARAVELAS",
+        "n": 34
+      },
+      {
+        "categoria": "VILA BELA",
+        "n": 34
+      },
+      {
+        "categoria": "JARDIM GERMANIA",
+        "n": 34
+      },
+      {
+        "categoria": "VILA NOVA CURUCA",
+        "n": 33
+      },
+      {
+        "categoria": "JARDIM SÃO BENTO NOVO",
+        "n": 33
+      },
+      {
+        "categoria": "JARDIM DOM JOSÉ",
+        "n": 33
+      },
+      {
+        "categoria": "PIQUERI",
+        "n": 33
+      },
+      {
+        "categoria": "JARDIM PERI",
+        "n": 33
+      },
+      {
+        "categoria": "JARDIM CATANDUVA",
+        "n": 33
+      },
+      {
+        "categoria": "BOSQUE DA SAÚDE",
+        "n": 33
+      },
+      {
+        "categoria": "VILA GUSTAVO",
+        "n": 32
+      },
+      {
+        "categoria": "GRAJAÚ",
+        "n": 32
+      },
+      {
+        "categoria": "VILA PEREIRA CERCA",
+        "n": 32
+      },
+      {
+        "categoria": "VILA CURUÇÁ VELHA",
+        "n": 32
+      },
+      {
+        "categoria": "VILA BANCARIA",
+        "n": 32
+      },
+      {
+        "categoria": "VILA SANTO HENRIQUE",
+        "n": 32
+      },
+      {
+        "categoria": "VILA BUTANTÃ",
+        "n": 32
+      },
+      {
+        "categoria": "VILA DO SOL",
+        "n": 31
+      },
+      {
+        "categoria": "VILA CAMPO GRANDE",
+        "n": 31
+      },
+      {
+        "categoria": "PARQUE MARIA HELENA",
+        "n": 31
+      },
+      {
+        "categoria": "VILA SÔNIA",
+        "n": 31
+      },
+      {
+        "categoria": "GLEBA DO PÊSSEGO",
+        "n": 31
+      },
+      {
+        "categoria": "JARDIM OLYMPIA",
+        "n": 30
+      },
+      {
+        "categoria": "VILA SOFIA",
+        "n": 30
+      },
+      {
+        "categoria": "PARQUE REGINA",
+        "n": 30
+      },
+      {
+        "categoria": "JARDIM DA LARANJEIRA (ZONA LESTE)",
+        "n": 30
+      },
+      {
+        "categoria": "JARDIM DAS GRACAS",
+        "n": 30
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL INSTITUTO ADVENTISTA",
+        "n": 30
+      },
+      {
+        "categoria": "SÃO RAFAEL",
+        "n": 29
+      },
+      {
+        "categoria": "VILA CRUZEIRO",
+        "n": 29
+      },
+      {
+        "categoria": "VILA MORAES",
+        "n": 29
+      },
+      {
+        "categoria": "VILA LOURDES",
+        "n": 29
+      },
+      {
+        "categoria": "ALTO DA MOOCA",
+        "n": 29
+      },
+      {
+        "categoria": "JARDIM AMALIA",
+        "n": 29
+      },
+      {
+        "categoria": "JARDIM PREVIDENCIA",
+        "n": 29
+      },
+      {
+        "categoria": "VILA DO ENCONTRO",
+        "n": 28
+      },
+      {
+        "categoria": "VILA ZAT",
+        "n": 28
+      },
+      {
+        "categoria": "VILA SABRINA",
+        "n": 28
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL TEOTONIO VILELA",
+        "n": 28
+      },
+      {
+        "categoria": "VILA GUARANI (ZONA SUL)",
+        "n": 28
+      },
+      {
+        "categoria": "VILA VERA",
+        "n": 28
+      },
+      {
+        "categoria": "PARQUE GUAIANAZES",
+        "n": 28
+      },
+      {
+        "categoria": "INSTITUTO DE PREVIDENCIA",
+        "n": 27
+      },
+      {
+        "categoria": "VILA GUARANI (Z SUL)",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM PÉROLA II",
+        "n": 27
+      },
+      {
+        "categoria": "ITABERABA",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM MONTE VERDE",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM BOM REFUGIO",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM BARTIRA",
+        "n": 27
+      },
+      {
+        "categoria": "CIDADE SATELITE SANTA BARBARA",
+        "n": 27
+      },
+      {
+        "categoria": "CHÁCARA DA ENSEADA",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM NÉLIA",
+        "n": 27
+      },
+      {
+        "categoria": "VILA MONTE ALEGRE",
+        "n": 27
+      },
+      {
+        "categoria": "VILA ARCADIA",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM IBITIRAMA",
+        "n": 27
+      },
+      {
+        "categoria": "VILA LAGEADO",
+        "n": 27
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL FAZENDA DO CARMO",
+        "n": 27
+      },
+      {
+        "categoria": "JARDIM TIETE",
+        "n": 26
+      },
+      {
+        "categoria": "CIDADE KEMEL",
+        "n": 26
+      },
+      {
+        "categoria": "JARDIM LIDER",
+        "n": 26
+      },
+      {
+        "categoria": "JARDIM GUARUJA",
+        "n": 26
+      },
+      {
+        "categoria": "JARDIM DA CONQUISTA",
+        "n": 26
+      },
+      {
+        "categoria": "CHÁCARA SANTANA",
+        "n": 26
+      },
+      {
+        "categoria": "PARQUE SAO DOMINGOS",
+        "n": 26
+      },
+      {
+        "categoria": "VILA PROGRESSO (ZONA LESTE)",
+        "n": 26
+      },
+      {
+        "categoria": "VILA CAMPESTRE",
+        "n": 26
+      },
+      {
+        "categoria": "PARQUE CASA DE PEDRA",
+        "n": 25
+      },
+      {
+        "categoria": "PARQUE NAÇÕES UNIDAS",
+        "n": 25
+      },
+      {
+        "categoria": "JARDIM JARAGUA",
+        "n": 25
+      },
+      {
+        "categoria": "CIDADE IPAVA",
+        "n": 25
+      },
+      {
+        "categoria": "JARDIM VERGUEIRO",
+        "n": 25
+      },
+      {
+        "categoria": "JARDIM NOVE DE JULHO",
+        "n": 25
+      },
+      {
+        "categoria": "SÃO MATEUS",
+        "n": 25
+      },
+      {
+        "categoria": "VILA MAZZEI",
+        "n": 25
+      },
+      {
+        "categoria": "JARDIM AEROPORTO",
+        "n": 25
+      },
+      {
+        "categoria": "VILA AZEVEDO",
+        "n": 24
+      },
+      {
+        "categoria": "VILA TAQUARI",
+        "n": 24
+      },
+      {
+        "categoria": "JARDIM SAO PEDRO",
+        "n": 24
+      },
+      {
+        "categoria": "VILA PALMEIRAS",
+        "n": 24
+      },
+      {
+        "categoria": "VILA FACHINI",
+        "n": 24
+      },
+      {
+        "categoria": "JARDIM DAS BANDEIRAS",
+        "n": 24
+      },
+      {
+        "categoria": "JARDIM IPE",
+        "n": 24
+      },
+      {
+        "categoria": "JARDIM ELISA MARIA",
+        "n": 24
+      },
+      {
+        "categoria": "VILA GUMERCINDO",
+        "n": 24
+      },
+      {
+        "categoria": "JARDIM UMARIZAL",
+        "n": 24
+      },
+      {
+        "categoria": "JARDIM DAS LARANJEIRAS",
+        "n": 24
+      },
+      {
+        "categoria": "VILA NOVA UNIAO",
+        "n": 24
+      },
+      {
+        "categoria": "BAIRRO JARDINS",
+        "n": 24
+      },
+      {
+        "categoria": "PARQUE TAIPAS",
+        "n": 24
+      },
+      {
+        "categoria": "VILA NILO",
+        "n": 23
+      },
+      {
+        "categoria": "JARDIM MITSUTANI",
+        "n": 23
+      },
+      {
+        "categoria": "PARQUE AMERICA",
+        "n": 23
+      },
+      {
+        "categoria": "VILA SÃO JOSÉ",
+        "n": 23
+      },
+      {
+        "categoria": "JARDIM BELCITO",
+        "n": 23
+      },
+      {
+        "categoria": "VILA NOVA GALVÃO",
+        "n": 23
+      },
+      {
+        "categoria": "JARDIM NOVA CONQUISTA",
+        "n": 23
+      },
+      {
+        "categoria": "VILA PLANA",
+        "n": 23
+      },
+      {
+        "categoria": "JARDINS RECANTO DAS ROSAS",
+        "n": 23
+      },
+      {
+        "categoria": "GUAPIRA",
+        "n": 23
+      },
+      {
+        "categoria": "PARQUE SANTA RITA",
+        "n": 23
+      },
+      {
+        "categoria": "PARQUE BELÉM",
+        "n": 23
+      },
+      {
+        "categoria": "VILA ALEXANDRIA",
+        "n": 23
+      },
+      {
+        "categoria": "JARDIM CAMBARA",
+        "n": 23
+      },
+      {
+        "categoria": "VILA TOLSTOI",
+        "n": 22
+      },
+      {
+        "categoria": "PARQUE COCAIA",
+        "n": 22
+      },
+      {
+        "categoria": "VILA BEATRIZ",
+        "n": 22
+      },
+      {
+        "categoria": "SÃO JOÃO CLIMACO",
+        "n": 22
+      },
+      {
+        "categoria": "PARQUE DO MORUMBI",
+        "n": 22
+      },
+      {
+        "categoria": "CIDADE DOMITILA",
+        "n": 22
+      },
+      {
+        "categoria": "JARDIM NORMA",
+        "n": 22
+      },
+      {
+        "categoria": "JARDIM ELIZABETH",
+        "n": 22
+      },
+      {
+        "categoria": "VILA PAULISTA",
+        "n": 22
+      },
+      {
+        "categoria": "JARDIM MONTE KEMEL",
+        "n": 22
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZINHA (PEDREIRA)",
+        "n": 22
+      },
+      {
+        "categoria": "VILA FANTON",
+        "n": 22
+      },
+      {
+        "categoria": "VILA MARARI",
+        "n": 22
+      },
+      {
+        "categoria": "VILA GUARANI",
+        "n": 22
+      },
+      {
+        "categoria": "JARDIM SILVA TELES",
+        "n": 22
+      },
+      {
+        "categoria": "JARDIM ÍRIS",
+        "n": 22
+      },
+      {
+        "categoria": "VILA SILVA TELES",
+        "n": 22
+      },
+      {
+        "categoria": "VILA ROSEIRA II",
+        "n": 22
+      },
+      {
+        "categoria": "JAGUARÁ",
+        "n": 22
+      },
+      {
+        "categoria": "VILA BERTIOGA",
+        "n": 21
+      },
+      {
+        "categoria": "VILA CONSTANÇA",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM ETELVINA",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM IRAPIRANGA",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM DO LAGO",
+        "n": 21
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL JOSE BONI",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM VILA CARRAO",
+        "n": 21
+      },
+      {
+        "categoria": "VILA MISSIONARIA",
+        "n": 21
+      },
+      {
+        "categoria": "TREMEMBÉ",
+        "n": 21
+      },
+      {
+        "categoria": "PARQUE COLONIAL",
+        "n": 21
+      },
+      {
+        "categoria": "VILA VERMELHA",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM RINCÃO",
+        "n": 21
+      },
+      {
+        "categoria": "VILA TALARICO",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM LONDRINA",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM ITAPEMIRIM",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM SHANGRILÁ (ZONA SUL)",
+        "n": 21
+      },
+      {
+        "categoria": "VILA MARA",
+        "n": 21
+      },
+      {
+        "categoria": "JARDIM MODELO",
+        "n": 20
+      },
+      {
+        "categoria": "CATUMBI",
+        "n": 20
+      },
+      {
+        "categoria": "PARQUE PERUCHE",
+        "n": 20
+      },
+      {
+        "categoria": "JARDIM JARAGUA (SAO DOMINGOS)",
+        "n": 20
+      },
+      {
+        "categoria": "JARDIM VERA CRUZ(ZONA SUL)",
+        "n": 20
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL SITIO CONCEICAO",
+        "n": 20
+      },
+      {
+        "categoria": "VILA VERDE",
+        "n": 20
+      },
+      {
+        "categoria": "JARDIM MARINGÁ",
+        "n": 20
+      },
+      {
+        "categoria": "VILA DIONISIA",
+        "n": 20
+      },
+      {
+        "categoria": "VILA NOVA MAZZEI",
+        "n": 20
+      },
+      {
+        "categoria": "JARDIM ESMERALDA",
+        "n": 20
+      },
+      {
+        "categoria": "CHACARA SANTA MARIA",
+        "n": 20
+      },
+      {
+        "categoria": "JARDIM PERI PERI",
+        "n": 20
+      },
+      {
+        "categoria": "JARDIM GUAIANAZES",
+        "n": 20
+      },
+      {
+        "categoria": "MOINHO VELHO",
+        "n": 20
+      },
+      {
+        "categoria": "VILA ISA",
+        "n": 19
+      },
+      {
+        "categoria": "PARQUE DAS FLORES",
+        "n": 19
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL BARRO BRANCO II",
+        "n": 19
+      },
+      {
+        "categoria": "PARQUE GUARANI",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM AIMORE",
+        "n": 19
+      },
+      {
+        "categoria": "PIRAJUSSARA",
+        "n": 19
+      },
+      {
+        "categoria": "VILA BRASILINA",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM VILA FORMOSA",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM AMÉRICA",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM CAMPO LIMPO",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM CASA GRANDE",
+        "n": 19
+      },
+      {
+        "categoria": "CHÁCARA BELENZINHO",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM PEDREIRA",
+        "n": 19
+      },
+      {
+        "categoria": "JARDIM AVELINO",
+        "n": 19
+      },
+      {
+        "categoria": "VILA CALU",
+        "n": 19
+      },
+      {
+        "categoria": "ÁGUA RASA",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM SAO MANOEL",
+        "n": 18
+      },
+      {
+        "categoria": "PARQUE GRAJAU",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM PLANALTO",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM SÃO JORGE",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM CAMPINAS",
+        "n": 18
+      },
+      {
+        "categoria": "PARQUE CRUZEIRO DO SUL",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM GUAIRACA",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM MÁLIA II",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM ORLY",
+        "n": 18
+      },
+      {
+        "categoria": "JARDIM MACEDONIA",
+        "n": 18
+      },
+      {
+        "categoria": "PARQUE SÃO LOURENÇO",
+        "n": 18
+      },
+      {
+        "categoria": "PARQUE MANDAQUI",
+        "n": 18
+      },
+      {
+        "categoria": "VILA ESPERANÇA",
+        "n": 18
+      },
+      {
+        "categoria": "VILA AIMORE",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM DOS IPES",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM COIMBRA",
+        "n": 17
+      },
+      {
+        "categoria": "VILA CONSTANCIA",
+        "n": 17
+      },
+      {
+        "categoria": "CHÁCARA JARAGUÁ",
+        "n": 17
+      },
+      {
+        "categoria": "BELÉM",
+        "n": 17
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL BUTANTÃ",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM SANTA TERESINHA",
+        "n": 17
+      },
+      {
+        "categoria": "PARQUE DOM JOAO NERI",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM ROBRU",
+        "n": 17
+      },
+      {
+        "categoria": "CANTINHO DO CÉU",
+        "n": 17
+      },
+      {
+        "categoria": "PARQUE REBOUCAS",
+        "n": 17
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL CASTRO ALVES",
+        "n": 17
+      },
+      {
+        "categoria": "VILA GUILHERMINA",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM NOVA VITÓRIA I",
+        "n": 17
+      },
+      {
+        "categoria": "VILA ITAIM",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM CAMARGO NOVO",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM ESTER",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM ROSELI",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM SANTO ANDRE",
+        "n": 17
+      },
+      {
+        "categoria": "SÃO JOÃO CLÍMACO",
+        "n": 17
+      },
+      {
+        "categoria": "VILA INDIANA",
+        "n": 17
+      },
+      {
+        "categoria": "VILA BANDEIRANTES",
+        "n": 17
+      },
+      {
+        "categoria": "VILA SAPOPEMBA",
+        "n": 17
+      },
+      {
+        "categoria": "JARDIM MARIA ESTELA",
+        "n": 16
+      },
+      {
+        "categoria": "PARQUE DA VILA PRUDENTE",
+        "n": 16
+      },
+      {
+        "categoria": "TRES CRUZES",
+        "n": 16
+      },
+      {
+        "categoria": "SÍTIO MORRO GRANDE",
+        "n": 16
+      },
+      {
+        "categoria": "RIO BONITO",
+        "n": 16
+      },
+      {
+        "categoria": "PARQUE SANTA MADALENA",
+        "n": 16
+      },
+      {
+        "categoria": "CHÁCARA COCAIA",
+        "n": 16
+      },
+      {
+        "categoria": "GUARAPIRANGA",
+        "n": 16
+      },
+      {
+        "categoria": "VILA INAH",
+        "n": 16
+      },
+      {
+        "categoria": "VILA SÃO FRANCISCO (ZONA SUL)",
+        "n": 16
+      },
+      {
+        "categoria": "REAL PARQUE",
+        "n": 16
+      },
+      {
+        "categoria": "PARQUE ANHEMBI",
+        "n": 16
+      },
+      {
+        "categoria": "PARQUE DEIZY",
+        "n": 16
+      },
+      {
+        "categoria": "JARDIM SANTA LUCRECIA",
+        "n": 16
+      },
+      {
+        "categoria": "BROOKLIN NOVO",
+        "n": 16
+      },
+      {
+        "categoria": "VILA SAO GERALDO",
+        "n": 16
+      },
+      {
+        "categoria": "JARDIM SOARES",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM AUGUSTO",
+        "n": 15
+      },
+      {
+        "categoria": "PARQUE SAVOI CITY",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM FIGUEIRA GRANDE",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM MARINGA",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM GUANHEMBU",
+        "n": 15
+      },
+      {
+        "categoria": "CIDADE SÃO MIGUEL",
+        "n": 15
+      },
+      {
+        "categoria": "VILA SANTO ESTEFANO",
+        "n": 15
+      },
+      {
+        "categoria": "CIDADE NITRO OPERÁRIA",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM CELESTE",
+        "n": 15
+      },
+      {
+        "categoria": "VILA NOVA CAROLINA",
+        "n": 15
+      },
+      {
+        "categoria": "VILA MIRA",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM SANTA ADELIA",
+        "n": 15
+      },
+      {
+        "categoria": "CONJUNTO PROMORAR RIO CLARO",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM IMPERADOR (ZONA LESTE)",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM MONTE BELO",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM NAIR",
+        "n": 15
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL SANTA ETELVINA II",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM PRINCESA",
+        "n": 15
+      },
+      {
+        "categoria": "SÃO MIGUEL",
+        "n": 15
+      },
+      {
+        "categoria": "VILA POPULAR",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM DOMITILA",
+        "n": 15
+      },
+      {
+        "categoria": "VILA ROSARIA",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM SANTA CRUZ (SACOMA)",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM AMÉRICA DA PENHA",
+        "n": 15
+      },
+      {
+        "categoria": "PARQUE ALTO DO RIO BONITO",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM BONFIGLIOLI",
+        "n": 15
+      },
+      {
+        "categoria": "SÍTIO DO PIQUERI",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM AURORA (ZONA LESTE)",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM CENTENARIO",
+        "n": 15
+      },
+      {
+        "categoria": "JARDIM COLOMBO",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM VARGINHA",
+        "n": 14
+      },
+      {
+        "categoria": "VILA BRASILIO MACHADO",
+        "n": 14
+      },
+      {
+        "categoria": "BELA ALIANÇA",
+        "n": 14
+      },
+      {
+        "categoria": "PARQUE CISPER",
+        "n": 14
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL PARQUE VALO VELHO II",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM DA GLORIA",
+        "n": 14
+      },
+      {
+        "categoria": "ENGENHEIRO GOULART",
+        "n": 14
+      },
+      {
+        "categoria": "PARQUE MARIA LUIZA",
+        "n": 14
+      },
+      {
+        "categoria": "CASA VERDE ALTA",
+        "n": 14
+      },
+      {
+        "categoria": "PARQUE SÃO LUCAS",
+        "n": 14
+      },
+      {
+        "categoria": "VILA LIVIERO",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM BRASÍLIA (ZONA NORTE)",
+        "n": 14
+      },
+      {
+        "categoria": "PARQUE NOVO SANTO AMARO",
+        "n": 14
+      },
+      {
+        "categoria": "VILA CLARICE",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM PIRACUAMA",
+        "n": 14
+      },
+      {
+        "categoria": "RECANTO VERDE DO SOL",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM DANFER",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM DA SAÚDE",
+        "n": 14
+      },
+      {
+        "categoria": "VILA SIQUEIRA (ZONA NORTE)",
+        "n": 14
+      },
+      {
+        "categoria": "VILA NATAL",
+        "n": 14
+      },
+      {
+        "categoria": "VILA DIVA (ZONA LESTE)",
+        "n": 14
+      },
+      {
+        "categoria": "CHÁCARA SONHO AZUL",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM FELICIDADE (ZONA NORTE)",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM LOURDES",
+        "n": 14
+      },
+      {
+        "categoria": "PARQUE SÃO RAFAEL",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM NOVO PANTANAL",
+        "n": 14
+      },
+      {
+        "categoria": "JARDIM INDEPENDÊNCIA (SÃO PAULO)",
+        "n": 14
+      },
+      {
+        "categoria": "VILA ARRIETE",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM SAO LUIZ",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM PAPAI NOEL",
+        "n": 13
+      },
+      {
+        "categoria": "VILA MINERVA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM CASABLANCA",
+        "n": 13
+      },
+      {
+        "categoria": "BARONESA",
+        "n": 13
+      },
+      {
+        "categoria": "VILA DAS MERCES",
+        "n": 13
+      },
+      {
+        "categoria": "CUPECÊ",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM PRAINHA",
+        "n": 13
+      },
+      {
+        "categoria": "CIDADE VARGAS",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM BRASIL",
+        "n": 13
+      },
+      {
+        "categoria": "VILA PENTEADO",
+        "n": 13
+      },
+      {
+        "categoria": "VILA RICA",
+        "n": 13
+      },
+      {
+        "categoria": "VILA UBERABINHA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM SAO PAULO(ZONA LESTE)",
+        "n": 13
+      },
+      {
+        "categoria": "VILA PAULISTANA",
+        "n": 13
+      },
+      {
+        "categoria": "VILA IPOJUCA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM ALFREDO",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM SATELITE",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM TABOAO",
+        "n": 13
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL BUTANTA",
+        "n": 13
+      },
+      {
+        "categoria": "PARQUE DOROTEIA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM BRASILIA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM ANA MARIA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM MARIA FERNANDES",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM LIDERANCA",
+        "n": 13
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL PRESTES MAIA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM LIDERANÇA",
+        "n": 13
+      },
+      {
+        "categoria": "PARQUE RESIDENCIAL DA LAPA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM FONTE DO MORUMBI",
+        "n": 13
+      },
+      {
+        "categoria": "VILA DOS ANDRADES",
+        "n": 13
+      },
+      {
+        "categoria": "VILA ITABERABA",
+        "n": 13
+      },
+      {
+        "categoria": "JARDIM JAÚ (ZONA LESTE)",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM SANTA MARIA",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM MALIA II",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM SANTO ONOFRE",
+        "n": 12
+      },
+      {
+        "categoria": "RESIDENCIAL SOL NASCENTE",
+        "n": 12
+      },
+      {
+        "categoria": "VILA DOM PEDRO II",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM SÃO BERNARDO",
+        "n": 12
+      },
+      {
+        "categoria": "VILA ESTER",
+        "n": 12
+      },
+      {
+        "categoria": "VILA NOVA PARADA",
+        "n": 12
+      },
+      {
+        "categoria": "VILA IOLANDA(LAJEADO)",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM MYRNA",
+        "n": 12
+      },
+      {
+        "categoria": "ÁGUA FRIA",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM SANTO ANTONIO",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM ADHEMAR DE BARROS",
+        "n": 12
+      },
+      {
+        "categoria": "VILA PARANAGUA",
+        "n": 12
+      },
+      {
+        "categoria": "VILA NAIR",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM SAO CARLOS (ZONA LESTE)",
+        "n": 12
+      },
+      {
+        "categoria": "VILA BRASIL",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM CAMPOS",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM TAQUARAL",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM ELIANA",
+        "n": 12
+      },
+      {
+        "categoria": "PARQUE ANHANGÜERA",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM ANALIA FRANCO",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM MAGGI",
+        "n": 12
+      },
+      {
+        "categoria": "VILA GRANADA",
+        "n": 12
+      },
+      {
+        "categoria": "PARQUE ANHANGUERA",
+        "n": 12
+      },
+      {
+        "categoria": "VILA DO CASTELO",
+        "n": 12
+      },
+      {
+        "categoria": "PARQUE UNIVERSITARIO ESPIRITA",
+        "n": 12
+      },
+      {
+        "categoria": "JARDIM ITACOLOMI",
+        "n": 12
+      },
+      {
+        "categoria": "VILA BARUEL",
+        "n": 12
+      },
+      {
+        "categoria": "PARQUE SAO LUIS",
+        "n": 12
+      },
+      {
+        "categoria": "VILA INDUSTRIAL",
+        "n": 12
+      },
+      {
+        "categoria": "VILA SANTA CLARA",
+        "n": 11
+      },
+      {
+        "categoria": "ANHANGÜERA",
+        "n": 11
+      },
+      {
+        "categoria": "SUPER QUADRA MORUMBI",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM JUSSARA",
+        "n": 11
+      },
+      {
+        "categoria": "VILA LUCIA",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM AURELIO",
+        "n": 11
+      },
+      {
+        "categoria": "VILA AURORA",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM FLUMINENSE",
+        "n": 11
+      },
+      {
+        "categoria": "VILA IOLANDA II",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM DAS CAMELIAS",
+        "n": 11
+      },
+      {
+        "categoria": "CHÁCARA FLÓRIDA",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM GRIMALDI",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM SÃO FRANCISCO",
+        "n": 11
+      },
+      {
+        "categoria": "PARQUE ARARIBA",
+        "n": 11
+      },
+      {
+        "categoria": "PARAISÓPOLIS",
+        "n": 11
+      },
+      {
+        "categoria": "VILA CAROLINA",
+        "n": 11
+      },
+      {
+        "categoria": "VILA MORSE",
+        "n": 11
+      },
+      {
+        "categoria": "VILA COSMOPOLITA",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM CONSORCIO",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM COMERCIAL",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM PARIS",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM CAPELA",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM COLORADO",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM SAO JOSE",
+        "n": 11
+      },
+      {
+        "categoria": "VILA NOVA CURUÇÁ",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM MAIA",
+        "n": 11
+      },
+      {
+        "categoria": "PARQUE INDEPENDÊNCIA",
+        "n": 11
+      },
+      {
+        "categoria": "VILA GEA",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM CAMPO GRANDE",
+        "n": 11
+      },
+      {
+        "categoria": "CAXINGUI",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM VILA MARIANA",
+        "n": 11
+      },
+      {
+        "categoria": "VILA NOVA DAS BELEZAS",
+        "n": 11
+      },
+      {
+        "categoria": "VILA MIRANTE",
+        "n": 11
+      },
+      {
+        "categoria": "VILA SANTA MARIA",
+        "n": 11
+      },
+      {
+        "categoria": "VILA CUNHA BUENO",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM INGA",
+        "n": 11
+      },
+      {
+        "categoria": "SOL NASCENTE",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM DO DIVINO",
+        "n": 11
+      },
+      {
+        "categoria": "JARDIM PROMISSÃO",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM ALPINO",
+        "n": 10
+      },
+      {
+        "categoria": "CHORA MENINO",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM CAPELINHA",
+        "n": 10
+      },
+      {
+        "categoria": "CONJUNTO PROMORAR ESTRADA DA PARADA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM PALMARES (ZONA NORTE)",
+        "n": 10
+      },
+      {
+        "categoria": "CHÁCARA MONTE ALEGRE",
+        "n": 10
+      },
+      {
+        "categoria": "VILA BUENOS AIRES",
+        "n": 10
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL INACIO MONTEIRO",
+        "n": 10
+      },
+      {
+        "categoria": "VILA SAO JOSE (CIDADE DUTRA)",
+        "n": 10
+      },
+      {
+        "categoria": "VILA FATIMA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM VITÓRIA RÉGIA (ZONA NORTE)",
+        "n": 10
+      },
+      {
+        "categoria": "VILA MOREIRA",
+        "n": 10
+      },
+      {
+        "categoria": "COLÔNIA (ZONA SUL)",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM DAS IMBUIAS",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM GUARANI",
+        "n": 10
+      },
+      {
+        "categoria": "VILA FIRMIANO PINTO",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZINHA (ZONA SUL)",
+        "n": 10
+      },
+      {
+        "categoria": "CONJUNTO CITY JARAGUA",
+        "n": 10
+      },
+      {
+        "categoria": "CONJUNTO PROMORAR RAPOSO TAVARES",
+        "n": 10
+      },
+      {
+        "categoria": "VILA PRIMAVERA",
+        "n": 10
+      },
+      {
+        "categoria": "VILA ISOLINA MAZZEI",
+        "n": 10
+      },
+      {
+        "categoria": "PARQUE SANTA BARBARA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM IVA",
+        "n": 10
+      },
+      {
+        "categoria": "VILA ANGLO BRASILEIRA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM PENHA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM JABAQUARA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM PANORAMA",
+        "n": 10
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL A. E. CARVALHO",
+        "n": 10
+      },
+      {
+        "categoria": "SANTA TERESINHA",
+        "n": 10
+      },
+      {
+        "categoria": "PARQUE MONTEIRO SOARES",
+        "n": 10
+      },
+      {
+        "categoria": "CHÁCARA DO CONDE",
+        "n": 10
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL TURISTICA",
+        "n": 10
+      },
+      {
+        "categoria": "SÍTIO DO MORRO",
+        "n": 10
+      },
+      {
+        "categoria": "VILA NATALIA",
+        "n": 10
+      },
+      {
+        "categoria": "CHÁCARA MAFALDA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM DAS ROSAS (ZONA OESTE)",
+        "n": 10
+      },
+      {
+        "categoria": "VILA PONTE RASA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM DO COLEGIO",
+        "n": 10
+      },
+      {
+        "categoria": "PARQUE IMPERIAL",
+        "n": 10
+      },
+      {
+        "categoria": "VILA INVERNADA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM DOS ÁLAMOS",
+        "n": 10
+      },
+      {
+        "categoria": "NÚCLEO LAGEADO",
+        "n": 10
+      },
+      {
+        "categoria": "VILA TERESINHA",
+        "n": 10
+      },
+      {
+        "categoria": "VILA SILVIA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM PEDRO JOSÉ NUNES",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM DA CONQUISTA (ZONA OESTE)",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM LAURA",
+        "n": 10
+      },
+      {
+        "categoria": "JARDIM MARTINICA",
+        "n": 10
+      },
+      {
+        "categoria": "FAZENDA MORUMBI",
+        "n": 10
+      },
+      {
+        "categoria": "VILA CHUCA",
+        "n": 9
+      },
+      {
+        "categoria": "RECANTO CAMPO BELO",
+        "n": 9
+      },
+      {
+        "categoria": "PARQUE SAO JOSE",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM GUEDALA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM VALE DAS VIRTUDES",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM D'ABRIL",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM EVEREST",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM POPULAR",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM ITAPURA",
+        "n": 9
+      },
+      {
+        "categoria": "VILA MANGALOT",
+        "n": 9
+      },
+      {
+        "categoria": "PIRAPORINHA",
+        "n": 9
+      },
+      {
+        "categoria": "PARQUE DOS BANCARIOS",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM VERGUEIRO (SACOMA)",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM ROSANA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM DAS ROSAS (IGUATEMI)",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM ONDINA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM INDAIA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM ORBAM",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM NAKAMURA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM ELEDY",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM PORTAL I E II",
+        "n": 9
+      },
+      {
+        "categoria": "CIDADE SÃO FRANCISCO",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM MARIANE",
+        "n": 9
+      },
+      {
+        "categoria": "PARAÍSO DO MORUMBI",
+        "n": 9
+      },
+      {
+        "categoria": "VILA CLELIA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM SANTA MARGARIDA",
+        "n": 9
+      },
+      {
+        "categoria": "VILA ÁGUA FUNDA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM NAZARETH",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM FANGANIELLO",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM MARISTELA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM DONA SINHA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM SAO JOSE (SAO MATEUS)",
+        "n": 9
+      },
+      {
+        "categoria": "CHÁCARA GAIVOTAS",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM SARAH",
+        "n": 9
+      },
+      {
+        "categoria": "VILA BRASILÂNDIA",
+        "n": 9
+      },
+      {
+        "categoria": "VILA SEABRA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM SAO LUIS (ZONA LESTE)",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM SÃO PAULO(ZONA LESTE)",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM PRIMAVERA",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM PANTANAL",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM WILMA FLOR",
+        "n": 9
+      },
+      {
+        "categoria": "PARQUE CENTRAL",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM RIZZO",
+        "n": 9
+      },
+      {
+        "categoria": "VILA NOVA YORK",
+        "n": 9
+      },
+      {
+        "categoria": "VILA SANTA CRUZ",
+        "n": 9
+      },
+      {
+        "categoria": "PARQUE SÃO JORGE",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM NOVO HORIZONTE",
+        "n": 9
+      },
+      {
+        "categoria": "JARDIM DOM BOSCO",
+        "n": 9
+      },
+      {
+        "categoria": "VILA SAO FRANCISCO (ZONA SUL)",
+        "n": 8
+      },
+      {
+        "categoria": "VILA FRANCA",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE SEVILHA",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE PLANALTO",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE DOM PEDRO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA ZILDA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM DOS MANACAS",
+        "n": 8
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL JOVA RURAL",
+        "n": 8
+      },
+      {
+        "categoria": "MARSILAC",
+        "n": 8
+      },
+      {
+        "categoria": "VILA OLGA CECÍLIA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM NOVO PARELHEIROS",
+        "n": 8
+      },
+      {
+        "categoria": "VILA NOVA MANCHESTER",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM DUPRAT",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM DAS ROSAS (ZONA SUL)",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE BELEM",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM DO CAMPO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA GRACIOSA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM FRATERNIDADE",
+        "n": 8
+      },
+      {
+        "categoria": "VILA GUACURI",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM SANTA EMILIA",
+        "n": 8
+      },
+      {
+        "categoria": "VILA MONTE SANTO",
+        "n": 8
+      },
+      {
+        "categoria": "CHACARA NOSSA SENHORA DO BOM CONSELHO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA IVONE",
+        "n": 8
+      },
+      {
+        "categoria": "VILA BOM JARDIM",
+        "n": 8
+      },
+      {
+        "categoria": "VILA MARILENA",
+        "n": 8
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL PADRE JOSE DE ANCHIETA",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE ALVES DE LIMA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM JOAO XXIII",
+        "n": 8
+      },
+      {
+        "categoria": "VILA DOUTOR EIRAS",
+        "n": 8
+      },
+      {
+        "categoria": "VILA POMPÉIA",
+        "n": 8
+      },
+      {
+        "categoria": "VILA AUREA",
+        "n": 8
+      },
+      {
+        "categoria": "VELEIROS",
+        "n": 8
+      },
+      {
+        "categoria": "VILA JOANIZA",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE NOVO GRAJAU",
+        "n": 8
+      },
+      {
+        "categoria": "VILA ORATORIO",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE SANTA AMÉLIA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM JARAGUA (ITAIM PAULISTA)",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM MARIA SAMPAIO",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM FELICIDADE(ZONA NORTE)",
+        "n": 8
+      },
+      {
+        "categoria": "VILA CARAGUATA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM OLINDA",
+        "n": 8
+      },
+      {
+        "categoria": "USINA PIRATININGA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM LAJEADO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA ESPANHOLA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM JULIETA",
+        "n": 8
+      },
+      {
+        "categoria": "CHÁCARA SANTO ANTÔNIO (ZONA LESTE)",
+        "n": 8
+      },
+      {
+        "categoria": "RECANTO DOS HUMILDES",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE MARIA FERNANDES",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM UBIRAJARA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM AMPLIACAO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA DOS REMEDIOS",
+        "n": 8
+      },
+      {
+        "categoria": "INDUSTRIAL ANHANGÜERA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM MARIA VIRGINIA",
+        "n": 8
+      },
+      {
+        "categoria": "PARQUE FONGARO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA SAO LUIS",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM SANTA CRUZ (CAMPO GRANDE)",
+        "n": 8
+      },
+      {
+        "categoria": "VILA IMPERIO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA HORTÊNCIA",
+        "n": 8
+      },
+      {
+        "categoria": "FERREIRA",
+        "n": 8
+      },
+      {
+        "categoria": "CIDADE CENTENÁRIO",
+        "n": 8
+      },
+      {
+        "categoria": "VILA ERNESTO",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM SILVEIRA",
+        "n": 8
+      },
+      {
+        "categoria": "VILA CONSTANCA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM COLONIAL",
+        "n": 8
+      },
+      {
+        "categoria": "VILA PEDROSO",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM MARACANA",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM QUISISANA (VILA NOVA CURUÇÁ)",
+        "n": 8
+      },
+      {
+        "categoria": "JARDIM GUARUJÁ",
+        "n": 7
+      },
+      {
+        "categoria": "VILA CLARA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM RAPOSO TAVARES",
+        "n": 7
+      },
+      {
+        "categoria": "COHAB PADRE MANOEL DA NOBREGA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM JACANA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM GUANABARA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM SAO CRISTOVAO",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM ANHANGÜERA",
+        "n": 7
+      },
+      {
+        "categoria": "PARQUE SANTO EDUARDO",
+        "n": 7
+      },
+      {
+        "categoria": "PARQUE LUIS MUCCIOLO",
+        "n": 7
+      },
+      {
+        "categoria": "PARQUE ESMERALDA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM PIRATININGA",
+        "n": 7
+      },
+      {
+        "categoria": "UMARIZAL",
+        "n": 7
+      },
+      {
+        "categoria": "VILA JOAO BATISTA",
+        "n": 7
+      },
+      {
+        "categoria": "VILA HELIÓPOLIS",
+        "n": 7
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL ELISIO TEIXEIRA LEITE",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM MARACA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM BELEM",
+        "n": 7
+      },
+      {
+        "categoria": "CHÁCARA SANTA ETELVINA",
+        "n": 7
+      },
+      {
+        "categoria": "SÃO LUCAS",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM GUANCA",
+        "n": 7
+      },
+      {
+        "categoria": "VILA NIVI",
+        "n": 7
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL JUSCELINO KUBITSCHECK DE OLIVEIRA",
+        "n": 7
+      },
+      {
+        "categoria": "GRANJA JULIETA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM CACHOEIRA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM ESTER YOLANDA",
+        "n": 7
+      },
+      {
+        "categoria": "VILA CLAUDIA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM LETICIA",
+        "n": 7
+      },
+      {
+        "categoria": "PARQUE CONTINENTAL",
+        "n": 7
+      },
+      {
+        "categoria": "PARADA DE TAIPAS",
+        "n": 7
+      },
+      {
+        "categoria": "VILA DA PAZ",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM PARQUE MORUMBI",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM FLORESTA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM IMBÉ",
+        "n": 7
+      },
+      {
+        "categoria": "VILA FAZZEONI",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM BOM PASTOR",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM BEATRIZ",
+        "n": 7
+      },
+      {
+        "categoria": "VILA REMO",
+        "n": 7
+      },
+      {
+        "categoria": "VILA PORTUGUESA",
+        "n": 7
+      },
+      {
+        "categoria": "VILA BRUNA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM HEBROM",
+        "n": 7
+      },
+      {
+        "categoria": "CHÁCARA TRÊS MENINAS",
+        "n": 7
+      },
+      {
+        "categoria": "VILA SANTA LUCIA",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM ANHANGUERA",
+        "n": 7
+      },
+      {
+        "categoria": "VILA QUINTANA",
+        "n": 7
+      },
+      {
+        "categoria": "VILA BRASILANDIA",
+        "n": 7
+      },
+      {
+        "categoria": "PARQUE ATLANTICO",
+        "n": 7
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL SANTA ETELVINA III",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM PINHEIROS",
+        "n": 7
+      },
+      {
+        "categoria": "MORRO DO ÍNDIO",
+        "n": 7
+      },
+      {
+        "categoria": "VILA RENATO (ZONA LESTE)",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM SANTA CRUZ",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM CAMPO LIMPO (ZONA NORTE)",
+        "n": 7
+      },
+      {
+        "categoria": "VILA SANTA EDWIGES",
+        "n": 7
+      },
+      {
+        "categoria": "VILA SAO VICENTE",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM SAO FRANCISCO",
+        "n": 7
+      },
+      {
+        "categoria": "FAZENDA ITAIM",
+        "n": 7
+      },
+      {
+        "categoria": "EMBURÁ",
+        "n": 7
+      },
+      {
+        "categoria": "JARDIM ALTO ALEGRE (SÃO RAFAEL)",
+        "n": 7
+      },
+      {
+        "categoria": "ALTO DA BOA VISTA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM MARILDA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM CLARICE",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM MORENO",
+        "n": 6
+      },
+      {
+        "categoria": "CENTRO CAPITAL",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM MARIA DUARTE",
+        "n": 6
+      },
+      {
+        "categoria": "VILA CARDOSO FRANCO",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM ANGELA (ZONA LESTE)",
+        "n": 6
+      },
+      {
+        "categoria": "CHÁCARA SÃO JOÃO",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM CECY",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM JAQUELINE",
+        "n": 6
+      },
+      {
+        "categoria": "BURGO PAULISTA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM CAGUASSU",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SÃO JOÃO (JARAGUÁ)",
+        "n": 6
+      },
+      {
+        "categoria": "NOVA PIRAJU",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM ALVINA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SAMARA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM NOVO SANTO AMARO",
+        "n": 6
+      },
+      {
+        "categoria": "VILA CHABILANDIA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM CIDALIA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM DAS PEDRAS",
+        "n": 6
+      },
+      {
+        "categoria": "PARQUE SONIA",
+        "n": 6
+      },
+      {
+        "categoria": "GUACURI",
+        "n": 6
+      },
+      {
+        "categoria": "VILA GIORDANO",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM NOVA HARMONIA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM LEONOR MENDES DE BARROS",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM IPANEMA (ZONA OESTE)",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SÃO GONÇALO",
+        "n": 6
+      },
+      {
+        "categoria": "VILA VIRGINIA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM MARISA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM JOANA D'ARC",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM INDEPENDÊNCIA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SHANGRILÁ (ZONA NORTE)",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM ADELFIORE",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM VITÓRIA RÉGIA",
+        "n": 6
+      },
+      {
+        "categoria": "VILA PAULISTA II",
+        "n": 6
+      },
+      {
+        "categoria": "CASA VERDE MÉDIA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM NITEROI",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM ALTO PAULISTANO",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM FLOR DE MAIO",
+        "n": 6
+      },
+      {
+        "categoria": "MORRO DOS INGLESES",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM REIMBERG",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM IDEAL",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SANTA HELENA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM ALVORADA (ZONA OESTE)",
+        "n": 6
+      },
+      {
+        "categoria": "VILA UNIVERSITARIA",
+        "n": 6
+      },
+      {
+        "categoria": "VILA YOLANDA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM JAMAICA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SAO CARLOS (ZONA SUL)",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM FONTALIS",
+        "n": 6
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL JARDIM CANAÃ",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SAO GABRIEL",
+        "n": 6
+      },
+      {
+        "categoria": "VILA RIBEIRO DE BARROS",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM BRASILIA (ZONA NORTE)",
+        "n": 6
+      },
+      {
+        "categoria": "VILA POLOPOLI",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM ALMEIDA PRADO",
+        "n": 6
+      },
+      {
+        "categoria": "VILA TRAMONTANO",
+        "n": 6
+      },
+      {
+        "categoria": "CONCEICAO",
+        "n": 6
+      },
+      {
+        "categoria": "VILA INDEPENDÊNCIA",
+        "n": 6
+      },
+      {
+        "categoria": "CITY AMÉRICA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM MONJOLO",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SAO PAULO(ZONA NORTE)",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SABARA",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM MIMAR",
+        "n": 6
+      },
+      {
+        "categoria": "SÃO DOMINGOS",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM BANDEIRANTES",
+        "n": 6
+      },
+      {
+        "categoria": "VILA INDUSTRIAL ( VILA NOVA CURUÇÁ)",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SAO SAVERIO",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM KAGOHARA",
+        "n": 6
+      },
+      {
+        "categoria": "VILA ANTONIO",
+        "n": 6
+      },
+      {
+        "categoria": "VILA MARIA TRINDADE",
+        "n": 6
+      },
+      {
+        "categoria": "JARDIM SÃO JOÃO (ZONA NORTE)",
+        "n": 6
+      },
+      {
+        "categoria": "VILA AYROSA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SANTA LUCRÉCIA",
+        "n": 5
+      },
+      {
+        "categoria": "VILA NOVA PAULICEIA",
+        "n": 5
+      },
+      {
+        "categoria": "PARQUE PRIMAVERA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM ANALIA FRANC",
+        "n": 5
+      },
+      {
+        "categoria": "VILA MORUMBI",
+        "n": 5
+      },
+      {
+        "categoria": "VILA ARCÁDIA",
+        "n": 5
+      },
+      {
+        "categoria": "VILA SANTA TERESA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM HELIAN",
+        "n": 5
+      },
+      {
+        "categoria": "VILA SAO PAULO",
+        "n": 5
+      },
+      {
+        "categoria": "PARQUE PAN AMERICANO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM VAZ DE LIMA",
+        "n": 5
+      },
+      {
+        "categoria": "VALO VELHO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM ANDARAÍ",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM LIDIA",
+        "n": 5
+      },
+      {
+        "categoria": "VILA ROBERTINA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM CASA PINTADA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM VIVAN",
+        "n": 5
+      },
+      {
+        "categoria": "PRAIA DO LEBLON",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DAS CAMÉLIAS",
+        "n": 5
+      },
+      {
+        "categoria": "CHÁCARA SÃO SILVESTRE",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SANTO ANTONINHO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DO TIRO",
+        "n": 5
+      },
+      {
+        "categoria": "VILA CANERO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM JAPÃO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DOS ALAMOS",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DOS PRADOS",
+        "n": 5
+      },
+      {
+        "categoria": "CAPÃO DO EMBIRA",
+        "n": 5
+      },
+      {
+        "categoria": "VILA IORIO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM AZANO II",
+        "n": 5
+      },
+      {
+        "categoria": "FLOR DA CANTAREIRA",
+        "n": 5
+      },
+      {
+        "categoria": "RECANTO PARAÍSO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DOS BICHINHOS",
+        "n": 5
+      },
+      {
+        "categoria": "VILA ANA ROSA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DIONISIO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM NOVO CARRAO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM ALMEIDA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM TRUSSARDI",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM ALVORADA (ZONA SUL)",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SONIA INGA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM KERALUX",
+        "n": 5
+      },
+      {
+        "categoria": "MORADA DO SOL",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM LUSO",
+        "n": 5
+      },
+      {
+        "categoria": "PARQUE SAO MIGUEL",
+        "n": 5
+      },
+      {
+        "categoria": "CHÁCARA DO SOL",
+        "n": 5
+      },
+      {
+        "categoria": "VILA BANCARIA MUNHOZ",
+        "n": 5
+      },
+      {
+        "categoria": "ANA ROSA",
+        "n": 5
+      },
+      {
+        "categoria": "ALTO DO PARI",
+        "n": 5
+      },
+      {
+        "categoria": "CASA VERDE BAIXA",
+        "n": 5
+      },
+      {
+        "categoria": "PARQUE VILA MARIA",
+        "n": 5
+      },
+      {
+        "categoria": "PARQUE ITABERABA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM ARACATI",
+        "n": 5
+      },
+      {
+        "categoria": "VILA RAMOS",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM LAR SAO PAULO",
+        "n": 5
+      },
+      {
+        "categoria": "VILA MALVINA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM NELIA IV",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SECKLER",
+        "n": 5
+      },
+      {
+        "categoria": "VILA ESTER (ZONA NORTE)",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SÃO PAULO (ZONA LESTE)",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM PETROPOLIS",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM DAMASCENO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SAO JANUARIO",
+        "n": 5
+      },
+      {
+        "categoria": "CHACARA SANTA ETELVINA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM REGIS",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM MARCELO",
+        "n": 5
+      },
+      {
+        "categoria": "VILA SANTA EULÁLIA",
+        "n": 5
+      },
+      {
+        "categoria": "VILA CELESTE",
+        "n": 5
+      },
+      {
+        "categoria": "HORTO FLORESTAL",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM TAIPAS",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM ITATIAIA",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM BELGICA",
+        "n": 5
+      },
+      {
+        "categoria": "PARQUE GUARAPIRANGA",
+        "n": 5
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL PADRE MANOEL DE PAIVA",
+        "n": 5
+      },
+      {
+        "categoria": "BARRO BRANCO (ZONA NORTE)",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM NORDESTE",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM MARÍLIA",
+        "n": 5
+      },
+      {
+        "categoria": "VILA BOACAVA",
+        "n": 5
+      },
+      {
+        "categoria": "FURNAS",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM RANIELE",
+        "n": 5
+      },
+      {
+        "categoria": "VILA CARRÃO",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM FERNANDES",
+        "n": 5
+      },
+      {
+        "categoria": "JARDIM SANTA FE (ZONA SUL)",
+        "n": 5
+      },
+      {
+        "categoria": "VILA PEDRA BRANCA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA ALABAMA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM GILDA MARIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM MARIA RITA",
+        "n": 4
+      },
+      {
+        "categoria": "CHÁCARA KLABIN",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM CASTELO",
+        "n": 4
+      },
+      {
+        "categoria": "VILA NINA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM DAS ROSAS",
+        "n": 4
+      },
+      {
+        "categoria": "VILA ROMANO",
+        "n": 4
+      },
+      {
+        "categoria": "VILA EDE",
+        "n": 4
+      },
+      {
+        "categoria": "UNIÃO DE VILA NOVA",
+        "n": 4
+      },
+      {
+        "categoria": "COHAB JOSÉ BONIFÁCIO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM BONIFACIO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SAO VICENTE",
+        "n": 4
+      },
+      {
+        "categoria": "CHÁCARA NANI",
+        "n": 4
+      },
+      {
+        "categoria": "CONTINENTAL",
+        "n": 4
+      },
+      {
+        "categoria": "VILA SANTA TEREZINHA (ZONA NORTE)",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM CLÁUDIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM DABRIL",
+        "n": 4
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL PADRE MANOEL DA NOBREGA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM APUANA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA SANTA CRUZ (ZONA LESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM THOMAZ",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM HERCULANO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM CAROMBE",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM IPANEMA(ZONA OESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL JARDIM SAO BENTO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SELMA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM GUAPIRA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM LUCÉLIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM LIMOEIRO",
+        "n": 4
+      },
+      {
+        "categoria": "CAPELA DO SOCORRO",
+        "n": 4
+      },
+      {
+        "categoria": "VILA NOVA SAVOIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM FRANCA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM AMERICA DA PENHA",
+        "n": 4
+      },
+      {
+        "categoria": "JORDANÓPOLIS",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM DRACENA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA UNIAO (ZONA LESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "VILA ZELINA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA IDA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA DANUBIO AZUL",
+        "n": 4
+      },
+      {
+        "categoria": "VILA ARAGUAIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM ELISIO",
+        "n": 4
+      },
+      {
+        "categoria": "VILA RENATO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM APURA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA GUIOMAR",
+        "n": 4
+      },
+      {
+        "categoria": "VILA CHICA LUISA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM CINCO DE JULHO",
+        "n": 4
+      },
+      {
+        "categoria": "PARQUE LIGIA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA SAO PEDRO",
+        "n": 4
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL SITIO CONCEIÇÃO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SANTA FE (ZONA OESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "SÍTIO MATSUMURA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM RICARDO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SANTANA",
+        "n": 4
+      },
+      {
+        "categoria": "SÍTIO ITABERABA II",
+        "n": 4
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL AGUIA DE HAIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM ELIANE",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM PONTE RASA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA INGLESA",
+        "n": 4
+      },
+      {
+        "categoria": "PARQUE DAS CEREJEIRAS",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM NOVA GERMANIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM MARIA LIDIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM RECANTO VERDE",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM IPANEMA(ZONA LESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM PAULO VI",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM NOSSA SENHORA APARECIDA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA DALILA",
+        "n": 4
+      },
+      {
+        "categoria": "PARQUE VITORIA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA RUI BARBOSA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM TERESA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM GAIVOTAS",
+        "n": 4
+      },
+      {
+        "categoria": "PARQUE DOS PRINCIPES",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SANTA ETELVINA",
+        "n": 4
+      },
+      {
+        "categoria": "PARQUE RESIDENCIAL DOS LAGOS",
+        "n": 4
+      },
+      {
+        "categoria": "VILA FRANCOS",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM MAZZA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA MARTE",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SONIA (ZONA SUL)",
+        "n": 4
+      },
+      {
+        "categoria": "ESTÂNCIA JARAGUÁ",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM BRASIL (ZONA SUL)",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM ARANTES",
+        "n": 4
+      },
+      {
+        "categoria": "VILA SAO SILVESTRE (ZONA LESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "CAMPININHA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA SANTO ANTÔNIO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM PALMARES (ZONA SUL)",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM NEIDE",
+        "n": 4
+      },
+      {
+        "categoria": "VILA BONILHA NOVA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM PARANÁ",
+        "n": 4
+      },
+      {
+        "categoria": "NOSSA SENHORA DO Ó",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM DONÁRIA",
+        "n": 4
+      },
+      {
+        "categoria": "NORTE",
+        "n": 4
+      },
+      {
+        "categoria": "CHÁCARA SANTO ANTÔNIO",
+        "n": 4
+      },
+      {
+        "categoria": "VILA DEODORO",
+        "n": 4
+      },
+      {
+        "categoria": "COHAB ADVENTISTA",
+        "n": 4
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL MARECHAL MASCARENHAS DE MORAIS",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SANTO AMARO",
+        "n": 4
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL BRIGADEIRO FARIA LIMA",
+        "n": 4
+      },
+      {
+        "categoria": "TERCEIRA DIVISÃO DE INTERLAGOS",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SANTA FÉ (ZONA SUL)",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM DAS PALMAS",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM MARPU",
+        "n": 4
+      },
+      {
+        "categoria": "VILA CAVATON",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM TANGO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SABIA II",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM SANTA MONICA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA CARLOS DE CAMPOS",
+        "n": 4
+      },
+      {
+        "categoria": "ALTO DA RIVIERA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA AMÉLIA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM GIANETTI",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM FELICIDADE (ZONA OESTE)",
+        "n": 4
+      },
+      {
+        "categoria": "VILA MARCELO",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM BOA VISTA(ANHANGUERA)",
+        "n": 4
+      },
+      {
+        "categoria": "PARADA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM NOEMIA",
+        "n": 4
+      },
+      {
+        "categoria": "FAZENDA ARICANDUVA",
+        "n": 4
+      },
+      {
+        "categoria": "JARDIM GERMÂNIA",
+        "n": 4
+      },
+      {
+        "categoria": "VILA FUKUYA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SÃO ROBERTO",
+        "n": 3
+      },
+      {
+        "categoria": "VILA REGINA",
+        "n": 3
+      },
+      {
+        "categoria": "MARANHÃO",
+        "n": 3
+      },
+      {
+        "categoria": "CHACARA DONA OLIVIA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM LABITARY",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IVANA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA CAIUBA",
+        "n": 3
+      },
+      {
+        "categoria": "COHAB PADRE JOSE DE ANCHIETA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM APURÁ",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ALBANO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SAO BENEDITO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM PREMIANO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM ANGELA (ZONA SUL)",
+        "n": 3
+      },
+      {
+        "categoria": "VILA PAULISTA I",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CRISTAL",
+        "n": 3
+      },
+      {
+        "categoria": "RECANTO ALEGRE",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM VERA CRUZ",
+        "n": 3
+      },
+      {
+        "categoria": "CONJUNTO PROMORAR VILA MARIA III",
+        "n": 3
+      },
+      {
+        "categoria": "BALNEÁRIO SÃO JOSÉ",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SANTA BARBARA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM BRITÂNIA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM DOS EUCALIPTOS",
+        "n": 3
+      },
+      {
+        "categoria": "CIDADE LUZ",
+        "n": 3
+      },
+      {
+        "categoria": "BOAÇAVA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM NOVO CARRÃO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM ATLANTICO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM TUA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SOUZA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM NOVA VITORIA I",
+        "n": 3
+      },
+      {
+        "categoria": "VILA PAULISTANIA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CAMPO DOS FERREIROS",
+        "n": 3
+      },
+      {
+        "categoria": "VILA SANTA DELFINA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM ALADIM",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IRACEMA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA YARA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM DOS LAGOS",
+        "n": 3
+      },
+      {
+        "categoria": "VILA JUREMA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CASTRO ALVES",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CAROMBÉ",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SHANGRILA (ZONA NORTE)",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM RUBILENE",
+        "n": 3
+      },
+      {
+        "categoria": "VILA PAIVA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM BOA ESPERANCA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM PÉROLA I",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM AMÁLIA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM HORIZONTE AZUL",
+        "n": 3
+      },
+      {
+        "categoria": "VILA LISBOA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA CENTENARIO",
+        "n": 3
+      },
+      {
+        "categoria": "CHÁCARA BANDEIRANTES",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM NOVO JAU",
+        "n": 3
+      },
+      {
+        "categoria": "VILA SANTO ESTEVÃO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SAO JOAO (GUAIANAZES)",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM LUANDA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA PIAUÍ",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM TEXTIL",
+        "n": 3
+      },
+      {
+        "categoria": "CIDADE ANTONIO ESTEVAO DE CARV",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IRENE",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM PROMISSAO",
+        "n": 3
+      },
+      {
+        "categoria": "PARQUE DO ESTADO",
+        "n": 3
+      },
+      {
+        "categoria": "VILA NOVA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA GIL",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IMPERIO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM QUARTO CENTENARIO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM BOA VISTA (ZONA SUL)",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IPANEMA (ZONA SUL)",
+        "n": 3
+      },
+      {
+        "categoria": "PARQUE LAGOA RICA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ODETE",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CLIMAX",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM QUISISANA (VILA NOVA CURUCA)",
+        "n": 3
+      },
+      {
+        "categoria": "PARQUE MUNHOZ",
+        "n": 3
+      },
+      {
+        "categoria": "RETIRO MORUMBI",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ROSCHEL",
+        "n": 3
+      },
+      {
+        "categoria": "TERCEIRA DIVISÃO",
+        "n": 3
+      },
+      {
+        "categoria": "PARQUE DAS ARVORES",
+        "n": 3
+      },
+      {
+        "categoria": "PARQUE INDUSTRIAL",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SANTA RITA",
+        "n": 3
+      },
+      {
+        "categoria": "CID KEMEL II",
+        "n": 3
+      },
+      {
+        "categoria": "VILA SULINA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA DOS PALMARES",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SÃO SAVÉRIO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SANTA JOSEFINA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA MIRIAM",
+        "n": 3
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL JUSCELINO KUBITSCHEK",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SAO JOAO (SAO RAFAEL)",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM LEONIDAS MOREIRA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SÃO JOSÉ (ZONA NORTE)",
+        "n": 3
+      },
+      {
+        "categoria": "VILA SAO LUIS(ZONA OESTE)",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM ITAOCA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM VAZANI",
+        "n": 3
+      },
+      {
+        "categoria": "VILA DOS ANDRADAS",
+        "n": 3
+      },
+      {
+        "categoria": "VILA MENDES",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM AURÉLIO",
+        "n": 3
+      },
+      {
+        "categoria": "BOM R",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM KIOTO",
+        "n": 3
+      },
+      {
+        "categoria": "VILA NHOCUNE",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM DO EDEM",
+        "n": 3
+      },
+      {
+        "categoria": "VILA CHAVANTES",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM MÁLIA I",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CABORÉ",
+        "n": 3
+      },
+      {
+        "categoria": "INSTITUTO DE PREVIDÊNCIA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SANTA ZELIA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM LAGEADO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CORDEIRO",
+        "n": 3
+      },
+      {
+        "categoria": "CONJUNTO PROMORAR SAO LUIS",
+        "n": 3
+      },
+      {
+        "categoria": "SICILIANO",
+        "n": 3
+      },
+      {
+        "categoria": "VILA PAULO SILAS",
+        "n": 3
+      },
+      {
+        "categoria": "PARQUE RESIDENCIAL ORATORIO",
+        "n": 3
+      },
+      {
+        "categoria": "FAZENDA CAGUAÇU",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM AZANO I",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM MELO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM LIBANO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM CARLU",
+        "n": 3
+      },
+      {
+        "categoria": "VILA HELENA",
+        "n": 3
+      },
+      {
+        "categoria": "HOSPITAL OSWALDO CRUZ",
+        "n": 3
+      },
+      {
+        "categoria": "JAÇANÃ",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM BÉLGICA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SAO JOAQUIM",
+        "n": 3
+      },
+      {
+        "categoria": "SÍTIO BARROCADA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA MORGADOURO",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM ANTARTICA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA GUEDES",
+        "n": 3
+      },
+      {
+        "categoria": "VILA SANTA INÊS",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM SÃO JOSÉ",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ELZE",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM PARAGUACU",
+        "n": 3
+      },
+      {
+        "categoria": "VILA SAO FRANCISCO (ZONA LESTE)",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM FILHOS DA TERRA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM TURQUESA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA LONDRINA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM DAS LARANJEIRAS (ZONA SUL)",
+        "n": 3
+      },
+      {
+        "categoria": "VILA GOMES",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ARAPUÃ",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ERNA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM ZAIRA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA DARLI",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM HELGA",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM TRÊS CORAÇÕES",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IPÊ",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM IAE",
+        "n": 3
+      },
+      {
+        "categoria": "CHÁCARA MONTE SOL",
+        "n": 3
+      },
+      {
+        "categoria": "JARDIM MARQUESA",
+        "n": 3
+      },
+      {
+        "categoria": "VILA ROMERO",
+        "n": 3
+      },
+      {
+        "categoria": "VILA CONCEICAO",
+        "n": 2
+      },
+      {
+        "categoria": "ENGENHEIRO MARSILAC",
+        "n": 2
+      },
+      {
+        "categoria": "VILA ISABEL",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM DA CONQUISTA (ZONA LESTE)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAMAS",
+        "n": 2
+      },
+      {
+        "categoria": "SÍTIO ITABERABA I",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE SAO FRANCISCO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SÃO FRANCISCO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NOVA CALEDONIA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NOVA UTINGA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA GILDA",
+        "n": 2
+      },
+      {
+        "categoria": "CIDADE NITRO QUÍMICA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA HEBE",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA BRANCA",
+        "n": 2
+      },
+      {
+        "categoria": "NOSSA SRA. DO O",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM VITORIA",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE SAO LUCAS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM LISBOA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA CARIOCA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ICARAI",
+        "n": 2
+      },
+      {
+        "categoria": "VILA ARAPUA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ARISTOCRATA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM GUACURI",
+        "n": 2
+      },
+      {
+        "categoria": "VILA GUACA",
+        "n": 2
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL CASTRO A",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SAO DOMINGOS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM PÉROLA III",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM BOA VISTA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO LUIS (ZONA OESTE)",
+        "n": 2
+      },
+      {
+        "categoria": "CIDADE BRASIL",
+        "n": 2
+      },
+      {
+        "categoria": "CHÁCARA TATUAPÉ",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM NOVA TEREZA",
+        "n": 2
+      },
+      {
+        "categoria": "RIVIERA PAULISTA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO JOAO (JARAGUA)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM DO RUSSO",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE DA LAPA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA MIAMI",
+        "n": 2
+      },
+      {
+        "categoria": "VILA AMERICA",
+        "n": 2
+      },
+      {
+        "categoria": "SUBPREFEITURA DE PERUS",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE FLORESTAL",
+        "n": 2
+      },
+      {
+        "categoria": "VILA MACEDOPOLIS",
+        "n": 2
+      },
+      {
+        "categoria": "VILA GUARANI(ZONA SUL)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM IPORA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM CATARINA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SANTA INES",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZINHA (ZONA L",
+        "n": 2
+      },
+      {
+        "categoria": "NÚCLEO DO ENGORDADOR",
+        "n": 2
+      },
+      {
+        "categoria": "TABOÃO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM IPANEMA",
+        "n": 2
+      },
+      {
+        "categoria": "CIDADE NOVA AMÉRICA",
+        "n": 2
+      },
+      {
+        "categoria": "SÍTIO BOTUQUARA",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE DAS NACOES",
+        "n": 2
+      },
+      {
+        "categoria": "LOTEAMENTO CITY JARAGUA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO LUIS (ZONA NORTE)",
+        "n": 2
+      },
+      {
+        "categoria": "VILA BELA VISTA (ZONA NORTE)",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE CÍSPER",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM COLIBRI",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM HERCILIA",
+        "n": 2
+      },
+      {
+        "categoria": "BATISTINI",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM VIRGINIA BIANCA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA BABILÔNIA",
+        "n": 2
+      },
+      {
+        "categoria": "COQUEIRO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM FRANCISCO MENDES",
+        "n": 2
+      },
+      {
+        "categoria": "VILA CALIFORNIA(ZONA SUL)",
+        "n": 2
+      },
+      {
+        "categoria": "CIDADE DE DEUS",
+        "n": 2
+      },
+      {
+        "categoria": "VILA JOÃO BATISTA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM CELIA (ZONA SUL)",
+        "n": 2
+      },
+      {
+        "categoria": "SETE PRAIAS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO MARTINHO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM IMPERIAL",
+        "n": 2
+      },
+      {
+        "categoria": "SÍTIO DA FIGUEIRA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA EFIGENIA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SÃO PEDRO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO PAULO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM LOS ANGELES",
+        "n": 2
+      },
+      {
+        "categoria": "VILA PRADO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM JUCARA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM BENFICA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA MISSIONÁRIA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA BÁRBARA",
+        "n": 2
+      },
+      {
+        "categoria": "CHÁCARA CRUZEIRO DO SUL",
+        "n": 2
+      },
+      {
+        "categoria": "CRISPIM",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM VIANA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM TUPA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM JOAMAR",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM COTIANA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM BRASILIA (ZONA LESTE)",
+        "n": 2
+      },
+      {
+        "categoria": "VILA CARBONE",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NOVA MAUA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ANA LUCIA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM DOS FRANCOS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO JUDAS TADEU",
+        "n": 2
+      },
+      {
+        "categoria": "VILA FLORA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM EGLE",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM DO CENTRO",
+        "n": 2
+      },
+      {
+        "categoria": "RANCHO DO ABILIO",
+        "n": 2
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL RECANTO DOS HUMILDES",
+        "n": 2
+      },
+      {
+        "categoria": "VILA FIDALGO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA LEONOR",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM PAINEIRAS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM LOURDES (ZONA SUL)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM JARAGUÁ",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NELSON",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NOVA ESPERANÇA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO ROBERTO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ALMANARA",
+        "n": 2
+      },
+      {
+        "categoria": "BIXIGA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SÃO PEDRO (ZONA SUL)",
+        "n": 2
+      },
+      {
+        "categoria": "VILA ANTONINA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM KIKA",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE GRAJAÚ",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM PATENTE",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM EVA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM MONICA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA COSTA MELO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM MANGALOT",
+        "n": 2
+      },
+      {
+        "categoria": "VILA MARINA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZINHA",
+        "n": 2
+      },
+      {
+        "categoria": "BAIXO AUGUSTA",
+        "n": 2
+      },
+      {
+        "categoria": "SAÚDE",
+        "n": 2
+      },
+      {
+        "categoria": "VILA ABC",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SUL SAO PAULO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM IBIRAPUERA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM DONA SINHÁ",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM LUZITÂNIA",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE VITÓRIA",
+        "n": 2
+      },
+      {
+        "categoria": "CHÁCARA FLORA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SANTA TERESINHA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA LAIS",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SAO JOSE (ITAIM PAULISTA)",
+        "n": 2
+      },
+      {
+        "categoria": "CITY BUSSOCABA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA IRMAOS ARNONI",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE NOVO GRAJAÚ",
+        "n": 2
+      },
+      {
+        "categoria": "VILA CRUZ DAS ALMAS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM MONTE AZUL",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM TIETÊ",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA FÉ",
+        "n": 2
+      },
+      {
+        "categoria": "VILA GUARANI(ZONA LESTE)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM LEME",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM EDITH",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM NINHO VERDE II",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SANTA VIRGINIA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM UBIRAJARA (ZONA SUL)",
+        "n": 2
+      },
+      {
+        "categoria": "VILA BARRETO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ANA ROSA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA CONDE DO PINHAL",
+        "n": 2
+      },
+      {
+        "categoria": "COHAB MONET",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM MELIUNAS",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SAO BENTO",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE SAVOY CITY",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM COPACABANA",
+        "n": 2
+      },
+      {
+        "categoria": "SÍTIO DO MANDAQUI",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SÃO CARLOS (ZONA LESTE)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM VALO VELHO",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM GUARAPIRANGA",
+        "n": 2
+      },
+      {
+        "categoria": "CONJUNTO PROMORAR SAPOPEMBA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ARIZE",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA ADÉLIA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM IPORÃ",
+        "n": 2
+      },
+      {
+        "categoria": "GRANJA NOSSA SENHORA APARECIDA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ITAJAI",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM DENISE",
+        "n": 2
+      },
+      {
+        "categoria": "GUAIAUNA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA ROQUE",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE BAIRRO MORUMBI",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM MALIA I",
+        "n": 2
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL JUSCELIN",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM PAULO AFONSO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA PORTUGAL",
+        "n": 2
+      },
+      {
+        "categoria": "JD CAMARGO VELHO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA GALVÃO",
+        "n": 2
+      },
+      {
+        "categoria": "EMBURA",
+        "n": 2
+      },
+      {
+        "categoria": "CENTRO HISTÓRICO DE",
+        "n": 2
+      },
+      {
+        "categoria": "VILA VITORIO MAZZEI",
+        "n": 2
+      },
+      {
+        "categoria": "PRAIA PAULISTINHA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM BOTUCATU",
+        "n": 2
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL VISTA VERDE",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE SANTA CECÍLIA (GRAJAÚ)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTO ANTÔNIO",
+        "n": 2
+      },
+      {
+        "categoria": "CASA GRANDE",
+        "n": 2
+      },
+      {
+        "categoria": "VILA INACIO",
+        "n": 2
+      },
+      {
+        "categoria": "J MARIA ROSA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM TUPÃ",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SOMARA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM ALTO ALEGRE",
+        "n": 2
+      },
+      {
+        "categoria": "VILA PARQUE JABAQUARA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM NOSSO LAR",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NARCISO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SAO FRANCISCO",
+        "n": 2
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL TURÍSTICA",
+        "n": 2
+      },
+      {
+        "categoria": "VILA BOAÇAVA",
+        "n": 2
+      },
+      {
+        "categoria": "PARQUE SÃO PAULO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA SIQUEIRA (ZONA LESTE)",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SÃO JOÃO (GUAIANAZES)",
+        "n": 2
+      },
+      {
+        "categoria": "VILA DALVA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM NOVO MUNDO",
+        "n": 2
+      },
+      {
+        "categoria": "VILA NOVA TERESA",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM GALLI",
+        "n": 2
+      },
+      {
+        "categoria": "JARDIM SANTA CRUZ (ZONA NORTE)",
+        "n": 2
+      },
+      {
+        "categoria": "VILA INDEPENDENTE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PEROLA II",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM BELA VISTA (ZONA SUL)",
+        "n": 1
+      },
+      {
+        "categoria": "NOVA MIRIM",
+        "n": 1
+      },
+      {
+        "categoria": "SÍTIO LAREDO",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE FLAMENGO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM HIPICO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ARCO-IRIS",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM EDDA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM HERPLIN",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ESTACAO",
+        "n": 1
+      },
+      {
+        "categoria": "PROBLEMA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA DAS MERCÊS",
+        "n": 1
+      },
+      {
+        "categoria": "FLOR DE MAIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM TRIANA",
+        "n": 1
+      },
+      {
+        "categoria": "ALTO DO IPIRANGA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MARTINS SILVA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VITÓRIA",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARAS CAXINGUI",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MAFRA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA ANGELICA",
+        "n": 1
+      },
+      {
+        "categoria": "EDUCANDARIO",
+        "n": 1
+      },
+      {
+        "categoria": "JD. PAULISTANO",
+        "n": 1
+      },
+      {
+        "categoria": "PARAISOPOLIS",
+        "n": 1
+      },
+      {
+        "categoria": "JD NEIDE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÔNIA (ZONA SUL)",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MARIA EUGENIA",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE SANTANA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAS FONTES",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NOSSA SENHORA DO RETIRO",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA VISTA ALEGRE",
+        "n": 1
+      },
+      {
+        "categoria": "CIDADE D'ABRIL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PARAÍSO",
+        "n": 1
+      },
+      {
+        "categoria": "JUAGUARA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ANGELINA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM RUSSO",
+        "n": 1
+      },
+      {
+        "categoria": "TAMANDUATEI",
+        "n": 1
+      },
+      {
+        "categoria": "VILA BANCÁRIA MUNHOZ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DA GLÓRIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ITAPOLIS",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MACEDÔNIA",
+        "n": 1
+      },
+      {
+        "categoria": "SANTA INÊS",
+        "n": 1
+      },
+      {
+        "categoria": "COLIBRIS",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM REAL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ITAMARATI",
+        "n": 1
+      },
+      {
+        "categoria": "VILA UNIÃO (ZONA LESTE)",
+        "n": 1
+      },
+      {
+        "categoria": "RECANTO MORUMBI",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL SANTA ET",
+        "n": 1
+      },
+      {
+        "categoria": "VILA GOUVEIA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NOVA MAUÁ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VILA RICA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MARTINI",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE DOM JOÃO NERI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PARANAVAÍ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM NAMBA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IPANEMA (ZONA LESTE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM RAMALA",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE UNIVERSITÁRIO ESPÍRITA",
+        "n": 1
+      },
+      {
+        "categoria": "PTO PAULISTA",
+        "n": 1
+      },
+      {
+        "categoria": "ANHAGABAU",
+        "n": 1
+      },
+      {
+        "categoria": "JD PRIMAVERA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA CAJU",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ALVORADA (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ELZA",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE DO ENGENHO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA RENATO (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ROSCHEL",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE PANAMERICANO",
+        "n": 1
+      },
+      {
+        "categoria": "JD RIO D'OURO",
+        "n": 1
+      },
+      {
+        "categoria": "LAR SÃO PAULO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM HELOISA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MARIA LÍGIA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA JAMIL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IDA GUEDES",
+        "n": 1
+      },
+      {
+        "categoria": "VL SACOMA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA DUARTE",
+        "n": 1
+      },
+      {
+        "categoria": "VL IORIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PAQUETÁ (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM AUGUSTA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA FERNANDES",
+        "n": 1
+      },
+      {
+        "categoria": "M'BOI MIRIM",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SANTA ISABEL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ELBA",
+        "n": 1
+      },
+      {
+        "categoria": "KM 19",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM COTCHING",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SONIA DO TABOAO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MARGARETH",
+        "n": 1
+      },
+      {
+        "categoria": "VILA PROGRESSO (ZONA SUL)",
+        "n": 1
+      },
+      {
+        "categoria": "GUAIANZES",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CIPRESTE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO LUÍS (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "CARRÃOZINHO",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE RESIDENCIAL JULIA",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE DO OTERO",
+        "n": 1
+      },
+      {
+        "categoria": "SÃO BENTO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA GALVAO",
+        "n": 1
+      },
+      {
+        "categoria": "RURAL",
+        "n": 1
+      },
+      {
+        "categoria": "VILA PICININ",
+        "n": 1
+      },
+      {
+        "categoria": "288",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM YPE",
+        "n": 1
+      },
+      {
+        "categoria": "MOOCA DISTRICT",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IV CENTENÁRIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAS PERDIZES",
+        "n": 1
+      },
+      {
+        "categoria": "PQ DAS NAÇÕES",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MONTE ALEGRE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CRUZEIRO",
+        "n": 1
+      },
+      {
+        "categoria": "INDUSTRIAL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ELLUS",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SAO JOSE (GUAIANAZES)",
+        "n": 1
+      },
+      {
+        "categoria": "VILA PIRACICABA",
+        "n": 1
+      },
+      {
+        "categoria": "PQ. NOVO MUNDO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA BABY",
+        "n": 1
+      },
+      {
+        "categoria": "VILA ANADIR",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PROGRESSO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO JOAO (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "COHAB BRIGADEIRO FARIA LIMA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PRESIDENTE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM D ABRIL",
+        "n": 1
+      },
+      {
+        "categoria": "JD VERA CRUAZ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM LALLO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAS ROSAS (ZONA LESTE I)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CABUCU",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTO ANDRÉ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SENICE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ASSUNCAO",
+        "n": 1
+      },
+      {
+        "categoria": "PQ DAS FLORES",
+        "n": 1
+      },
+      {
+        "categoria": "VL NOVA CONCEIÇÃO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MARGARIDA",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE TIETE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTA MARCELINA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA PIAUI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CAPÃO REDONDO",
+        "n": 1
+      },
+      {
+        "categoria": "SÍTIO CANELA BRANCA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ANA LÚCIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ROSA MARIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO LUIS (ZONA OESTE",
+        "n": 1
+      },
+      {
+        "categoria": "TERRA PRETA (TERRA PRETA)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VALE DO SOL",
+        "n": 1
+      },
+      {
+        "categoria": "TOLSTOI",
+        "n": 1
+      },
+      {
+        "categoria": "VL SABRINA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM RUBIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTA MÔNICA",
+        "n": 1
+      },
+      {
+        "categoria": "VL 15 DE NOVEMBRO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA UNIVERSITÁRIA",
+        "n": 1
+      },
+      {
+        "categoria": "TUPARACOERA",
+        "n": 1
+      },
+      {
+        "categoria": "AYROSA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA GENIOLI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO FRANCISCO(ZONA SUL)",
+        "n": 1
+      },
+      {
+        "categoria": "VILA DORNA",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA MARIA TRINDADE",
+        "n": 1
+      },
+      {
+        "categoria": "JD. MARPUR-GUAIANASES",
+        "n": 1
+      },
+      {
+        "categoria": "PQ SÃO JORGE",
+        "n": 1
+      },
+      {
+        "categoria": "JD. DAS FONTES",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA FIGUEIRA GRANDE",
+        "n": 1
+      },
+      {
+        "categoria": "JD CASTRO ALVES",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MATIAS",
+        "n": 1
+      },
+      {
+        "categoria": "PROTENDIT",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANDRA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SABIÁ",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MENCK",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTO ALBERTO",
+        "n": 1
+      },
+      {
+        "categoria": "ALTOS DE VILA PRUDENTE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO JUDAS TADEU",
+        "n": 1
+      },
+      {
+        "categoria": "EMBU DAS ARTES",
+        "n": 1
+      },
+      {
+        "categoria": "VILA N. CONCEIÇÃO",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL BARREIRA GRANDE",
+        "n": 1
+      },
+      {
+        "categoria": "ARMÊNIA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SANTA LÚCIA",
+        "n": 1
+      },
+      {
+        "categoria": "JD COLOMBO",
+        "n": 1
+      },
+      {
+        "categoria": "BAIXADA DO GLICÉRIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM WANDA",
+        "n": 1
+      },
+      {
+        "categoria": "RECANTO SANTO ANTONIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM INDAIÁ",
+        "n": 1
+      },
+      {
+        "categoria": "EDUCANDÁRIO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA AMALIA (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "ÁREA INDUSTRIAL DOIS A",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM FLORIDA PAULISTA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ALVIVERDE",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE CRUZEIRO DO SUL (VILA FORMOSA)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO JOAO",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MONTE BELO (RAPOSO TAVARES)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM BOM REFÚGIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTA EDWIGES",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VILAS BOAS",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CABUÇU",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ARTUR ALVIM",
+        "n": 1
+      },
+      {
+        "categoria": "VILA GERMINAL",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE IPÊ",
+        "n": 1
+      },
+      {
+        "categoria": "VILA EUTHALIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM NOVA ITAQUÁ",
+        "n": 1
+      },
+      {
+        "categoria": "SANTA LUZIA",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL SALVADOR TOLEZANI",
+        "n": 1
+      },
+      {
+        "categoria": "JD ARICANDUVA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM LAPENA",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE RESIDENCIAL D'ABRIL",
+        "n": 1
+      },
+      {
+        "categoria": "FREGUESIA",
+        "n": 1
+      },
+      {
+        "categoria": "SHOPPING CENTER NORTE",
+        "n": 1
+      },
+      {
+        "categoria": "SÍTIO COCAIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM BRONZATO",
+        "n": 1
+      },
+      {
+        "categoria": "JD SAO NIOCOLAU",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZINHA (PARELHEIROS)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MABEL",
+        "n": 1
+      },
+      {
+        "categoria": "ENGENHEIRO MARCILAC",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTO ELIAS (SAO MIGUEL)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MORADA DO SOL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MARGARIDA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PANORAMA (ZONA LESTE)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PEROLA I",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ICARAÍ",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NITRO OPERARIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAS PALMEIRAS",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAS ESMERALDAS",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL JOSÉ BONIFACIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM NICE",
+        "n": 1
+      },
+      {
+        "categoria": "J. BONIFÁCIO",
+        "n": 1
+      },
+      {
+        "categoria": "PORTAL DO MORUMBI",
+        "n": 1
+      },
+      {
+        "categoria": "VILA ALZIRA",
+        "n": 1
+      },
+      {
+        "categoria": "VL P. BARRETO",
+        "n": 1
+      },
+      {
+        "categoria": "BORTOLÂNDIA",
+        "n": 1
+      },
+      {
+        "categoria": "PRESIDENTE ALTINO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SERRA GRANDE",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE IGUATEMI",
+        "n": 1
+      },
+      {
+        "categoria": "VILA JACI",
+        "n": 1
+      },
+      {
+        "categoria": "C MONCOES",
+        "n": 1
+      },
+      {
+        "categoria": "QUILÔMETRO VINTE E OITO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAYAQUINHA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA BASILEIA",
+        "n": 1
+      },
+      {
+        "categoria": "MOINHO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM LEÔNIDAS MOREIRA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SALETE",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARAS REUNIDAS ANHANGÜERA (NOVA VENEZA)",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NACI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CAROLINA",
+        "n": 1
+      },
+      {
+        "categoria": "SÃO JUDAS",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE MARIA ALICE",
+        "n": 1
+      },
+      {
+        "categoria": "VILA CORBERI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IPANEMA (CIDADE LIDER)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTA FRANCISCA CABRINI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SANTA TEREZA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM POUSO ALEGRE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PATENTE NOVO",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA SANTA MARIA",
+        "n": 1
+      },
+      {
+        "categoria": "VL AURORA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM FREI GALVAO",
+        "n": 1
+      },
+      {
+        "categoria": "BAIRRO NAPOLEAO",
+        "n": 1
+      },
+      {
+        "categoria": "CONJ. RES.SAL DA TERRA II",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DO COLEGIO (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "VILA REPRESA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SANTA TERESA (ZONA SUL)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CONSÓRCIO",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE TAMARI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAS VERTENTES",
+        "n": 1
+      },
+      {
+        "categoria": "JD FERREIRA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM RECORD",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM BATAGLIA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA DOS MINERIOS",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL MARECHAL MASCARENHAS DE MORA",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL BARREIRA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CLEIDE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CAPRI",
+        "n": 1
+      },
+      {
+        "categoria": "GLICERIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CAPAO REDONDO",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE ESPERANCA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MARABA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA CENTRAL",
+        "n": 1
+      },
+      {
+        "categoria": "CIPÓ DO MEIO",
+        "n": 1
+      },
+      {
+        "categoria": "PARQUE JACARANDÁ",
+        "n": 1
+      },
+      {
+        "categoria": "SÍTIO AREIÃO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM NADIR",
+        "n": 1
+      },
+      {
+        "categoria": "METRO CONSOLAÇÃO- AV. PAULISTA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM REPUBLICA",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL SITIO CO",
+        "n": 1
+      },
+      {
+        "categoria": "SANTA TEREZINHA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DO ÉDEM",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÔNIA INGA",
+        "n": 1
+      },
+      {
+        "categoria": "COLONIA",
+        "n": 1
+      },
+      {
+        "categoria": "C H PRES JUSCELINO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PINHEIRINHO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM RUTH",
+        "n": 1
+      },
+      {
+        "categoria": "RECANTO ANA MARIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM",
+        "n": 1
+      },
+      {
+        "categoria": "SAMPAIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SILVIA (ZONA OESTE)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PANORAMA (ZONA SUL)",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DA CACHOEIRA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DOM JOSE",
+        "n": 1
+      },
+      {
+        "categoria": "PRAÇA DA ARVORE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PARAISO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SANTISTA",
+        "n": 1
+      },
+      {
+        "categoria": "SÍTIO REPRESA",
+        "n": 1
+      },
+      {
+        "categoria": "J S SALVADOR",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IVONE",
+        "n": 1
+      },
+      {
+        "categoria": "VILA IVG",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM LILAH",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM TAMOIO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MARIZA MAZZEI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SOEIRO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA REIS",
+        "n": 1
+      },
+      {
+        "categoria": "VILA ANHANGUERA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA DOMITILA",
+        "n": 1
+      },
+      {
+        "categoria": "CIDADE NITRO OPERARIA",
+        "n": 1
+      },
+      {
+        "categoria": "B PALANQUE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM TROPICAL",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO ROQUE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO SILVESTRE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO SEBASTIÃO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VALQUIRIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM NOVO LAR",
+        "n": 1
+      },
+      {
+        "categoria": "PQ NOVO SANTO AMARO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO GONCALO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM REMO",
+        "n": 1
+      },
+      {
+        "categoria": "PQ. DOM PEDRO II",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NOSSA SENHORA APARECIDA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IMPERADOR",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NOVA ALBA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM EDILENE",
+        "n": 1
+      },
+      {
+        "categoria": "ESTÂNCIA TANGARÁ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DE LORENZO",
+        "n": 1
+      },
+      {
+        "categoria": "GRANJA VIANA",
+        "n": 1
+      },
+      {
+        "categoria": "JAÇANAN",
+        "n": 1
+      },
+      {
+        "categoria": "ABC/SÃO BERNADO DO CAMPO",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SCARPELLI",
+        "n": 1
+      },
+      {
+        "categoria": "ALPHAVILLE",
+        "n": 1
+      },
+      {
+        "categoria": "CIDADE LEONOR",
+        "n": 1
+      },
+      {
+        "categoria": "MOCA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DO MAR",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ROMANO",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO RESIDENCIAL SITIO ORATORIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM NOVA VITÓRIA II",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM AUREA",
+        "n": 1
+      },
+      {
+        "categoria": "ALTOS DO IPIRANGA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM ITAPEVA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO NICOLAU",
+        "n": 1
+      },
+      {
+        "categoria": "VILA HOMERO",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA DAS CORUJAS",
+        "n": 1
+      },
+      {
+        "categoria": "VILA CASTELO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM MYRNA II",
+        "n": 1
+      },
+      {
+        "categoria": "CIDADE DOS BANDEIRANTES",
+        "n": 1
+      },
+      {
+        "categoria": "ILHA PAULISTA",
+        "n": 1
+      },
+      {
+        "categoria": "JD. FELICIDADE",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA SANTO HUBERTUS",
+        "n": 1
+      },
+      {
+        "categoria": "PALANQUE",
+        "n": 1
+      },
+      {
+        "categoria": "VILA OLIMPIA",
+        "n": 1
+      },
+      {
+        "categoria": "CHÁCARA DO VOVÓ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DAYSY",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VERONIA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA MESQUITA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO BENEDITO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM DONARIA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA VELHA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO FRANCISCO DE ASSIS",
+        "n": 1
+      },
+      {
+        "categoria": "JD. NOVO SANTO AMARO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SILVIA MARIA",
+        "n": 1
+      },
+      {
+        "categoria": "RECANTO DAS ANDORINHAS",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SINHA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CRUZ DO CORISCO",
+        "n": 1
+      },
+      {
+        "categoria": "152",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO JOSÉ (ARTUR ALVIM)",
+        "n": 1
+      },
+      {
+        "categoria": "VILA BABILONIA",
+        "n": 1
+      },
+      {
+        "categoria": "VL. MARIA ALTA",
+        "n": 1
+      },
+      {
+        "categoria": "BOA VISTA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA APARECIDA",
+        "n": 1
+      },
+      {
+        "categoria": "RIVIEIRA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM TRES MARIAS",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NASCENTE",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SÃO MARTINHO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM CRISTALIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM GUARAU",
+        "n": 1
+      },
+      {
+        "categoria": "PRQ D J NERI",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM PORTEIRA GRANDE",
+        "n": 1
+      },
+      {
+        "categoria": "VILA SANTOS",
+        "n": 1
+      },
+      {
+        "categoria": "CONJUNTO HABITACIONAL TEOTONIO",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM IPORANGA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM BANDEIRANTE",
+        "n": 1
+      },
+      {
+        "categoria": "VILA AIMORÉ",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SIPRAMAR",
+        "n": 1
+      },
+      {
+        "categoria": "VILA DOS PINHEIROS",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM SAO JOSE (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "categoria": "MIAMI PAULISTA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA ZEFIRA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM JUA",
+        "n": 1
+      },
+      {
+        "categoria": "SANTA ETELVINA",
+        "n": 1
+      },
+      {
+        "categoria": "VILA NATÁLIA",
+        "n": 1
+      },
+      {
+        "categoria": "JARDIM VIRGINIA",
+        "n": 1
+      },
+      {
+        "categoria": "J ANALIA FRANCO",
+        "n": 1
+      }
+    ]
+  },
+  "possiveis_equivalencias_acento": {
+    "REPUBLICA": [
+      {
+        "grafia": "REPUBLICA",
+        "n": 6226
+      },
+      {
+        "grafia": "REPÚBLICA",
+        "n": 2051
+      }
+    ],
+    "VILA SAO FRANCISCO (ZONA SUL)": [
+      {
+        "grafia": "VILA SAO FRANCISCO (ZONA SUL)",
+        "n": 8
+      },
+      {
+        "grafia": "VILA SÃO FRANCISCO (ZONA SUL)",
+        "n": 16
+      }
+    ],
+    "SACOMA": [
+      {
+        "grafia": "SACOMA",
+        "n": 1195
+      },
+      {
+        "grafia": "SACOMÃ",
+        "n": 59
+      }
+    ],
+    "FREGUESIA DO O": [
+      {
+        "grafia": "FREGUESIA DO O",
+        "n": 1157
+      },
+      {
+        "grafia": "FREGUESIA DO Ó",
+        "n": 77
+      }
+    ],
+    "CONSOLACAO": [
+      {
+        "grafia": "CONSOLAÇÃO",
+        "n": 2744
+      },
+      {
+        "grafia": "CONSOLACAO",
+        "n": 3425
+      }
+    ],
+    "BRAS": [
+      {
+        "grafia": "BRAS",
+        "n": 2276
+      },
+      {
+        "grafia": "BRÁS",
+        "n": 2713
+      }
+    ],
+    "SE": [
+      {
+        "grafia": "SE",
+        "n": 3626
+      },
+      {
+        "grafia": "SÉ",
+        "n": 1111
+      }
+    ],
+    "VILA JACUI": [
+      {
+        "grafia": "VILA JACUI",
+        "n": 540
+      },
+      {
+        "grafia": "VILA JACUÍ",
+        "n": 69
+      }
+    ],
+    "VILA OLIMPIA": [
+      {
+        "grafia": "VILA OLÍMPIA",
+        "n": 540
+      },
+      {
+        "grafia": "VILA OLIMPIA",
+        "n": 1
+      }
+    ],
+    "CIDADE LIDER": [
+      {
+        "grafia": "CIDADE LIDER",
+        "n": 586
+      },
+      {
+        "grafia": "CIDADE LÍDER",
+        "n": 92
+      }
+    ],
+    "JARDIM SAO ROBERTO": [
+      {
+        "grafia": "JARDIM SÃO ROBERTO",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM SAO ROBERTO",
+        "n": 2
+      }
+    ],
+    "SAO MATEUS": [
+      {
+        "grafia": "SAO MATEUS",
+        "n": 1182
+      },
+      {
+        "grafia": "SÃO MATEUS",
+        "n": 25
+      }
+    ],
+    "JAGUARA": [
+      {
+        "grafia": "JAGUARA",
+        "n": 143
+      },
+      {
+        "grafia": "JAGUARÁ",
+        "n": 22
+      }
+    ],
+    "JARDIM PROMISSAO": [
+      {
+        "grafia": "JARDIM PROMISSÃO",
+        "n": 10
+      },
+      {
+        "grafia": "JARDIM PROMISSAO",
+        "n": 3
+      }
+    ],
+    "VILA SONIA": [
+      {
+        "grafia": "VILA SONIA",
+        "n": 1311
+      },
+      {
+        "grafia": "VILA SÔNIA",
+        "n": 31
+      }
+    ],
+    "SAO RAFAEL": [
+      {
+        "grafia": "SÃO RAFAEL",
+        "n": 29
+      },
+      {
+        "grafia": "SAO RAFAEL",
+        "n": 560
+      }
+    ],
+    "CAPAO REDONDO": [
+      {
+        "grafia": "CAPAO REDONDO",
+        "n": 2932
+      },
+      {
+        "grafia": "CAPÃO REDONDO",
+        "n": 114
+      }
+    ],
+    "AGUA RASA": [
+      {
+        "grafia": "AGUA RASA",
+        "n": 471
+      },
+      {
+        "grafia": "ÁGUA RASA",
+        "n": 18
+      }
+    ],
+    "CIDADE ANTONIO ESTEVAO DE CARVALHO": [
+      {
+        "grafia": "CIDADE ANTÔNIO ESTEVÃO DE CARVALHO",
+        "n": 270
+      },
+      {
+        "grafia": "CIDADE ANTÔNIO ESTÊVÃO DE CARVALHO",
+        "n": 106
+      }
+    ],
+    "GRAJAU": [
+      {
+        "grafia": "GRAJAU",
+        "n": 1955
+      },
+      {
+        "grafia": "GRAJAÚ",
+        "n": 32
+      }
+    ],
+    "BUTANTA": [
+      {
+        "grafia": "BUTANTÃ",
+        "n": 599
+      },
+      {
+        "grafia": "BUTANTA",
+        "n": 946
+      }
+    ],
+    "CANGAIBA": [
+      {
+        "grafia": "CANGAIBA",
+        "n": 587
+      },
+      {
+        "grafia": "CANGAÍBA",
+        "n": 50
+      }
+    ],
+    "TREMEMBE": [
+      {
+        "grafia": "TREMEMBE",
+        "n": 964
+      },
+      {
+        "grafia": "TREMEMBÉ",
+        "n": 21
+      }
+    ],
+    "JARAGUA": [
+      {
+        "grafia": "JARAGUA",
+        "n": 787
+      },
+      {
+        "grafia": "JARAGUÁ",
+        "n": 56
+      }
+    ],
+    "TATUAPE": [
+      {
+        "grafia": "TATUAPE",
+        "n": 1441
+      },
+      {
+        "grafia": "TATUAPÉ",
+        "n": 1091
+      }
+    ],
+    "INSTITUTO DE PREVIDENCIA": [
+      {
+        "grafia": "INSTITUTO DE PREVIDENCIA",
+        "n": 27
+      },
+      {
+        "grafia": "INSTITUTO DE PREVIDÊNCIA",
+        "n": 3
+      }
+    ],
+    "JOSE BONIFACIO": [
+      {
+        "grafia": "JOSE BONIFACIO",
+        "n": 608
+      },
+      {
+        "grafia": "JOSÉ BONIFÁCIO",
+        "n": 41
+      }
+    ],
+    "SAO DOMINGOS": [
+      {
+        "grafia": "SAO DOMINGOS",
+        "n": 364
+      },
+      {
+        "grafia": "SÃO DOMINGOS",
+        "n": 6
+      }
+    ],
+    "VILA NOVA CURUCA": [
+      {
+        "grafia": "VILA NOVA CURUCA",
+        "n": 33
+      },
+      {
+        "grafia": "VILA NOVA CURUÇÁ",
+        "n": 11
+      }
+    ],
+    "JACANA": [
+      {
+        "grafia": "JACANA",
+        "n": 453
+      },
+      {
+        "grafia": "JAÇANÃ",
+        "n": 3
+      }
+    ],
+    "BRASILANDIA": [
+      {
+        "grafia": "BRASILANDIA",
+        "n": 1092
+      },
+      {
+        "grafia": "BRASILÂNDIA",
+        "n": 64
+      }
+    ],
+    "JARDIM SAO PAULO(ZONA NORTE)": [
+      {
+        "grafia": "JARDIM SÃO PAULO(ZONA NORTE)",
+        "n": 60
+      },
+      {
+        "grafia": "JARDIM SAO PAULO(ZONA NORTE)",
+        "n": 6
+      }
+    ],
+    "JARDIM TRES MARIAS": [
+      {
+        "grafia": "JARDIM TRÊS MARIAS",
+        "n": 156
+      },
+      {
+        "grafia": "JARDIM TRES MARIAS",
+        "n": 1
+      }
+    ],
+    "JAGUARE": [
+      {
+        "grafia": "JAGUARE",
+        "n": 285
+      },
+      {
+        "grafia": "JAGUARÉ",
+        "n": 126
+      }
+    ],
+    "ANHANGUERA": [
+      {
+        "grafia": "ANHANGUERA",
+        "n": 264
+      },
+      {
+        "grafia": "ANHANGÜERA",
+        "n": 11
+      }
+    ],
+    "BELEM": [
+      {
+        "grafia": "BELEM",
+        "n": 855
+      },
+      {
+        "grafia": "BELÉM",
+        "n": 17
+      }
+    ],
+    "SAO MIGUEL": [
+      {
+        "grafia": "SAO MIGUEL",
+        "n": 1005
+      },
+      {
+        "grafia": "SÃO MIGUEL",
+        "n": 15
+      }
+    ],
+    "SANTA CECILIA": [
+      {
+        "grafia": "SANTA CECILIA",
+        "n": 1932
+      },
+      {
+        "grafia": "SANTA CECÍLIA",
+        "n": 100
+      }
+    ],
+    "VILA INDEPENDENCIA": [
+      {
+        "grafia": "VILA INDEPENDENCIA",
+        "n": 50
+      },
+      {
+        "grafia": "VILA INDEPENDÊNCIA",
+        "n": 6
+      }
+    ],
+    "JARDIM SANTA LUCRECIA": [
+      {
+        "grafia": "JARDIM SANTA LUCRÉCIA",
+        "n": 5
+      },
+      {
+        "grafia": "JARDIM SANTA LUCRECIA",
+        "n": 16
+      }
+    ],
+    "VILA CONSTANCA": [
+      {
+        "grafia": "VILA CONSTANÇA",
+        "n": 21
+      },
+      {
+        "grafia": "VILA CONSTANCA",
+        "n": 8
+      }
+    ],
+    "JARDIM GUARUJA": [
+      {
+        "grafia": "JARDIM GUARUJÁ",
+        "n": 7
+      },
+      {
+        "grafia": "JARDIM GUARUJA",
+        "n": 26
+      }
+    ],
+    "JARDIM SAO SEBASTIAO": [
+      {
+        "grafia": "JARDIM SAO SEBASTIAO",
+        "n": 40
+      },
+      {
+        "grafia": "JARDIM SÃO SEBASTIÃO",
+        "n": 1
+      }
+    ],
+    "LIMAO": [
+      {
+        "grafia": "LIMAO",
+        "n": 595
+      },
+      {
+        "grafia": "LIMÃO",
+        "n": 142
+      }
+    ],
+    "SAUDE": [
+      {
+        "grafia": "SAUDE",
+        "n": 943
+      },
+      {
+        "grafia": "SAÚDE",
+        "n": 2
+      }
+    ],
+    "SAO LUCAS": [
+      {
+        "grafia": "SAO LUCAS",
+        "n": 579
+      },
+      {
+        "grafia": "SÃO LUCAS",
+        "n": 7
+      }
+    ],
+    "VILA HELIOPOLIS": [
+      {
+        "grafia": "VILA HELIOPOLIS",
+        "n": 109
+      },
+      {
+        "grafia": "VILA HELIÓPOLIS",
+        "n": 7
+      }
+    ],
+    "SAO JOAO CLIMACO": [
+      {
+        "grafia": "SÃO JOÃO CLIMACO",
+        "n": 22
+      },
+      {
+        "grafia": "SÃO JOÃO CLÍMACO",
+        "n": 17
+      }
+    ],
+    "JARDIM DAS ACACIAS": [
+      {
+        "grafia": "JARDIM DAS ACÁCIAS",
+        "n": 108
+      },
+      {
+        "grafia": "JARDIM DAS ACACIAS",
+        "n": 88
+      }
+    ],
+    "JARDIM PEROLA II": [
+      {
+        "grafia": "JARDIM PEROLA II",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM PÉROLA II",
+        "n": 27
+      }
+    ],
+    "JARDIM AIMORE": [
+      {
+        "grafia": "JARDIM AIMORÉ",
+        "n": 76
+      },
+      {
+        "grafia": "JARDIM AIMORE",
+        "n": 19
+      }
+    ],
+    "JARDIM LUZITANIA": [
+      {
+        "grafia": "JARDIM LUZITANIA",
+        "n": 49
+      },
+      {
+        "grafia": "JARDIM LUZITÂNIA",
+        "n": 2
+      }
+    ],
+    "JARDIM TIETE": [
+      {
+        "grafia": "JARDIM TIETE",
+        "n": 26
+      },
+      {
+        "grafia": "JARDIM TIETÊ",
+        "n": 2
+      }
+    ],
+    "JARDIM SAO PEDRO": [
+      {
+        "grafia": "JARDIM SAO PEDRO",
+        "n": 24
+      },
+      {
+        "grafia": "JARDIM SÃO PEDRO",
+        "n": 2
+      }
+    ],
+    "PARQUE GRAJAU": [
+      {
+        "grafia": "PARQUE GRAJAU",
+        "n": 18
+      },
+      {
+        "grafia": "PARQUE GRAJAÚ",
+        "n": 2
+      }
+    ],
+    "VILA AIMORE": [
+      {
+        "grafia": "VILA AIMORE",
+        "n": 17
+      },
+      {
+        "grafia": "VILA AIMORÉ",
+        "n": 1
+      }
+    ],
+    "JARDIM JARAGUA": [
+      {
+        "grafia": "JARDIM JARAGUA",
+        "n": 25
+      },
+      {
+        "grafia": "JARDIM JARAGUÁ",
+        "n": 2
+      }
+    ],
+    "NOSSA SENHORA DO O": [
+      {
+        "grafia": "NOSSA SENHORA DO O",
+        "n": 60
+      },
+      {
+        "grafia": "NOSSA SENHORA DO Ó",
+        "n": 4
+      }
+    ],
+    "PARQUE INDEPENDENCIA": [
+      {
+        "grafia": "PARQUE INDEPENDENCIA",
+        "n": 41
+      },
+      {
+        "grafia": "PARQUE INDEPENDÊNCIA",
+        "n": 11
+      }
+    ],
+    "JARDIM MALIA II": [
+      {
+        "grafia": "JARDIM MALIA II",
+        "n": 12
+      },
+      {
+        "grafia": "JARDIM MÁLIA II",
+        "n": 18
+      }
+    ],
+    "JARDIM JAPAO": [
+      {
+        "grafia": "JARDIM JAPAO",
+        "n": 46
+      },
+      {
+        "grafia": "JARDIM JAPÃO",
+        "n": 5
+      }
+    ],
+    "VILA DAS MERCES": [
+      {
+        "grafia": "VILA DAS MERCES",
+        "n": 13
+      },
+      {
+        "grafia": "VILA DAS MERCÊS",
+        "n": 1
+      }
+    ],
+    "JARDIM APURA": [
+      {
+        "grafia": "JARDIM APURÁ",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM APURA",
+        "n": 4
+      }
+    ],
+    "PARQUE CISPER": [
+      {
+        "grafia": "PARQUE CISPER",
+        "n": 14
+      },
+      {
+        "grafia": "PARQUE CÍSPER",
+        "n": 2
+      }
+    ],
+    "JARDIM ANHANGUERA": [
+      {
+        "grafia": "JARDIM ANHANGÜERA",
+        "n": 7
+      },
+      {
+        "grafia": "JARDIM ANHANGUERA",
+        "n": 7
+      }
+    ],
+    "JARDIM AURELIO": [
+      {
+        "grafia": "JARDIM AURELIO",
+        "n": 11
+      },
+      {
+        "grafia": "JARDIM AURÉLIO",
+        "n": 3
+      }
+    ],
+    "PARQUE IPE": [
+      {
+        "grafia": "PARQUE IPE",
+        "n": 40
+      },
+      {
+        "grafia": "PARQUE IPÊ",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO BENEDITO": [
+      {
+        "grafia": "JARDIM SAO BENEDITO",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM SÃO BENEDITO",
+        "n": 1
+      }
+    ],
+    "CONJUNTO RESIDENCIAL BUTANTA": [
+      {
+        "grafia": "CONJUNTO RESIDENCIAL BUTANTÃ",
+        "n": 17
+      },
+      {
+        "grafia": "CONJUNTO RESIDENCIAL BUTANTA",
+        "n": 13
+      }
+    ],
+    "VILA ARCADIA": [
+      {
+        "grafia": "VILA ARCÁDIA",
+        "n": 5
+      },
+      {
+        "grafia": "VILA ARCADIA",
+        "n": 27
+      }
+    ],
+    "JARDIM DA GLORIA": [
+      {
+        "grafia": "JARDIM DA GLORIA",
+        "n": 14
+      },
+      {
+        "grafia": "JARDIM DA GLÓRIA",
+        "n": 1
+      }
+    ],
+    "CIDADE SATELITE SANTA BARBARA": [
+      {
+        "grafia": "CIDADE SATÉLITE SANTA BÁRBARA",
+        "n": 39
+      },
+      {
+        "grafia": "CIDADE SATELITE SANTA BARBARA",
+        "n": 27
+      }
+    ],
+    "JARDIM SAO PAULO": [
+      {
+        "grafia": "JARDIM SÃO PAULO",
+        "n": 62
+      },
+      {
+        "grafia": "JARDIM SAO PAULO",
+        "n": 2
+      }
+    ],
+    "VILA MISSIONARIA": [
+      {
+        "grafia": "VILA MISSIONARIA",
+        "n": 21
+      },
+      {
+        "grafia": "VILA MISSIONÁRIA",
+        "n": 2
+      }
+    ],
+    "VILA CARRAO": [
+      {
+        "grafia": "VILA CARRAO",
+        "n": 84
+      },
+      {
+        "grafia": "VILA CARRÃO",
+        "n": 5
+      }
+    ],
+    "JARDIM IPE": [
+      {
+        "grafia": "JARDIM IPE",
+        "n": 24
+      },
+      {
+        "grafia": "JARDIM IPÊ",
+        "n": 3
+      }
+    ],
+    "JARDIM DOM JOSE": [
+      {
+        "grafia": "JARDIM DOM JOSÉ",
+        "n": 33
+      },
+      {
+        "grafia": "JARDIM DOM JOSE",
+        "n": 1
+      }
+    ],
+    "JARDIM MARINGA": [
+      {
+        "grafia": "JARDIM MARINGA",
+        "n": 15
+      },
+      {
+        "grafia": "JARDIM MARINGÁ",
+        "n": 20
+      }
+    ],
+    "PARQUE DOM JOAO NERI": [
+      {
+        "grafia": "PARQUE DOM JOAO NERI",
+        "n": 17
+      },
+      {
+        "grafia": "PARQUE DOM JOÃO NERI",
+        "n": 1
+      }
+    ],
+    "VILA NHOCUNE": [
+      {
+        "grafia": "VILA NHOCUNÉ",
+        "n": 35
+      },
+      {
+        "grafia": "VILA NHOCUNE",
+        "n": 3
+      }
+    ],
+    "CONJUNTO RESIDENCIAL JOSE BONIFACIO": [
+      {
+        "grafia": "CONJUNTO RESIDENCIAL JOSÉ BONIFÁCIO",
+        "n": 134
+      },
+      {
+        "grafia": "CONJUNTO RESIDENCIAL JOSÉ BONIFACIO",
+        "n": 1
+      }
+    ],
+    "JARDIM AMERICA": [
+      {
+        "grafia": "JARDIM AMERICA",
+        "n": 47
+      },
+      {
+        "grafia": "JARDIM AMÉRICA",
+        "n": 19
+      }
+    ],
+    "JARDIM ANGELA (ZONA SUL)": [
+      {
+        "grafia": "JARDIM ANGELA (ZONA SUL)",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM ÂNGELA (ZONA SUL)",
+        "n": 40
+      }
+    ],
+    "JARDIM AMALIA": [
+      {
+        "grafia": "JARDIM AMALIA",
+        "n": 29
+      },
+      {
+        "grafia": "JARDIM AMÁLIA",
+        "n": 3
+      }
+    ],
+    "JARDIM GERMANIA": [
+      {
+        "grafia": "JARDIM GERMANIA",
+        "n": 34
+      },
+      {
+        "grafia": "JARDIM GERMÂNIA",
+        "n": 4
+      }
+    ],
+    "JARDIM BOM REFUGIO": [
+      {
+        "grafia": "JARDIM BOM REFUGIO",
+        "n": 27
+      },
+      {
+        "grafia": "JARDIM BOM REFÚGIO",
+        "n": 1
+      }
+    ],
+    "CIDADE NITRO OPERARIA": [
+      {
+        "grafia": "CIDADE NITRO OPERÁRIA",
+        "n": 15
+      },
+      {
+        "grafia": "CIDADE NITRO OPERARIA",
+        "n": 1
+      }
+    ],
+    "VILA SAO FRANCISCO": [
+      {
+        "grafia": "VILA SÃO FRANCISCO",
+        "n": 2
+      },
+      {
+        "grafia": "VILA SAO FRANCISCO",
+        "n": 2
+      }
+    ],
+    "JARDIM ANDARAI": [
+      {
+        "grafia": "JARDIM ANDARAI",
+        "n": 39
+      },
+      {
+        "grafia": "JARDIM ANDARAÍ",
+        "n": 5
+      }
+    ],
+    "JARDIM IRIS": [
+      {
+        "grafia": "JARDIM IRIS",
+        "n": 38
+      },
+      {
+        "grafia": "JARDIM ÍRIS",
+        "n": 22
+      }
+    ],
+    "JARDIM DAS CAMELIAS": [
+      {
+        "grafia": "JARDIM DAS CAMELIAS",
+        "n": 11
+      },
+      {
+        "grafia": "JARDIM DAS CAMÉLIAS",
+        "n": 5
+      }
+    ],
+    "PARQUE SAO LUCAS": [
+      {
+        "grafia": "PARQUE SÃO LUCAS",
+        "n": 14
+      },
+      {
+        "grafia": "PARQUE SAO LUCAS",
+        "n": 2
+      }
+    ],
+    "JARDIM SAO PAULO(ZONA LESTE)": [
+      {
+        "grafia": "JARDIM SAO PAULO(ZONA LESTE)",
+        "n": 13
+      },
+      {
+        "grafia": "JARDIM SÃO PAULO(ZONA LESTE)",
+        "n": 9
+      }
+    ],
+    "JARDIM NOVA VITORIA I": [
+      {
+        "grafia": "JARDIM NOVA VITÓRIA I",
+        "n": 17
+      },
+      {
+        "grafia": "JARDIM NOVA VITORIA I",
+        "n": 3
+      }
+    ],
+    "JARDIM SANTA ADELIA": [
+      {
+        "grafia": "JARDIM SANTA ADELIA",
+        "n": 15
+      },
+      {
+        "grafia": "JARDIM SANTA ADÉLIA",
+        "n": 2
+      }
+    ],
+    "CONJUNTO HABITACIONAL SITIO CONCEICAO": [
+      {
+        "grafia": "CONJUNTO HABITACIONAL SITIO CONCEICAO",
+        "n": 20
+      },
+      {
+        "grafia": "CONJUNTO HABITACIONAL SITIO CONCEIÇÃO",
+        "n": 4
+      }
+    ],
+    "JARDIM BRASILIA (ZONA NORTE)": [
+      {
+        "grafia": "JARDIM BRASÍLIA (ZONA NORTE)",
+        "n": 14
+      },
+      {
+        "grafia": "JARDIM BRASILIA (ZONA NORTE)",
+        "n": 6
+      }
+    ],
+    "VILA JOAO BATISTA": [
+      {
+        "grafia": "VILA JOAO BATISTA",
+        "n": 7
+      },
+      {
+        "grafia": "VILA JOÃO BATISTA",
+        "n": 2
+      }
+    ],
+    "JARDIM SANTO ANTONIO": [
+      {
+        "grafia": "JARDIM SANTO ANTONIO",
+        "n": 12
+      },
+      {
+        "grafia": "JARDIM SANTO ANTÔNIO",
+        "n": 2
+      }
+    ],
+    "JARDIM SAO JOAO (JARAGUA)": [
+      {
+        "grafia": "JARDIM SÃO JOÃO (JARAGUÁ)",
+        "n": 6
+      },
+      {
+        "grafia": "JARDIM SAO JOAO (JARAGUA)",
+        "n": 2
+      }
+    ],
+    "PARQUE BELEM": [
+      {
+        "grafia": "PARQUE BELEM",
+        "n": 8
+      },
+      {
+        "grafia": "PARQUE BELÉM",
+        "n": 23
+      }
+    ],
+    "JARDIM DAS GRACAS": [
+      {
+        "grafia": "JARDIM DAS GRACAS",
+        "n": 30
+      },
+      {
+        "grafia": "JARDIM DAS GRAÇAS",
+        "n": 39
+      }
+    ],
+    "PARQUE SAO RAFAEL": [
+      {
+        "grafia": "PARQUE SAO RAFAEL",
+        "n": 46
+      },
+      {
+        "grafia": "PARQUE SÃO RAFAEL",
+        "n": 14
+      }
+    ],
+    "JARDIM SAO FRANCISCO": [
+      {
+        "grafia": "JARDIM SÃO FRANCISCO",
+        "n": 11
+      },
+      {
+        "grafia": "JARDIM SAO FRANCISCO",
+        "n": 7
+      }
+    ],
+    "PARAISOPOLIS": [
+      {
+        "grafia": "PARAISÓPOLIS",
+        "n": 11
+      },
+      {
+        "grafia": "PARAISOPOLIS",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO JANUARIO": [
+      {
+        "grafia": "JARDIM SÃO JANUÁRIO",
+        "n": 84
+      },
+      {
+        "grafia": "JARDIM SAO JANUARIO",
+        "n": 5
+      }
+    ],
+    "JARDIM VITORIA": [
+      {
+        "grafia": "JARDIM VITÓRIA",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM VITORIA",
+        "n": 2
+      }
+    ],
+    "JARDIM CONSORCIO": [
+      {
+        "grafia": "JARDIM CONSORCIO",
+        "n": 11
+      },
+      {
+        "grafia": "JARDIM CONSÓRCIO",
+        "n": 1
+      }
+    ],
+    "CHACARA SANTA ETELVINA": [
+      {
+        "grafia": "CHÁCARA SANTA ETELVINA",
+        "n": 7
+      },
+      {
+        "grafia": "CHACARA SANTA ETELVINA",
+        "n": 5
+      }
+    ],
+    "EDUCANDARIO": [
+      {
+        "grafia": "EDUCANDARIO",
+        "n": 1
+      },
+      {
+        "grafia": "EDUCANDÁRIO",
+        "n": 1
+      }
+    ],
+    "JARDIM CAROMBE": [
+      {
+        "grafia": "JARDIM CAROMBE",
+        "n": 4
+      },
+      {
+        "grafia": "JARDIM CAROMBÉ",
+        "n": 3
+      }
+    ],
+    "JARDIM SANTA BARBARA": [
+      {
+        "grafia": "JARDIM SANTA BARBARA",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM SANTA BÁRBARA",
+        "n": 2
+      }
+    ],
+    "JARDIM ICARAI": [
+      {
+        "grafia": "JARDIM ICARAI",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM ICARAÍ",
+        "n": 1
+      }
+    ],
+    "JARDIM INDAIA": [
+      {
+        "grafia": "JARDIM INDAIA",
+        "n": 9
+      },
+      {
+        "grafia": "JARDIM INDAIÁ",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO CARLOS (ZONA LESTE)": [
+      {
+        "grafia": "JARDIM SAO CARLOS (ZONA LESTE)",
+        "n": 12
+      },
+      {
+        "grafia": "JARDIM SÃO CARLOS (ZONA LESTE)",
+        "n": 2
+      }
+    ],
+    "JARDIM SONIA (ZONA SUL)": [
+      {
+        "grafia": "JARDIM SÔNIA (ZONA SUL)",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM SONIA (ZONA SUL)",
+        "n": 4
+      }
+    ],
+    "VILA ARAPUA": [
+      {
+        "grafia": "VILA ARAPUA",
+        "n": 2
+      },
+      {
+        "grafia": "VILA ARAPUÃ",
+        "n": 3
+      }
+    ],
+    "JARDIM SAO GONCALO": [
+      {
+        "grafia": "JARDIM SÃO GONÇALO",
+        "n": 6
+      },
+      {
+        "grafia": "JARDIM SAO GONCALO",
+        "n": 1
+      }
+    ],
+    "JARDIM NOVO CARRAO": [
+      {
+        "grafia": "JARDIM NOVO CARRÃO",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM NOVO CARRAO",
+        "n": 5
+      }
+    ],
+    "JARDIM SANTO ANDRE": [
+      {
+        "grafia": "JARDIM SANTO ANDRE",
+        "n": 17
+      },
+      {
+        "grafia": "JARDIM SANTO ANDRÉ",
+        "n": 1
+      }
+    ],
+    "JARDIM PARAISO": [
+      {
+        "grafia": "JARDIM PARAÍSO",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM PARAISO",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO JOSE": [
+      {
+        "grafia": "JARDIM SAO JOSE",
+        "n": 11
+      },
+      {
+        "grafia": "JARDIM SÃO JOSÉ",
+        "n": 3
+      }
+    ],
+    "PARQUE NOVO GRAJAU": [
+      {
+        "grafia": "PARQUE NOVO GRAJAU",
+        "n": 8
+      },
+      {
+        "grafia": "PARQUE NOVO GRAJAÚ",
+        "n": 2
+      }
+    ],
+    "JARDIM DOS ALAMOS": [
+      {
+        "grafia": "JARDIM DOS ALAMOS",
+        "n": 5
+      },
+      {
+        "grafia": "JARDIM DOS ÁLAMOS",
+        "n": 10
+      }
+    ],
+    "JARDIM SHANGRILA (ZONA NORTE)": [
+      {
+        "grafia": "JARDIM SHANGRILÁ (ZONA NORTE)",
+        "n": 6
+      },
+      {
+        "grafia": "JARDIM SHANGRILA (ZONA NORTE)",
+        "n": 3
+      }
+    ],
+    "JARDIM AMERICA DA PENHA": [
+      {
+        "grafia": "JARDIM AMERICA DA PENHA",
+        "n": 4
+      },
+      {
+        "grafia": "JARDIM AMÉRICA DA PENHA",
+        "n": 15
+      }
+    ],
+    "VILA BANCARIA MUNHOZ": [
+      {
+        "grafia": "VILA BANCÁRIA MUNHOZ",
+        "n": 1
+      },
+      {
+        "grafia": "VILA BANCARIA MUNHOZ",
+        "n": 5
+      }
+    ],
+    "VILA UNIAO (ZONA LESTE)": [
+      {
+        "grafia": "VILA UNIAO (ZONA LESTE)",
+        "n": 4
+      },
+      {
+        "grafia": "VILA UNIÃO (ZONA LESTE)",
+        "n": 1
+      }
+    ],
+    "JARDIM MACEDONIA": [
+      {
+        "grafia": "JARDIM MACEDONIA",
+        "n": 18
+      },
+      {
+        "grafia": "JARDIM MACEDÔNIA",
+        "n": 1
+      }
+    ],
+    "PARQUE ANHANGUERA": [
+      {
+        "grafia": "PARQUE ANHANGÜERA",
+        "n": 12
+      },
+      {
+        "grafia": "PARQUE ANHANGUERA",
+        "n": 12
+      }
+    ],
+    "JARDIM LIDERANCA": [
+      {
+        "grafia": "JARDIM LIDERANCA",
+        "n": 13
+      },
+      {
+        "grafia": "JARDIM LIDERANÇA",
+        "n": 13
+      }
+    ],
+    "JARDIM DONA SINHA": [
+      {
+        "grafia": "JARDIM DONA SINHA",
+        "n": 9
+      },
+      {
+        "grafia": "JARDIM DONA SINHÁ",
+        "n": 2
+      }
+    ],
+    "PARQUE UNIVERSITARIO ESPIRITA": [
+      {
+        "grafia": "PARQUE UNIVERSITARIO ESPIRITA",
+        "n": 12
+      },
+      {
+        "grafia": "PARQUE UNIVERSITÁRIO ESPÍRITA",
+        "n": 1
+      }
+    ],
+    "CHACARA SANTA MARIA": [
+      {
+        "grafia": "CHACARA SANTA MARIA",
+        "n": 20
+      },
+      {
+        "grafia": "CHÁCARA SANTA MARIA",
+        "n": 1
+      }
+    ],
+    "VILA NOVA MAUA": [
+      {
+        "grafia": "VILA NOVA MAUÁ",
+        "n": 1
+      },
+      {
+        "grafia": "VILA NOVA MAUA",
+        "n": 2
+      }
+    ],
+    "CONJUNTO HABITACIONAL TURISTICA": [
+      {
+        "grafia": "CONJUNTO HABITACIONAL TURISTICA",
+        "n": 10
+      },
+      {
+        "grafia": "CONJUNTO HABITACIONAL TURÍSTICA",
+        "n": 2
+      }
+    ],
+    "JARDIM IPORA": [
+      {
+        "grafia": "JARDIM IPORA",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM IPORÃ",
+        "n": 2
+      }
+    ],
+    "VILA SANTA INES": [
+      {
+        "grafia": "VILA SANTA INES",
+        "n": 2
+      },
+      {
+        "grafia": "VILA SANTA INÊS",
+        "n": 3
+      }
+    ],
+    "JARDIM PEROLA I": [
+      {
+        "grafia": "JARDIM PÉROLA I",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM PEROLA I",
+        "n": 1
+      }
+    ],
+    "VILA UNIVERSITARIA": [
+      {
+        "grafia": "VILA UNIVERSITARIA",
+        "n": 6
+      },
+      {
+        "grafia": "VILA UNIVERSITÁRIA",
+        "n": 1
+      }
+    ],
+    "VILA NATALIA": [
+      {
+        "grafia": "VILA NATALIA",
+        "n": 10
+      },
+      {
+        "grafia": "VILA NATÁLIA",
+        "n": 1
+      }
+    ],
+    "JARDIM SONIA INGA": [
+      {
+        "grafia": "JARDIM SONIA INGA",
+        "n": 5
+      },
+      {
+        "grafia": "JARDIM SÔNIA INGA",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO JOAO (GUAIANAZES)": [
+      {
+        "grafia": "JARDIM SAO JOAO (GUAIANAZES)",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM SÃO JOÃO (GUAIANAZES)",
+        "n": 2
+      }
+    ],
+    "VILA PIAUI": [
+      {
+        "grafia": "VILA PIAUÍ",
+        "n": 3
+      },
+      {
+        "grafia": "VILA PIAUI",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO LUIS (ZONA NORTE)": [
+      {
+        "grafia": "JARDIM SAO LUIS (ZONA NORTE)",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM SÃO LUÍS (ZONA NORTE)",
+        "n": 1
+      }
+    ],
+    "VILA BRASILANDIA": [
+      {
+        "grafia": "VILA BRASILÂNDIA",
+        "n": 9
+      },
+      {
+        "grafia": "VILA BRASILANDIA",
+        "n": 7
+      }
+    ],
+    "VILA SANTA LUCIA": [
+      {
+        "grafia": "VILA SANTA LUCIA",
+        "n": 7
+      },
+      {
+        "grafia": "VILA SANTA LÚCIA",
+        "n": 1
+      }
+    ],
+    "VILA BABILONIA": [
+      {
+        "grafia": "VILA BABILÔNIA",
+        "n": 2
+      },
+      {
+        "grafia": "VILA BABILONIA",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO MARTINHO": [
+      {
+        "grafia": "JARDIM SAO MARTINHO",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM SÃO MARTINHO",
+        "n": 1
+      }
+    ],
+    "JARDIM QUISISANA (VILA NOVA CURUCA)": [
+      {
+        "grafia": "JARDIM QUISISANA (VILA NOVA CURUCA)",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM QUISISANA (VILA NOVA CURUÇÁ)",
+        "n": 8
+      }
+    ],
+    "VILA GALVAO": [
+      {
+        "grafia": "VILA GALVAO",
+        "n": 1
+      },
+      {
+        "grafia": "VILA GALVÃO",
+        "n": 2
+      }
+    ],
+    "PARQUE VITORIA": [
+      {
+        "grafia": "PARQUE VITORIA",
+        "n": 4
+      },
+      {
+        "grafia": "PARQUE VITÓRIA",
+        "n": 2
+      }
+    ],
+    "JARDIM TUPA": [
+      {
+        "grafia": "JARDIM TUPA",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM TUPÃ",
+        "n": 2
+      }
+    ],
+    "JARDIM ANA LUCIA": [
+      {
+        "grafia": "JARDIM ANA LUCIA",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM ANA LÚCIA",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO JUDAS TADEU": [
+      {
+        "grafia": "JARDIM SAO JUDAS TADEU",
+        "n": 2
+      },
+      {
+        "grafia": "JARDIM SÃO JUDAS TADEU",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO SAVERIO": [
+      {
+        "grafia": "JARDIM SÃO SAVÉRIO",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM SAO SAVERIO",
+        "n": 6
+      }
+    ],
+    "JARDIM SAO JOAO (ZONA NORTE)": [
+      {
+        "grafia": "JARDIM SAO JOAO (ZONA NORTE)",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM SÃO JOÃO (ZONA NORTE)",
+        "n": 6
+      }
+    ],
+    "JARDIM LEONIDAS MOREIRA": [
+      {
+        "grafia": "JARDIM LEONIDAS MOREIRA",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM LEÔNIDAS MOREIRA",
+        "n": 1
+      }
+    ],
+    "JARDIM SAO JOSE (ZONA NORTE)": [
+      {
+        "grafia": "JARDIM SÃO JOSÉ (ZONA NORTE)",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM SAO JOSE (ZONA NORTE)",
+        "n": 1
+      }
+    ],
+    "JARDIM CABUCU": [
+      {
+        "grafia": "JARDIM CABUCU",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM CABUÇU",
+        "n": 1
+      }
+    ],
+    "JARDIM DONARIA": [
+      {
+        "grafia": "JARDIM DONÁRIA",
+        "n": 4
+      },
+      {
+        "grafia": "JARDIM DONARIA",
+        "n": 1
+      }
+    ],
+    "JARDIM CAPAO REDONDO": [
+      {
+        "grafia": "JARDIM CAPÃO REDONDO",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM CAPAO REDONDO",
+        "n": 1
+      }
+    ],
+    "JARDIM DO EDEM": [
+      {
+        "grafia": "JARDIM DO EDEM",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM DO ÉDEM",
+        "n": 1
+      }
+    ],
+    "JARDIM SANTA FE (ZONA SUL)": [
+      {
+        "grafia": "JARDIM SANTA FÉ (ZONA SUL)",
+        "n": 4
+      },
+      {
+        "grafia": "JARDIM SANTA FE (ZONA SUL)",
+        "n": 5
+      }
+    ],
+    "JARDIM MALIA I": [
+      {
+        "grafia": "JARDIM MÁLIA I",
+        "n": 3
+      },
+      {
+        "grafia": "JARDIM MALIA I",
+        "n": 2
+      }
+    ],
+    "JARDIM SANTA MONICA": [
+      {
+        "grafia": "JARDIM SANTA MÔNICA",
+        "n": 1
+      },
+      {
+        "grafia": "JARDIM SANTA MONICA",
+        "n": 4
+      }
+    ],
+    "EMBURA": [
+      {
+        "grafia": "EMBURÁ",
+        "n": 7
+      },
+      {
+        "grafia": "EMBURA",
+        "n": 2
+      }
+    ],
+    "JARDIM BELGICA": [
+      {
+        "grafia": "JARDIM BELGICA",
+        "n": 5
+      },
+      {
+        "grafia": "JARDIM BÉLGICA",
+        "n": 3
+      }
+    ],
+    "VILA BOACAVA": [
+      {
+        "grafia": "VILA BOACAVA",
+        "n": 5
+      },
+      {
+        "grafia": "VILA BOAÇAVA",
+        "n": 2
+      }
+    ]
+  },
+  "suspeitas_semanticas": []
+}

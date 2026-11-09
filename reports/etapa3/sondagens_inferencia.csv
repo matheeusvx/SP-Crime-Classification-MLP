@@ -1,0 +1,7 @@
+﻿caso_sintetico,codigo,classe,probabilidade_furto,probabilidade_roubo,probabilidades_calibradas
+valido,0,FURTO,0.7717520743608475,0.22824792563915253,False
+minusculas,0,FURTO,0.7717520743608475,0.22824792563915253,False
+local_sem_acento,0,FURTO,0.9421827718615532,0.05781722813844681,False
+local_novo,0,FURTO,0.9421827718615532,0.05781722813844681,False
+ausentes,0,FURTO,0.5936256945133209,0.4063743054866791,False
+bairro_codigo_textual,1,ROUBO,0.22404789924621582,0.7759521007537842,False

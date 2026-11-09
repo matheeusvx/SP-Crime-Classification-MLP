@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "evaluation_id": "gs-celulares-sp-dense64-v1.0.0-teste-2025-unico",
+  "started_at": "2026-11-09T22:46:11.641021+00:00",
+  "manifest_sha256": "b992412335c69623bdf63c9341cefaa82e0a81ae73d7d32e110f2498faa8c532",
+  "frozen_at": "2026-11-09T22:42:06.159595+00:00",
+  "pretests_sha256": "04f3870cc7640fa642c6d8254b1275f2162e3a86439995dc03cbfad6ae70e85f",
+  "prediction_calls": 1,
+  "test_year": 2025,
+  "model_version": "gs-celulares-sp-dense64-v1.0.0",
+  "evaluation_code_sha256": "5fd4ec2290eca26cb9fcb40c2bd06c44e22d3c0757bbcd523bca31564c555146",
+  "metrics_code_sha256": "7f02c89489a6741458f52df8058cb938ef4de6ed612c89ac59f4a01de0c0c7a1",
+  "tensorflow_seed": 42,
+  "bootstrap_seed": 12345,
+  "integrity_verified_at": "2026-11-09T22:46:16.220635+00:00",
+  "inference_started_at": "2026-11-09T22:46:16.220635+00:00",
+  "completed_at": "2026-11-09T22:46:24.332538+00:00",
+  "seconds": 12.687631599983433,
+  "result_hashes": {
+    "reports/etapa5/metricas_2025.json": "f8c9aedffa1225b3a411cde10b59c6f35c7f2f9f17ebd84ee84097ee5f4c5e5d",
+    "reports/etapa5/private/previsoes_2025.npz": "ae85e0e2842408588a06aa3f4297f8714c4da5cf63d03068aef7952aed42ab84",
+    "reports/etapa5/intervalos_confianca_2025.json": "830648347f479b74eb465ce90dd7a00c40cbf206b713bb70ffea8568e07a6413",
+    "reports/etapa5/verificacao_integridade.json": "b7d686161cfb9fd7b1eff320a7bb200082b88b8f379a11f48a758e93c635f3a3",
+    "reports/etapa5/comparacao_2024_2025.csv": "a3dcbf6ae4804e31f8d70f28080083b4acf84b553c61373cb3ef80de07e00735",
+    "reports/etapa5/metricas_grupos_2025.csv": "6694e28301a18977e446c1c6fb4c4d6f415338073fe07c53f62735430d246f55",
+    "reports/etapa5/referencia_majoritaria_2025.json": "0438540fc9ed5b171afd1cfad9cf2de7b6a5643b5110367c23134c1567272666",
+    "reports/etapa5/categorias_2025.json": "f22a40ede8acdfd22cc1cef3fd7ae0f029ebc1e45ca90bc7dfefe4c8b0eef6a4",
+    "reports/etapa5/mudanca_distribuicao_2024_2025.csv": "629a814d5a0ac944cc257be1d61cdfd4cc29b83caa826d294e28900e4a593024",
+    "reports/etapa5/ausencias_ano_classe.csv": "7a280a49595e6f4ca5a9437e4dfdbd1163246f407af010545b17e87ea82703e4",
+    "reports/etapa5/calibracao_bins_2025.csv": "5714d60a999eeb91fdf36fd764b23c3ed4f6ce0a3580e677a1a060d7a83ec4ac"
+  }
+}

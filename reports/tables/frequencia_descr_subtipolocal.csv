@@ -1,0 +1,770 @@
+﻿ano_arquivo,valor,linhas
+2023,Via Pública,353923
+2023,Outros,29551
+2023,Casa,23482
+2023,Metroviário e Ferroviário Metropolitano,21206
+2023,Lojas,5789
+2023,Transeunte,4301
+2023,Interior de Transporte Coletivo,2435
+2023,Interior de Veículo Particular,2151
+2023,Bar/Botequim,2030
+2023,Veículo em movimento,1915
+2023,Casas,1853
+2023,Acostamento,1765
+2023,Delegacia,1695
+2023,Mercado,1610
+2023,Ônibus/Lotação/Trolebus,1412
+2023,Posto de Gasolina,1412
+2023,Praça,1329
+2023,Área Comum,1292
+2023,Magazine,1010
+2023,Obra/Construção,859
+2023,Transportadora,847
+2023,Eletroeletrônicos,840
+2023,Garagem ou abrigo de residência,812
+2023,Praia/Balneário,752
+2023,Estacionamento particular,726
+2023,De Frente a Residência da Vítima,719
+2023,Sítio,714
+2023,Apartamento,703
+2023,Rodoviário,670
+2023,Arena/Rodeio,649
+2023,Lanchonete/Pastelaria/Pizzaria,587
+2023,Restaurante,584
+2023,Fazenda,552
+2023,Interior de Veículo de Carga,548
+2023,Chácara,535
+2023,Hospital,509
+2023,Farmácia/Drogaria,490
+2023,Estacionamento Particular,481
+2023,Casa de Show/Espetáculo,451
+2023,Estacionamento público,449
+2023,Estacionamento,442
+2023,Parque/Bosque/Horto/Reserva,426
+2023,Apartamentos,392
+2023,Salão de Beleza/Estética,384
+2023,Clínica,383
+2023,Ferroviário,364
+2023,Estacionamento com vigilância,364
+2023,Clube/Centro Esportivo,362
+2023,Oficina,359
+2023,Garagem coletiva de prédio,320
+2023,Bar,296
+2023,Aeroportuário,290
+2023,Ensino Fundamental,290
+2023,Distribuidora,289
+2023,Informática e Suprimentos,275
+2023,Escritórios,273
+2023,Casa Noturna/Outros,266
+2023,Hotel,263
+2023,Café/Lanchonete,260
+2023,Assistência Técnica,260
+2023,Estádio/Ginásio,259
+2023,Padaria/Confeitaria,258
+2023,Armazém/Empório,256
+2023,Conveniência,246
+2023,Salão de Festas/Buffet,245
+2023,Agência,225
+2023,Roupas,216
+2023,Túnel/Viaduto/Ponte,216
+2023,Lote de Terreno,207
+2023,Semáforo,204
+2023,Posto de Saúde,199
+2023,Ensino Médio,192
+2023,Material de Construção,181
+2023,Pavilhão de Exposição,175
+2023,Boate/Danceteria,174
+2023,Igreja,167
+2023,Doceria/Bomboniere/Sorveteria,154
+2023,Fábrica/Indústria,154
+2023,Artigos e Equipamentos para Indústria/Comércio,152
+2023,Terreno Baldio,152
+2023,Pela Internet,151
+2023,Bazar,150
+2023,Concessionária de Veículos,129
+2023,Feira Livre,123
+2023,Área de Descanso,122
+2023,Açougue/Frigorífico,120
+2023,Passarela,118
+2023,Consultório Dentário,116
+2023,Albergue,113
+2023,Atacadista,112
+2023,Prefeitura Municipal,110
+2023,Chácaras,109
+2023,Pensão/Estalagem/Hospedaria,106
+2023,Pet Shop,105
+2023,Lotérica,103
+2023,Móveis,101
+2023,Padaria/Café,99
+2023,Motel,96
+2023,Construção Abandonada,95
+2023,Ciclofaixa,94
+2023,Autopeças,83
+2023,Parque de Diversão/Temático/Zôo,82
+2023,Metalúrgica,81
+2023,Loteamento,80
+2023,Mecânica/Borracharia,79
+2023,Mata/Floresta,78
+2023,Pesqueiro,76
+2023,Posto de Auxílio,75
+2023,Imobiliária,73
+2023,Escola de Idiomas,66
+2023,Escola de Arte,65
+2023,Lanchonete,64
+2023,Recepção,63
+2023,Agência Bancária,63
+2023,Instituto,63
+2023,Depósito,62
+2023,Ensino Superior,61
+2023,Locadora,54
+2023,Viela,53
+2023,Berçário/Creche,51
+2023,Posto Policial,49
+2023,Secretaria,49
+2023,Praça de Alimentação,49
+2023,Bureau de Serviços,48
+2023,Praça de Pedágio,47
+2023,Madeireira/Marcenaria,46
+2023,Curso Profissionalizante,46
+2023,Agência Funerária,46
+2023,Consultório Médico,44
+2023,Papelaria/Livraria,43
+2023,Distribuidora de Gás,42
+2023,Joalheria,41
+2023,Perfumaria,41
+2023,Serralheria,41
+2023,Sala de Reuniões/Convenções,41
+2023,Caixa Eletrônico,40
+2023,Show-Room,39
+2023,Prédio Abandonado,38
+2023,Lavanderia,37
+2023,Area de Diversão,37
+2023,Roupas Femininas,36
+2023,Ponto de Táxi,33
+2023,Marcenaria,33
+2023,Calçados,33
+2023,Whatsapp,33
+2023,Consultórios,32
+2023,Boutique,31
+2023,Ótica/Laboratório Fotográfico,30
+2023,Galeria,29
+2023,Curso Preparatório/Outros,29
+2023,Desmanche,27
+2023,Cemitério,27
+2023,Agência da ECT,27
+2023,Banca de Jornais/Revistaria,26
+2023,Laboratório,26
+2023,Contabilidade,24
+2023,Cinema/Teatro,24
+2023,Advocacia,24
+2023,Floricultura,23
+2023,Balança,22
+2023,Sanitário Feminino,22
+2023,Poupatempo,21
+2023,Escola de Prendas Domésticas,20
+2023,Moradia,20
+2023,Posto de Fiscalização,20
+2023,Detran/Ciretran,20
+2023,Estação de Tratamento de Água,19
+2023,Mina,18
+2023,Edícula/Fundos,18
+2023,Administração/Escritório,17
+2023,Fundição,17
+2023,Casa de Prostituição,17
+2023,Consultoria,16
+2023,Corredor,15
+2023,Joalheria/Relojoaria,15
+2023,AutoAtendimento,15
+2023,Lago/Lagoa,15
+2023,Corretora de Seguros,15
+2023,Sala de Espera,14
+2023,Casa de Repouso,14
+2023,Gráfica,14
+2023,Rio/Cahoeira,14
+2023,Cortiço,13
+2023,Material Elétrico,13
+2023,Facebook,13
+2023,Instagram,13
+2023,Marina,13
+2023,Distribuidora de Água,12
+2023,Represa,12
+2023,Aplicativos de Mensagens,12
+2023,Boutiques,12
+2023,Central Telemarketing,11
+2023,Junta/Fórum/Tribunal,11
+2023,Representante Comercial,10
+2023,Estação de Tratamento de Esgoto,10
+2023,Chaveiro,10
+2023,Vidraçaria,10
+2023,Granja,10
+2023,Biblioteca,10
+2023,Lan House/Fliperama,10
+2023,Roupas Masculinas,9
+2023,Agência de Viagem,9
+2023,Sanitário Masculino,9
+2023,Despachante,8
+2023,Brinquedos,8
+2023,Roupas Infantis,8
+2023,Templo,8
+2023,Olaria,7
+2023,Agência Telefônica,7
+2023,Caixa d'Água,7
+2023,Alfaiataria,7
+2023,Escola de Música/Conservatório,7
+2023,Aterro Sanitário,7
+2023,Acampamento,7
+2023,Sapataria,6
+2023,Assembléia Legislativa,6
+2023,Autoatendimento Bancário,6
+2023,Rotisserie/Laticínio/Secos e Molhados,6
+2023,Patrimônio,6
+2023,Portuário,6
+2023,Mar Territorial,6
+2023,Casa de Massagem,6
+2023,Elevador,5
+2023,Doceria/Bomboniere,5
+2023,Velório,5
+2023,Haras,5
+2023,Cartório,5
+2023,Companhia/Batalhão/Destacamento,5
+2023,Pedreira,5
+2023,Museu,5
+2023,Cadeia/CDP/Presídio,4
+2023,Estação de Energia Elétrica,4
+2023,Camara de Vereadores,4
+2023,SOS Criança,4
+2023,Agência de Publicidade,4
+2023,Defronte Estabelecimento Bancário,3
+2023,Tecelagem,3
+2023,Orfanato,3
+2023,Arquitetura/Engenharia/Decoração,3
+2023,Balsa,3
+2023,Escada Rolante,3
+2023,Drive-Thru,3
+2023,Móveis para Escritório,3
+2023,Vidraria,3
+2023,Estúdio/Emissora,2
+2023,Invasão/Ocupação,2
+2023,Escada,2
+2023,Distribuidora de Energia Elétrica,2
+2023,Corretora de Câmbio e Valores Mobiliários,2
+2023,Assistência Técnica/Oficina,2
+2023,Circo,2
+2023,Bingo/Vídeo Bingo,2
+2023,Rede de Distribuição de Água,1
+2023,Junta Comercial,1
+2023,Mirante,1
+2023,Capela,1
+2023,Hipódromo,1
+2023,Aquário,1
+2023,Margem Direita de Rio,1
+2023,Febem,1
+2023,Cassino,1
+2024,Via Pública,298412
+2024,Outros,25580
+2024,Casa,19091
+2024,Metroviário e Ferroviário Metropolitano,18917
+2024,Lojas,5344
+2024,Transeunte,3411
+2024,Interior de Transporte Coletivo,2285
+2024,Veículo em movimento,1870
+2024,Bar/Botequim,1743
+2024,Casas,1556
+2024,Interior de Veículo Particular,1463
+2024,Ônibus/Lotação/Trolebus,1420
+2024,Mercado,1354
+2024,Acostamento,1173
+2024,Praça,1129
+2024,Área Comum,1114
+2024,Posto de Gasolina,1019
+2024,Eletroeletrônicos,917
+2024,Interior de Veículo de Carga,799
+2024,Delegacia,796
+2024,Rodoviário,686
+2024,Obra/Construção,611
+2024,Praia/Balneário,597
+2024,De Frente a Residência da Vítima,590
+2024,Garagem ou abrigo de residência,581
+2024,Chácara,568
+2024,Sítio,554
+2024,Apartamento,530
+2024,Fazenda,524
+2024,Estacionamento particular,524
+2024,Hospital,509
+2024,Magazine,490
+2024,Farmácia/Drogaria,472
+2024,Restaurante,449
+2024,Lanchonete/Pastelaria/Pizzaria,410
+2024,Estacionamento Particular,400
+2024,Parque/Bosque/Horto/Reserva,391
+2024,Arena/Rodeio,390
+2024,Apartamentos,345
+2024,Salão de Beleza/Estética,339
+2024,Ferroviário,338
+2024,Clube/Centro Esportivo,334
+2024,Estacionamento público,327
+2024,Casa de Show/Espetáculo,316
+2024,Clínica,316
+2024,Bar,314
+2024,Ensino Fundamental,304
+2024,Estacionamento,298
+2024,Hotel,287
+2024,Estacionamento com vigilância,283
+2024,Assistência Técnica,261
+2024,Garagem coletiva de prédio,259
+2024,Escritórios,251
+2024,Distribuidora,246
+2024,Pela Internet,236
+2024,Posto de Saúde,234
+2024,Túnel/Viaduto/Ponte,232
+2024,Oficina,224
+2024,Agência,213
+2024,Aeroportuário,212
+2024,Lote de Terreno,205
+2024,Transportadora,204
+2024,Padaria/Confeitaria,194
+2024,Café/Lanchonete,192
+2024,Fábrica/Indústria,171
+2024,Igreja,168
+2024,Armazém/Empório,163
+2024,Casa Noturna/Outros,162
+2024,Roupas,156
+2024,Estádio/Ginásio,154
+2024,Material de Construção,154
+2024,Ensino Médio,150
+2024,Salão de Festas/Buffet,148
+2024,Conveniência,134
+2024,Doceria/Bomboniere/Sorveteria,130
+2024,Terreno Baldio,128
+2024,Boate/Danceteria,127
+2024,Chácaras,123
+2024,Pavilhão de Exposição,122
+2024,Feira Livre,117
+2024,Semáforo,112
+2024,Mecânica/Borracharia,108
+2024,Pensão/Estalagem/Hospedaria,100
+2024,Albergue,98
+2024,Passarela,98
+2024,Açougue/Frigorífico,98
+2024,Pesqueiro,93
+2024,Concessionária de Veículos,90
+2024,Parque de Diversão/Temático/Zôo,89
+2024,Lotérica,87
+2024,Atacadista,86
+2024,Praça de Pedágio,86
+2024,Bazar,85
+2024,Prefeitura Municipal,82
+2024,Área de Descanso,79
+2024,Pet Shop,76
+2024,Ciclofaixa,73
+2024,Informática e Suprimentos,70
+2024,Padaria/Café,70
+2024,Viela,65
+2024,Recepção,64
+2024,Motel,64
+2024,Mata/Floresta,64
+2024,Advocacia,62
+2024,Metalúrgica,61
+2024,Consultório Dentário,60
+2024,Posto de Auxílio,58
+2024,Lanchonete,57
+2024,Imobiliária,55
+2024,Berçário/Creche,54
+2024,Sala de Reuniões/Convenções,51
+2024,Artigos e Equipamentos para Indústria/Comércio,50
+2024,Secretaria,50
+2024,Autopeças,50
+2024,Ensino Superior,48
+2024,Móveis,48
+2024,Sala de Espera,48
+2024,Administração/Escritório,43
+2024,Curso Profissionalizante,43
+2024,Agência Bancária,42
+2024,Central Telemarketing,41
+2024,Marina,41
+2024,Escola de Arte,40
+2024,Loteamento,39
+2024,Locadora,38
+2024,Boutique,34
+2024,Instituto,34
+2024,Whatsapp,33
+2024,Consultório Médico,32
+2024,Depósito,32
+2024,Praça de Alimentação,32
+2024,Escola de Idiomas,32
+2024,Floricultura,30
+2024,Caixa Eletrônico,30
+2024,Invasão/Ocupação,29
+2024,Ótica/Laboratório Fotográfico,29
+2024,Material Elétrico,29
+2024,Estação de Tratamento de Esgoto,28
+2024,Construção Abandonada,28
+2024,Show-Room,27
+2024,Ponto de Táxi,26
+2024,Joalheria,26
+2024,Estação de Tratamento de Água,26
+2024,Agência da ECT,26
+2024,Roupas Femininas,25
+2024,Vidraçaria,25
+2024,Madeireira/Marcenaria,24
+2024,Cemitério,24
+2024,Area de Diversão,24
+2024,Sanitário Feminino,23
+2024,Curso Preparatório/Outros,23
+2024,Cinema/Teatro,21
+2024,Distribuidora de Gás,20
+2024,Marcenaria,20
+2024,Granja,20
+2024,Lavanderia,19
+2024,Roupas Infantis,19
+2024,Casa de Prostituição,19
+2024,Papelaria/Livraria,19
+2024,Banca de Jornais/Revistaria,18
+2024,Poupatempo,18
+2024,Distribuidora de Água,17
+2024,Casa de Repouso,17
+2024,Companhia/Batalhão/Destacamento,17
+2024,Lago/Lagoa,17
+2024,Calçados,17
+2024,Bureau de Serviços,17
+2024,Representante Comercial,16
+2024,Edícula/Fundos,16
+2024,Consultoria,16
+2024,Pátio,16
+2024,Estúdio/Emissora,15
+2024,Rotisserie/Laticínio/Secos e Molhados,15
+2024,Laboratório,15
+2024,Despachante,14
+2024,Posto Policial,13
+2024,Balança,13
+2024,Aplicativos de Mensagens,12
+2024,Sanitário Masculino,12
+2024,Serralheria,11
+2024,Consultórios,11
+2024,AutoAtendimento,11
+2024,Desmanche,11
+2024,Escola de Música/Conservatório,11
+2024,Escola de Prendas Domésticas,10
+2024,Cadeia/CDP/Presídio,10
+2024,Arquitetura/Engenharia/Decoração,10
+2024,Perfumaria,10
+2024,Rio/Cahoeira,10
+2024,Gráfica,10
+2024,Sapataria,9
+2024,Cortiço,9
+2024,Galeria,9
+2024,Patrimônio,9
+2024,Biblioteca,9
+2024,Junta/Fórum/Tribunal,9
+2024,Doceria/Bomboniere,8
+2024,Portuário,8
+2024,Agência de Viagem,8
+2024,Agência Funerária,8
+2024,Alfaiataria,8
+2024,Velório,8
+2024,Cartório,8
+2024,Corredor,7
+2024,Olaria,6
+2024,Contabilidade,6
+2024,Corretora de Câmbio e Valores Mobiliários,6
+2024,Facebook,6
+2024,Fundição,6
+2024,Assembléia Legislativa,5
+2024,Tecelagem,5
+2024,Moradia,5
+2024,Museu,5
+2024,Rede de Distribuição de Água,4
+2024,Represa,4
+2024,Caixa d'Água,4
+2024,SOS Criança,4
+2024,Instagram,4
+2024,Boutiques,4
+2024,Monumento,4
+2024,Roupas Masculinas,4
+2024,Brinquedos,3
+2024,Casa de Massagem,3
+2024,Bingo/Vídeo Bingo,3
+2024,Templo,3
+2024,Circo,3
+2024,Prédio Abandonado,2
+2024,Balsa,2
+2024,Mirante,2
+2024,Capela,2
+2024,Chaveiro,2
+2024,Quartel/Comando,2
+2024,Sex Shop,2
+2024,Joalheria/Relojoaria,2
+2024,Distribuidora de Energia Elétrica,2
+2024,Haras,2
+2024,Acampamento,2
+2024,Camara de Vereadores,2
+2024,Agência de Publicidade,2
+2024,Escada Rolante,2
+2024,Convento,2
+2024,Posto de Fiscalização,1
+2024,Elevador,1
+2024,Defronte Estabelecimento Bancário,1
+2024,Orfanato,1
+2024,Heliporto,1
+2024,Vidraria,1
+2024,Detran/Ciretran,1
+2024,Aterro Sanitário,1
+2024,Corretora de Seguros,1
+2024,Lavanderia/Tinturaria,1
+2024,Autoatendimento Bancário,1
+2024,Margem Direita de Rio,1
+2024,Assistência Técnica/Oficina,1
+2025,Via Pública,279752
+2025,Outros,25658
+2025,Metroviário e Ferroviário Metropolitano,19971
+2025,Casa,15735
+2025,Lojas,3428
+2025,Transeunte,3108
+2025,Interior de Transporte Coletivo,2227
+2025,Veículo em movimento,1938
+2025,Ônibus/Lotação/Trolebus,1730
+2025,Bar/Botequim,1728
+2025,Área Comum,1364
+2025,Mercado,1362
+2025,Interior de Veículo Particular,1352
+2025,Casas,1242
+2025,Praça,1006
+2025,Acostamento,937
+2025,Posto de Gasolina,711
+2025,Rodoviário,638
+2025,Praia/Balneário,584
+2025,Estacionamento particular,567
+2025,Hospital,524
+2025,Obra/Construção,492
+2025,Restaurante,481
+2025,Garagem ou abrigo de residência,477
+2025,Farmácia/Drogaria,477
+2025,Apartamento,444
+2025,Casa de Show/Espetáculo,414
+2025,Delegacia,411
+2025,Chácara,408
+2025,De Frente a Residência da Vítima,374
+2025,Ferroviário,356
+2025,Eletroeletrônicos,352
+2025,Sítio,346
+2025,Apartamentos,345
+2025,Parque/Bosque/Horto/Reserva,344
+2025,Lanchonete/Pastelaria/Pizzaria,324
+2025,Arena/Rodeio,320
+2025,Estacionamento público,308
+2025,Magazine,296
+2025,Hotel,290
+2025,Estacionamento,285
+2025,Garagem coletiva de prédio,283
+2025,Bar,277
+2025,Fazenda,272
+2025,Clube/Centro Esportivo,267
+2025,Interior de Veículo de Carga,259
+2025,Estacionamento com vigilância,256
+2025,Aeroportuário,235
+2025,Distribuidora,234
+2025,Estádio/Ginásio,230
+2025,Transportadora,226
+2025,Salão de Beleza/Estética,223
+2025,Ensino Fundamental,214
+2025,Ensino Médio,209
+2025,Clínica,199
+2025,Agência,194
+2025,Café/Lanchonete,173
+2025,Salão de Festas/Buffet,172
+2025,Posto de Saúde,172
+2025,Estacionamento Particular,169
+2025,Armazém/Empório,167
+2025,Pela Internet,166
+2025,Escritórios,159
+2025,Oficina,156
+2025,Padaria/Confeitaria,147
+2025,Igreja,141
+2025,Túnel/Viaduto/Ponte,131
+2025,Fábrica/Indústria,131
+2025,Terreno Baldio,130
+2025,Albergue,124
+2025,Lote de Terreno,124
+2025,Pavilhão de Exposição,124
+2025,Conveniência,114
+2025,Assistência Técnica,110
+2025,Berçário/Creche,107
+2025,Lotérica,102
+2025,Açougue/Frigorífico,98
+2025,Boate/Danceteria,98
+2025,Roupas,96
+2025,Material de Construção,96
+2025,Feira Livre,88
+2025,Casa Noturna/Outros,87
+2025,Pensão/Estalagem/Hospedaria,86
+2025,Área de Descanso,82
+2025,Passarela,78
+2025,Parque de Diversão/Temático/Zôo,73
+2025,Doceria/Bomboniere/Sorveteria,67
+2025,Prefeitura Municipal,67
+2025,Padaria/Café,66
+2025,Chácaras,65
+2025,Atacadista,64
+2025,Semáforo,64
+2025,Viela,62
+2025,Loteamento,61
+2025,Bazar,60
+2025,Concessionária de Veículos,59
+2025,Praça de Pedágio,59
+2025,Mata/Floresta,59
+2025,Autopeças,58
+2025,Consultório Dentário,57
+2025,Ciclofaixa,53
+2025,Mecânica/Borracharia,50
+2025,Artigos e Equipamentos para Indústria/Comércio,48
+2025,Lanchonete,48
+2025,Advocacia,47
+2025,Bureau de Serviços,46
+2025,Informática e Suprimentos,44
+2025,Construção Abandonada,44
+2025,Praça de Alimentação,44
+2025,Whatsapp,44
+2025,Locadora,42
+2025,Metalúrgica,42
+2025,Agência Bancária,42
+2025,Estação de Tratamento de Esgoto,41
+2025,Secretaria,41
+2025,Instituto,41
+2025,Recepção,40
+2025,Escola de Idiomas,39
+2025,Escola de Arte,38
+2025,Pesqueiro,37
+2025,Móveis,37
+2025,Imobiliária,35
+2025,Curso Profissionalizante,35
+2025,Ponto de Táxi,34
+2025,Motel,34
+2025,Pet Shop,34
+2025,Sanitário Feminino,32
+2025,Sala de Reuniões/Convenções,32
+2025,Caixa Eletrônico,32
+2025,Ótica/Laboratório Fotográfico,31
+2025,Posto de Auxílio,31
+2025,Consultórios,30
+2025,Contabilidade,28
+2025,Papelaria/Livraria,28
+2025,Ensino Superior,27
+2025,Prédio Abandonado,27
+2025,Madeireira/Marcenaria,27
+2025,Boutique,25
+2025,Balança,23
+2025,Consultório Médico,23
+2025,Area de Diversão,23
+2025,Estação de Tratamento de Água,22
+2025,Cemitério,22
+2025,Detran/Ciretran,21
+2025,Depósito,20
+2025,Laboratório,20
+2025,Casa de Repouso,20
+2025,Cortiço,19
+2025,Roupas Femininas,18
+2025,Poupatempo,18
+2025,Cinema/Teatro,17
+2025,Floricultura,17
+2025,Aplicativos de Mensagens,17
+2025,Agência da ECT,17
+2025,Perfumaria,16
+2025,Lavanderia,16
+2025,Consultoria,16
+2025,Casa de Prostituição,16
+2025,Joalheria,14
+2025,Marcenaria,14
+2025,Curso Preparatório/Outros,14
+2025,Administração/Escritório,13
+2025,Material Elétrico,13
+2025,Cadeia/CDP/Presídio,13
+2025,Sala de Espera,13
+2025,Granja,13
+2025,Cartório,13
+2025,Roupas Infantis,13
+2025,Sapataria,12
+2025,Distribuidora de Água,12
+2025,Invasão/Ocupação,12
+2025,Ilha,12
+2025,Calçados,11
+2025,Companhia/Batalhão/Destacamento,11
+2025,Velório,11
+2025,Show-Room,10
+2025,Sanitário Masculino,10
+2025,Junta/Fórum/Tribunal,10
+2025,Corredor,9
+2025,Banca de Jornais/Revistaria,9
+2025,Agência de Viagem,9
+2025,Móveis para Escritório,9
+2025,Escola de Prendas Domésticas,8
+2025,Galeria,8
+2025,Caixa d'Água,8
+2025,Rio/Cahoeira,8
+2025,Lago/Lagoa,8
+2025,Posto Policial,7
+2025,Rotisserie/Laticínio/Secos e Molhados,7
+2025,AutoAtendimento,7
+2025,Marina,7
+2025,Vidraçaria,7
+2025,Patrimônio,7
+2025,Acampamento,7
+2025,Facebook,6
+2025,Defronte Estabelecimento Bancário,6
+2025,Olaria,6
+2025,Arquitetura/Engenharia/Decoração,6
+2025,Estúdio/Emissora,6
+2025,Represa,6
+2025,Agência Funerária,6
+2025,Gráfica,6
+2025,Portuário,6
+2025,Museu,6
+2025,Pedreira,6
+2025,Retiro,5
+2025,Sex Shop,5
+2025,Despachante,5
+2025,Joalheria/Relojoaria,5
+2025,Escada Rolante,5
+2025,Corretora de Seguros,5
+2025,Fundição,5
+2025,Biblioteca,5
+2025,Alfaiataria,5
+2025,Serralheria,4
+2025,Doceria/Bomboniere,4
+2025,Templo,4
+2025,Convento,4
+2025,Casa de Massagem,4
+2025,Lan House/Fliperama,4
+2025,Junta Comercial,3
+2025,Estação de Energia Elétrica,3
+2025,Quartel/Comando,3
+2025,Curso Pré-vestibular,3
+2025,Orfanato,3
+2025,Agência Telefônica,3
+2025,Assistência Técnica/Oficina,3
+2025,Boutiques,3
+2025,Haras,3
+2025,Margem Direita de Rio,3
+2025,Balsa,2
+2025,Tecelagem,2
+2025,Moradia,2
+2025,Mina,2
+2025,Central Telemarketing,2
+2025,Edícula/Fundos,2
+2025,Brinquedos,2
+2025,Distribuidora de Gás,2
+2025,Aplicativos de Relacionamento,2
+2025,SOS Criança,2
+2025,Circo,2
+2025,Bingo/Vídeo Bingo,2
+2025,Aterro Sanitário,2
+2025,Representante Comercial,1
+2025,Capela,1
+2025,Hipódromo,1
+2025,Elevador,1
+2025,Chaveiro,1
+2025,Rede de Distribuição de Água,1
+2025,Sinagoga,1
+2025,Drive-Thru,1
+2025,Vidraria,1
+2025,Procon,1
+2025,Instagram,1

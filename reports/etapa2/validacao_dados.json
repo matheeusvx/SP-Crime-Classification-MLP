@@ -1,0 +1,43 @@
+{
+  "counts": {
+    "2023": 190124,
+    "2024": 158895,
+    "2025": 156168
+  },
+  "checks": {
+    "linhas_base": true,
+    "linhas_analiticas": true,
+    "indice_unico_contiguo": true,
+    "chaves_unicas": true,
+    "chaves_analiticas_unicas": true,
+    "sem_chaves_ausentes": true,
+    "alinhamento_celula_a_celula": true,
+    "rotulos_binarios": true,
+    "intervalos": true,
+    "grupos_sem_sobreposicao": true
+  },
+  "schema": {
+    "mes": "TINYINT",
+    "dia_semana": "TINYINT",
+    "periodo_fato": "VARCHAR",
+    "tipo_local": "VARCHAR",
+    "bairro": "VARCHAR",
+    "alvo": "TINYINT"
+  },
+  "duplicidade_contextos": [
+    {
+      "ano": 2023,
+      "tuplas_X_distintas": 45017,
+      "repeticoes_X_entre_BOs": 145107,
+      "tuplas_X_com_ambas_classes": 12274
+    },
+    {
+      "ano": 2024,
+      "tuplas_X_distintas": 42372,
+      "repeticoes_X_entre_BOs": 116523,
+      "tuplas_X_com_ambas_classes": 11452
+    }
+  ],
+  "test_2025": "somente integridade, contagem e alinhamento; sem transformacao ou inferencia",
+  "alignment": "indice_linha + chave_bo + comparacao de todos os campos com a base analitica independente"
+}

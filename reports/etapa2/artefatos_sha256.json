@@ -1,0 +1,6 @@
+{
+  "arquitetura_mlp.json": "6077d0e7fe9ab562a1b35f4819906e02f13032752602cd967b7b1f866ef6afc6",
+  "config_modelo.json": "e73e8fb7e10258bc4e433f8f2d0c25ea069bbbab3880d11c75d694b6be92ee23",
+  "mlp_baseline.keras": "36c2e52cd6233e9ca964bff408f6ee51bc3491b25a3fa7260ef6f1578af63786",
+  "preprocessador.joblib": "c0729d9368dffe7c736bdb0bc2821aa802728845eccba95015ffcabaeb62d0a3"
+}

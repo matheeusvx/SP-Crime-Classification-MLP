@@ -1,0 +1,15 @@
+{
+  "diagnostic_years": [
+    2023,
+    2024
+  ],
+  "prediction_years": [
+    2023,
+    2024
+  ],
+  "test_2025_predictions": 0,
+  "test_2025_transformations": 0,
+  "baseline_changed": false,
+  "threshold": 0.5,
+  "preprocessor_refitted": false
+}

@@ -1,0 +1,1914 @@
+[
+  {
+    "year": 2023,
+    "support": {
+      "methodology": [
+        [
+          1,
+          [
+            "Para interpretação dos dados é importante observar as seguintes informações:"
+          ]
+        ],
+        [
+          2,
+          [
+            "1. Os dados constantes da resposta foram extraídos do sistema de Registro Digital de Ocorrências (R.D.O.) e Sistema de Polícia Judiciária (SPJ) que são as ferramentas de registro dos boletins de ocorrência nas delegacias de polícia. Com relação ao sistema R.D.O. é importante esclarecer que sua implantação foi concretizada de modo gradual nas diversas unidades policiais do Estado, tendo sua abrangência alcançado todos os municípios apenas a partir do ano de 2010, sendo substituido pelo S.P.J. entre 2022 e 2023 . Também deve ser destacado que as tabelas e campos de preenchimento deste sistema são objetos de constante aperfeiçoamento a fim de adaptar-se às alterações nas dinâmicas criminais observadas no Estado ou propiciar melhoria no atendimento do serviço policial."
+          ]
+        ],
+        [
+          3,
+          [
+            "2. Para entendimento do conteúdo de cada campo, segue a planilha denominada Dicionário de Dados."
+          ]
+        ],
+        [
+          4,
+          [
+            "3. A inclusão ou alteração de um campo e respectivos períodos de implementação podem influenciar diretamente nos critérios de pesquisa executados, não havendo na base fornecida o tratamento metodológico necessário para qualificá-las como dados estatísticos oficiais."
+          ]
+        ],
+        [
+          5,
+          [
+            "4. O número total de boletins de ocorrências registrados sob uma natureza criminal não representa a estatística criminal do Estado ou de determinada área ou região. A estatística em São Paulo é contabilizada de acordo com os procedimentos estabelecidos pela Resolução SSP nº 160/01 de 08 de maio de 2001, que criou o Sistema Estadual de Coleta de Estatísticas Criminais e pode ser consultada através do endereço eletrônico www.ssp.sp.gov.br.\""
+          ]
+        ],
+        [
+          6,
+          [
+            "5. Cada linha constante na tabela registra os dados de uma pessoa, natureza ou objeto relacionado no boletim. Assim, um boletim que possua a identificação de mais de uma pessoa, natureza ou objeto (a depender da pesquisa solicitada) terá os dados da ocorrência multiplicados pelos indexadores solicitados, ou seja, várias linhas podem se referir ao mesmo boletim. Para conclusões quanto as quantidades de ocorrências é necessária exclusão das duplicidades por meio dos campos:"
+          ]
+        ],
+        [
+          7,
+          [
+            " NOME_DELEGACIA"
+          ]
+        ],
+        [
+          8,
+          [
+            " ANO_BO"
+          ]
+        ],
+        [
+          9,
+          [
+            " NUM_BO"
+          ]
+        ],
+        [
+          10,
+          [
+            "6. Frise-se que ao cidadão é facultado o registro da ocorrencia em qualquer Delegacia de Polícia do Estado, sendo certo que cerca de 60% das ocorrencias são registradas fora de sua circunscrição, ou seja, local de ocorrencia. Assim, para a análise dos dados obtem-se resultados diferentes sobre delegacia de registro e delegacia de circunscrição."
+          ]
+        ],
+        [
+          11,
+          [
+            "7. Os campos que podem levar a identificação da pessoa são protegidos de acordo com o art 31 da Lei de Acesso a Informação, desta forma não são disponibilizados endereços de:"
+          ]
+        ],
+        [
+          12,
+          [
+            "     Residência"
+          ]
+        ],
+        [
+          13,
+          [
+            "     Condomínio Comercial"
+          ]
+        ],
+        [
+          14,
+          [
+            "     Condomínio Residencial"
+          ]
+        ],
+        [
+          15,
+          [
+            "     Hospedagem"
+          ]
+        ],
+        [
+          16,
+          [
+            "     Shopping Center"
+          ]
+        ],
+        [
+          17,
+          [
+            "     Internet"
+          ]
+        ],
+        [
+          18,
+          [
+            "     Estabelecimento de Ensino"
+          ]
+        ],
+        [
+          19,
+          [
+            "     De Frente a Residência da Vítima"
+          ]
+        ],
+        [
+          20,
+          [
+            "     Favela"
+          ]
+        ],
+        [
+          21,
+          [
+            "     Estacionamento/Garagem"
+          ]
+        ],
+        [
+          22,
+          [
+            "     Unidade Rural"
+          ]
+        ],
+        [
+          23,
+          [
+            "7.1 As linhas em que o campo DESCR_TIPOLOCAL se enquadraem em uma das hipóteses acima, terão o campo LOGRADOURO substituido por VEDAÇÃO DA DIVULGAÇÃO DOS DADOS RELATIVOS e os demais detalhes vazios. "
+          ]
+        ]
+      ],
+      "dictionary": [
+        [
+          1,
+          [
+            "A PRESENTE TABELA TEM POR FINALIDADE ESCLARECER OS CAMPOS CONTIDOS NA BASE DE DADOS"
+          ]
+        ],
+        [
+          2,
+          [
+            "*Resultado Null indica que o campo se encontrava vazio no banco de dados"
+          ]
+        ],
+        [
+          4,
+          [
+            "Campos",
+            "Descrição"
+          ]
+        ],
+        [
+          5,
+          [
+            "ID_DELEGACIA",
+            "Código da delegacia responsável pelo registro da ocorrencia",
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            "NOME_DEPARTAMENTO",
+            "Departamento responsável pelo registro"
+          ]
+        ],
+        [
+          7,
+          [
+            "NOME_SECCIONAL",
+            "Delegacia Seccional responsável pelo registro"
+          ]
+        ],
+        [
+          8,
+          [
+            "NOME_DELEGACIA",
+            "Delegacia responsável pelo registro"
+          ]
+        ],
+        [
+          9,
+          [
+            "NOME_MUNICIPIO",
+            "Município responsável pelo Registro"
+          ]
+        ],
+        [
+          10,
+          [
+            "ANO_BO",
+            "Ano do BO"
+          ]
+        ],
+        [
+          11,
+          [
+            "NUM_BO",
+            "Número do BO"
+          ]
+        ],
+        [
+          12,
+          [
+            "VERSAO",
+            "Versionamento do Registro",
+            null,
+            null
+          ]
+        ],
+        [
+          13,
+          [
+            "NOME_DEPARTAMENTO_CIRC",
+            "Departamento de Circunscrição"
+          ]
+        ],
+        [
+          14,
+          [
+            "NOME_SECCIONAL_CIRC",
+            "Seccional de Circunscrição"
+          ]
+        ],
+        [
+          15,
+          [
+            "NOME_DELEGACIA_CIRC",
+            "Delegacia de Circunscrição"
+          ]
+        ],
+        [
+          16,
+          [
+            "NOME_MUNICIPIO_CIRC",
+            "Município da Delegacia de Circunscrição"
+          ]
+        ],
+        [
+          17,
+          [
+            "DATA_OCORRENCIA_BO",
+            "Data da Ocorrência"
+          ]
+        ],
+        [
+          18,
+          [
+            "HORA_OCORRENCIA",
+            "Hora da Ocorrência"
+          ]
+        ],
+        [
+          19,
+          [
+            "DESCRICAO_APRESENTACAO",
+            "Corporação que apresentou a ocorrência",
+            null
+          ]
+        ],
+        [
+          20,
+          [
+            "DATAHORA_REGISTRO_BO",
+            "Data hora do Registro da ocorrência",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          21,
+          [
+            "DATA_COMUNICACAO_BO",
+            "Data da Comunicação",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          22,
+          [
+            "DATAHORA_IMPRESSAO_BO",
+            "Data-Hora da elaboração da impressão",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          23,
+          [
+            "DESCR_PERIODO",
+            "Período da Ocorrência",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          24,
+          [
+            "AUTORIA_BO",
+            "Conhecida / desconhecida",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          25,
+          [
+            "FLAG_INTOLERANCIA",
+            "Indica se houve intolerância (S= sim; N=não)"
+          ]
+        ],
+        [
+          26,
+          [
+            "TIPO_INTOLERANCIA",
+            "Tipo de intolerância"
+          ]
+        ],
+        [
+          27,
+          [
+            "FLAG_FLAGRANTE",
+            "Indica se houve flagrante (S= sim; N=não)"
+          ]
+        ],
+        [
+          28,
+          [
+            "FLAG_STATUS",
+            "Indica se é crime consumado ou tentado"
+          ]
+        ],
+        [
+          29,
+          [
+            "DESC_LEI",
+            "Legislação Penal",
+            null,
+            null
+          ]
+        ],
+        [
+          30,
+          [
+            "FLAG_ATO_INFRACIONAL",
+            "Indica se (S=sim; N=não) praticado por menor",
+            null,
+            null
+          ]
+        ],
+        [
+          31,
+          [
+            "RUBRICA",
+            "Natureza juridica da ocorrencia"
+          ]
+        ],
+        [
+          32,
+          [
+            "DESCR_CONDUTA",
+            "Tipo de local ou circunstancia que qualifica a ocorrencia"
+          ]
+        ],
+        [
+          33,
+          [
+            "DESDOBRAMENTO",
+            "Desdobramentos juridicos envolvidos na ocorrencia"
+          ]
+        ],
+        [
+          34,
+          [
+            "CIRCUNSTANCIA",
+            "Situação auxiliar da natureza criminal"
+          ]
+        ],
+        [
+          35,
+          [
+            "DESCR_TIPOLOCAL",
+            "Descreve grupo de tipos de locais onde se deu o fato"
+          ]
+        ],
+        [
+          36,
+          [
+            "DESCR_SUBTIPOLOCAL",
+            "Descreve subgrupo de tipos de locais, vinculado ao tipo de local,  onde se deu o fato"
+          ]
+        ],
+        [
+          37,
+          [
+            "CIDADE",
+            "Cidade de Registro"
+          ]
+        ],
+        [
+          38,
+          [
+            "BAIRRO",
+            "Bairro da Ocorrência"
+          ]
+        ],
+        [
+          39,
+          [
+            "CEP",
+            "Código de Endereçamento Postal"
+          ]
+        ],
+        [
+          40,
+          [
+            "LOGRADOURO_VERSAO",
+            "Versionamento do Logradouro do BO"
+          ]
+        ],
+        [
+          41,
+          [
+            "LOGRADOURO",
+            "Logradouro dos fatos"
+          ]
+        ],
+        [
+          42,
+          [
+            "NUMERO_LOGRADOURO",
+            "Numero do Logradouro dos fatos"
+          ]
+        ],
+        [
+          43,
+          [
+            "LATITUDE",
+            "Latitude da Ocorrência"
+          ]
+        ],
+        [
+          44,
+          [
+            "LONGITUDE",
+            "Longitude da Ocorrência"
+          ]
+        ],
+        [
+          45,
+          [
+            "CONT_OBJETO",
+            "Identificação do Objeto na Ocorrência"
+          ]
+        ],
+        [
+          46,
+          [
+            "DESCR_MODO_OBJETO",
+            "Situação do objeto na ocorrencia"
+          ]
+        ],
+        [
+          47,
+          [
+            "DESCR_TIPO_OBJETO",
+            "Tipo de objeto - grande categoria"
+          ]
+        ],
+        [
+          48,
+          [
+            "DESCR_SUBTIPO_OBJETO",
+            "Subtipo de objeto"
+          ]
+        ],
+        [
+          49,
+          [
+            "DESCR_UNIDADE",
+            "Unidade de contagem do objeto"
+          ]
+        ],
+        [
+          50,
+          [
+            "QUANTIDADE_OBJETO",
+            "Contagem do objeto",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          51,
+          [
+            "MARCA_OBJETO",
+            "Fabricante",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          52,
+          [
+            "FLAG_BLOQUEIO",
+            "IMEI Bloqueado_sim ou não",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          53,
+          [
+            "FLAG_DESBLOQUEIO",
+            "IMEI Desbloqueado_sim ou não",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          54,
+          [
+            "MES",
+            "Mês da Estatística ",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          55,
+          [
+            "ANO",
+            "Ano da Estatística ",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          56,
+          [
+            "CMD",
+            "Área do Comando Polícia Militar (local onde se deu o fato)",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          57,
+          [
+            "BTL",
+            "Área do Batalhão Polícia Militar (local onde se deu o fato)",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          58,
+          [
+            "CIA",
+            "Área da Companhia Polícia Militar (local onde se deu o fato)",
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          59,
+          [
+            "COD IBGE",
+            "Identificador único do código do Município da Federação ",
+            null,
+            null,
+            null
+          ]
+        ]
+      ]
+    },
+    "headers": [
+      "ID_DELEGACIA",
+      "NOME_DEPARTAMENTO",
+      "NOME_SECCIONAL",
+      "NOME_DELEGACIA",
+      "NOME_MUNICIPIO",
+      "ANO_BO",
+      "NUM_BO",
+      "VERSAO",
+      "NOME_DEPARTAMENTO_CIRC",
+      "NOME_SECCIONAL_CIRC",
+      "NOME_DELEGACIA_CIRC",
+      "NOME_MUNICIPIO_CIRC",
+      "DATA_OCORRENCIA_BO",
+      "HORA_OCORRENCIA",
+      "DESCRICAO_APRESENTACAO",
+      "DATAHORA_REGISTRO_BO",
+      "DATA_COMUNICACAO_BO",
+      "DATAHORA_IMPRESSAO_BO",
+      "DESCR_PERIODO",
+      "AUTORIA_BO",
+      "FLAG_INTOLERANCIA",
+      "TIPO_INTOLERANCIA",
+      "FLAG_FLAGRANTE",
+      "FLAG_STATUS",
+      "DESC_LEI",
+      "FLAG_ATO_INFRACIONAL",
+      "RUBRICA",
+      "DESCR_CONDUTA",
+      "DESDOBRAMENTO",
+      "CIRCUNSTANCIA",
+      "DESCR_TIPOLOCAL",
+      "DESCR_SUBTIPOLOCAL",
+      "CIDADE",
+      "BAIRRO",
+      "CEP",
+      "LOGRADOURO_VERSAO",
+      "LOGRADOURO",
+      "NUMERO_LOGRADOURO",
+      "LATITUDE",
+      "LONGITUDE",
+      "CONT_OBJETO",
+      "DESCR_MODO_OBJETO",
+      "DESCR_TIPO_OBJETO",
+      "DESCR_SUBTIPO_OBJETO",
+      "DESCR_UNIDADE",
+      "QUANTIDADE_OBJETO",
+      "MARCA_OBJETO",
+      "FLAG_BLOQUEIO",
+      "FLAG_DESBLOQUEIO",
+      "MES",
+      "ANO",
+      "CMD",
+      "BTL",
+      "CIA",
+      "CD_IBGE"
+    ]
+  },
+  {
+    "year": 2024,
+    "support": {
+      "methodology": [
+        [
+          1,
+          [
+            "Para interpretação dos dados é importante observar as seguintes informações:"
+          ]
+        ],
+        [
+          2,
+          [
+            "1. Os dados constantes da resposta foram extraídos do sistema de Registro Digital de Ocorrências (R.D.O.) e Sistema de Polícia Judiciária (SPJ) que são as ferramentas de registro dos boletins de ocorrência nas delegacias de polícia. Com relação ao sistema R.D.O. é importante esclarecer que sua implantação foi concretizada de modo gradual nas diversas unidades policiais do Estado, tendo sua abrangência alcançado todos os municípios apenas a partir do ano de 2010, sendo substituido pelo S.P.J. entre 2022 e 2023 . Também deve ser destacado que as tabelas e campos de preenchimento deste sistema são objetos de constante aperfeiçoamento a fim de adaptar-se às alterações nas dinâmicas criminais observadas no Estado ou propiciar melhoria no atendimento do serviço policial."
+          ]
+        ],
+        [
+          3,
+          [
+            "2. Para entendimento do conteúdo de cada campo, segue a planilha denominada Dicionário de Dados."
+          ]
+        ],
+        [
+          4,
+          [
+            "3. A inclusão ou alteração de um campo e respectivos períodos de implementação podem influenciar diretamente nos critérios de pesquisa executados, não havendo na base fornecida o tratamento metodológico necessário para qualificá-las como dados estatísticos oficiais."
+          ]
+        ],
+        [
+          5,
+          [
+            "4. O número total de boletins de ocorrências registrados sob uma natureza criminal não representa a estatística criminal do Estado ou de determinada área ou região. A estatística em São Paulo é contabilizada de acordo com os procedimentos estabelecidos pela Resolução SSP nº 160/01 de 08 de maio de 2001, que criou o Sistema Estadual de Coleta de Estatísticas Criminais e pode ser consultada através do endereço eletrônico www.ssp.sp.gov.br.\""
+          ]
+        ],
+        [
+          6,
+          [
+            "5. Cada linha constante na tabela registra os dados de uma pessoa, natureza ou objeto relacionado no boletim. Assim, um boletim que possua a identificação de mais de uma pessoa, natureza ou objeto (a depender da pesquisa solicitada) terá os dados da ocorrência multiplicados pelos indexadores solicitados, ou seja, várias linhas podem se referir ao mesmo boletim. Para conclusões quanto as quantidades de ocorrências é necessária exclusão das duplicidades por meio dos campos:"
+          ]
+        ],
+        [
+          7,
+          [
+            " NOME_DELEGACIA"
+          ]
+        ],
+        [
+          8,
+          [
+            " ANO_BO"
+          ]
+        ],
+        [
+          9,
+          [
+            " NUM_BO"
+          ]
+        ],
+        [
+          10,
+          [
+            "6. Frise-se que ao cidadão é facultado o registro da ocorrencia em qualquer Delegacia de Polícia do Estado, sendo certo que cerca de 60% das ocorrencias são registradas fora de sua circunscrição, ou seja, local de ocorrencia. Assim, para a análise dos dados obtem-se resultados diferentes sobre delegacia de registro e delegacia de circunscrição."
+          ]
+        ],
+        [
+          11,
+          [
+            "7. Os campos que podem levar a identificação da pessoa são protegidos de acordo com o art 31 da Lei de Acesso a Informação, desta forma não são disponibilizados endereços de:"
+          ]
+        ],
+        [
+          12,
+          [
+            "     Residência"
+          ]
+        ],
+        [
+          13,
+          [
+            "     Condomínio Comercial"
+          ]
+        ],
+        [
+          14,
+          [
+            "     Condomínio Residencial"
+          ]
+        ],
+        [
+          15,
+          [
+            "     Hospedagem"
+          ]
+        ],
+        [
+          16,
+          [
+            "     Shopping Center"
+          ]
+        ],
+        [
+          17,
+          [
+            "     Internet"
+          ]
+        ],
+        [
+          18,
+          [
+            "     Estabelecimento de Ensino"
+          ]
+        ],
+        [
+          19,
+          [
+            "     De Frente a Residência da Vítima"
+          ]
+        ],
+        [
+          20,
+          [
+            "     Favela"
+          ]
+        ],
+        [
+          21,
+          [
+            "     Estacionamento/Garagem"
+          ]
+        ],
+        [
+          22,
+          [
+            "     Unidade Rural"
+          ]
+        ],
+        [
+          23,
+          [
+            "7.1 As linhas em que o campo DESCR_TIPOLOCAL se enquadraem em uma das hipóteses acima, terão o campo LOGRADOURO substituido por VEDAÇÃO DA DIVULGAÇÃO DOS DADOS RELATIVOS e os demais detalhes vazios. "
+          ]
+        ]
+      ],
+      "dictionary": [
+        [
+          1,
+          [
+            "A PRESENTE TABELA TEM POR FINALIDADE ESCLARECER OS CAMPOS CONTIDOS NA BASE DE DADOS"
+          ]
+        ],
+        [
+          2,
+          [
+            "*Resultado Null indica que o campo se encontrava vazio no banco de dados"
+          ]
+        ],
+        [
+          4,
+          [
+            "Campos",
+            "Descrição"
+          ]
+        ],
+        [
+          5,
+          [
+            "ID_DELEGACIA",
+            "Código da delegacia responsável pelo registro da ocorrencia",
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            "NOME_DEPARTAMENTO",
+            "Departamento responsável pelo registro"
+          ]
+        ],
+        [
+          7,
+          [
+            "NOME_SECCIONAL",
+            "Delegacia Seccional responsável pelo registro"
+          ]
+        ],
+        [
+          8,
+          [
+            "NOME_DELEGACIA",
+            "Delegacia responsável pelo registro"
+          ]
+        ],
+        [
+          9,
+          [
+            "NOME_MUNICIPIO",
+            "Município responsável pelo Registro"
+          ]
+        ],
+        [
+          10,
+          [
+            "ANO_BO",
+            "Ano do BO"
+          ]
+        ],
+        [
+          11,
+          [
+            "NUM_BO",
+            "Número do BO"
+          ]
+        ],
+        [
+          12,
+          [
+            "VERSAO",
+            "Versionamento do Registro",
+            null,
+            null
+          ]
+        ],
+        [
+          13,
+          [
+            "NOME_DEPARTAMENTO_CIRC",
+            "Departamento de Circunscrição"
+          ]
+        ],
+        [
+          14,
+          [
+            "NOME_SECCIONAL_CIRC",
+            "Seccional de Circunscrição"
+          ]
+        ],
+        [
+          15,
+          [
+            "NOME_DELEGACIA_CIRC",
+            "Delegacia de Circunscrição"
+          ]
+        ],
+        [
+          16,
+          [
+            "NOME_MUNICIPIO_CIRC",
+            "Município da Delegacia de Circunscrição"
+          ]
+        ],
+        [
+          17,
+          [
+            "DATA_OCORRENCIA_BO",
+            "Data da Ocorrência"
+          ]
+        ],
+        [
+          18,
+          [
+            "HORA_OCORRENCIA",
+            "Hora da Ocorrência"
+          ]
+        ],
+        [
+          19,
+          [
+            "DESCRICAO_APRESENTACAO",
+            "Corporação que apresentou a ocorrência",
+            null
+          ]
+        ],
+        [
+          20,
+          [
+            "DATAHORA_REGISTRO_BO",
+            "Data hora do Registro da ocorrência",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          21,
+          [
+            "DATA_COMUNICACAO_BO",
+            "Data da Comunicação",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          22,
+          [
+            "DATAHORA_IMPRESSAO_BO",
+            "Data-Hora da elaboração da impressão",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          23,
+          [
+            "DESCR_PERIODO",
+            "Período da Ocorrência",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          24,
+          [
+            "AUTORIA_BO",
+            "Conhecida / desconhecida",
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          25,
+          [
+            "FLAG_INTOLERANCIA",
+            "Indica se houve intolerância (S= sim; N=não)"
+          ]
+        ],
+        [
+          26,
+          [
+            "TIPO_INTOLERANCIA",
+            "Tipo de intolerância"
+          ]
+        ],
+        [
+          27,
+          [
+            "FLAG_FLAGRANTE",
+            "Indica se houve flagrante (S= sim; N=não)"
+          ]
+        ],
+        [
+          28,
+          [
+            "FLAG_STATUS",
+            "Indica se é crime consumado ou tentado"
+          ]
+        ],
+        [
+          29,
+          [
+            "DESC_LEI",
+            "Legislação Penal",
+            null,
+            null
+          ]
+        ],
+        [
+          30,
+          [
+            "FLAG_ATO_INFRACIONAL",
+            "Indica se (S=sim; N=não) praticado por menor",
+            null,
+            null
+          ]
+        ],
+        [
+          31,
+          [
+            "RUBRICA",
+            "Natureza juridica da ocorrencia"
+          ]
+        ],
+        [
+          32,
+          [
+            "DESCR_CONDUTA",
+            "Tipo de local ou circunstancia que qualifica a ocorrencia"
+          ]
+        ],
+        [
+          33,
+          [
+            "DESDOBRAMENTO",
+            "Desdobramentos juridicos envolvidos na ocorrencia"
+          ]
+        ],
+        [
+          34,
+          [
+            "CIRCUNSTANCIA",
+            "Situação auxiliar da natureza criminal"
+          ]
+        ],
+        [
+          35,
+          [
+            "DESCR_TIPOLOCAL",
+            "Descreve grupo de tipos de locais onde se deu o fato"
+          ]
+        ],
+        [
+          36,
+          [
+            "DESCR_SUBTIPOLOCAL",
+            "Descreve subgrupo de tipos de locais, vinculado ao tipo de local,  onde se deu o fato"
+          ]
+        ],
+        [
+          37,
+          [
+            "CIDADE",
+            "Cidade de Registro"
+          ]
+        ],
+        [
+          38,
+          [
+            "BAIRRO",
+            "Bairro da Ocorrência"
+          ]
+        ],
+        [
+          39,
+          [
+            "CEP",
+            "Código de Endereçamento Postal"
+          ]
+        ],
+        [
+          40,
+          [
+            "LOGRADOURO_VERSAO",
+            "Versionamento do Logradouro do BO"
+          ]
+        ],
+        [
+          41,
+          [
+            "LOGRADOURO",
+            "Logradouro dos fatos"
+          ]
+        ],
+        [
+          42,
+          [
+            "NUMERO_LOGRADOURO",
+            "Numero do Logradouro dos fatos"
+          ]
+        ],
+        [
+          43,
+          [
+            "LATITUDE",
+            "Latitude da Ocorrência"
+          ]
+        ],
+        [
+          44,
+          [
+            "LONGITUDE",
+            "Longitude da Ocorrência"
+          ]
+        ],
+        [
+          45,
+          [
+            "CONT_OBJETO",
+            "Identificação do Objeto na Ocorrência"
+          ]
+        ],
+        [
+          46,
+          [
+            "DESCR_MODO_OBJETO",
+            "Situação do objeto na ocorrencia"
+          ]
+        ],
+        [
+          47,
+          [
+            "DESCR_TIPO_OBJETO",
+            "Tipo de objeto - grande categoria"
+          ]
+        ],
+        [
+          48,
+          [
+            "DESCR_SUBTIPO_OBJETO",
+            "Subtipo de objeto"
+          ]
+        ],
+        [
+          49,
+          [
+            "DESCR_UNIDADE",
+            "Unidade de contagem do objeto"
+          ]
+        ],
+        [
+          50,
+          [
+            "QUANTIDADE_OBJETO",
+            "Contagem do objeto",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          51,
+          [
+            "MARCA_OBJETO",
+            "Fabricante",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          52,
+          [
+            "FLAG_BLOQUEIO",
+            "IMEI Bloqueado_sim ou não",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          53,
+          [
+            "FLAG_DESBLOQUEIO",
+            "IMEI Desbloqueado_sim ou não",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          54,
+          [
+            "MES",
+            "Mês da Estatística ",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          55,
+          [
+            "ANO",
+            "Ano da Estatística ",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          56,
+          [
+            "CMD",
+            "Área do Comando Polícia Militar (local onde se deu o fato)",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          57,
+          [
+            "BTL",
+            "Área do Batalhão Polícia Militar (local onde se deu o fato)",
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          58,
+          [
+            "CIA",
+            "Área da Companhia Polícia Militar (local onde se deu o fato)",
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          59,
+          [
+            "COD IBGE",
+            "Identificador único do código do Município da Federação ",
+            null,
+            null,
+            null
+          ]
+        ]
+      ]
+    },
+    "headers": [
+      "ID_DELEGACIA",
+      "NOME_DEPARTAMENTO",
+      "NOME_SECCIONAL",
+      "NOME_DELEGACIA",
+      "NOME_MUNICIPIO",
+      "ANO_BO",
+      "NUM_BO",
+      "VERSAO",
+      "NOME_DEPARTAMENTO_CIRC",
+      "NOME_SECCIONAL_CIRC",
+      "NOME_DELEGACIA_CIRC",
+      "NOME_MUNICIPIO_CIRC",
+      "DATA_OCORRENCIA_BO",
+      "HORA_OCORRENCIA",
+      "DESCRICAO_APRESENTACAO",
+      "DATAHORA_REGISTRO_BO",
+      "DATA_COMUNICACAO_BO",
+      "DATAHORA_IMPRESSAO_BO",
+      "DESCR_PERIODO",
+      "AUTORIA_BO",
+      "FLAG_INTOLERANCIA",
+      "TIPO_INTOLERANCIA",
+      "FLAG_FLAGRANTE",
+      "FLAG_STATUS",
+      "DESC_LEI",
+      "FLAG_ATO_INFRACIONAL",
+      "RUBRICA",
+      "DESCR_CONDUTA",
+      "DESDOBRAMENTO",
+      "CIRCUNSTANCIA",
+      "DESCR_TIPOLOCAL",
+      "DESCR_SUBTIPOLOCAL",
+      "CIDADE",
+      "BAIRRO",
+      "CEP",
+      "LOGRADOURO_VERSAO",
+      "LOGRADOURO",
+      "NUMERO_LOGRADOURO",
+      "LATITUDE",
+      "LONGITUDE",
+      "CONT_OBJETO",
+      "DESCR_MODO_OBJETO",
+      "DESCR_TIPO_OBJETO",
+      "DESCR_SUBTIPO_OBJETO",
+      "DESCR_UNIDADE",
+      "QUANTIDADE_OBJETO",
+      "MARCA_OBJETO",
+      "FLAG_BLOQUEIO",
+      "FLAG_DESBLOQUEIO",
+      "MES",
+      "ANO",
+      "CMD",
+      "BTL",
+      "CIA",
+      "CD_IBGE"
+    ]
+  },
+  {
+    "year": 2025,
+    "support": {
+      "methodology": [
+        [
+          1,
+          [
+            "Metodologia de extração e interpretação dos dados de ocorrências envolvendo subtração de celulares:"
+          ]
+        ],
+        [
+          2,
+          [
+            "1. Origem dos Dados\nAs informações foram extraídas dos sistemas Registro Digital de Ocorrências (R.D.O.) e Sistema de Polícia Judiciária (S.P.J.), utilizados para o registro de boletins de ocorrência nas delegacias de polícia do Estado de São Paulo.\nO R.D.O. foi implantado gradualmente até alcançar todo o Estado em 2010, sendo substituído pelo S.P.J. entre 2022 e 2023.\nAmbos os sistemas passam por atualizações contínuas para adequação às mudanças nas dinâmicas criminais e melhoria dos serviços prestados à população."
+          ]
+        ],
+        [
+          3,
+          [
+            "2. Dicionário de Dados\nPara facilitar a leitura e interpretação das variáveis, foi disponibilizada uma planilha denominada Dicionário de Dados, contendo a descrição de cada campo da base."
+          ]
+        ],
+        [
+          4,
+          [
+            "3. Limitações e Qualidade dos Dados\nOs dados referentes a celulares subtraídos foram disponibilizados em atendimento à demanda crescente por informações públicas sobre esse tipo de ocorrência. Ressalta-se que tais dados não constituem estatística oficial do Estado de São Paulo ou de suas regiões administrativas.\n\nA estatística oficial é produzida conforme os critérios definidos na Resolução SSP nº 160/2001, disponível em www.ssp.sp.gov.br, a qual não contempla indicador específico referente a celulares subtraídos.\n\nA disponibilização das informações segue os princípios da transparência ativa, com extração direta das bases de Boletins de Ocorrência (RDO e SPJ), sem aplicação de filtros, padronizações ou tratamentos de consistência. Esse procedimento observa as diretrizes do Decreto nº 68.155/2023 (nº 58.052/2012), assegurando ao cidadão acesso à informação primária, íntegra, autêntica e atualizada, conforme a legislação estadual de acesso à informação.\n\nO formato de base bruta (não tratada), retorna a combinação especifica dos elementos registrados resultando em múltiplas linhas, contendo todas as informações criminais associadas ao boletins com celulares subtraídos, isto pode ocorrer registros duplicados ou incompletos, decorrentes da forma como as informações são estruturadas, cadastradas e vinculadas nos Boletins de Ocorrência.\nEssas repetições são inerentes ao modelo de armazenamento dos sistemas e não representam boletins distintos, mas diferentes vínculos de dados relativos a um mesmo registro.\n\nAssim, em virtude dessas características, a base deve ser utilizada de forma exploratória e analítica, servindo como subsídio para estudos, pesquisas e análises sobre dinâmicas criminais, reafirmando o compromisso da Secretaria da Segurança Pública com a transparência, a integridade e o acesso à informação pública.",
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          5,
+          [
+            "4. Estrutura da Base de Dados\nCada linha da tabela representa um registro individual vinculado a uma pessoa, natureza criminal ou objeto citado no boletim.\nAssim, um mesmo boletim pode gerar várias linhas, caso envolva mais de uma pessoa, natureza ou objeto.\nPara apuração do número real de ocorrências, é necessário eliminar as duplicidades, utilizando os campos de identificação únicos da ocorrência:",
+            null,
+            null,
+            null
+          ]
+        ],
+        [
+          6,
+          [
+            " NOME_DELEGACIA"
+          ]
+        ],
+        [
+          7,
+          [
+            " ANO_BO"
+          ]
+        ],
+        [
+          8,
+          [
+            " NUM_BO"
+          ]
+        ],
+        [
+          9,
+          [
+            "5. Local de Registro x Local do Fato\nO cidadão pode registrar o boletim em qualquer delegacia do Estado, independentemente do local onde ocorreu o fato.\nAproximadamente 60% das ocorrências são registradas fora da área onde o crime aconteceu, o que pode gerar diferenças entre o local de registro e o local efetivo da ocorrência."
+          ]
+        ],
+        [
+          10,
+          [
+            "6. Proteção de Dados Pessoais\nOs campos que possam identificar pessoas são protegidos conforme o art. 31 da Lei de Acesso à Informação (Lei nº 12.527/2011) e a proteção de dados pessoais conforme a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados – LGPD).\nQuando o tipo de local (campo DESCR_TIPOLOCAL) se enquadra em situações protegidas, o campo LOGRADOURO é substituído pela expressão “VEDAÇÃO DA DIVULGAÇÃO DOS DADOS RELATIVOS”, e os demais detalhes são suprimidos."
+          ]
+        ],
+        [
+          11,
+          [
+            "7. Recomendações para Uso dos Dados\nOs dados devem ser utilizados com cautela, preferencialmente para fins analíticos ou exploratórios.\nQualquer tentativa de quantificação deve considerar a necessidade de deduplicação e padronização dos campos.\nRecomenda-se não comparar períodos longos sem considerar as mudanças de sistema (R.D.O. → S.P.J.) e suas diferenças de estrutura."
+          ]
+        ],
+        [
+          13,
+          [
+            "Resumo Simplificado – Metodologia\n\nOs dados sobre celulares subtraídos foram extraídos dos sistemas R.D.O. e S.P.J., que registram boletins de ocorrência em todo o Estado de São Paulo.\n\nA base é bruta, sem filtros ou tratamentos, reunindo todas as naturezas criminais e objetos vinculados aos boletins. Por essa razão, podem ocorrer duplicidades e repetições, que refletem a forma como os dados são estruturados e não boletins distintos.\n\nEssas informações têm caráter exploratório e analítico, não constituindo estatística oficial, mas servindo como subsídio para estudos e pesquisas sobre dinâmicas criminais.\n\nOs dados pessoais seguem protegidos conforme a Lei de Acesso à Informação e a Lei Geral de Proteção de Dados (LGPD).\n\nRecomenda-se o uso da base com cautela e foco analítico, considerando a necessidade de tratamento e deduplicação dos registros.\n\nAs estatísticas criminais oficiais são apuradas conforme os critérios definidos pela Resolução SSP nº 160/2001."
+          ]
+        ]
+      ],
+      "dictionary": [
+        [
+          1,
+          [
+            "A PRESENTE TABELA TEM POR FINALIDADE ESCLARECER OS CAMPOS CONTIDOS NA BASE DE DADOS"
+          ]
+        ],
+        [
+          2,
+          [
+            "*Resultado Null indica que o campo se encontrava vazio no banco de dados"
+          ]
+        ],
+        [
+          4,
+          [
+            "Campos",
+            "Descrição"
+          ]
+        ],
+        [
+          5,
+          [
+            "ANO_BO",
+            "Ano do boletim de ocorrência"
+          ]
+        ],
+        [
+          6,
+          [
+            "ANO_REGISTRO_BO",
+            "Ano do registro da ocorrência"
+          ]
+        ],
+        [
+          7,
+          [
+            "AUTORIA_BO",
+            "Autoria no boletim de ocorrência (C=conhecida; D=desconhecida)"
+          ]
+        ],
+        [
+          8,
+          [
+            "BAIRRO",
+            "Bairro da ocorrência"
+          ]
+        ],
+        [
+          9,
+          [
+            "CEP",
+            "Código de endereçamento postal"
+          ]
+        ],
+        [
+          10,
+          [
+            "CIDADE",
+            "Cidade dos fatos"
+          ]
+        ],
+        [
+          11,
+          [
+            "CIRCUNSTANCIA",
+            "Situação auxiliar da natureza criminal"
+          ]
+        ],
+        [
+          12,
+          [
+            "CONT_OBJETO",
+            "Identificação do objeto na ocorrência"
+          ]
+        ],
+        [
+          13,
+          [
+            "DATA_COMUNICACAO_BO",
+            "Data da comunicação do boletim de ocorrência"
+          ]
+        ],
+        [
+          14,
+          [
+            "DATA_OCORRENCIA_BO",
+            "Data da ocorrência"
+          ]
+        ],
+        [
+          15,
+          [
+            "DATAHORA_IMPRESSAO_BO",
+            "Data da elaboração da impressão"
+          ]
+        ],
+        [
+          16,
+          [
+            "DATAHORA_REGISTRO_BO",
+            "Data do registro da ocorrência"
+          ]
+        ],
+        [
+          17,
+          [
+            "DESC_LEI",
+            "Legislação penal"
+          ]
+        ],
+        [
+          18,
+          [
+            "DESCR_CONDUTA",
+            "Tipo de local ou circunstancia que qualifica a ocorrência"
+          ]
+        ],
+        [
+          19,
+          [
+            "DESCR_MODO_OBJETO",
+            "Situação do objeto na ocorrência"
+          ]
+        ],
+        [
+          20,
+          [
+            "DESCR_PERIODO",
+            "Período da ocorrência"
+          ]
+        ],
+        [
+          21,
+          [
+            "DESCR_SUBTIPO_OBJETO",
+            "Subtipo de objeto"
+          ]
+        ],
+        [
+          22,
+          [
+            "DESCR_SUBTIPOLOCAL",
+            "Descreve subgrupo de tipos de locais, vinculado ao tipo de local,  onde se deu o fato"
+          ]
+        ],
+        [
+          23,
+          [
+            "DESCR_TIPO_OBJETO",
+            "Tipo de objeto – (Grande categoria)"
+          ]
+        ],
+        [
+          24,
+          [
+            "DESCR_TIPOLOCAL",
+            "Descreve grupo de tipos de locais onde se deu o fato"
+          ]
+        ],
+        [
+          25,
+          [
+            "DESCR_UNIDADE",
+            "Unidade de contagem do objeto"
+          ]
+        ],
+        [
+          26,
+          [
+            "DESCRICAO_APRESENTACAO",
+            "Corporação que apresentou a ocorrência"
+          ]
+        ],
+        [
+          27,
+          [
+            "DESDOBRAMENTO",
+            "Desdobramentos jurídicos envolvidos na ocorrência"
+          ]
+        ],
+        [
+          28,
+          [
+            "FLAG_ATO_INFRACIONAL",
+            "Indica se (S=sim; N=não) praticado por menor"
+          ]
+        ],
+        [
+          29,
+          [
+            "FLAG_BLOQUEIO",
+            "Imei bloqueado (S=sim; N=não)"
+          ]
+        ],
+        [
+          30,
+          [
+            "FLAG_DESBLOQUEIO",
+            "Imei desbloqueado  (S=sim; N=não)"
+          ]
+        ],
+        [
+          31,
+          [
+            "FLAG_FLAGRANTE",
+            "Indica se houve flagrante (S= sim; N=não)"
+          ]
+        ],
+        [
+          32,
+          [
+            "FLAG_INTOLERANCIA",
+            "Indica se houve intolerância (S= sim; N=não)"
+          ]
+        ],
+        [
+          33,
+          [
+            "FLAG_STATUS",
+            "Indica se é crime consumado ou tentado"
+          ]
+        ],
+        [
+          34,
+          [
+            "HORA_OCORRENCIA",
+            "Hora da ocorrência"
+          ]
+        ],
+        [
+          35,
+          [
+            "ID_DELEGACIA",
+            "Código da delegacia responsável pelo registro da ocorrência"
+          ]
+        ],
+        [
+          36,
+          [
+            "LATITUDE",
+            "Latitude da ocorrência"
+          ]
+        ],
+        [
+          37,
+          [
+            "LOGRADOURO",
+            "Endereço dos fatos"
+          ]
+        ],
+        [
+          38,
+          [
+            "LOGRADOURO_VERSAO",
+            "Versionamento do logradouro do boletim de ocorrência"
+          ]
+        ],
+        [
+          39,
+          [
+            "LONGITUDE",
+            "Longitude da ocorrência"
+          ]
+        ],
+        [
+          40,
+          [
+            "MARCA_OBJETO",
+            "Marca/Modelo do objeto"
+          ]
+        ],
+        [
+          41,
+          [
+            "MES_REGISTRO_BO",
+            "Mês do registro da ocorrência"
+          ]
+        ],
+        [
+          42,
+          [
+            "NOME_DELEGACIA",
+            "Delegacia responsável pelo registro"
+          ]
+        ],
+        [
+          43,
+          [
+            "NOME_DELEGACIA_CIRC",
+            "Delegacia de circunscrição (local onde ocorreu o fato)"
+          ]
+        ],
+        [
+          44,
+          [
+            "NOME_DEPARTAMENTO",
+            "Departamento responsável pelo registro"
+          ]
+        ],
+        [
+          45,
+          [
+            "NOME_DEPARTAMENTO_CIRC",
+            "Departamento de circunscrição (local onde ocorreu o fato)"
+          ]
+        ],
+        [
+          46,
+          [
+            "NOME_MUNICIPIO",
+            "Município responsável pelo registro"
+          ]
+        ],
+        [
+          47,
+          [
+            "NOME_MUNICIPIO_CIRC",
+            "Município da delegacia de circunscrição (local onde ocorreu o fato)"
+          ]
+        ],
+        [
+          48,
+          [
+            "NOME_SECCIONAL",
+            "Delegacia seccional responsável pelo registro"
+          ]
+        ],
+        [
+          49,
+          [
+            "NOME_SECCIONAL_CIRC",
+            "Seccional de circunscrição (local onde ocorreu o fato)"
+          ]
+        ],
+        [
+          50,
+          [
+            "NUM_BO",
+            "Número do boletim de ocorrência"
+          ]
+        ],
+        [
+          51,
+          [
+            "NUMERO_LOGRADOURO",
+            "Número do endereço dos fatos"
+          ]
+        ],
+        [
+          52,
+          [
+            "QUANTIDADE_OBJETO",
+            "Contagem do objeto"
+          ]
+        ],
+        [
+          53,
+          [
+            "RUBRICA",
+            "Natureza jurídica da ocorrência"
+          ]
+        ],
+        [
+          54,
+          [
+            "TIPO_INTOLERANCIA",
+            "Tipo de intolerância"
+          ]
+        ],
+        [
+          55,
+          [
+            "VERSAO",
+            "Versionamento do registro"
+          ]
+        ],
+        [
+          56,
+          [
+            "CMD",
+            "Área do Comando Polícia Militar (local onde se deu o fato)"
+          ]
+        ],
+        [
+          57,
+          [
+            "BTL",
+            "Área do Batalhão Polícia Militar (local onde se deu o fato)"
+          ]
+        ],
+        [
+          58,
+          [
+            "CIA",
+            "Área da Companhia Polícia Militar (local onde se deu o fato)"
+          ]
+        ],
+        [
+          59,
+          [
+            "COD IBGE",
+            "Identificador único do código do Município da Federação "
+          ]
+        ]
+      ]
+    },
+    "headers": [
+      "ID_DELEGACIA",
+      "NOME_DEPARTAMENTO",
+      "NOME_SECCIONAL",
+      "NOME_DELEGACIA",
+      "NOME_MUNICIPIO",
+      "ANO_BO",
+      "NUM_BO",
+      "VERSAO",
+      "NOME_DEPARTAMENTO_CIRC",
+      "NOME_SECCIONAL_CIRC",
+      "NOME_DELEGACIA_CIRC",
+      "NOME_MUNICIPIO_CIRC",
+      "DATA_OCORRENCIA_BO",
+      "HORA_OCORRENCIA",
+      "DESCRICAO_APRESENTACAO",
+      "DATAHORA_REGISTRO_BO",
+      "DATA_COMUNICACAO_BO",
+      "DATAHORA_IMPRESSAO_BO",
+      "DESCR_PERIODO",
+      "AUTORIA_BO",
+      "FLAG_INTOLERANCIA",
+      "TIPO_INTOLERANCIA",
+      "FLAG_FLAGRANTE",
+      "FLAG_STATUS",
+      "DESC_LEI",
+      "FLAG_ATO_INFRACIONAL",
+      "RUBRICA",
+      "DESCR_CONDUTA",
+      "DESDOBRAMENTO",
+      "CIRCUNSTANCIA",
+      "DESCR_TIPOLOCAL",
+      "DESCR_SUBTIPOLOCAL",
+      "CIDADE",
+      "BAIRRO",
+      "CEP",
+      "LOGRADOURO_VERSAO",
+      "LOGRADOURO",
+      "NUMERO_LOGRADOURO",
+      "LATITUDE",
+      "LONGITUDE",
+      "CONT_OBJETO",
+      "DESCR_MODO_OBJETO",
+      "DESCR_TIPO_OBJETO",
+      "DESCR_SUBTIPO_OBJETO",
+      "DESCR_UNIDADE",
+      "QUANTIDADE_OBJETO",
+      "MARCA_OBJETO",
+      "FLAG_BLOQUEIO",
+      "FLAG_DESBLOQUEIO",
+      "MES_REGISTRO_BO",
+      "ANO_REGISTRO_BO",
+      "CMD",
+      "BTL",
+      "CIA",
+      "CD_IBGE"
+    ]
+  }
+]

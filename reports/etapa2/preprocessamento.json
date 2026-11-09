@@ -1,0 +1,92 @@
+{
+  "treino": {
+    "rows": 190124,
+    "dimensao": 299,
+    "bairros_observados_treino": 1913,
+    "bairros_retidos": 247,
+    "aliases_ativados": {
+      "REPÚBLICA": "REPUBLICA",
+      "CONSOLAÇÃO": "CONSOLACAO",
+      "BRÁS": "BRAS",
+      "SÉ": "SE",
+      "SACOMÃ": "SACOMA",
+      "FREGUESIA DO Ó": "FREGUESIA DO O",
+      "VILA JACUÍ": "VILA JACUI",
+      "VILA OLÍMPIA": "VILA OLIMPIA",
+      "SÃO MATEUS": "SAO MATEUS",
+      "VILA SÔNIA": "VILA SONIA",
+      "CAPÃO REDONDO": "CAPAO REDONDO",
+      "GRAJAÚ": "GRAJAU",
+      "ÁGUA RASA": "AGUA RASA",
+      "CIDADE LÍDER": "CIDADE LIDER",
+      "JAGUARÁ": "JAGUARA",
+      "SÃO RAFAEL": "SAO RAFAEL"
+    },
+    "limiar_bairro": 50,
+    "mes": {
+      "ausentes_entrada": 0,
+      "desconhecidos": 0,
+      "raros": 0
+    },
+    "dia_semana": {
+      "ausentes_entrada": 0,
+      "desconhecidos": 0,
+      "raros": 0
+    },
+    "tipo_local": {
+      "ausentes_entrada": 14031,
+      "desconhecidos": 0,
+      "raros": 0
+    },
+    "bairro": {
+      "ausentes_entrada": 633,
+      "desconhecidos": 0,
+      "raros": 14244
+    }
+  },
+  "validacao": {
+    "rows": 158895,
+    "dimensao": 299,
+    "bairros_observados_treino": 1913,
+    "bairros_retidos": 247,
+    "aliases_ativados": {
+      "REPÚBLICA": "REPUBLICA",
+      "CONSOLAÇÃO": "CONSOLACAO",
+      "BRÁS": "BRAS",
+      "SÉ": "SE",
+      "SACOMÃ": "SACOMA",
+      "FREGUESIA DO Ó": "FREGUESIA DO O",
+      "VILA JACUÍ": "VILA JACUI",
+      "VILA OLÍMPIA": "VILA OLIMPIA",
+      "SÃO MATEUS": "SAO MATEUS",
+      "VILA SÔNIA": "VILA SONIA",
+      "CAPÃO REDONDO": "CAPAO REDONDO",
+      "GRAJAÚ": "GRAJAU",
+      "ÁGUA RASA": "AGUA RASA",
+      "CIDADE LÍDER": "CIDADE LIDER",
+      "JAGUARÁ": "JAGUARA",
+      "SÃO RAFAEL": "SAO RAFAEL"
+    },
+    "limiar_bairro": 50,
+    "mes": {
+      "ausentes_entrada": 0,
+      "desconhecidos": 0,
+      "raros": 0
+    },
+    "dia_semana": {
+      "ausentes_entrada": 0,
+      "desconhecidos": 0,
+      "raros": 0
+    },
+    "tipo_local": {
+      "ausentes_entrada": 4653,
+      "desconhecidos": 0,
+      "raros": 0
+    },
+    "bairro": {
+      "ausentes_entrada": 521,
+      "desconhecidos": 355,
+      "raros": 13028
+    }
+  }
+}

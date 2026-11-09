@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Sucesso\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "dependencies": {
+    "pyarrow": "26.0.1",
+    "duckdb": "2.0.0",
+    "matplotlib": "3.11.2",
+    "psutil": "7.2.2"
+  },
+  "ram_total_gib": 31.92,
+  "duckdb_memory_limit": "1500MB",
+  "threads": 2
+}

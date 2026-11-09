@@ -1,0 +1,13 @@
+﻿id,interpretacao
+A0,Referencia sob novo protocolo; nao substitui historico.
+A1,Retirar local reduz Macro F1 e recall gerais; melhora parte dos roubos sem local. Dependencia nao prova seguranca do atributo.
+A2,Retirar bairro causa a maior perda interna; recall sobe a custa de muitos falsos positivos. Nao avancou a 2024.
+A3,"Pequeno ganho interno de Macro F1 com perda de 3,88 pp de recall; nao escolhido. Meses Q4 nao vistos limitam interpretacao."
+A4_10,"Maior dimensao e menos raros; ganho de Macro F1 ~0,057 pp, sem ganho claro e recall menor. Nao avancou."
+A4_100,"Menor dimensao; perde ~0,140 pp de Macro F1 interna. Sem beneficio preditivo demonstrado."
+A5,"Matrizes identicas a A0; reutilizacao comprovada. Melhora somente contrato de acentuacao, sem ganho metrico alegado."
+B32,"Mais simples; desempenho 2024 proximo de B64 e do historico, mas apenas uma semente completa."
+B64,Mais estavel entre as candidatas; preserva capacidade historica e nao demonstra ganho de Macro F1 sobre o historico.
+B64_32,"Mais recall, mais FP e maior complexidade; nenhum ganho consistente de Macro F1."
+C_dropout,"Macro F1 quase igual, recall maior, mas BCE de validacao e gap piores; nao melhorou generalizacao no ensaio interno."
+C_l2,"Gap BCE menor, sem melhorar Macro F1 ou BCE de validacao; reduzir gap isoladamente nao demonstra beneficio."

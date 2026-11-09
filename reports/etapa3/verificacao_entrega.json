@@ -1,0 +1,13 @@
+{
+  "previous_artifacts_preserved": 117,
+  "tests_executed": 40,
+  "failures": 0,
+  "errors": 0,
+  "executed_notebook_cells": 6,
+  "figures_visually_reviewed": 6,
+  "threshold_preserved": 0.5,
+  "preprocessor_changed": false,
+  "test_2025_predictions": 0,
+  "test_2025_transformations": 0,
+  "baseline_seed42_max_abs_diff": 0.0
+}

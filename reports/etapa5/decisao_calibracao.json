@@ -1,0 +1,95 @@
+{
+  "registered_protocol_sha256": "9c98895337a66f08ce588d9561f4d5f8bc59bbb3258a660532f13bd7263f8d88",
+  "decided_at": "2026-11-09T22:42:05.972593+00:00",
+  "fit_rows_H1": 80321,
+  "assessment_rows_H2": 78574,
+  "method": "Platt sobre logit(sigmoid)",
+  "slope": 0.9435224572986957,
+  "intercept": -0.08251420393639183,
+  "checks": {
+    "positive_slope": true,
+    "brier_gain": true,
+    "log_loss_gain": true,
+    "ece10_guard": true,
+    "ece20_guard": true,
+    "macro_f1_guard": true,
+    "recall_guard": false,
+    "Q3_2024_brier_guard": true,
+    "Q3_2024_loss_guard": true,
+    "Q4_2024_brier_guard": true,
+    "Q4_2024_loss_guard": true
+  },
+  "adopted": false,
+  "threshold": 0.5,
+  "classification_changes_H2": 2508,
+  "assessment_uncalibrated": {
+    "n": 78574,
+    "furtos": 46446,
+    "roubos": 32128,
+    "tn": 33609,
+    "fp": 12837,
+    "fn": 11783,
+    "tp": 20345,
+    "accuracy": 0.6866648000610889,
+    "precision_roubo": 0.6131336266650593,
+    "recall_roubo": 0.6332482569721115,
+    "f1_roubo": 0.6230286326749349,
+    "precision_furto": 0.7404168135354248,
+    "recall_furto": 0.723614520087844,
+    "f1_furto": 0.7319192491125678,
+    "macro_f1": 0.6774739408937513,
+    "balanced_accuracy": 0.6784313885299778,
+    "brier": 0.20035566638901003,
+    "log_loss": 0.5834875511861909,
+    "high_conf_errors": 297,
+    "high_conf_fn": 292,
+    "ece10": 0.03809146443970991,
+    "ece20": 0.03814060965536664,
+    "confusion_matrix": [
+      [
+        33609,
+        12837
+      ],
+      [
+        11783,
+        20345
+      ]
+    ]
+  },
+  "assessment_calibrated": {
+    "n": 78574,
+    "furtos": 46446,
+    "roubos": 32128,
+    "tn": 34997,
+    "fp": 11449,
+    "fn": 12903,
+    "tp": 19225,
+    "accuracy": 0.6900755975258992,
+    "precision_roubo": 0.6267522983634348,
+    "recall_roubo": 0.5983876992031872,
+    "f1_roubo": 0.6122416483551479,
+    "precision_furto": 0.7306263048016701,
+    "recall_furto": 0.7534986866468587,
+    "f1_furto": 0.741886248489602,
+    "macro_f1": 0.677063948422375,
+    "balanced_accuracy": 0.675943192925023,
+    "brier": 0.19928582877453618,
+    "log_loss": 0.5810872980813029,
+    "high_conf_errors": 261,
+    "high_conf_fn": 260,
+    "ece10": 0.02290652118710917,
+    "ece20": 0.022952774203143022,
+    "confusion_matrix": [
+      [
+        34997,
+        11449
+      ],
+      [
+        12903,
+        19225
+      ]
+    ]
+  },
+  "pipeline_frozen_before_2025": true,
+  "limitation": "2024 participou previamente da selecao; H2 e holdout do calibrador, nao independente de todas as decisoes do projeto."
+}

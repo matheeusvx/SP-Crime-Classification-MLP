@@ -1,0 +1,23 @@
+[
+  {
+    "id": "B64",
+    "role": "candidata principal, nao definitiva",
+    "result": "reports/etapa4/runs/B64_full_s42.json",
+    "model": "models/experiments/etapa4/B64_full_s42/modelo.keras",
+    "preprocessor": "models/experiments/etapa4/B64_full_s42/preprocessador.joblib"
+  },
+  {
+    "id": "B64_32",
+    "role": "alternativa: mais recall, mais falsos positivos",
+    "result": "reports/etapa4/runs/B64_32_full_s42.json",
+    "model": "models/experiments/etapa4/B64_32_full_s42/modelo.keras",
+    "preprocessor": "models/experiments/etapa4/B64_32_full_s42/preprocessador.joblib"
+  },
+  {
+    "id": "B32",
+    "role": "alternativa compacta exploratoria, somente uma semente completa",
+    "result": "reports/etapa4/runs/B32_full_s42.json",
+    "model": "models/experiments/etapa4/B32_full_s42/modelo.keras",
+    "preprocessor": "models/experiments/etapa4/B32_full_s42/preprocessador.joblib"
+  }
+]

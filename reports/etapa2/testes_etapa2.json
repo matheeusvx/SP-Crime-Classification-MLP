@@ -1,0 +1,16 @@
+[
+  {
+    "arquivo": "test_integridade.py",
+    "executados": 8,
+    "falhas": 0,
+    "erros": 0,
+    "sucesso": true
+  },
+  {
+    "arquivo": "test_ml_pipeline.py",
+    "executados": 15,
+    "falhas": 0,
+    "erros": 0,
+    "sucesso": true
+  }
+]

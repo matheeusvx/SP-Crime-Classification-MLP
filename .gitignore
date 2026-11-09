@@ -1,0 +1,17 @@
+.runtime/
+.venv/
+__pycache__/
+*.pyc
+data/raw/*
+data/interim/*
+data/processed/*
+*.xlsx
+*.xls
+*.duckdb*
+source_inspection.json
+.runtime_ml/
+models/*.keras
+models/*.joblib
+reports/etapa2/*.npz
+.ipynb_checkpoints/
+reports/private/
