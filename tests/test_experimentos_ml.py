@@ -101,7 +101,9 @@ class Experimentos(unittest.TestCase):
             record={f:self.val[0][f] for f in predictor.pre.features};r=predictor.predict(**record)
             self.assertAlmostEqual(r['probabilidade_roubo']+r['probabilidade_furto'],1)
             self.assertEqual(r['codigo'],int(r['probabilidade_roubo']>=.5));self.assertFalse(r['calibrada'])
-    def test_baseline_preservado(self):self.assertGreater(preserve(),100)
+    def test_baseline_preservado(self):
+        from maintenance56.integrity import verify_history
+        self.assertGreater(verify_history(read('preservacao.json')),100)
     def test_tabelas_integras(self):
         for name in ['resultados_experimentos','comparacao_arquiteturas','comparacao_atributos','comparacao_regularizacao']:
             with (OUT/(name+'.csv')).open(encoding='utf-8-sig') as f:rows=list(csv.DictReader(f))

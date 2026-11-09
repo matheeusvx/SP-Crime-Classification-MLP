@@ -1,0 +1,73 @@
+{
+  "revision": "pos-auditoria-1.0.0",
+  "created_at": "2026-11-09T23:30:10.726508+00:00",
+  "snapshot_tag": "snapshot-pos-auditoria-antes-correcoes",
+  "retroactive_evidence": false,
+  "files": {
+    "src/ml/inference.py": {
+      "before_sha256": "6fb7a0132268022653e647eaa4d68387f792181de51cdd932a959f8fa7314e3b",
+      "after_sha256": "88d6c80aec76a5798e4a84e2b87cf365785b61c15e54c3ed88c6cbfede7a2e33",
+      "reason": "Marcação de legado histórico sem mudança do comportamento."
+    },
+    "tests/test_experimentos_ml.py": {
+      "before_sha256": "5ca9b3708e5d03f0ee34848fb9ae00d9733787777ec219bbb1cdce727a101306",
+      "after_sha256": "4c1447964299c7db03a77cd22dd8e437d1d9b6352eb638763c67c79aa823be58",
+      "reason": "Preservação valida original e revisão sem reescrever manifesto."
+    },
+    "tests/test_ml_pipeline.py": {
+      "before_sha256": "87a82aa7a0cf7610a6728b40b03b7c1086ad01a7932c1d9562e4fde783a1e16b",
+      "after_sha256": "63f03cbd35996367bc73f6556756bba2caeb075e15781c1b691309ac186c2e86",
+      "reason": "Preservação valida original no snapshot e revisão autorizada."
+    },
+    "tests/test_modelo_final.py": {
+      "before_sha256": "0c1d09cea49d92192a69a597dfa190b8ab808388fc2d6b5e6cbd051d0dfd6e7f",
+      "after_sha256": "241fb499a9de95a76999fe95469561f75d84624c61a32143f8a7e9b7e6973bc8",
+      "reason": "Preservação histórica com revisão explícita; FinalPost separado."
+    },
+    "tests/test_robustez_ml.py": {
+      "before_sha256": "55aeff2d8fa8050c78c81524dbc988a86b621fbd531b4ef5d7e342432d1b44fa",
+      "after_sha256": "f1011b4aaeef7fba95051722f28258c9e0808598cff681d7f5deda752967af4a",
+      "reason": "Escopo histórico do teste de acentuação e preservação revisada."
+    },
+    "docs/contrato_inferencia.md": {
+      "before_sha256": "c0d6c574dbfdbfb19c3ea175b58badf6de64f10067a0f940730ff37036af5562",
+      "after_sha256": "38238e9b827da7688061baec4a23a4a412239f6f0b852072d0749eeb21660691",
+      "reason": "Contrato histórico identificado; encaminhamento ao seguro."
+    },
+    "docs/decisao_modelo_final.md": {
+      "before_sha256": "ea3b21d01ab12b34b0010c5fdaca708a54f413ce212cc333da85efa4b6efd4d1",
+      "after_sha256": "548d37346b26c20715a1220e427adec5a38e1fd3a9fc558451ccb1aa684a06bc",
+      "reason": "Errata de calibração, referência retrospectiva e independência."
+    },
+    "docs/protocolo_teste_final.md": {
+      "before_sha256": "bb4a52ea76dd604deea1a5a8b1e0623f0b8571a45b57e2a1a0c0491dbe3c67b7",
+      "after_sha256": "ea3cec4f7d361db5a9a8cff8e33e2c3b8d371123b60fc09accf0d1f7f16c4961",
+      "reason": "Ressalvas de teste consumido e distinção calibração/limiar."
+    },
+    "docs/recomendacoes_etapa6.md": {
+      "before_sha256": "bdcda5a2a30d2ed883ac3366c9fab770889001f1a0967264d3f6b985fc04a2a8",
+      "after_sha256": "f9212fd6b0ec462244e16fe2d869f1d54405227efab12fdc5ebc66a07f86dc69",
+      "reason": "Orientação ao adaptador seguro e campos controlados."
+    },
+    "reports/relatorio_etapa5.md": {
+      "before_sha256": "fcbfff32dfaed290dbf354e92c027848fca7e9aa7c4d2704e6ad60075eb0191a",
+      "after_sha256": "b33008586a7c79b68f5692409dc423ae9252e477b1de10a2caef861f718f4ae8",
+      "reason": "Errata separada sem substituir métricas publicadas."
+    },
+    "notebooks/05_avaliacao_final.ipynb": {
+      "before_sha256": "cc0e4769a7ad7b3173fb7a2735c3a231d4a6b1784ffc032d4595c70542ba2fb5",
+      "after_sha256": "077ec5a3a308061a8e733229f21e162c195ff2d32ae4296695dea32a2d8d1f41",
+      "reason": "Célula de errata; código e saídas históricos inalterados."
+    },
+    "README.md": {
+      "before_sha256": "d33c72047d6b74b0cbcb1d743eaec2e36d6f78ea3a875cccf414270e50b5d97a",
+      "after_sha256": "75e7996337cd7ac3ceb09564e7925f23a74638c9c313c1c35f4909b52d370110",
+      "reason": "Estado atual, contrato seguro, limitações, teste consumido e rastreabilidade."
+    },
+    ".gitignore": {
+      "before_sha256": "54c59160708e2baeee0de24bb929728868c9268d70ed6bf05bb693a23161e785",
+      "after_sha256": "81921f20b3a084de818dccefcd73003f2625d5aafe1cef2de85e858b347826a2",
+      "reason": "Exclusões recursivas para dados privados, binários, segredos e caches."
+    }
+  }
+}

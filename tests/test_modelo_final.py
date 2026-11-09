@@ -63,7 +63,9 @@ class FinalPre(unittest.TestCase):
     def test_2024_reproduzido(self):
         r=read('verificacao_previa_2024.json');self.assertEqual(r['n'],158895);self.assertLessEqual(r['max_abs_difference'],1e-7)
         self.assertAlmostEqual(r['metrics']['macro_f1'],.676902006111324,places=12)
-    def test_preservacao_historico(self):self.assertGreater(preserve(),168)
+    def test_preservacao_historico(self):
+        from maintenance56.integrity import verify_history
+        self.assertGreater(verify_history(read('preservacao.json')),168)
     def test_manifesto_adulterado_rejeitado(self):
         with tempfile.TemporaryDirectory() as d:
             folder=Path(d)
@@ -81,7 +83,8 @@ class FinalPost(unittest.TestCase):
         self.assertLess(self.state['frozen_at'],self.state['inference_started_at'])
         self.assertEqual(self.state['manifest_sha256'],sha256(FINAL/'manifesto.json'))
     def test_hashes_pos_avaliacao(self):
-        verify_manifest();preserve()
+        from maintenance56.integrity import verify_history
+        verify_manifest();verify_history(read('preservacao.json'))
         for path,h in self.state['result_hashes'].items():self.assertEqual(sha256(ROOT/path),h)
     def test_metricas_matriz_e_labels(self):
         m=metrics(self.saved['y_true'],self.saved['prob'])
@@ -102,8 +105,13 @@ class FinalPost(unittest.TestCase):
         self.assertTrue(p['test_inference_after_freeze']);self.assertEqual(p['alignment_mismatches'],0);self.assertEqual(p['unique_keys'],156168)
     def test_gate_idempotente_sem_reinferir(self):
         from final5.evaluate import evaluate_once
+        from maintenance56.integrity import verify_history
         before=sha256(OUT/'avaliacao_unica.json')
-        with patch.object(FinalPipeline,'probabilities',side_effect=AssertionError('Nao repetir inferencia')):evaluate_once()
+        # Na reprodução opcional do cache, reconhecer revisões explícitas sem
+        # alterar o avaliador histórico, seu hash ou autorizar nova inferência.
+        with patch('final5.evaluate.preserve',side_effect=lambda:verify_history(read('preservacao.json'))), \
+             patch.object(FinalPipeline,'probabilities',side_effect=AssertionError('Nao repetir inferencia')):
+            evaluate_once()
         self.assertEqual(before,sha256(OUT/'avaliacao_unica.json'))
 
 if __name__=='__main__':unittest.main(verbosity=2)

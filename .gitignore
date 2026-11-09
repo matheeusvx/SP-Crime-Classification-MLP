@@ -15,3 +15,25 @@ models/*.joblib
 reports/etapa2/*.npz
 .ipynb_checkpoints/
 reports/private/
+
+# Revisão pós-auditoria: exclusões recursivas, sem publicar dados individuais.
+**/private/
+*.npz
+*.parquet
+*.keras
+*.joblib
+*.h5
+*.pkl
+*.log
+.env
+.env.*
+*.pem
+*.key
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.tmp
+*.bak
+tmp/
+temp/
+reports/pos_auditoria/estado_anterior.json

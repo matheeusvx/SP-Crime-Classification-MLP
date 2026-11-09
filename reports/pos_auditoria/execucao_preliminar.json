@@ -1,0 +1,10 @@
+{
+  "executed": 29,
+  "passed": 28,
+  "failures": 0,
+  "errors": 1,
+  "cause": "Premissa incorreta em teste novo: JARDIM ÂNGELA é desconhecido no vocabulário final, embora o histórico o aceitasse no bucket raro. O adaptador corretamente o rejeitou.",
+  "correction": "Teste de grafias distintas usa TATUAPE/TATUAPÉ, ambas conhecidas; teste adicional exige rejeição de JARDIM ÂNGELA sem equivalência inventada.",
+  "model_changed": false,
+  "datasets_evaluated": false
+}

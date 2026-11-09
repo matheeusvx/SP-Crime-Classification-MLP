@@ -17,3 +17,8 @@ Uma unica regressao logistica de Platt sobre logit da sigmoid, clip1e-7; C=1e6, 
 IC95% para accuracy, Macro F1, balanced accuracy e recall de roubo: 10.000 replicas IID nao parametricas da distribuicao conjunta das quatro celulas (y,pred), via multinomial, seed12345; percentis2,5/97,5. Para metricas dependentes so da matriz, e equivalente a reamostrar BOs. Intervalos condicionais ao pipeline congelado, sem incerteza de treinamento/selecoes e sem corrigir dependencia residual ou multiplicidade dos subgrupos. Nao afirmar causalidade ou previsao de crime futuro.
 
 Salvar previsoes individuais apenas localmente em pasta privada ignorada pelo Git; testes posteriores recalculam resultados dessas previsoes, sem nova inferencia em2025. Notebook le resultados e nao treina nem reavalia. Encerrar na Etapa5, sem HTTP/frontend/dashboard.
+
+
+## Revisão 5.6 — 09/11/2026
+
+Registro histórico preservado: 2025 não era absolutamente cego, pois estatísticas por classe/ano já haviam sido usadas na Etapa 1; foi avaliado na Etapa 5 e consultado novamente na auditoria. Não usar como teste independente de v2. O critério histórico de recall para Platt fundiu calibração e limiar; ver errata em `decisao_modelo_final.md`. A manutenção não executa novamente esse protocolo nem altera resultados.

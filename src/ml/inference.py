@@ -1,4 +1,9 @@
-"""Interface Python, sem HTTP. Carregue somente artefatos locais confiaveis."""
+"""LEGADO HISTÓRICO — baseline da Etapa 2, não a Dense64 final.
+
+Preservado para reprodução acadêmica. Novas integrações devem usar
+final5.validation.SafeClassifier (contrato seguro 1.1.0).
+Não importar este módulo na futura aplicação web.
+"""
 from ml.runtime import ROOT,MODELS,FEATURES,LABELS
 import json
 import joblib

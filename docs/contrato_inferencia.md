@@ -46,3 +46,8 @@ O carregamento confere o manifesto e os hashes antes de desserializar os artefat
 Para usar no ambiente de ML já configurado, definir `PYTHONPATH=src`. Para inferência, as versões fixadas em `requirements-final.txt` são suficientes; para auditoria/reprodução da avaliação, manter também o ambiente completo de `requirements-ml.txt`. A inicialização deve falhar se os hashes, versão ou dimensões forem incompatíveis.
 
 Uso previsto: demonstração acadêmica sobre registros históricos de celulares subtraídos em São Paulo capital. A resposta não constitui determinação jurídica, não prevê criminalidade futura, não é um sistema oficial e não foi validada para decisão policial ou operacional real.
+
+
+## Revisão 5.6 — 09/11/2026
+
+Este documento descreve o comportamento HISTÓRICO do pipeline congelado, não a entrada recomendada para a web. As permissões de mês/dia None, local desconhecido→ausente e bairro numérico→ausente foram identificadas como defeitos de integração. Para novas integrações, usar `final5.validation.SafeClassifier` e `contrato_inferencia_seguro.md` (1.1.0), que bloqueiam esses casos antes da rede. O contrato JSON congelado não foi reescrito.

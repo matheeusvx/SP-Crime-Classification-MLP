@@ -225,3 +225,27 @@ O teste2025 está encerrado: sua piora de calibração e os problemas de subgrup
 Referência metodológica: [calibração — documentação oficial scikit-learn](https://scikit-learn.org/stable/modules/calibration.html). Brier/Log Loss não isolam calibração; a decisão e os resultados deste projeto foram calculados localmente, sem envio das bases a serviços externos.
 
 **A Etapa5 termina com modelo selecionado, congelado e avaliado uma vez em2025. Nenhum parâmetro foi alterado após o teste.**
+
+
+## Revisão pós-auditoria — Etapa 5.6 (09/11/2026)
+
+Esta seção corrige interpretações da publicação original acima, sem alterar números, artefatos, limiar ou resultados históricos. Prevalece sobre os trechos anteriores incompatíveis. Evidência: [auditoria independente](auditoria_claude.md), achados A1–A4, M1–M7 e B1–B8. As métricas abaixo são transcritas da auditoria, não recalculadas nesta manutenção.
+
+| Referência em 2025 | Accuracy | Macro F1 | AUC ROC |
+| --- | --- | --- | --- |
+| Frequências históricas de roubo em 2023 por local/bairro | 69,28% | 67,27% | 0,7389 |
+| Dense64 final | 68,82% | 67,09% | 0,7412 |
+
+A MLP supera a classe majoritária, porém **não demonstrou ganho consistente sobre a referência por frequências**. Essa referência foi criada retrospectivamente pela auditoria, depois da divulgação do teste: não é candidata selecionada nem vencedora de experimento independente. AUC ROC mede ordenação/discriminação entre classes ao longo dos limiares (0,5 corresponde à referência aleatória e 1 à ordenação perfeita); não é acurácia, não avalia diretamente calibração e não substitui Macro F1 no ponto de operação. A pequena vantagem de AUC da MLP não comprova superioridade geral.
+
+**Errata da calibração:** o critério original confundiu qualidade probabilística com ponto de operação. Platt era monotônico (inclinação positiva 0,9435; intercepto −0,0825), preservando ordenação. Usar 0,5 na escala calibrada equivalia a aproximadamente 0,5218 na sigmoid original; as 2.508 classificações alteradas e a queda de recall de 3,49 pp decorrem desse deslocamento de limiar. Não demonstram isoladamente piora de calibração. Brier, Log Loss e ECE haviam melhorado no holdout de 2024. A decisão histórica de não adotar o calibrador permanece, mas sua justificativa de qualidade estava incompleta. Não foi implementado calibrador, nem alterado o limiar 0,5 nesta revisão.
+
+Em 2025, a sigmoid média de roubo foi aproximadamente 44,31%, contra prevalência de 36,22%, superestimação de 8,10 pp. A auditoria identificou superestimação em todos os bins, ECE10 igual ao desvio médio, AUC semelhante (0,7448 em 2024; 0,7412 em 2025) e inclinação semelhante (0,954; 0,951). Há evidência de desajuste principalmente de nível associado à queda de prevalência, sem perda expressiva de discriminação. Isso é mais específico que atribuir o ECE genericamente à confiabilidade pior, sem provar que todas as demais relações condicionais permaneceram invariantes. Não houve nova aplicação de calibrador ou inferência de 2025 nesta etapa.
+
+**Contrato:** as permissões históricas de None temporal, local desconhecido e bairro numérico não são seguras para a web. Novas integrações devem usar `final5.validation.SafeClassifier`, contrato 1.1.0, com validação bloqueante anterior à rede. O pipeline congelado e seu contrato JSON permanecem históricos e intactos. Não há equivalência global de acentuação de bairros: apenas aliases efetivamente presentes no objeto.
+
+**Limitações adicionais:** ausências/OUTROS em local são fortemente associados ao canal eletrônico e à recodificação observada em 2024; não há vazamento comprovado. A auditoria contém OUTROS presencial em 2025, portanto não se deve afirmar exclusividade absoluta desse valor no canal eletrônico. Em via pública + bairro raro/desconhecido, encontrou 11.118 previsões constantes de roubo, com 4.601 FP. A filtragem excluiu proporcionalmente mais roubos com outras naturezas (4,3%) que furtos (1,1%). Fatos de 2025 registrados em 2026 não são cobertos. Intervalos IID históricos não incluem dependência temporal nem variabilidade de treino.
+
+**Independência e rastreabilidade:** estatísticas de 2025 já foram consultadas na Etapa 1; o teste foi consumido na Etapa 5 e consultado novamente na auditoria para reprodução/diagnóstico. A expressão original “independente” refere-se ao não ajuste do pipeline nesses registros, não à cegueira absoluta de todas as decisões. Uma v2 posterior a esses diagnósticos precisa de protocolo prévio e novo teste (por exemplo 2026, sujeito a qualidade/disponibilidade). O Git próprio começou só após a auditoria; não comprova retroativamente o congelamento.
+
+Detalhamento e oito correções em `relatorio_correcoes_pos_auditoria.md`; contrato seguro e limitações em `../docs/contrato_inferencia_seguro.md` e `../docs/limitacoes_modelo_final.md`. Os números e testes na publicação acima são registros da Etapa 5, não contagem da regressão 5.6.

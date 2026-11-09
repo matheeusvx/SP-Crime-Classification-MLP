@@ -12,3 +12,8 @@
 10. Manter o modelo, threshold e eventual calibrador exatamente como congelados. Uma alteração futura cria nova versão, não substitui silenciosamente o modelo avaliado.
 
 Nenhum frontend, endpoint HTTP ou dashboard foi criado nesta etapa. A implementação web depende de autorização específica para a Etapa6.
+
+
+## Revisão 5.6 — 09/11/2026
+
+Revisão prioritária: para a futura web carregar `final5.validation.SafeClassifier`, não `FinalPipeline` diretamente nem `ml.inference`. Usar `validator.vocabulary()` em seleções controladas e seguir `contrato_inferencia_seguro.md` 1.1.0: mês/dia obrigatórios, local/bairro desconhecidos bloqueados, ausência explícita só local/bairro, raros reconhecidos com aviso. Exibir scores sigmoid não calibrados, nunca chance de crime. A seleção de acentos de bairro é explícita, sem unificação global. O contrato Python foi preparado; nenhuma API/interface foi implementada. 2025 foi consumido e não valida v2. Antes de implantação futura, verificar hashes, testar o contrato em ambiente isolado e revisar apresentação das categorias; não registrar entradas individuais desnecessariamente.

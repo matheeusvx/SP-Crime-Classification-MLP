@@ -27,7 +27,9 @@ class Robustez(unittest.TestCase):
         self.assertEqual(a,b)
     def test_alias_bairro_inspecionado(self):
         self.assertEqual(self.clf.classificar(5,2,'VIA PÚBLICA','BRÁS'),self.clf.classificar(5,2,'VIA PÚBLICA','BRAS'))
-    def test_acento_local_nao_e_equivalencia_automatica(self):
+    def test_acento_local_baseline_historico_nao_e_equivalencia_automatica(self):
+        # Escopo: baseline da Etapa 2. O final local_alias=True tem outro contrato,
+        # coberto em test_contrato_inferencia_seguro, sem alterar este artefato.
         r=dict(mes=5,dia_semana=2,tipo_local='VIA PUBLICA',bairro='BELA VISTA')
         active=[self.pre.feature_names_[i] for i in self.pre.transform([r]).indices]
         self.assertIn('tipo_local_'+MISSING,active)
@@ -63,7 +65,9 @@ class Robustez(unittest.TestCase):
         before=pickle.dumps(self.pre)
         self.clf.classificar(12,6,'LOCAL NOVO','BAIRRO NOVO')
         self.assertEqual(before,pickle.dumps(self.pre));self.assertEqual(self.pre.fit_year_,2023)
-    def test_artefatos_preservados(self):self.assertGreater(preserve(),0)
+    def test_artefatos_preservados(self):
+        from maintenance56.integrity import verify_history
+        self.assertGreater(verify_history(read('preservacao.json')),0)
     def test_reserva_2025(self):
         with self.assertRaises(ValueError):load_year(None,2025)
         a=read('acesso_dados.json')
