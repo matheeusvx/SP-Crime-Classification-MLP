@@ -85,6 +85,7 @@ export interface Estatisticas {
   total: Contagem
   por_ano: (Contagem & { ano: number })[]
   por_mes: (Contagem & { ano: number; mes: number })[]
+  por_dia_mes: (Contagem & { ano: number; mes: number; dia_semana: number })[]
   por_tipo_local: { ano: number; categorias: CategoriaLocal[] }[]
   limiar_demais_categorias: number
 }
@@ -140,7 +141,15 @@ export interface ArquiteturaExperimento {
   recall_roubo_media: number
 }
 
+export interface GrupoPublicado {
+  n: number
+  accuracy: number
+  fp: number
+  fn: number
+}
+
 export interface Metodologia {
+  grupos_2025: { tipo_local: Record<string, GrupoPublicado>; condicao_bairro: Record<string, GrupoPublicado> }
   conjuntos: { papel: string; ano: number; boletins: number }[]
   arquiteturas: ArquiteturaExperimento[]
   desempenho: { validacao_2024: Metricas; teste_2025: Metricas }

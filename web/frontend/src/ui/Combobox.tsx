@@ -1,30 +1,28 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import type { KeyboardEvent } from 'react'
-import type { OpcaoBairro } from '../api/types'
 import { chaveBusca } from '../format'
 
 /** undefined = nada escolhido; null = "não informado" explícito. */
-export type ValorBairro = string | null | undefined
+export type ValorOpcao = string | null | undefined
 
-const LIMITE_VISIVEL = 60
-const NAO_INFORMADO = 'Não informado'
-
-interface Item {
+export interface ItemOpcao {
   valor: string | null
   rotulo: string
-  raro: boolean
-  chave: string
+  tag?: string
 }
+
+const LIMITE_VISIVEL = 60
 
 interface Props {
   rotulo: string
-  opcoes: OpcaoBairro[]
-  valor: ValorBairro
+  itens: ItemOpcao[]
+  valor: ValorOpcao
   erro?: string
-  aoMudar: (valor: ValorBairro) => void
+  dica?: string
+  aoMudar: (valor: ValorOpcao) => void
 }
 
-export function BairroCombobox({ rotulo, opcoes, valor, erro, aoMudar }: Props) {
+export function Combobox({ rotulo, itens, valor, erro, dica, aoMudar }: Props) {
   const id = useId()
   const listaId = `${id}-lista`
   const erroId = `${id}-erro`
@@ -33,33 +31,27 @@ export function BairroCombobox({ rotulo, opcoes, valor, erro, aoMudar }: Props) 
   const [ativo, setAtivo] = useState(0)
   const listaRef = useRef<HTMLUListElement>(null)
 
-  const itens = useMemo<Item[]>(() => {
-    const ordenados = [...opcoes].sort((a, b) => a.valor.localeCompare(b.valor, 'pt-BR'))
-    return [
-      { valor: null, rotulo: NAO_INFORMADO, raro: false, chave: chaveBusca(NAO_INFORMADO) },
-      ...ordenados.map((o) => ({ valor: o.valor, rotulo: o.valor, raro: o.grupo === 'raro', chave: chaveBusca(o.valor) })),
-    ]
-  }, [opcoes])
+  const comChave = useMemo(() => itens.map((i) => ({ ...i, chave: chaveBusca(i.rotulo) })), [itens])
 
-  // Mantém o texto alinhado a seleções externas (ex.: exemplo hipotético, limpar).
+  // Mantém o texto alinhado a seleções externas (ex.: exemplo ou cenário restaurado).
   useEffect(() => {
     if (valor === undefined) return
-    setTexto(valor === null ? NAO_INFORMADO : valor)
-  }, [valor])
+    setTexto(itens.find((i) => i.valor === valor)?.rotulo ?? '')
+  }, [valor, itens])
 
   const { visiveis, total } = useMemo(() => {
     const busca = chaveBusca(valor === undefined ? texto : '')
     const achados = busca
-      ? [...itens.filter((i) => i.chave.startsWith(busca)), ...itens.filter((i) => !i.chave.startsWith(busca) && i.chave.includes(busca))]
-      : itens
+      ? [...comChave.filter((i) => i.chave.startsWith(busca)), ...comChave.filter((i) => !i.chave.startsWith(busca) && i.chave.includes(busca))]
+      : comChave
     return { visiveis: achados.slice(0, LIMITE_VISIVEL), total: achados.length }
-  }, [itens, texto, valor])
+  }, [comChave, texto, valor])
 
   useEffect(() => {
     if (aberto) listaRef.current?.querySelector('[aria-selected="true"]')?.scrollIntoView?.({ block: 'nearest' })
   }, [ativo, aberto])
 
-  function escolher(item: Item) {
+  function escolher(item: ItemOpcao) {
     aoMudar(item.valor)
     setTexto(item.rotulo)
     setAberto(false)
@@ -99,7 +91,7 @@ export function BairroCombobox({ rotulo, opcoes, valor, erro, aoMudar }: Props) 
         aria-describedby={erro ? erroId : undefined}
         autoComplete="off"
         spellCheck={false}
-        placeholder="Digite para buscar"
+        placeholder={dica ?? 'Digite para buscar'}
         value={texto}
         onFocus={() => setAberto(true)}
         onClick={() => setAberto(true)}
@@ -124,7 +116,7 @@ export function BairroCombobox({ rotulo, opcoes, valor, erro, aoMudar }: Props) 
         aria-label={rotulo}
         hidden={!aberto}
         onMouseDown={(e) => e.preventDefault()}
-        className="absolute z-20 mt-1 max-h-72 w-full overflow-auto rounded-md border border-line-strong bg-surface py-1 shadow-md"
+        className="surgir absolute z-30 mt-1.5 max-h-72 w-full origin-top overflow-auto rounded-xl bg-surface p-1 shadow-xl ring-1 ring-line"
       >
         {visiveis.map((item, i) => (
           <li
@@ -134,13 +126,13 @@ export function BairroCombobox({ rotulo, opcoes, valor, erro, aoMudar }: Props) 
             aria-selected={i === ativo}
             onMouseEnter={() => setAtivo(i)}
             onClick={() => escolher(item)}
-            className={`flex cursor-pointer items-center justify-between gap-3 px-3 py-2 text-sm ${i === ativo ? 'bg-accent-soft' : ''}`}
+            className={`flex cursor-pointer items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm ${i === ativo ? 'bg-accent-soft' : ''}`}
           >
             <span>{item.rotulo}</span>
-            {item.raro && <span className="shrink-0 text-xs text-ink-3">grupo raro</span>}
+            {item.tag && <span className="shrink-0 text-xs text-ink-3">{item.tag}</span>}
           </li>
         ))}
-        {visiveis.length === 0 && <li className="px-3 py-2 text-sm text-ink-2">Nenhum bairro do vocabulário corresponde à busca.</li>}
+        {visiveis.length === 0 && <li className="px-3 py-2 text-sm text-ink-2">Nenhuma opção do vocabulário corresponde à busca.</li>}
         {total > visiveis.length && (
           <li className="px-3 py-2 text-xs text-ink-3">
             Mostrando {visiveis.length} de {total}. Continue digitando para refinar.

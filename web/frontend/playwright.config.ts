@@ -14,7 +14,7 @@ export default defineConfig({
   fullyParallel: false,
   timeout: 45_000,
   reporter: [['list']],
-  use: { baseURL: `http://127.0.0.1:${PORTA}`, channel: canal, locale: 'pt-BR' },
+  use: { baseURL: `http://127.0.0.1:${PORTA}`, channel: canal, locale: 'pt-BR', contextOptions: { reducedMotion: 'reduce' } },
   projects: [
     { name: 'desktop', use: { ...devices['Desktop Chrome'], channel: canal, viewport: { width: 1280, height: 900 } } },
     { name: 'mobile', use: { ...devices['Pixel 7'], channel: canal, viewport: { width: 375, height: 800 } } },

@@ -24,6 +24,7 @@ FONTES_METRICAS = {
     'teste': ROOT/'reports/etapa5/metricas_2025.json',
     'validacao': ROOT/'reports/etapa5/metricas_2024_pipeline_final.json',
     'majoritaria': ROOT/'reports/etapa5/referencia_majoritaria_2025.json',
+    'grupos': ROOT/'reports/etapa5/metricas_grupos_2025.csv',
     'auditoria': ROOT/'reports/auditoria_claude.md',
     'manifesto': ROOT/'models/final/manifesto.json',
 }
@@ -45,7 +46,7 @@ def estatisticas():
     if not ELEGIVEIS.exists():
         raise SystemExit(f'Base processada ausente: {ELEGIVEIS.relative_to(ROOT)}')
     db = duckdb.connect()
-    db.execute(f"""CREATE VIEW e AS SELECT ano_fato ano, month(data_fato) mes, alvo,
+    db.execute(f"""CREATE VIEW e AS SELECT ano_fato ano, month(data_fato) mes, dia_semana dia, alvo,
                    NULLIF(TRIM(tipo_local), '') local
                    FROM read_parquet('{ELEGIVEIS.as_posix()}')""")
     por = lambda sql: db.sql(sql).fetchall()
@@ -56,6 +57,9 @@ def estatisticas():
     meses = {}
     for ano, mes, alvo, n in por('SELECT ano, mes, alvo, count(*) FROM e GROUP BY ALL'):
         meses.setdefault((ano, mes), {})[alvo] = n
+    dias = {}
+    for ano, mes, dia, alvo, n in por('SELECT ano, mes, dia, alvo, count(*) FROM e GROUP BY ALL'):
+        dias.setdefault((ano, mes, dia), {})[alvo] = n
     volume = dict(por('SELECT local, count(*) FROM e WHERE local IS NOT NULL GROUP BY local'))
 
     def rotulo(local):
@@ -79,6 +83,7 @@ def estatisticas():
         'total': contar(total),
         'por_ano': [{'ano': a, **contar(anos[a])} for a in sorted(anos)],
         'por_mes': [{'ano': a, 'mes': m, **contar(meses[(a, m)])} for a, m in sorted(meses)],
+        'por_dia_mes': [{'ano': a, 'mes': m, 'dia_semana': d, **contar(dias[(a, m, d)])} for a, m, d in sorted(dias)],
         'por_tipo_local': [{'ano': a, 'categorias': sorted(
             ({'categoria': n, 'tipo': t, **contar(v)} for (n, t), v in locais[a].items()),
             key=lambda c: (c['tipo'] == 'demais', -(c['furtos']+c['roubos']), c['categoria']))}
@@ -149,7 +154,13 @@ def metodologia():
     teste, validacao = ler('teste'), ler('validacao')
     a1, nivel = auditoria()
     maj = ler('majoritaria')['metrics']
+    grupos = {}
+    for r in csv_rows(FONTES_METRICAS['grupos']):
+        if r['grupo'] in ('tipo_local', 'condicao_bairro'):
+            grupos.setdefault(r['grupo'], {})[r['categoria']] = {
+                'n': int(r['n']), 'accuracy': float(r['accuracy']), 'fp': int(r['fp']), 'fn': int(r['fn'])}
     return {
+        'grupos_2025': grupos,
         'conjuntos': [
             {'papel': 'Treino', 'ano': 2023, 'boletins': manifesto['preprocessing']['fit_rows']},
             {'papel': 'Validação (desenvolvimento)', 'ano': 2024, 'boletins': validacao['n']},

@@ -247,6 +247,1772 @@
    "roubos": 3864
   }
  ],
+ "por_dia_mes": [
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 0,
+   "furtos": 1041,
+   "roubos": 1077
+  },
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 1,
+   "furtos": 1247,
+   "roubos": 1178
+  },
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 2,
+   "furtos": 1044,
+   "roubos": 910
+  },
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 3,
+   "furtos": 956,
+   "roubos": 1013
+  },
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 4,
+   "furtos": 1067,
+   "roubos": 1117
+  },
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 5,
+   "furtos": 1122,
+   "roubos": 1069
+  },
+  {
+   "ano": 2023,
+   "mes": 1,
+   "dia_semana": 6,
+   "furtos": 1192,
+   "roubos": 1129
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 0,
+   "furtos": 1224,
+   "roubos": 926
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 1,
+   "furtos": 1292,
+   "roubos": 971
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 2,
+   "furtos": 989,
+   "roubos": 1011
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 3,
+   "furtos": 1102,
+   "roubos": 1054
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 4,
+   "furtos": 1280,
+   "roubos": 1182
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 5,
+   "furtos": 2404,
+   "roubos": 1336
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "dia_semana": 6,
+   "furtos": 2009,
+   "roubos": 1128
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 0,
+   "furtos": 941,
+   "roubos": 832
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 1,
+   "furtos": 1153,
+   "roubos": 892
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 2,
+   "furtos": 1454,
+   "roubos": 1332
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 3,
+   "furtos": 1573,
+   "roubos": 1270
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 4,
+   "furtos": 1891,
+   "roubos": 1329
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 5,
+   "furtos": 1461,
+   "roubos": 1111
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "dia_semana": 6,
+   "furtos": 1035,
+   "roubos": 1006
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 0,
+   "furtos": 893,
+   "roubos": 818
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 1,
+   "furtos": 1148,
+   "roubos": 901
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 2,
+   "furtos": 1152,
+   "roubos": 958
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 3,
+   "furtos": 1204,
+   "roubos": 1025
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 4,
+   "furtos": 932,
+   "roubos": 900
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 5,
+   "furtos": 1407,
+   "roubos": 1215
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "dia_semana": 6,
+   "furtos": 1122,
+   "roubos": 1064
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 0,
+   "furtos": 993,
+   "roubos": 900
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 1,
+   "furtos": 1481,
+   "roubos": 1121
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 2,
+   "furtos": 1470,
+   "roubos": 1117
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 3,
+   "furtos": 1231,
+   "roubos": 931
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 4,
+   "furtos": 1311,
+   "roubos": 1041
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 5,
+   "furtos": 1363,
+   "roubos": 1000
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "dia_semana": 6,
+   "furtos": 931,
+   "roubos": 806
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 0,
+   "furtos": 915,
+   "roubos": 751
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 1,
+   "furtos": 1168,
+   "roubos": 866
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 2,
+   "furtos": 1236,
+   "roubos": 909
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 3,
+   "furtos": 1520,
+   "roubos": 1044
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 4,
+   "furtos": 1533,
+   "roubos": 1319
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 5,
+   "furtos": 1394,
+   "roubos": 995
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "dia_semana": 6,
+   "furtos": 1824,
+   "roubos": 928
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 0,
+   "furtos": 1076,
+   "roubos": 880
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 1,
+   "furtos": 1129,
+   "roubos": 826
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 2,
+   "furtos": 1147,
+   "roubos": 851
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 3,
+   "furtos": 1143,
+   "roubos": 933
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 4,
+   "furtos": 1326,
+   "roubos": 1064
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 5,
+   "furtos": 1629,
+   "roubos": 1165
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "dia_semana": 6,
+   "furtos": 1076,
+   "roubos": 959
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 0,
+   "furtos": 860,
+   "roubos": 757
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 1,
+   "furtos": 1406,
+   "roubos": 1068
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 2,
+   "furtos": 1717,
+   "roubos": 1138
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 3,
+   "furtos": 1529,
+   "roubos": 1083
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 4,
+   "furtos": 1258,
+   "roubos": 1001
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 5,
+   "furtos": 1219,
+   "roubos": 941
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "dia_semana": 6,
+   "furtos": 844,
+   "roubos": 799
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 0,
+   "furtos": 967,
+   "roubos": 695
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 1,
+   "furtos": 1107,
+   "roubos": 844
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 2,
+   "furtos": 1263,
+   "roubos": 901
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 3,
+   "furtos": 1247,
+   "roubos": 929
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 4,
+   "furtos": 1576,
+   "roubos": 1295
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 5,
+   "furtos": 2002,
+   "roubos": 1184
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "dia_semana": 6,
+   "furtos": 1902,
+   "roubos": 774
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 0,
+   "furtos": 1110,
+   "roubos": 930
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 1,
+   "furtos": 1365,
+   "roubos": 1178
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 2,
+   "furtos": 1194,
+   "roubos": 1018
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 3,
+   "furtos": 1123,
+   "roubos": 936
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 4,
+   "furtos": 1198,
+   "roubos": 960
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 5,
+   "furtos": 1349,
+   "roubos": 979
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "dia_semana": 6,
+   "furtos": 1111,
+   "roubos": 919
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 0,
+   "furtos": 854,
+   "roubos": 809
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 1,
+   "furtos": 1161,
+   "roubos": 882
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 2,
+   "furtos": 1489,
+   "roubos": 1186
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 3,
+   "furtos": 1432,
+   "roubos": 1149
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 4,
+   "furtos": 1353,
+   "roubos": 961
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 5,
+   "furtos": 1331,
+   "roubos": 898
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "dia_semana": 6,
+   "furtos": 927,
+   "roubos": 720
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 0,
+   "furtos": 786,
+   "roubos": 710
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 1,
+   "furtos": 988,
+   "roubos": 850
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 2,
+   "furtos": 1080,
+   "roubos": 905
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 3,
+   "furtos": 1125,
+   "roubos": 953
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 4,
+   "furtos": 1496,
+   "roubos": 1186
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 5,
+   "furtos": 1739,
+   "roubos": 1120
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "dia_semana": 6,
+   "furtos": 1082,
+   "roubos": 885
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 0,
+   "furtos": 941,
+   "roubos": 788
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 1,
+   "furtos": 1011,
+   "roubos": 911
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 2,
+   "furtos": 1072,
+   "roubos": 957
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 3,
+   "furtos": 882,
+   "roubos": 822
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 4,
+   "furtos": 830,
+   "roubos": 866
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 5,
+   "furtos": 999,
+   "roubos": 824
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "dia_semana": 6,
+   "furtos": 843,
+   "roubos": 693
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 0,
+   "furtos": 894,
+   "roubos": 711
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 1,
+   "furtos": 1160,
+   "roubos": 815
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 2,
+   "furtos": 873,
+   "roubos": 721
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 3,
+   "furtos": 1193,
+   "roubos": 986
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 4,
+   "furtos": 1023,
+   "roubos": 901
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 5,
+   "furtos": 1630,
+   "roubos": 1022
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "dia_semana": 6,
+   "furtos": 1621,
+   "roubos": 843
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 0,
+   "furtos": 736,
+   "roubos": 666
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 1,
+   "furtos": 985,
+   "roubos": 804
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 2,
+   "furtos": 1019,
+   "roubos": 763
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 3,
+   "furtos": 1039,
+   "roubos": 846
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 4,
+   "furtos": 1435,
+   "roubos": 985
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 5,
+   "furtos": 1443,
+   "roubos": 1000
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "dia_semana": 6,
+   "furtos": 1057,
+   "roubos": 818
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 0,
+   "furtos": 972,
+   "roubos": 832
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 1,
+   "furtos": 1259,
+   "roubos": 952
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 2,
+   "furtos": 1059,
+   "roubos": 762
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 3,
+   "furtos": 1001,
+   "roubos": 886
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 4,
+   "furtos": 1107,
+   "roubos": 818
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 5,
+   "furtos": 1142,
+   "roubos": 805
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "dia_semana": 6,
+   "furtos": 916,
+   "roubos": 654
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 0,
+   "furtos": 718,
+   "roubos": 576
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 1,
+   "furtos": 984,
+   "roubos": 785
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 2,
+   "furtos": 1225,
+   "roubos": 894
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 3,
+   "furtos": 1227,
+   "roubos": 930
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 4,
+   "furtos": 1256,
+   "roubos": 1008
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 5,
+   "furtos": 1184,
+   "roubos": 807
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "dia_semana": 6,
+   "furtos": 768,
+   "roubos": 654
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 0,
+   "furtos": 757,
+   "roubos": 651
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 1,
+   "furtos": 966,
+   "roubos": 709
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 2,
+   "furtos": 1020,
+   "roubos": 758
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 3,
+   "furtos": 1086,
+   "roubos": 753
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 4,
+   "furtos": 1178,
+   "roubos": 825
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 5,
+   "furtos": 1437,
+   "roubos": 990
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "dia_semana": 6,
+   "furtos": 1661,
+   "roubos": 921
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 0,
+   "furtos": 866,
+   "roubos": 712
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 1,
+   "furtos": 1016,
+   "roubos": 769
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 2,
+   "furtos": 1214,
+   "roubos": 917
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 3,
+   "furtos": 1036,
+   "roubos": 778
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 4,
+   "furtos": 1083,
+   "roubos": 863
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 5,
+   "furtos": 1103,
+   "roubos": 792
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "dia_semana": 6,
+   "furtos": 776,
+   "roubos": 612
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 0,
+   "furtos": 724,
+   "roubos": 535
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 1,
+   "furtos": 960,
+   "roubos": 615
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 2,
+   "furtos": 1102,
+   "roubos": 679
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 3,
+   "furtos": 1475,
+   "roubos": 951
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 4,
+   "furtos": 1429,
+   "roubos": 899
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 5,
+   "furtos": 1421,
+   "roubos": 966
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "dia_semana": 6,
+   "furtos": 730,
+   "roubos": 562
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 0,
+   "furtos": 995,
+   "roubos": 702
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 1,
+   "furtos": 1039,
+   "roubos": 711
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 2,
+   "furtos": 1198,
+   "roubos": 651
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 3,
+   "furtos": 1125,
+   "roubos": 665
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 4,
+   "furtos": 1162,
+   "roubos": 716
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 5,
+   "furtos": 1285,
+   "roubos": 797
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "dia_semana": 6,
+   "furtos": 1158,
+   "roubos": 790
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 0,
+   "furtos": 751,
+   "roubos": 565
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 1,
+   "furtos": 1272,
+   "roubos": 871
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 2,
+   "furtos": 1331,
+   "roubos": 947
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 3,
+   "furtos": 1338,
+   "roubos": 915
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 4,
+   "furtos": 1085,
+   "roubos": 785
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 5,
+   "furtos": 1210,
+   "roubos": 716
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "dia_semana": 6,
+   "furtos": 810,
+   "roubos": 580
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 0,
+   "furtos": 867,
+   "roubos": 621
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 1,
+   "furtos": 1074,
+   "roubos": 744
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 2,
+   "furtos": 1052,
+   "roubos": 770
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 3,
+   "furtos": 1148,
+   "roubos": 694
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 4,
+   "furtos": 1409,
+   "roubos": 975
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 5,
+   "furtos": 1595,
+   "roubos": 942
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "dia_semana": 6,
+   "furtos": 866,
+   "roubos": 609
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 0,
+   "furtos": 1045,
+   "roubos": 786
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 1,
+   "furtos": 1180,
+   "roubos": 812
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 2,
+   "furtos": 940,
+   "roubos": 711
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 3,
+   "furtos": 976,
+   "roubos": 688
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 4,
+   "furtos": 1190,
+   "roubos": 843
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 5,
+   "furtos": 1328,
+   "roubos": 860
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "dia_semana": 6,
+   "furtos": 1082,
+   "roubos": 1012
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 0,
+   "furtos": 843,
+   "roubos": 586
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 1,
+   "furtos": 961,
+   "roubos": 622
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 2,
+   "furtos": 1167,
+   "roubos": 788
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 3,
+   "furtos": 1138,
+   "roubos": 768
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 4,
+   "furtos": 1250,
+   "roubos": 947
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 5,
+   "furtos": 1017,
+   "roubos": 782
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "dia_semana": 6,
+   "furtos": 817,
+   "roubos": 602
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 0,
+   "furtos": 819,
+   "roubos": 568
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 1,
+   "furtos": 1063,
+   "roubos": 703
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 2,
+   "furtos": 1082,
+   "roubos": 674
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 3,
+   "furtos": 1123,
+   "roubos": 701
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 4,
+   "furtos": 1213,
+   "roubos": 764
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 5,
+   "furtos": 1439,
+   "roubos": 864
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "dia_semana": 6,
+   "furtos": 1226,
+   "roubos": 679
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 0,
+   "furtos": 1256,
+   "roubos": 725
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 1,
+   "furtos": 1284,
+   "roubos": 737
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 2,
+   "furtos": 1039,
+   "roubos": 624
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 3,
+   "furtos": 1094,
+   "roubos": 740
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 4,
+   "furtos": 1203,
+   "roubos": 825
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 5,
+   "furtos": 1965,
+   "roubos": 1007
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "dia_semana": 6,
+   "furtos": 1618,
+   "roubos": 925
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 0,
+   "furtos": 760,
+   "roubos": 505
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 1,
+   "furtos": 1344,
+   "roubos": 756
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 2,
+   "furtos": 1499,
+   "roubos": 875
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 3,
+   "furtos": 1132,
+   "roubos": 683
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 4,
+   "furtos": 994,
+   "roubos": 666
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 5,
+   "furtos": 1130,
+   "roubos": 677
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "dia_semana": 6,
+   "furtos": 815,
+   "roubos": 573
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 0,
+   "furtos": 864,
+   "roubos": 555
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 1,
+   "furtos": 1194,
+   "roubos": 571
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 2,
+   "furtos": 1363,
+   "roubos": 714
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 3,
+   "furtos": 1403,
+   "roubos": 809
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 4,
+   "furtos": 1485,
+   "roubos": 854
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 5,
+   "furtos": 1483,
+   "roubos": 778
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "dia_semana": 6,
+   "furtos": 897,
+   "roubos": 579
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 0,
+   "furtos": 957,
+   "roubos": 575
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 1,
+   "furtos": 1140,
+   "roubos": 653
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 2,
+   "furtos": 1154,
+   "roubos": 663
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 3,
+   "furtos": 1040,
+   "roubos": 595
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 4,
+   "furtos": 1098,
+   "roubos": 685
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 5,
+   "furtos": 1360,
+   "roubos": 717
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "dia_semana": 6,
+   "furtos": 1559,
+   "roubos": 708
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 0,
+   "furtos": 776,
+   "roubos": 502
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 1,
+   "furtos": 1430,
+   "roubos": 838
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 2,
+   "furtos": 1342,
+   "roubos": 744
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 3,
+   "furtos": 1360,
+   "roubos": 829
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 4,
+   "furtos": 1205,
+   "roubos": 804
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 5,
+   "furtos": 1316,
+   "roubos": 711
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "dia_semana": 6,
+   "furtos": 898,
+   "roubos": 579
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 0,
+   "furtos": 862,
+   "roubos": 467
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 1,
+   "furtos": 1255,
+   "roubos": 551
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 2,
+   "furtos": 1236,
+   "roubos": 658
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 3,
+   "furtos": 1161,
+   "roubos": 647
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 4,
+   "furtos": 1487,
+   "roubos": 930
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 5,
+   "furtos": 1642,
+   "roubos": 869
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "dia_semana": 6,
+   "furtos": 1225,
+   "roubos": 630
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 0,
+   "furtos": 1083,
+   "roubos": 601
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 1,
+   "furtos": 1364,
+   "roubos": 771
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 2,
+   "furtos": 1300,
+   "roubos": 609
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 3,
+   "furtos": 1295,
+   "roubos": 617
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 4,
+   "furtos": 1279,
+   "roubos": 669
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 5,
+   "furtos": 1778,
+   "roubos": 682
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "dia_semana": 6,
+   "furtos": 1215,
+   "roubos": 521
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 0,
+   "furtos": 715,
+   "roubos": 435
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 1,
+   "furtos": 1132,
+   "roubos": 599
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 2,
+   "furtos": 1382,
+   "roubos": 790
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 3,
+   "furtos": 1553,
+   "roubos": 830
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 4,
+   "furtos": 1565,
+   "roubos": 818
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 5,
+   "furtos": 1242,
+   "roubos": 563
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "dia_semana": 6,
+   "furtos": 874,
+   "roubos": 461
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 0,
+   "furtos": 916,
+   "roubos": 462
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 1,
+   "furtos": 1157,
+   "roubos": 523
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 2,
+   "furtos": 1269,
+   "roubos": 631
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 3,
+   "furtos": 1108,
+   "roubos": 562
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 4,
+   "furtos": 1167,
+   "roubos": 606
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 5,
+   "furtos": 1859,
+   "roubos": 806
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "dia_semana": 6,
+   "furtos": 1047,
+   "roubos": 560
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 0,
+   "furtos": 938,
+   "roubos": 619
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 1,
+   "furtos": 953,
+   "roubos": 546
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 2,
+   "furtos": 905,
+   "roubos": 547
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 3,
+   "furtos": 858,
+   "roubos": 495
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 4,
+   "furtos": 1038,
+   "roubos": 565
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 5,
+   "furtos": 1289,
+   "roubos": 583
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "dia_semana": 6,
+   "furtos": 843,
+   "roubos": 509
+  }
+ ],
  "por_tipo_local": [
   {
    "ano": 2023,

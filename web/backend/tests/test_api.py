@@ -257,6 +257,9 @@ def test_estatisticas_conferem_com_base(client):
     assert sum(m['furtos'] for m in b['por_mes']) == 298083
     assert sum(m['roubos'] for m in b['por_mes']) == 207104
     assert len(b['por_mes']) == 36
+    assert len(b['por_dia_mes']) == 36*7
+    assert sum(d['furtos'] for d in b['por_dia_mes']) == 298083
+    assert sum(d['roubos'] for d in b['por_dia_mes']) == 207104
     for ano in b['por_tipo_local']:
         linha = next(a for a in b['por_ano'] if a['ano'] == ano['ano'])
         assert sum(c['furtos'] for c in ano['categorias']) == linha['furtos']
@@ -294,6 +297,8 @@ def test_metodologia_reproduz_metricas_publicadas(client):
     assert round(t['balanced_accuracy']*100, 2) == 67.65 and t['auc'] == 0.7412
     assert round(t['ece10']*100, 2) == 8.10
     assert (t['tn'], t['fp'], t['fn'], t['tp']) == (71598, 28009, 20691, 35870)
+    assert m['grupos_2025']['tipo_local']['VIA PÚBLICA']['n'] == 122014
+    assert sum(g['n'] for g in m['grupos_2025']['condicao_bairro'].values()) == 156168
     assert [a['nome'] for a in m['arquiteturas']] == ['Dense32', 'Dense64', 'Dense64 → Dense32']
     assert m['referencias_2025']['tabela_frequencias']['accuracy'] == pytest.approx(.6928)
     assert m['referencias_2025']['classe_majoritaria']['accuracy'] == pytest.approx(.6378195, abs=1e-6)

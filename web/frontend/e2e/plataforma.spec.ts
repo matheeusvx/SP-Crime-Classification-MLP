@@ -37,17 +37,20 @@ test.beforeAll(() => {
 
 const score = (n: number) => n.toLocaleString('pt-BR', { minimumFractionDigits: 3, maximumFractionDigits: 3 })
 
-async function escolherBairro(page: Page, nome: string) {
-  const campo = page.getByRole('combobox', { name: 'Bairro' })
-  await campo.fill(nome)
-  await page.getByRole('listbox', { name: 'Bairro' }).getByRole('option', { name: nome }).first().click()
+const escapar = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+
+async function escolher(page: Page, campo: string, nome: string) {
+  await page.getByRole('combobox', { name: campo }).fill(nome)
+  await page.getByRole('listbox', { name: campo }).getByRole('option', { name: new RegExp(`^${escapar(nome)}( grupo raro)?$`) }).click()
 }
 
+const chip = (page: Page, nome: string) => page.locator('label.chip', { has: page.getByRole('radio', { name: nome, exact: true }) }).click()
+
 async function preencher(page: Page, c: (typeof CASOS)[number]) {
-  await page.getByLabel('Mês da ocorrência').selectOption({ label: c.mes })
-  await page.getByLabel('Dia da semana').selectOption({ label: c.dia })
-  await page.getByLabel('Tipo de local').selectOption({ value: c.entrada.tipo_local })
-  await escolherBairro(page, c.entrada.bairro)
+  await chip(page, c.mes)
+  await chip(page, c.dia)
+  await escolher(page, 'Tipo de local', c.local)
+  await escolher(page, 'Bairro', c.entrada.bairro)
 }
 
 async function semRolagemHorizontal(page: Page) {
@@ -60,7 +63,7 @@ const captura = (page: Page, nome: string, projeto: string) =>
 
 test('resultados na interface correspondem à interface Python segura', async ({ page }, info) => {
   await page.goto('/')
-  await expect(page.getByLabel('Tipo de local')).toBeVisible()
+  await expect(page.getByRole('combobox', { name: 'Tipo de local' })).toBeVisible()
   await captura(page, '01-classificador-vazio', info.project.name)
   for (const [i, caso] of CASOS.entries()) {
     await preencher(page, caso)
@@ -77,6 +80,8 @@ test('resultados na interface correspondem à interface Python segura', async ({
     await expect(painel.getByText('Saídas não calibradas do modelo')).toBeVisible()
     if (i === 0) await captura(page, '02-classificador-resultado', info.project.name)
   }
+  await expect(page.getByRole('button', { name: /^Cenário \d/ })).toHaveCount(3)
+  await captura(page, '08-cenarios-e-contexto', info.project.name)
   await semRolagemHorizontal(page)
 })
 
@@ -85,7 +90,7 @@ test('bairro raro exibe aviso real do contrato', async ({ page, request }, info)
   const raro = opcoes.bairros.find((b: { grupo: string }) => b.grupo === 'raro').valor
   await page.goto('/')
   await preencher(page, CASOS[0])
-  await escolherBairro(page, raro)
+  await escolher(page, 'Bairro', raro)
   await page.getByRole('button', { name: 'Classificar ocorrência' }).click()
   await expect(page.getByText('Bairro com representação limitada')).toBeVisible()
   await captura(page, '03-aviso-bairro-raro', info.project.name)
@@ -93,13 +98,12 @@ test('bairro raro exibe aviso real do contrato', async ({ page, request }, info)
 
 test('ausência explícita gera avisos e não mês ou dia ausentes', async ({ page }) => {
   await page.goto('/')
-  await page.getByLabel('Tipo de local').selectOption({ label: 'Não informado' })
-  await page.getByRole('combobox', { name: 'Bairro' }).click()
-  await page.getByRole('listbox', { name: 'Bairro' }).getByRole('option', { name: 'Não informado', exact: true }).click()
+  await escolher(page, 'Tipo de local', 'Não informado')
+  await escolher(page, 'Bairro', 'Não informado')
   await page.getByRole('button', { name: 'Classificar ocorrência' }).click()
   await expect(page.getByText('Selecione o mês.')).toBeVisible()
-  await page.getByLabel('Mês da ocorrência').selectOption({ label: 'Maio' })
-  await page.getByLabel('Dia da semana').selectOption({ label: 'Quarta-feira' })
+  await chip(page, 'Maio')
+  await chip(page, 'Quarta-feira')
   await page.getByRole('button', { name: 'Classificar ocorrência' }).click()
   await expect(page.getByText('Tipo de local com ressalva')).toBeVisible()
   await expect(page.getByText('Campo não informado')).toHaveCount(2)
@@ -136,12 +140,14 @@ test('falha de rede e serviço indisponível são informados', async ({ page }, 
 test('formulário funciona somente pelo teclado', async ({ page }, info) => {
   test.skip(info.project.name === 'mobile', 'teclado físico é cenário de desktop')
   await page.goto('/')
-  await page.getByLabel('Mês da ocorrência').focus()
-  await page.keyboard.press('ArrowDown')
+  await page.getByRole('radio', { name: 'Janeiro' }).focus()
+  await page.keyboard.press('Space')
   await page.keyboard.press('Tab')
-  await page.keyboard.press('ArrowDown')
+  await page.keyboard.press('Space')
   await page.keyboard.press('Tab')
-  await page.keyboard.press('ArrowDown')
+  await expect(page.getByRole('combobox', { name: 'Tipo de local' })).toBeFocused()
+  await page.keyboard.type('via p')
+  await page.keyboard.press('Enter')
   await page.keyboard.press('Tab')
   await expect(page.getByRole('combobox', { name: 'Bairro' })).toBeFocused()
   await page.keyboard.type('bela vis')
@@ -155,14 +161,14 @@ test('formulário funciona somente pelo teclado', async ({ page }, info) => {
 
 test('painel mostra dados históricos reais e filtra', async ({ page }, info) => {
   await page.goto('/painel')
-  const tile = page.locator('.panel', { hasText: 'Boletins elegíveis' }).first()
+  const tile = page.locator('.card', { hasText: 'Boletins elegíveis' }).first()
   await expect(tile).toContainText('505.187')
-  await expect(page.locator('.panel', { hasText: 'Furtos' }).first()).toContainText('298.083')
+  await expect(page.locator('.card', { has: page.locator('p', { hasText: /^Furtos$/ }) }).first()).toContainText('298.083')
   await expect(page.locator('svg.recharts-surface').first()).toBeVisible()
   await page.waitForTimeout(300)
   await captura(page, '06-painel', info.project.name)
   await semRolagemHorizontal(page)
-  await page.getByText('2024', { exact: true }).first().click()
+  await page.locator('label', { hasText: /^2024$/ }).click()
   await expect(tile).toContainText('158.895')
   await expect(page.getByText(/preenchimento administrativo da Delegacia Eletrônica/)).toBeVisible()
   await expect(page.getByText(/não são previsões de criminalidade/i)).toBeVisible()
@@ -174,11 +180,28 @@ test('metodologia apresenta as métricas publicadas', async ({ page }, info) => 
   await expect(page.getByRole('cell', { name: '68,82%' }).first()).toBeVisible()
   await expect(page.getByRole('cell', { name: '67,09%' }).first()).toBeVisible()
   await expect(page.getByText('71.598')).toBeVisible()
-  await expect(page.getByRole('rowheader', { name: /Dense64 → Dense32/ })).toBeVisible()
+  await expect(page.getByRole('button', { name: /Dense64 → Dense32/ })).toBeVisible()
   await expect(page.getByText(/não demonstrou vantagem consistente/)).toBeVisible()
   await expect(page.getByRole('link', { name: 'Consultas estatísticas da SSP-SP' })).toHaveAttribute('href', 'https://www.ssp.sp.gov.br/estatistica/consultas')
   await captura(page, '07-sobre', info.project.name)
   await semRolagemHorizontal(page)
+})
+
+test.describe('com animações ativas', () => {
+  test.use({ contextOptions: { reducedMotion: 'no-preference' } })
+
+  test('números terminam exatos e conteúdo é revelado ao rolar', async ({ page }) => {
+    await page.goto('/painel')
+    await expect(page.locator('.card', { hasText: 'Boletins elegíveis' }).first()).toContainText('505.187')
+    await page.getByRole('heading', { name: 'Mês e dia da semana' }).scrollIntoViewIfNeeded()
+    await expect(page.locator('.revelar.visivel').first()).toBeVisible()
+    await page.goto('/')
+    await preencher(page, CASOS[0])
+    await page.getByRole('button', { name: 'Classificar ocorrência' }).click()
+    const scores = page.getByRole('region', { name: 'Scores do modelo' })
+    await expect(scores.getByText(score(referencias[0].scores_sigmoid.roubo), { exact: true })).toBeVisible()
+    await expect(page.locator('path.transicao-arco').first()).toHaveAttribute('stroke-dasharray', /^0\.7/)
+  })
 })
 
 test('sem erros de console nas páginas', async ({ page }) => {

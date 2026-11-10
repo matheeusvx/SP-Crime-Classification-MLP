@@ -32,6 +32,23 @@ Tipos de local têm rótulo legível na tela (“Via Pública”), mas o valor e
 
 `OUTROS` e “Não informado” recebem ressalva na tela. A nota sobre `OUTROS` e local ausente no resultado é de apresentação; o corpo de `/api/classify` segue integralmente o contrato. No gráfico por local, tipos com menos de 1.000 boletins nos três anos são somados em “Demais categorias”, o que também evita células muito pequenas nos filtros.
 
+### Remodelação visual
+
+A interface foi refeita com cartões, indicadores em destaque e visualizações inspiradas nas referências enviadas. Cada elemento usa dados reais:
+
+| Elemento | Dados |
+| --- | --- |
+| Medidor semicircular e comparação furto × roubo | Scores da própria classificação, com a marca superior no limiar 0,5 |
+| Comparar cenários | Classificações feitas pelo visitante, mantidas só em memória; selecionar uma restaura os campos sem nova chamada |
+| Barras com destaque de mês e dia | Contagens históricas, atualizadas ao selecionar os campos |
+| Acurácia publicada em grupos semelhantes | `reports/etapa5/metricas_grupos_2025.csv`, sem novo cálculo |
+| Mapa de calor mês × dia, série com área e minigráficos | Novos agregados `por_dia_mes` e séries mensais |
+| Diagrama da rede, matriz 2024/2025 e seleção de arquiteturas | Manifesto e métricas publicadas |
+
+**Decisão metodológica:** não foi criado mapa de score do modelo por mês e dia, nem análise automática de sensibilidade. Isso apresentaria scores como risco por período e funcionaria como explicação individual sem método validado, o que as regras da etapa proíbem. A variação de cor no painel representa volume de registros; a tela informa que isso não indica risco.
+
+**Animações:** implementadas em CSS e React, sem biblioteca adicional. A skill `stageshow`, indicada no pedido, não foi encontrada nesta instalação nem no catálogo. Todas as animações respeitam a preferência de movimento reduzido, e os valores finais não dependem delas. Testes confirmam o estado final com animação ativa, sem avaliar a fluidez percebida.
+
 ## 3. Segurança
 
 CORS por lista explícita (curinga recusado); apenas GET e POST; atributos extras recusados; corpo limitado a 2 KB; 60 classificações por minuto e por IP; cabeçalhos CSP, `nosniff` e `frame-ancestors`; documentação desativada em produção; sem rota de treino ou upload; respostas sem hashes, caminhos ou eco da entrada; entradas não vão para logs nem para retreinamento.
@@ -42,8 +59,8 @@ CORS por lista explícita (curinga recusado); apenas GET e POST; atributos extra
 | --- | --- |
 | Regressão da Etapa 5.6 (mesmas suítes de `maintenance56.run_tests`) | **105 executados, 0 falhas, 0 erros** |
 | API (pytest, modelo real, entradas sintéticas) | **73 aprovados** |
-| Componentes (Vitest + Testing Library) | **25 aprovados** |
-| Integração em navegador real (Playwright + Edge; desktop 1280 px e mobile 375 px) | **19 aprovados, 1 pulado** |
+| Componentes (Vitest + Testing Library) | **29 aprovados** |
+| Integração em navegador real (Playwright + Edge; desktop 1280 px e mobile 375 px) | **21 aprovados, 1 pulado** |
 
 A regressão foi executada por suíte, sem regravar `reports/pos_auditoria`; resultado em `etapa6/regressao_105.json`. Os oito testes `FinalPost` de cache de 2025 continuam separados e não foram executados. O teste pulado é o de teclado físico no perfil móvel; ele foi executado no perfil desktop.
 
@@ -62,9 +79,10 @@ Medições locais, em CPU, sem rede.
 | Carga do modelo e inicialização | ≈ 4,8 s |
 | Memória residente após 300 classificações | ≈ 343 MB |
 | Classificação (mediana / p95) | ≈ 4,4 ms / 5,6 ms |
-| JavaScript inicial (gzip) | ≈ 89 KB |
-| CSS (gzip) | ≈ 5 KB |
-| Página do painel com Recharts, sob demanda (gzip) | ≈ 113 KB |
+| JavaScript inicial (gzip) | ≈ 94 KB |
+| CSS (gzip) | ≈ 7,5 KB |
+| Fonte Inter, subconjunto latino | ≈ 48 KB |
+| Página do painel com Recharts, sob demanda (gzip) | ≈ 115 KB |
 | `/api/options` descomprimido | ≈ 87 KB |
 
 ## 6. Dados e reprodutibilidade

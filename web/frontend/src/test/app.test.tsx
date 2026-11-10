@@ -7,7 +7,7 @@ import { rotuloCategoria } from '../format'
 import { EXPLICACAO } from '../components/Resultado'
 import { opcoes, resposta, simularApi, sucesso } from './fixtures'
 
-const indicador = (rotulo: string) => screen.getByText(rotulo).closest('.panel') as HTMLElement
+const indicador = (rotulo: string) => screen.getByText(rotulo).closest('.card') as HTMLElement
 
 const abrir = (rota = '/') =>
   render(
@@ -16,12 +16,27 @@ const abrir = (rota = '/') =>
     </MemoryRouter>,
   )
 
-async function preencher(user: ReturnType<typeof userEvent.setup>) {
-  await user.selectOptions(await screen.findByLabelText('Mês da ocorrência'), 'Maio')
-  await user.selectOptions(screen.getByLabelText('Dia da semana'), 'Quarta-feira')
-  await user.selectOptions(screen.getByLabelText('Tipo de local'), 'VIA PÚBLICA')
-  await user.type(screen.getByRole('combobox', { name: 'Bairro' }), 'bela')
-  await user.click(screen.getByRole('option', { name: 'BELA VISTA' }))
+type Usuario = ReturnType<typeof userEvent.setup>
+const areaResultado = () => within(screen.getByRole('region', { name: 'Resultado' }))
+const areaResultadoAsync = (texto: string) => waitFor(() => areaResultado().getByText(texto))
+
+async function escolher(user: Usuario, campo: string, busca: string, opcao: string) {
+  const entrada = screen.getByRole('combobox', { name: campo })
+  await user.clear(entrada)
+  if (busca) await user.type(entrada, busca)
+  else await user.click(entrada)
+  await user.click(within(screen.getByRole('listbox', { name: campo })).getByRole('option', { name: opcao }))
+}
+
+async function escolherDatas(user: Usuario) {
+  await user.click(await screen.findByRole('radio', { name: 'Maio' }))
+  await user.click(screen.getByRole('radio', { name: 'Quarta-feira' }))
+}
+
+async function preencher(user: Usuario) {
+  await escolherDatas(user)
+  await escolher(user, 'Tipo de local', 'via', 'Via Pública')
+  await escolher(user, 'Bairro', 'bela', 'BELA VISTA')
 }
 
 const corpoEnviado = (falso: ReturnType<typeof simularApi>) => {
@@ -58,8 +73,9 @@ describe('classificador', () => {
   it('carrega opções reais do contrato nos campos', async () => {
     simularApi()
     abrir()
-    expect(await screen.findByRole('option', { name: 'Maio' })).toBeInTheDocument()
-    expect(screen.getByRole('option', { name: 'Via Pública' })).toHaveValue('VIA PÚBLICA')
+    expect(await screen.findByRole('radio', { name: 'Maio' })).toBeInTheDocument()
+    await userEvent.setup().click(screen.getByRole('combobox', { name: 'Tipo de local' }))
+    expect(within(screen.getByRole('listbox', { name: 'Tipo de local' })).getByRole('option', { name: 'Via Pública' })).toBeInTheDocument()
   })
 
   it('mostra estado de carregamento', async () => {
@@ -83,11 +99,12 @@ describe('classificador', () => {
     abrir()
     await preencher(user)
     await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
-    expect(await screen.findByText('FURTO')).toBeInTheDocument()
+    expect(await areaResultadoAsync('FURTO')).toBeInTheDocument()
     expect(corpoEnviado(falso)).toEqual({ mes: 5, dia_semana: 2, tipo_local: 'VIA PÚBLICA', bairro: 'BELA VISTA' })
     expect(screen.getByText('Saídas não calibradas do modelo')).toBeInTheDocument()
-    expect(screen.getByText('0,750')).toBeInTheDocument()
-    expect(screen.getByText('0,250')).toBeInTheDocument()
+    const scores = within(screen.getByRole('region', { name: 'Scores do modelo' }))
+    expect(scores.getByText('0,750')).toBeInTheDocument()
+    expect(scores.getByText('0,250')).toBeInTheDocument()
     expect(screen.getByText(EXPLICACAO)).toBeInTheDocument()
     expect(screen.getByText(/Modelo modelo-de-teste/)).toBeInTheDocument()
   })
@@ -96,9 +113,8 @@ describe('classificador', () => {
     const falso = simularApi()
     const user = userEvent.setup()
     abrir()
-    await user.selectOptions(await screen.findByLabelText('Mês da ocorrência'), 'Maio')
-    await user.selectOptions(screen.getByLabelText('Dia da semana'), 'Quarta-feira')
-    await user.selectOptions(screen.getByLabelText('Tipo de local'), 'VIA PÚBLICA')
+    await escolherDatas(user)
+    await escolher(user, 'Tipo de local', 'via', 'Via Pública')
     await user.type(screen.getByRole('combobox', { name: 'Bairro' }), 'BAIRRO INVENTADO')
     await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
     expect(screen.getByText(/Selecione um bairro da lista/)).toBeInTheDocument()
@@ -109,13 +125,11 @@ describe('classificador', () => {
     const falso = simularApi()
     const user = userEvent.setup()
     abrir()
-    await user.selectOptions(await screen.findByLabelText('Mês da ocorrência'), 'Maio')
-    await user.selectOptions(screen.getByLabelText('Dia da semana'), 'Quarta-feira')
-    await user.selectOptions(screen.getByLabelText('Tipo de local'), 'Não informado')
-    await user.click(screen.getByRole('combobox', { name: 'Bairro' }))
-    await user.click(within(screen.getByRole('listbox', { name: 'Bairro' })).getByRole('option', { name: 'Não informado' }))
+    await escolherDatas(user)
+    await escolher(user, 'Tipo de local', '', 'Não informado')
+    await escolher(user, 'Bairro', '', 'Não informado')
     await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
-    await screen.findByText('FURTO')
+    await areaResultadoAsync('FURTO')
     expect(corpoEnviado(falso)).toEqual({ mes: 5, dia_semana: 2, tipo_local: null, bairro: null })
     expect(screen.getByText('Tipo de local com ressalva')).toBeInTheDocument()
   })
@@ -148,9 +162,9 @@ describe('classificador', () => {
     abrir()
     await preencher(user)
     await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
-    await screen.findByText('FURTO')
-    await user.selectOptions(screen.getByLabelText('Mês da ocorrência'), 'Janeiro')
-    expect(screen.queryByText('FURTO')).not.toBeInTheDocument()
+    await areaResultadoAsync('FURTO')
+    await user.click(screen.getByRole('radio', { name: 'Janeiro' }))
+    expect(areaResultado().queryByText('FURTO')).not.toBeInTheDocument()
   })
 
   it('exibe erro de validação do backend', async () => {
@@ -213,15 +227,71 @@ describe('classificador', () => {
     simularApi()
     const user = userEvent.setup()
     abrir()
-    await screen.findByLabelText('Mês da ocorrência')
-    for (let i = 0; i < 12 && document.activeElement !== screen.getByLabelText('Mês da ocorrência'); i++) await user.tab()
-    expect(screen.getByLabelText('Mês da ocorrência')).toHaveFocus()
+    const mes = await screen.findByRole('radio', { name: 'Janeiro' })
+    for (let i = 0; i < 12 && document.activeElement !== mes; i++) await user.tab()
+    expect(mes).toHaveFocus()
+    await user.keyboard(' ')
+    expect(mes).toBeChecked()
     await user.tab()
-    expect(screen.getByLabelText('Dia da semana')).toHaveFocus()
+    expect(screen.getByRole('radio', { name: 'Segunda-feira' })).toHaveFocus()
     await user.tab()
-    expect(screen.getByLabelText('Tipo de local')).toHaveFocus()
+    expect(screen.getByRole('combobox', { name: 'Tipo de local' })).toHaveFocus()
     await user.tab()
     expect(screen.getByRole('combobox', { name: 'Bairro' })).toHaveFocus()
+  })
+})
+
+describe('cenários e contexto', () => {
+  it('acumula cenários e restaura o selecionado sem nova chamada', async () => {
+    const falso = simularApi({
+      '/api/classify': () => resposta({ ...sucesso, classe_estimada: 'ROUBO', codigo_classe: 1, scores_sigmoid: { furto: 0.3, roubo: 0.7 } }),
+    })
+    const user = userEvent.setup()
+    abrir()
+    await preencher(user)
+    await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
+    await areaResultadoAsync('ROUBO')
+    await user.click(screen.getByRole('radio', { name: 'Janeiro' }))
+    await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
+    await waitFor(() => expect(screen.getAllByRole('button', { name: /^Cenário \d/ })).toHaveLength(2))
+    const chamadas = falso.mock.calls.filter((c) => String(c[0]) === '/api/classify').length
+    await user.click(screen.getByRole('button', { name: /^Cenário 1/ }))
+    expect(screen.getByRole('radio', { name: 'Maio' })).toBeChecked()
+    expect(falso.mock.calls.filter((c) => String(c[0]) === '/api/classify')).toHaveLength(chamadas)
+    await user.click(screen.getByRole('button', { name: 'Limpar' }))
+    expect(screen.queryByRole('button', { name: /^Cenário/ })).not.toBeInTheDocument()
+  })
+
+  it('exibe contexto histórico apenas como contagem', async () => {
+    simularApi()
+    const user = userEvent.setup()
+    abrir()
+    expect(await screen.findByText(/não explicam a classificação/)).toBeInTheDocument()
+    await user.click(await screen.findByRole('radio', { name: 'Janeiro' }))
+    expect(screen.getByText(/200 boletins · 40,0% roubos/)).toBeInTheDocument()
+  })
+
+  it('mostra acurácia publicada do grupo e sinaliza poucos registros', async () => {
+    simularApi()
+    const user = userEvent.setup()
+    abrir()
+    await screen.findByText('Accuracy em 2025')
+    await escolherDatas(user)
+    await escolher(user, 'Tipo de local', 'outros', 'OUTROS')
+    await escolher(user, 'Bairro', 'bela', 'BELA VISTA')
+    await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
+    expect(await screen.findByText('Acurácia publicada em grupos semelhantes')).toBeInTheDocument()
+    expect(screen.getByText(/Poucos registros/)).toBeInTheDocument()
+    expect(screen.getByText(/não é robustez demonstrada/)).toBeInTheDocument()
+  })
+
+  it('o classificador funciona sem estatísticas', async () => {
+    simularApi({ '/api/statistics': () => resposta({ status: 'servico_indisponivel', mensagem: 'x' }, 503) })
+    const user = userEvent.setup()
+    abrir()
+    await preencher(user)
+    await user.click(screen.getByRole('button', { name: 'Classificar ocorrência' }))
+    await areaResultadoAsync('FURTO')
   })
 })
 
@@ -278,7 +348,7 @@ describe('sobre o modelo', () => {
     expect(screen.getByText('Não prevê crimes')).toBeInTheDocument()
     expect(screen.getByText('Validação 2024')).toBeInTheDocument()
     expect(screen.getByText('Teste 2025')).toBeInTheDocument()
-    expect(screen.getByText('Matriz de confusão — teste 2025')).toBeInTheDocument()
+    expect(screen.getByRole('heading', { name: 'Matriz de confusão' })).toBeInTheDocument()
   })
 })
 

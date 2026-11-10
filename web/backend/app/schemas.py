@@ -135,6 +135,10 @@ class ContagemMes(Contagem):
     mes: int = Field(ge=1, le=12)
 
 
+class ContagemDiaMes(ContagemMes):
+    dia_semana: int = Field(ge=0, le=6)
+
+
 class CategoriaLocal(Contagem):
     categoria: str
     tipo: Literal['categoria', 'outros', 'ausente', 'demais']
@@ -162,5 +166,6 @@ class Estatisticas(_Fechado):
     total: Contagem
     por_ano: list[ContagemAno]
     por_mes: list[ContagemMes]
+    por_dia_mes: list[ContagemDiaMes]
     por_tipo_local: list[LocalAno]
     limiar_demais_categorias: int

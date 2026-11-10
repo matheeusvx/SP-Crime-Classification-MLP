@@ -1,4 +1,208 @@
 {
+ "grupos_2025": {
+  "tipo_local": {
+   "(AUSENTE)": {
+    "n": 68,
+    "accuracy": 0.5,
+    "fp": 0,
+    "fn": 34
+   },
+   "AREA NÃO OCUPADA": {
+    "n": 98,
+    "accuracy": 0.5918367346938775,
+    "fp": 22,
+    "fn": 18
+   },
+   "CENTRO COMERCIAL/EMPRESARIAL": {
+    "n": 178,
+    "accuracy": 0.8089887640449438,
+    "fp": 2,
+    "fn": 32
+   },
+   "COMÉRCIO E SERVIÇOS": {
+    "n": 633,
+    "accuracy": 0.6714060031595577,
+    "fp": 100,
+    "fn": 108
+   },
+   "CONDOMÍNIO COMERCIAL": {
+    "n": 183,
+    "accuracy": 0.8032786885245902,
+    "fp": 8,
+    "fn": 28
+   },
+   "CONDOMÍNIO RESIDENCIAL": {
+    "n": 163,
+    "accuracy": 0.6748466257668712,
+    "fp": 12,
+    "fn": 41
+   },
+   "ENTIDADE ASSISTENCIAL": {
+    "n": 92,
+    "accuracy": 0.9782608695652174,
+    "fp": 0,
+    "fn": 2
+   },
+   "ESCRITÓRIO": {
+    "n": 45,
+    "accuracy": 0.7777777777777778,
+    "fp": 1,
+    "fn": 9
+   },
+   "ESTABELECIMENTO BANCÁRIO": {
+    "n": 35,
+    "accuracy": 0.7428571428571429,
+    "fp": 0,
+    "fn": 9
+   },
+   "ESTABELECIMENTO DE ENSINO": {
+    "n": 98,
+    "accuracy": 0.9489795918367347,
+    "fp": 0,
+    "fn": 5
+   },
+   "ESTABELECIMENTO INDUSTRIAL": {
+    "n": 10,
+    "accuracy": 0.9,
+    "fp": 0,
+    "fn": 1
+   },
+   "ESTACIONAMENTO/GARAGEM": {
+    "n": 879,
+    "accuracy": 0.6655290102389079,
+    "fp": 195,
+    "fn": 99
+   },
+   "FAVELA": {
+    "n": 68,
+    "accuracy": 0.75,
+    "fp": 0,
+    "fn": 17
+   },
+   "HOSPEDAGEM": {
+    "n": 129,
+    "accuracy": 0.813953488372093,
+    "fp": 8,
+    "fn": 16
+   },
+   "INTERNET": {
+    "n": 14,
+    "accuracy": 0.8571428571428571,
+    "fp": 0,
+    "fn": 2
+   },
+   "LAZER E RECREAÇÃO": {
+    "n": 525,
+    "accuracy": 0.8952380952380953,
+    "fp": 0,
+    "fn": 55
+   },
+   "LOCAL CLANDESTINO/ILEGAL": {
+    "n": 5,
+    "accuracy": 0.8,
+    "fp": 0,
+    "fn": 1
+   },
+   "OUTROS": {
+    "n": 11901,
+    "accuracy": 0.9188303503907235,
+    "fp": 1,
+    "fn": 965
+   },
+   "REPARTIÇÃO PÚBLICA": {
+    "n": 17,
+    "accuracy": 0.8823529411764706,
+    "fp": 0,
+    "fn": 2
+   },
+   "RESIDÊNCIA": {
+    "n": 1035,
+    "accuracy": 0.6898550724637681,
+    "fp": 36,
+    "fn": 285
+   },
+   "RESTAURANTE E AFINS": {
+    "n": 493,
+    "accuracy": 0.7890466531440162,
+    "fp": 24,
+    "fn": 80
+   },
+   "RODOVIA/ESTRADA": {
+    "n": 540,
+    "accuracy": 0.7351851851851852,
+    "fp": 19,
+    "fn": 124
+   },
+   "SAÚDE": {
+    "n": 163,
+    "accuracy": 0.9386503067484663,
+    "fp": 0,
+    "fn": 10
+   },
+   "SERVIÇOS E BENS PÚBLICOS": {
+    "n": 8,
+    "accuracy": 1.0,
+    "fp": 0,
+    "fn": 0
+   },
+   "SHOPPING CENTER": {
+    "n": 240,
+    "accuracy": 0.8708333333333333,
+    "fp": 0,
+    "fn": 31
+   },
+   "TEMPLO E AFINS": {
+    "n": 40,
+    "accuracy": 0.9,
+    "fp": 0,
+    "fn": 4
+   },
+   "TERMINAL/ESTAÇÃO": {
+    "n": 16491,
+    "accuracy": 0.8972773027712085,
+    "fp": 6,
+    "fn": 1688
+   },
+   "UNIDADE RURAL": {
+    "n": 3,
+    "accuracy": 0.0,
+    "fp": 0,
+    "fn": 3
+   },
+   "VIA PÚBLICA": {
+    "n": 122014,
+    "accuracy": 0.6344927631255429,
+    "fp": 27575,
+    "fn": 17022
+   }
+  },
+  "condicao_bairro": {
+   "ausente": {
+    "n": 540,
+    "accuracy": 0.6814814814814815,
+    "fp": 137,
+    "fn": 35
+   },
+   "desconhecido": {
+    "n": 389,
+    "accuracy": 0.6503856041131105,
+    "fp": 126,
+    "fn": 10
+   },
+   "frequente": {
+    "n": 142253,
+    "accuracy": 0.6940029384266061,
+    "fp": 23198,
+    "fn": 20331
+   },
+   "raro_conhecido": {
+    "n": 12986,
+    "accuracy": 0.6255197905436624,
+    "fp": 4548,
+    "fn": 315
+   }
+  }
+ },
  "conjuntos": [
   {
    "papel": "Treino",

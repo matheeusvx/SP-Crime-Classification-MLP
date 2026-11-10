@@ -13,7 +13,7 @@ export const opcoes: Opcoes = {
     { valor: 0, rotulo: 'Segunda-feira' },
     { valor: 2, rotulo: 'Quarta-feira' },
   ],
-  tipos_local: ['OUTROS', 'VIA PÚBLICA'],
+  tipos_local: ['OUTROS', 'VIA PÚBLICA', 'RESIDÊNCIA'],
   bairros: [
     { valor: 'BELA VISTA', grupo: 'frequente' },
     { valor: 'BRÁS DE TESTE', grupo: 'raro' },
@@ -49,6 +49,10 @@ export const estatisticas: Estatisticas = {
   por_mes: [
     { ano: 2023, mes: 1, ...contagem },
     { ano: 2024, mes: 1, ...contagem },
+  ],
+  por_dia_mes: [
+    { ano: 2023, mes: 1, dia_semana: 0, ...contagem },
+    { ano: 2024, mes: 5, dia_semana: 2, ...contagem },
   ],
   por_tipo_local: [
     { ano: 2023, categorias: [{ categoria: 'VIA PÚBLICA', tipo: 'categoria', ...contagem }, { categoria: 'OUTROS', tipo: 'outros', furtos: 0, roubos: 0 }] },
@@ -86,6 +90,10 @@ const arq = (id: string, nome: string) => ({
   semente_42: { accuracy: 0.7, macro_f1: 0.7, balanced_accuracy: 0.7, precision_roubo: 0.6, recall_roubo: 0.6, brier: 0.2, log_loss: 0.5 },
 })
 export const metodologia: Metodologia = {
+  grupos_2025: {
+    tipo_local: { 'VIA PÚBLICA': { n: 1000, accuracy: 0.63, fp: 1, fn: 1 }, OUTROS: { n: 50, accuracy: 0.9, fp: 1, fn: 1 } },
+    condicao_bairro: { frequente: { n: 900, accuracy: 0.69, fp: 1, fn: 1 }, raro_conhecido: { n: 300, accuracy: 0.62, fp: 1, fn: 1 }, ausente: { n: 300, accuracy: 0.68, fp: 1, fn: 1 } },
+  },
   conjuntos: [
     { papel: 'Treino', ano: 2023, boletins: 1 },
     { papel: 'Validação', ano: 2024, boletins: 2 },
