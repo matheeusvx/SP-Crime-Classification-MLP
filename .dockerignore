@@ -1,0 +1,15 @@
+# Lista de permissão: nada de dados, relatórios, ambientes ou segredos na imagem.
+*
+!requirements-final.txt
+!requirements-web.txt
+!src/
+!models/final/
+!web/backend/app/
+!web/backend/data/
+!web/frontend/
+**/__pycache__/
+**/*.pyc
+web/frontend/node_modules/
+web/frontend/dist/
+web/frontend/e2e/
+web/frontend/test-results/
