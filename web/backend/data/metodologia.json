@@ -1,0 +1,181 @@
+{
+ "conjuntos": [
+  {
+   "papel": "Treino",
+   "ano": 2023,
+   "boletins": 190124
+  },
+  {
+   "papel": "Validação (desenvolvimento)",
+   "ano": 2024,
+   "boletins": 158895
+  },
+  {
+   "papel": "Teste final",
+   "ano": 2025,
+   "boletins": 156168
+  }
+ ],
+ "arquiteturas": [
+  {
+   "id": "B32",
+   "nome": "Dense32",
+   "camadas": "32",
+   "parametros": 9633,
+   "semente_42": {
+    "accuracy": 0.6860064822681645,
+    "macro_f1": 0.677451837885561,
+    "balanced_accuracy": 0.6772168770679694,
+    "precision_roubo": 0.6280485962102209,
+    "recall_roubo": 0.6218282465589468,
+    "brier": 0.20140223315103842,
+    "log_loss": 0.5863302471642929
+   },
+   "n_sementes": 1,
+   "sementes": "42",
+   "macro_f1_media": 0.677451837885561,
+   "macro_f1_dp": null,
+   "recall_roubo_media": 0.6218282465589468
+  },
+  {
+   "id": "B64",
+   "nome": "Dense64",
+   "camadas": "64",
+   "parametros": 19265,
+   "semente_42": {
+    "accuracy": 0.6850687560967935,
+    "macro_f1": 0.676902006111324,
+    "balanced_accuracy": 0.6768849987913127,
+    "precision_roubo": 0.625754195798961,
+    "recall_roubo": 0.6253141831238779,
+    "brier": 0.20160448847627263,
+    "log_loss": 0.5865684835774249
+   },
+   "n_sementes": 3,
+   "sementes": "123,42,7",
+   "macro_f1_media": 0.6770998373293823,
+   "macro_f1_dp": 0.00018284214421734156,
+   "recall_roubo_media": 0.6268950728106922
+  },
+  {
+   "id": "B64_32",
+   "nome": "Dense64 → Dense32",
+   "camadas": "64→32",
+   "parametros": 21313,
+   "semente_42": {
+    "accuracy": 0.6810409389848642,
+    "macro_f1": 0.6751776702141328,
+    "balanced_accuracy": 0.6767630537496756,
+    "precision_roubo": 0.6142673285530429,
+    "recall_roubo": 0.6498055056852184,
+    "brier": 0.2027196048864563,
+    "log_loss": 0.588850584716284
+   },
+   "n_sementes": 3,
+   "sementes": "123,42,7",
+   "macro_f1_media": 0.6759000870303581,
+   "macro_f1_dp": 0.0006811888617745396,
+   "recall_roubo_media": 0.6485138639537203
+  }
+ ],
+ "desempenho": {
+  "validacao_2024": {
+   "n": 158895,
+   "furtos": 92055,
+   "roubos": 66840,
+   "tn": 67058,
+   "fp": 24997,
+   "fn": 25044,
+   "tp": 41796,
+   "accuracy": 0.6850687560967935,
+   "macro_f1": 0.676902006111324,
+   "balanced_accuracy": 0.6768849987913127,
+   "precision_roubo": 0.625754195798961,
+   "recall_roubo": 0.6253141831238779,
+   "f1_roubo": 0.6255341120830933,
+   "precision_furto": 0.7280840806931446,
+   "recall_furto": 0.7284558144587475,
+   "f1_furto": 0.7282699001395548,
+   "brier": 0.20160448847581988,
+   "log_loss": 0.5865684835018611,
+   "ece10": 0.027147106314255275,
+   "auc": 0.7448
+  },
+  "teste_2025": {
+   "n": 156168,
+   "furtos": 99607,
+   "roubos": 56561,
+   "tn": 71598,
+   "fp": 28009,
+   "fn": 20691,
+   "tp": 35870,
+   "accuracy": 0.6881563444495671,
+   "macro_f1": 0.6709329933321986,
+   "balanced_accuracy": 0.6764937336136738,
+   "precision_roubo": 0.5615303934000219,
+   "recall_roubo": 0.6341825639574972,
+   "f1_roubo": 0.5956492859515111,
+   "precision_furto": 0.7758020999252349,
+   "recall_furto": 0.7188049032698505,
+   "f1_furto": 0.7462167007128861,
+   "brier": 0.2005471646975279,
+   "log_loss": 0.5835064622407448,
+   "ece10": 0.08096399905311927,
+   "auc": 0.7412
+  }
+ },
+ "referencias_2025": {
+  "classe_majoritaria": {
+   "accuracy": 0.6378195276881308,
+   "macro_f1": 0.3894321180725247,
+   "balanced_accuracy": 0.5
+  },
+  "tabela_frequencias": {
+   "accuracy": 0.6928,
+   "macro_f1": 0.6727,
+   "recall_roubo": 0.6137,
+   "auc": 0.7389,
+   "brier": 0.2006
+  },
+  "mlp": {
+   "accuracy": 0.6882,
+   "macro_f1": 0.6709,
+   "recall_roubo": 0.6342,
+   "auc": 0.7412,
+   "brier": 0.2005
+  }
+ },
+ "referencias_2024": {
+  "tabela_frequencias": {
+   "accuracy": 0.6853,
+   "macro_f1": 0.6758,
+   "recall_roubo": 0.6112,
+   "auc": 0.7417,
+   "brier": 0.2029
+  },
+  "mlp": {
+   "accuracy": 0.6851,
+   "macro_f1": 0.6769,
+   "recall_roubo": 0.6253,
+   "auc": 0.7448,
+   "brier": 0.2016
+  }
+ },
+ "nivel_scores": [
+  {
+   "ano": 2023,
+   "prevalencia_roubo": 0.4403,
+   "score_medio_roubo": 0.4451
+  },
+  {
+   "ano": 2024,
+   "prevalencia_roubo": 0.4207,
+   "score_medio_roubo": 0.4472
+  },
+  {
+   "ano": 2025,
+   "prevalencia_roubo": 0.3622,
+   "score_medio_roubo": 0.4431
+  }
+ ]
+}

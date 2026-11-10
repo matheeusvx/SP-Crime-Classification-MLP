@@ -1,0 +1,20 @@
+{
+ "script": "web/backend/scripts/gerar_agregados.py",
+ "entradas_sha256": {
+  "data/processed/ocorrencias_elegiveis.parquet": "ee05731ea42ae9467c347ce04b0ae4300eb83938d27617b99017d381846d962a",
+  "reports/etapa4/comparacao_arquiteturas.csv": "533534aa1b025b9760ad13b337832fb0286509221e870da4d0dec2ff4ae2eb53",
+  "reports/etapa4/resumo_validacao_2024.csv": "c81c3356662ed796531d4b0953edc6ddfaa7cfe81a658782ab430d8c4f5b7682",
+  "reports/etapa5/metricas_2025.json": "f8c9aedffa1225b3a411cde10b59c6f35c7f2f9f17ebd84ee84097ee5f4c5e5d",
+  "reports/etapa5/metricas_2024_pipeline_final.json": "818e0c774f606507cb396b80dc9d1c0a1720cf04554793a45e7f4a519d7f281d",
+  "reports/etapa5/referencia_majoritaria_2025.json": "0438540fc9ed5b171afd1cfad9cf2de7b6a5643b5110367c23134c1567272666",
+  "reports/auditoria_claude.md": "f2d981c7f75f182e50a8dcfa80fa1035b299c8d8519bd73ab5367253325f498d",
+  "models/final/manifesto.json": "b992412335c69623bdf63c9341cefaa82e0a81ae73d7d32e110f2498faa8c532"
+ },
+ "saidas_sha256": {
+  "estatisticas.json": "ab7296475daf06fde0578f1294b94827974f757c9e9d8c846ac6857f6aec3f40",
+  "metodologia.json": "e9ee89bf3be6e60bdc3e9aa97498f23930c1881e2fb5a0e8d6f20a651c3eb3ed"
+ },
+ "inferencia_executada": false,
+ "treinamento_executado": false,
+ "observacao": "Contagens descritivas e cópia de métricas publicadas; 2025 não foi usado para ajustar modelo."
+}

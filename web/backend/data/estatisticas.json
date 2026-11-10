@@ -1,0 +1,466 @@
+{
+ "fonte": {
+  "nome": "Secretaria da Segurança Pública do Estado de São Paulo (SSP-SP) — Celulares subtraídos",
+  "url": "https://www.ssp.sp.gov.br/estatistica/consultas",
+  "recorte": "Boletins elegíveis de furto e roubo de celulares no município de São Paulo, por ano do fato."
+ },
+ "periodo": {
+  "inicio": "2023-01",
+  "fim": "2025-12"
+ },
+ "total": {
+  "furtos": 298083,
+  "roubos": 207104
+ },
+ "por_ano": [
+  {
+   "ano": 2023,
+   "furtos": 106421,
+   "roubos": 83703
+  },
+  {
+   "ano": 2024,
+   "furtos": 92055,
+   "roubos": 66840
+  },
+  {
+   "ano": 2025,
+   "furtos": 99607,
+   "roubos": 56561
+  }
+ ],
+ "por_mes": [
+  {
+   "ano": 2023,
+   "mes": 1,
+   "furtos": 7669,
+   "roubos": 7493
+  },
+  {
+   "ano": 2023,
+   "mes": 2,
+   "furtos": 10300,
+   "roubos": 7608
+  },
+  {
+   "ano": 2023,
+   "mes": 3,
+   "furtos": 9508,
+   "roubos": 7772
+  },
+  {
+   "ano": 2023,
+   "mes": 4,
+   "furtos": 7858,
+   "roubos": 6881
+  },
+  {
+   "ano": 2023,
+   "mes": 5,
+   "furtos": 8780,
+   "roubos": 6916
+  },
+  {
+   "ano": 2023,
+   "mes": 6,
+   "furtos": 9590,
+   "roubos": 6812
+  },
+  {
+   "ano": 2023,
+   "mes": 7,
+   "furtos": 8526,
+   "roubos": 6678
+  },
+  {
+   "ano": 2023,
+   "mes": 8,
+   "furtos": 8833,
+   "roubos": 6787
+  },
+  {
+   "ano": 2023,
+   "mes": 9,
+   "furtos": 10064,
+   "roubos": 6622
+  },
+  {
+   "ano": 2023,
+   "mes": 10,
+   "furtos": 8450,
+   "roubos": 6920
+  },
+  {
+   "ano": 2023,
+   "mes": 11,
+   "furtos": 8547,
+   "roubos": 6605
+  },
+  {
+   "ano": 2023,
+   "mes": 12,
+   "furtos": 8296,
+   "roubos": 6609
+  },
+  {
+   "ano": 2024,
+   "mes": 1,
+   "furtos": 6578,
+   "roubos": 5861
+  },
+  {
+   "ano": 2024,
+   "mes": 2,
+   "furtos": 8394,
+   "roubos": 5999
+  },
+  {
+   "ano": 2024,
+   "mes": 3,
+   "furtos": 7714,
+   "roubos": 5882
+  },
+  {
+   "ano": 2024,
+   "mes": 4,
+   "furtos": 7456,
+   "roubos": 5709
+  },
+  {
+   "ano": 2024,
+   "mes": 5,
+   "furtos": 7362,
+   "roubos": 5654
+  },
+  {
+   "ano": 2024,
+   "mes": 6,
+   "furtos": 8105,
+   "roubos": 5607
+  },
+  {
+   "ano": 2024,
+   "mes": 7,
+   "furtos": 7094,
+   "roubos": 5443
+  },
+  {
+   "ano": 2024,
+   "mes": 8,
+   "furtos": 7841,
+   "roubos": 5207
+  },
+  {
+   "ano": 2024,
+   "mes": 9,
+   "furtos": 7962,
+   "roubos": 5032
+  },
+  {
+   "ano": 2024,
+   "mes": 10,
+   "furtos": 7797,
+   "roubos": 5379
+  },
+  {
+   "ano": 2024,
+   "mes": 11,
+   "furtos": 8011,
+   "roubos": 5355
+  },
+  {
+   "ano": 2024,
+   "mes": 12,
+   "furtos": 7741,
+   "roubos": 5712
+  },
+  {
+   "ano": 2025,
+   "mes": 1,
+   "furtos": 7193,
+   "roubos": 5095
+  },
+  {
+   "ano": 2025,
+   "mes": 2,
+   "furtos": 7965,
+   "roubos": 4953
+  },
+  {
+   "ano": 2025,
+   "mes": 3,
+   "furtos": 9459,
+   "roubos": 5583
+  },
+  {
+   "ano": 2025,
+   "mes": 4,
+   "furtos": 7674,
+   "roubos": 4735
+  },
+  {
+   "ano": 2025,
+   "mes": 5,
+   "furtos": 8689,
+   "roubos": 4860
+  },
+  {
+   "ano": 2025,
+   "mes": 6,
+   "furtos": 8308,
+   "roubos": 4596
+  },
+  {
+   "ano": 2025,
+   "mes": 7,
+   "furtos": 8327,
+   "roubos": 5007
+  },
+  {
+   "ano": 2025,
+   "mes": 8,
+   "furtos": 8868,
+   "roubos": 4752
+  },
+  {
+   "ano": 2025,
+   "mes": 9,
+   "furtos": 9314,
+   "roubos": 4470
+  },
+  {
+   "ano": 2025,
+   "mes": 10,
+   "furtos": 8463,
+   "roubos": 4496
+  },
+  {
+   "ano": 2025,
+   "mes": 11,
+   "furtos": 8523,
+   "roubos": 4150
+  },
+  {
+   "ano": 2025,
+   "mes": 12,
+   "furtos": 6824,
+   "roubos": 3864
+  }
+ ],
+ "por_tipo_local": [
+  {
+   "ano": 2023,
+   "categorias": [
+    {
+     "categoria": "VIA PÚBLICA",
+     "tipo": "categoria",
+     "furtos": 74116,
+     "roubos": 77547
+    },
+    {
+     "categoria": "TERMINAL/ESTAÇÃO",
+     "tipo": "categoria",
+     "furtos": 15191,
+     "roubos": 2568
+    },
+    {
+     "categoria": "Não informado",
+     "tipo": "ausente",
+     "furtos": 12613,
+     "roubos": 1418
+    },
+    {
+     "categoria": "RESIDÊNCIA",
+     "tipo": "categoria",
+     "furtos": 774,
+     "roubos": 430
+    },
+    {
+     "categoria": "ESTACIONAMENTO/GARAGEM",
+     "tipo": "categoria",
+     "furtos": 489,
+     "roubos": 512
+    },
+    {
+     "categoria": "COMÉRCIO E SERVIÇOS",
+     "tipo": "categoria",
+     "furtos": 553,
+     "roubos": 355
+    },
+    {
+     "categoria": "RODOVIA/ESTRADA",
+     "tipo": "categoria",
+     "furtos": 417,
+     "roubos": 180
+    },
+    {
+     "categoria": "RESTAURANTE E AFINS",
+     "tipo": "categoria",
+     "furtos": 411,
+     "roubos": 167
+    },
+    {
+     "categoria": "LAZER E RECREAÇÃO",
+     "tipo": "categoria",
+     "furtos": 475,
+     "roubos": 93
+    },
+    {
+     "categoria": "OUTROS",
+     "tipo": "outros",
+     "furtos": 11,
+     "roubos": 1
+    },
+    {
+     "categoria": "Demais categorias",
+     "tipo": "demais",
+     "furtos": 1371,
+     "roubos": 432
+    }
+   ]
+  },
+  {
+   "ano": 2024,
+   "categorias": [
+    {
+     "categoria": "VIA PÚBLICA",
+     "tipo": "categoria",
+     "furtos": 62803,
+     "roubos": 62006
+    },
+    {
+     "categoria": "TERMINAL/ESTAÇÃO",
+     "tipo": "categoria",
+     "furtos": 13744,
+     "roubos": 2077
+    },
+    {
+     "categoria": "OUTROS",
+     "tipo": "outros",
+     "furtos": 6993,
+     "roubos": 713
+    },
+    {
+     "categoria": "Não informado",
+     "tipo": "ausente",
+     "furtos": 4174,
+     "roubos": 479
+    },
+    {
+     "categoria": "RESIDÊNCIA",
+     "tipo": "categoria",
+     "furtos": 802,
+     "roubos": 321
+    },
+    {
+     "categoria": "ESTACIONAMENTO/GARAGEM",
+     "tipo": "categoria",
+     "furtos": 479,
+     "roubos": 375
+    },
+    {
+     "categoria": "COMÉRCIO E SERVIÇOS",
+     "tipo": "categoria",
+     "furtos": 533,
+     "roubos": 226
+    },
+    {
+     "categoria": "RESTAURANTE E AFINS",
+     "tipo": "categoria",
+     "furtos": 435,
+     "roubos": 136
+    },
+    {
+     "categoria": "RODOVIA/ESTRADA",
+     "tipo": "categoria",
+     "furtos": 357,
+     "roubos": 125
+    },
+    {
+     "categoria": "LAZER E RECREAÇÃO",
+     "tipo": "categoria",
+     "furtos": 360,
+     "roubos": 65
+    },
+    {
+     "categoria": "Demais categorias",
+     "tipo": "demais",
+     "furtos": 1375,
+     "roubos": 317
+    }
+   ]
+  },
+  {
+   "ano": 2025,
+   "categorias": [
+    {
+     "categoria": "VIA PÚBLICA",
+     "tipo": "categoria",
+     "furtos": 69538,
+     "roubos": 52476
+    },
+    {
+     "categoria": "TERMINAL/ESTAÇÃO",
+     "tipo": "categoria",
+     "furtos": 14797,
+     "roubos": 1694
+    },
+    {
+     "categoria": "OUTROS",
+     "tipo": "outros",
+     "furtos": 10936,
+     "roubos": 965
+    },
+    {
+     "categoria": "RESIDÊNCIA",
+     "tipo": "categoria",
+     "furtos": 742,
+     "roubos": 293
+    },
+    {
+     "categoria": "ESTACIONAMENTO/GARAGEM",
+     "tipo": "categoria",
+     "furtos": 496,
+     "roubos": 383
+    },
+    {
+     "categoria": "COMÉRCIO E SERVIÇOS",
+     "tipo": "categoria",
+     "furtos": 458,
+     "roubos": 175
+    },
+    {
+     "categoria": "RODOVIA/ESTRADA",
+     "tipo": "categoria",
+     "furtos": 397,
+     "roubos": 143
+    },
+    {
+     "categoria": "LAZER E RECREAÇÃO",
+     "tipo": "categoria",
+     "furtos": 470,
+     "roubos": 55
+    },
+    {
+     "categoria": "RESTAURANTE E AFINS",
+     "tipo": "categoria",
+     "furtos": 406,
+     "roubos": 87
+    },
+    {
+     "categoria": "Não informado",
+     "tipo": "ausente",
+     "furtos": 34,
+     "roubos": 34
+    },
+    {
+     "categoria": "Demais categorias",
+     "tipo": "demais",
+     "furtos": 1333,
+     "roubos": 256
+    }
+   ]
+  }
+ ],
+ "limiar_demais_categorias": 1000
+}

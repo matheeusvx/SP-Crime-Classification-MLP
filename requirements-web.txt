@@ -1,0 +1,4 @@
+# Etapa 6: API web. Inclui as dependências fixadas de inferência da Dense64.
+-r requirements-final.txt
+fastapi==0.121.*
+uvicorn==0.38.*
