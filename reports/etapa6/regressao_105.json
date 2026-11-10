@@ -1,0 +1,56 @@
+{
+ "executed": 105,
+ "failures": 0,
+ "errors": 0,
+ "passed": true,
+ "suites": [
+  {
+   "suite": "test_integridade",
+   "executed": 8,
+   "failures": 0,
+   "errors": 0,
+   "passed": true
+  },
+  {
+   "suite": "test_ml_pipeline",
+   "executed": 15,
+   "failures": 0,
+   "errors": 0,
+   "passed": true
+  },
+  {
+   "suite": "test_robustez_ml",
+   "executed": 17,
+   "failures": 0,
+   "errors": 0,
+   "passed": true
+  },
+  {
+   "suite": "test_experimentos_ml",
+   "executed": 17,
+   "failures": 0,
+   "errors": 0,
+   "passed": true
+  },
+  {
+   "suite": "test_modelo_final.FinalPre",
+   "executed": 18,
+   "failures": 0,
+   "errors": 0,
+   "passed": true
+  },
+  {
+   "suite": "test_contrato_inferencia_seguro",
+   "executed": 30,
+   "failures": 0,
+   "errors": 0,
+   "passed": true
+  }
+ ],
+ "excluded": [
+  "test_modelo_final.FinalPost: 8 verificações de cache de 2025 preservadas, não executadas"
+ ],
+ "new_training": false,
+ "new_2025_predictions": false,
+ "runner": "unittest por suíte, com as mesmas suítes de maintenance56.run_tests, sem regravar os registros históricos de reports/pos_auditoria"
+}

@@ -1,0 +1,18 @@
+{
+ "observacao": "Medido localmente em CPU, no processo da aplicação, sem rede; valores variam por máquina.",
+ "importacao_api_s": 0.67,
+ "carga_modelo_e_inicializacao_s": 4.81,
+ "memoria_inicial_mb": 18,
+ "memoria_apos_carga_e_300_classificacoes_mb": 343,
+ "classificacao_ms": {
+  "n": 300,
+  "mediana": 4.4,
+  "p95": 5.6,
+  "max": 6.3
+ },
+ "corpo_descomprimido_bytes": {
+  "/api/options": 87493,
+  "/api/statistics": 4996,
+  "/api/methodology": 3353
+ }
+}
