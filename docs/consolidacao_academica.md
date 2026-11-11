@@ -75,6 +75,7 @@ Para validar a entrega, sem dados privados ou treinamento:
 python -m pip install nbformat nbclient ipykernel
 python scripts/validar_documentacao.py
 python scripts/validar_documentacao.py --executar
+python tests/test_documentacao.py
 ```
 
 O segundo comando executa em memória as células de leitura e os blocos opcionais
@@ -95,3 +96,23 @@ metodologia resumida, comparação conservadora e execução local transparente 
 os binários ausentes no clone. Não foi inventada licença, identidade acadêmica,
 superioridade da MLP ou estado de CI. Nome completo, RM e turma continuam sem
 confirmação nos documentos acadêmicos consultados.
+
+## Validação desta entrega
+
+- Um único `.ipynb` versionado: 54 células, dez seções obrigatórias e 16 figuras.
+- As 16 células de código executaram sem falhas; a execução foi repetida em cópia
+  pública temporária sem pesos, datasets ou importação de TensorFlow.
+- 86 links locais/âncoras conferidos; figuras PNG existentes; renderização local
+  em 1280 e 390 pixels sem imagens quebradas ou transbordamento da página.
+- Sete badges shields.io responderam 200 com SVG; GitHub, SSP-SP e FIAP responderam 200.
+- Cinco testes editoriais aprovados, incluindo rejeição de destino adulterado,
+  notebook antigo recriado e hash anterior forjado.
+- 232 evidências históricas versionadas e os hashes de todos os arquivos
+  congelados disponíveis conferem. As métricas foram lidas e comparadas com os
+  registros existentes, sem reinferência ou recálculo do teste de 2025.
+- Nenhuma modificação de aplicação ou implantação foi feita nesta tarefa;
+  alterações de deploy que já estavam pendentes ficaram fora destes commits.
+
+As prévias locais servem para revisão de legibilidade; a renderização final do
+GitHub não foi publicada nesta tarefa. Os binários continuam fora do Git e os
+dados acadêmicos pessoais (nome completo/RM/turma) permanecem sem confirmação.

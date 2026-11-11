@@ -91,6 +91,13 @@
       "action": "updated",
       "after_sha256": "9fb96c72ec73f58c05511c2ea64b62c0a7d4181758163f4616a0906a0ea4616c",
       "reason": "Consolidação acadêmica e atualização explícita de navegação, sem alteração de ML."
+    },
+    "README.md": {
+      "before_commit": "1da0bc4bb1b77a47b6475208aab63ded724a9eca",
+      "before_sha256": "75e7996337cd7ac3ceb09564e7925f23a74638c9c313c1c35f4909b52d370110",
+      "action": "updated",
+      "after_sha256": "31e42ee7ff33ca61f93d9bd911d3d5357fe17ebb0fce7f7a731553e536113ce7",
+      "reason": "Redesign progressivo, badges reais, demonstração confirmada, execução e limitações."
     }
   },
   "protected_files": {
