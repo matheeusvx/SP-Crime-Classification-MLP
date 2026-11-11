@@ -7,7 +7,7 @@ import type { Cenario } from '../components/Contexto'
 import { MedidorVazio, Resultado } from '../components/Resultado'
 import { percentual, rotuloCategoria } from '../format'
 import { useResource } from '../hooks/useResource'
-import { Cabecalho, Carregando, MensagemErro, Nota, Revelar } from '../ui/base'
+import { Cabecalho, Carregando, MensagemErro, Revelar } from '../ui/base'
 import { Combobox } from '../ui/Combobox'
 import type { ItemOpcao, ValorOpcao } from '../ui/Combobox'
 
@@ -217,9 +217,6 @@ export default function ClassificadorPage() {
       {recurso.estado === 'carregando' && <Carregando texto="Carregando opções do modelo…" />}
       {recurso.estado === 'erro' && <MensagemErro erro={recurso.erro} aoTentar={recarregar} />}
       {recurso.estado === 'ok' && <Classificador opcoes={recurso.dados} est={estatisticas.recurso.estado === 'ok' ? estatisticas.recurso.dados : undefined} met={met} />}
-      <div className="mt-5">
-        <Nota>O modelo não prevê crimes futuros, não determina a natureza jurídica de um fato e não mede a segurança de bairros.</Nota>
-      </div>
     </>
   )
 }

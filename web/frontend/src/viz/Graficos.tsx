@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Area, AreaChart, Bar, BarChart, CartesianGrid, Cell, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
+import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts'
 import { compacto, inteiro } from '../format'
 import { movimentoReduzido } from '../hooks/useMotion'
 
@@ -43,29 +42,6 @@ interface Dados {
   dados: ({ rotulo: string } & Partial<Record<Serie, number>>)[]
   series: Serie[]
   descricao: string
-}
-
-export function BarrasAnuais({ dados, series, descricao }: Dados) {
-  const [ativo, setAtivo] = useState<number>()
-  return (
-    <div role="img" aria-label={descricao} className="h-80">
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={dados} barGap={4} margin={{ top: 8, right: 4, bottom: 0, left: 0 }} onMouseLeave={() => setAtivo(undefined)}>
-          <CartesianGrid vertical={false} stroke="var(--color-line)" />
-          <XAxis dataKey="rotulo" tick={EIXO} tickLine={false} axisLine={false} />
-          <YAxis tick={EIXO} tickLine={false} axisLine={false} width={52} tickFormatter={compacto} />
-          <Tooltip content={<Dica />} cursor={false} />
-          {series.map((s) => (
-            <Bar key={s} dataKey={s} name={SERIES[s].nome} radius={[6, 6, 0, 0]} maxBarSize={38} isAnimationActive={!movimentoReduzido()} animationDuration={700} onMouseEnter={(_, i) => setAtivo(i)}>
-              {dados.map((d, i) => (
-                <Cell key={d.rotulo} fill={SERIES[s].cor} style={{ opacity: ativo === undefined || ativo === i ? 1 : 0.3, transition: 'opacity .2s' }} />
-              ))}
-            </Bar>
-          ))}
-        </BarChart>
-      </ResponsiveContainer>
-    </div>
-  )
 }
 
 export function AreaMensal({ dados, series, descricao }: Dados) {

@@ -27,7 +27,7 @@ Tipos de local têm rótulo legível na tela (“Via Pública”), mas o valor e
 
 - **Classificador:** quatro campos, bairro em lista pesquisável com “Não informado” explícito, exemplo identificado como hipotético, classe, dois scores não calibrados, explicação obrigatória, versões e avisos.
 - **Painel histórico:** indicadores, evolução anual, série mensal de 36 meses, proporção de classes e tipo de local, com filtros de ano e tipo, tabelas alternativas e ressalvas. Não há dados de bairro nem rankings territoriais.
-- **Sobre o modelo:** arquitetura 299 → 64 → 1, explicação em camadas, validação 2024 × teste 2025, matriz de confusão, três arquiteturas, referências simples e nove limitações.
+- **Sobre o modelo:** arquitetura 299 → 64 → 1, explicação em camadas, validação 2024 × teste 2025, matriz de confusão, três arquiteturas e referências simples.
 - **Estados:** carregamento, sucesso, validação, comunicação, limite excedido e serviço indisponível.
 
 `OUTROS` e “Não informado” recebem ressalva na tela. A nota sobre `OUTROS` e local ausente no resultado é de apresentação; o corpo de `/api/classify` segue integralmente o contrato. No gráfico por local, tipos com menos de 1.000 boletins nos três anos são somados em “Demais categorias”, o que também evita células muito pequenas nos filtros.
@@ -42,6 +42,8 @@ A interface foi refeita com cartões, indicadores em destaque e visualizações 
 | Comparar cenários | Classificações feitas pelo visitante, mantidas só em memória; selecionar uma restaura os campos sem nova chamada |
 | Barras com destaque de mês e dia | Contagens históricas, atualizadas ao selecionar os campos |
 | Acurácia publicada em grupos semelhantes | `reports/etapa5/metricas_grupos_2025.csv`, sem novo cálculo |
+| Anel em espiral da distribuição das classes | Totais de furtos e roubos do período; adaptado do componente de referência enviado, sem `animejs`, ocultação de fatias nem dados de exemplo |
+| Cilindros da evolução anual | Contagens de furtos e roubos por ano; adaptados do componente de referência enviado, sem `animejs` nem dados de exemplo. Altura do líquido proporcional ao valor, a partir de zero |
 | Mapa de calor mês × dia, série com área e minigráficos | Novos agregados `por_dia_mes` e séries mensais |
 | Diagrama da rede, matriz 2024/2025 e seleção de arquiteturas | Manifesto e métricas publicadas |
 
@@ -59,7 +61,7 @@ CORS por lista explícita (curinga recusado); apenas GET e POST; atributos extra
 | --- | --- |
 | Regressão da Etapa 5.6 (mesmas suítes de `maintenance56.run_tests`) | **105 executados, 0 falhas, 0 erros** |
 | API (pytest, modelo real, entradas sintéticas) | **73 aprovados** |
-| Componentes (Vitest + Testing Library) | **29 aprovados** |
+| Componentes (Vitest + Testing Library) | **31 aprovados** |
 | Integração em navegador real (Playwright + Edge; desktop 1280 px e mobile 375 px) | **21 aprovados, 1 pulado** |
 
 A regressão foi executada por suíte, sem regravar `reports/pos_auditoria`; resultado em `etapa6/regressao_105.json`. Os oito testes `FinalPost` de cache de 2025 continuam separados e não foram executados. O teste pulado é o de teclado físico no perfil móvel; ele foi executado no perfil desktop.
@@ -106,4 +108,6 @@ Medições locais, em CPU, sem rede.
 | Vocabulário de bairros | Vem do treinamento de 2023 e inclui entradas sem curadoria, como nomes fora da capital. Não é cadastro oficial; a seleção foi preservada conforme o contrato |
 | Limite de requisições | Em memória e por processo, adequado a uma demonstração |
 
-As limitações metodológicas do modelo continuam válidas e estão na interface: scores não calibrados, ausência de vantagem demonstrada sobre a tabela de frequências, possíveis proxies administrativos, bairros raros, grafias históricas, vieses de seleção, restrição de domínio e ausência de validação para uso real.
+**Alteração solicitada pelo responsável:** o cartão de limitações da página Sobre, o alerta do classificador e a frase de rodapé sobre projeto acadêmico e não oficialidade foram removidos da interface, o que altera o requisito original 7.5 e a regra 15. Permanecem na tela os avisos de scores não calibrados, a ressalva de “OUTROS”, a comparação com referências e a identificação “Demonstração acadêmica” no cabeçalho.
+
+As limitações metodológicas do modelo continuam válidas e documentadas em `docs/limitacoes_modelo_final.md`: scores não calibrados, ausência de vantagem demonstrada sobre a tabela de frequências, possíveis proxies administrativos, bairros raros, grafias históricas, vieses de seleção, restrição de domínio e ausência de validação para uso real.

@@ -4,7 +4,7 @@ import { obterMetodologia, obterModelo } from '../api/client'
 import type { ArquiteturaExperimento, Metodologia, Metricas, ModeloPublico, Referencia } from '../api/types'
 import { decimal, inteiro, percentual } from '../format'
 import { useResource } from '../hooks/useResource'
-import { Cabecalho, Carregando, Cartao, MensagemErro, Nota, Numero, Revelar, Rotulo, Segmentado, atraso } from '../ui/base'
+import { Cabecalho, Carregando, Cartao, MensagemErro, Numero, Revelar, Rotulo, Segmentado, atraso } from '../ui/base'
 import { Rede } from '../viz/Rede'
 
 const fmtInt = (n: number) => inteiro(Math.round(n))
@@ -258,39 +258,14 @@ function Referencias({ met }: { met: Metodologia }) {
   )
 }
 
-function Limitacoes({ met }: { met: Metodologia }) {
-  const n2025 = met.nivel_scores.find((n) => n.ano === 2025)!
-  const itens: [string, string][] = [
-    ['Scores não calibrados', `Em 2025, o score médio de roubo foi ${percentual(n2025.score_medio_roubo)}, enquanto ${percentual(n2025.prevalencia_roubo)} dos boletins eram roubos. Os valores superestimam a classe e não são chances.`],
-    ['Mudanças ao longo do tempo', 'A proporção de roubos caiu de 44% em 2023 para 36% em 2025. O modelo foi treinado apenas com 2023, e os padrões de registro mudam.'],
-    ['Possíveis proxies administrativos', '“OUTROS” e local ausente se relacionam com a Delegacia Eletrônica e podem indicar como o boletim foi preenchido, não onde o fato ocorreu.'],
-    ['Bairros raros agrupados', 'Mais de mil bairros pouco frequentes dividem uma única coluna. Em via pública, esse grupo recebeu sempre a classe ROUBO em 2025, o que concentra falsos positivos.'],
-    ['Grafia histórica dos bairros', 'Acentos e abreviações podem criar categorias diferentes para o mesmo bairro, com respostas diferentes. A aplicação não unifica essas grafias.'],
-    ['Viés de seleção', 'Boletins com outras naturezas associadas foram excluídos, removendo proporcionalmente mais roubos. Fatos de 2025 registrados apenas em 2026 não estão cobertos.'],
-    ['Sem validação para uso real', 'O modelo não foi validado para decisões policiais ou operacionais e não determina a natureza jurídica de um fato.'],
-    ['Domínio restrito', 'Abrange apenas celulares subtraídos na capital paulista, e não todas as ocorrências criminais.'],
-    ['Não prevê crimes', 'O modelo classifica características de um registro. Não prevê crimes futuros e não mede a segurança de lugares.'],
-  ]
+function FonteDados() {
   return (
-    <Cartao titulo="Limitações">
-      <ul className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3">
-        {itens.map(([t, d]) => (
-          <li key={t} className="rounded-xl bg-soft p-4">
-            <p className="text-[15px] font-semibold">{t}</p>
-            <p className="mt-0.5 text-sm text-ink-2">{d}</p>
-          </li>
-        ))}
-      </ul>
-      <div className="mt-4">
-        <Nota>
-          Esta é uma demonstração acadêmica e não um sistema oficial da SSP-SP. Fonte pública original:{' '}
-          <a className="font-medium text-accent underline" href="https://www.ssp.sp.gov.br/estatistica/consultas" target="_blank" rel="noreferrer">
-            Consultas estatísticas da SSP-SP
-          </a>
-          .
-        </Nota>
-      </div>
-    </Cartao>
+    <p className="text-[13px] text-ink-3">
+      Fonte pública original:{' '}
+      <a className="font-medium text-accent hover:underline" href="https://www.ssp.sp.gov.br/estatistica/consultas" target="_blank" rel="noreferrer">
+        Consultas estatísticas da SSP-SP
+      </a>
+    </p>
   )
 }
 
@@ -318,7 +293,7 @@ export default function SobrePage() {
               <Referencias met={metodologia.recurso.dados} />
             </Revelar>
             <Revelar>
-              <Limitacoes met={metodologia.recurso.dados} />
+              <FonteDados />
             </Revelar>
           </>
         )}

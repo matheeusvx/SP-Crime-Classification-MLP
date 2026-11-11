@@ -230,7 +230,30 @@ body {
   background-size: 200% 100%;
 }
 
+@keyframes piscar {
+  50% {
+    opacity: 0.15;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
+  .cilindro-tom {
+    transition: opacity 0.3s ease-out;
+  }
+  .cilindro-banda {
+    transition: x 0.45s var(--ease-out-soft), width 0.45s var(--ease-out-soft);
+  }
+  .cilindro-faisca {
+    animation: piscar 2.2s ease-in-out infinite;
+  }
+  .faisca-1 {
+    animation-duration: 1.7s;
+    animation-delay: 0.4s;
+  }
+  .faisca-2 {
+    animation-duration: 2.8s;
+    animation-delay: 0.9s;
+  }
   .pagina {
     animation: subir 0.35s var(--ease-out-soft) both;
   }

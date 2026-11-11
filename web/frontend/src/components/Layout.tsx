@@ -79,7 +79,6 @@ export function Layout() {
 
       <footer className="border-t border-line bg-surface">
         <div className="mx-auto max-w-[76rem] space-y-1 px-4 py-5 text-xs text-ink-3 sm:px-6">
-          <p>Projeto acadêmico Global Solution FIAP 2026.2. Não é um sistema oficial da SSP-SP e não foi validado para decisões policiais ou operacionais.</p>
           <p>
             Fonte dos dados:{' '}
             <a className="underline hover:text-ink" href="https://www.ssp.sp.gov.br/estatistica/consultas" target="_blank" rel="noreferrer">

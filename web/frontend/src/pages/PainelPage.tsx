@@ -4,8 +4,10 @@ import type { CategoriaLocal, Contagem, Estatisticas } from '../api/types'
 import { compacto, inteiro, MESES_CURTOS, percentual, rotuloCategoria } from '../format'
 import { useResource } from '../hooks/useResource'
 import { Cabecalho, Carregando, Cartao, MensagemErro, Nota, Numero, Revelar, Rotulo, Segmentado, atraso } from '../ui/base'
-import { Faisca, MapaCalor, Medidor } from '../viz/basicos'
-import { AreaMensal, BarrasAnuais, SERIES } from '../viz/Graficos'
+import { Anel } from '../viz/Anel'
+import { Faisca, MapaCalor } from '../viz/basicos'
+import { Cilindros } from '../viz/Cilindros'
+import { AreaMensal, SERIES } from '../viz/Graficos'
 import type { Serie } from '../viz/Graficos'
 
 type FiltroAno = 'todos' | number
@@ -195,22 +197,14 @@ function Painel({ est }: { est: Estatisticas }) {
 
       <Revelar className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Cartao titulo="Distribuição das classes" subtitulo={`${nomePeriodo}. Não é afetada pelo filtro de tipo.`}>
-          <Medidor
-            segmentos={[
-              { nome: 'furtos', valor: total.furtos, cor: SERIES.furtos.cor },
-              { nome: 'roubos', valor: total.roubos, cor: SERIES.roubos.cor },
+          <Anel
+            key={nomePeriodo}
+            rotuloTotal={`Boletins, ${nomePeriodo}`}
+            fatias={[
+              { chave: 'furtos', nome: 'Furtos', valor: total.furtos, cor: 'var(--color-furto)', textoPilula: '#fff' },
+              { chave: 'roubos', nome: 'Roubos', valor: total.roubos, cor: 'var(--color-roubo)', textoPilula: 'var(--color-ink)' },
             ]}
-            descricao={`Furtos ${percentual(total.furtos / soma, 1)}, roubos ${percentual(total.roubos / soma, 1)}`}
-          >
-            <p className="text-xs text-ink-3">Roubos</p>
-            <p className="tabular text-2xl font-bold tracking-tight">
-              <Numero valor={total.roubos / soma} formato={fmtPct1} />
-            </p>
-          </Medidor>
-          <div className="mt-3 flex justify-center gap-4">
-            <Rotulo cor={SERIES.furtos.cor}>Furtos {percentual(total.furtos / soma, 1)}</Rotulo>
-            <Rotulo cor={SERIES.roubos.cor}>Roubos {percentual(total.roubos / soma, 1)}</Rotulo>
-          </div>
+          />
           <div className="mt-4 border-t border-line pt-3">
             <h3 className="mb-1 text-[13px] font-medium text-ink-2">Participação de roubos por ano</h3>
             <dl className="tabular space-y-1 text-sm">
@@ -261,7 +255,7 @@ function Painel({ est }: { est: Estatisticas }) {
 
       <Revelar className="grid grid-cols-1 gap-4 lg:grid-cols-5">
         <Cartao className="lg:col-span-2" titulo="Evolução anual" subtitulo="Compara sempre os três anos; não é afetada pelo filtro de ano." acao={<Legenda series={series} />}>
-          <BarrasAnuais dados={dadosSerie(anuais)} series={series} descricao={`Barras por ano: ${anuais.map((a) => `${a.rotulo}, ${inteiro(a.furtos)} furtos e ${inteiro(a.roubos)} roubos`).join('; ')}.`} />
+          <Cilindros linhas={est.por_ano} series={series} descricao={`Cilindros por ano: ${anuais.map((a) => `${a.rotulo}, ${inteiro(a.furtos)} furtos e ${inteiro(a.roubos)} roubos`).join('; ')}. Use as setas para percorrer.`} />
           <div className="mt-4 flex-1 border-t border-line pt-2">
             <TabelaContagem primeira="Ano" linhas={anuais} />
           </div>
@@ -269,9 +263,9 @@ function Painel({ est }: { est: Estatisticas }) {
         <Cartao className="lg:col-span-3" titulo="Distribuição por tipo de local" subtitulo={`${nomePeriodo}. Barras na mesma escala.`} acao={<Legenda series={series} />} tabela={<TabelaContagem primeira="Tipo de local" linhas={locais.map((c) => ({ ...c, rotulo: rotuloCategoria(c.categoria) }))} />}>
           <BarrasLocal categorias={locais} series={series} />
           <div className="mt-3 space-y-2">
-            <Nota titulo="* Ressalva sobre “OUTROS” e “Não informado”">
-              Parte desses registros está associada ao preenchimento administrativo da Delegacia Eletrônica. Em 2024, os registros sem local deram lugar a “OUTROS”, o que sugere mudança de preenchimento, e não mudança nos lugares dos fatos.
-            </Nota>
+            <p className="text-xs leading-relaxed text-ink-3">
+              * Parte dos registros em “OUTROS” e “Não informado” está associada ao preenchimento administrativo da Delegacia Eletrônica. Em 2024, os registros sem local deram lugar a “OUTROS”, o que sugere mudança de preenchimento, e não mudança nos lugares dos fatos.
+            </p>
             <p className="text-[13px] text-ink-3">“Demais categorias” soma os tipos de local com menos de {inteiro(est.limiar_demais_categorias)} boletins nos três anos.</p>
           </div>
         </Cartao>

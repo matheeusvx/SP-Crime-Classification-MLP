@@ -56,10 +56,11 @@ describe('navegação', () => {
     expect(await screen.findByRole('heading', { level: 1, name: 'Sobre o modelo' })).toBeInTheDocument()
   })
 
-  it('mostra identificação acadêmica no rodapé', async () => {
+  it('mostra somente a fonte no rodapé', async () => {
     simularApi()
     abrir()
-    expect(await screen.findByText(/Não é um sistema oficial da SSP-SP/)).toBeInTheDocument()
+    expect(await screen.findByText(/Fonte dos dados/)).toBeInTheDocument()
+    expect(screen.queryByText(/Projeto acadêmico/)).not.toBeInTheDocument()
   })
 
   it('trata rota inexistente', async () => {
@@ -323,6 +324,32 @@ describe('painel histórico', () => {
     expect(within(indicador('Boletins elegíveis')).getByText('200')).toBeInTheDocument()
   })
 
+  it('anel de classes responde ao teclado', async () => {
+    simularApi()
+    const user = userEvent.setup()
+    abrir('/painel')
+    const anel = await screen.findByRole('slider', { name: 'Distribuição entre furtos e roubos' })
+    anel.focus()
+    await user.keyboard('{ArrowRight}')
+    expect(anel).toHaveAttribute('aria-valuetext', 'Furtos: 120, 60,0%')
+    await user.keyboard('{ArrowRight}')
+    expect(anel).toHaveAttribute('aria-valuetext', 'Roubos: 80, 40,0%')
+  })
+
+  it('percorre os cilindros anuais pelo teclado', async () => {
+    simularApi()
+    const user = userEvent.setup()
+    abrir('/painel')
+    const primeiro = await screen.findByRole('button', { name: '2023, Furtos: 60' })
+    expect(screen.getAllByRole('button', { name: /^20\d\d, (Furtos|Roubos)/ })).toHaveLength(4)
+    primeiro.focus()
+    await user.keyboard('{ArrowRight}')
+    expect(screen.getByRole('button', { name: '2023, Roubos: 40' })).toHaveFocus()
+    expect(screen.getByRole('button', { name: '2023, Roubos: 40' })).toHaveAttribute('aria-pressed', 'true')
+    await user.click(screen.getByRole('radio', { name: 'Furtos' }))
+    expect(screen.getAllByRole('button', { name: /^20\d\d, (Furtos|Roubos)/ })).toHaveLength(2)
+  })
+
   it('não oferece informações de bairro', async () => {
     simularApi()
     abrir('/painel')
@@ -338,14 +365,14 @@ describe('painel histórico', () => {
 })
 
 describe('sobre o modelo', () => {
-  it('apresenta arquitetura, comparações e limitações', async () => {
+  it('apresenta arquitetura, comparações e fonte', async () => {
     simularApi()
     abrir('/sobre')
     expect(await screen.findByRole('img', { name: /299 entradas, 64 neurônios ReLU, 1 saída sigmoid/ })).toBeInTheDocument()
     expect(await screen.findByText('Dense64 → Dense32')).toBeInTheDocument()
     expect(screen.getByText(/não demonstrou vantagem consistente/)).toBeInTheDocument()
-    expect(screen.getByText('Scores não calibrados')).toBeInTheDocument()
-    expect(screen.getByText('Não prevê crimes')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: 'Consultas estatísticas da SSP-SP' })).toBeInTheDocument()
+    expect(screen.queryByRole('heading', { name: 'Limitações' })).not.toBeInTheDocument()
     expect(screen.getByText('Validação 2024')).toBeInTheDocument()
     expect(screen.getByText('Teste 2025')).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: 'Matriz de confusão' })).toBeInTheDocument()
