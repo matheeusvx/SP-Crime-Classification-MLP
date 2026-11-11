@@ -220,8 +220,10 @@ As células padrão leem agregados e fontes; a reprodução opcional permanece b
 
 ## Autoria e referências
 
-Repositório mantido por **[matheeusvx](https://github.com/matheeusvx)** no contexto da **Global Solution FIAP 2026.2**. Nome acadêmico completo, RM e turma não foram identificados nos documentos acadêmicos consultados e não foram presumidos.
+Repositório mantido por **[matheeusvx](https://github.com/matheeusvx)** no contexto da **Global Solution FIAP 2026.2**. 
 
-**IA generativa:** Codex apoiou desenvolvimento, testes, integração e documentação. Claude realizou a auditoria técnica registrada, em revisão separada. Essas ferramentas não substituem conferência das evidências nem responsabilidade do autor; a auditoria por IA não é certificação institucional.
+**RM do aluno: 562765.**
+
+**IA generativa:** Codex apoiou desenvolvimento, testes e documentação. Claude realizou a auditoria técnica registrada, em revisão separada. Essas ferramentas não substituem conferência das evidências nem responsabilidade do autor; a auditoria por IA não é certificação institucional.
 
 Fonte: [SSP-SP](https://www.ssp.sp.gov.br/estatistica/consultas). Contexto acadêmico: [FIAP](https://www.fiap.com.br/). Metodologia: [Keras](https://keras.io/api/) e [scikit-learn](https://scikit-learn.org/stable/). A menção às instituições não implica endosso ao modelo ou à aplicação.
