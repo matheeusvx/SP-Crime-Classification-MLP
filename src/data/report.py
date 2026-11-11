@@ -152,7 +152,7 @@ As tabelas de classes mensais cobrem ano/mês do fato; distribuições de bairro
 - `data/processed/metadados_modelagem.parquet`: chave, data, ano e município, alinhados por índice de linha à base de modelagem.
 - `data/processed/quarentena_boletins.parquet`: chave e motivo de segregação; os originais permitem investigar os vínculos, sem exemplos pessoais no relatório.
 - `data/processed/amostra_experimental_20000.parquet`: amostra de BOs elegíveis com metadados; selecionar as mesmas cinco entradas para modelar.
-- `src/data/`: scripts reutilizáveis; `notebooks/01_auditoria_exploracao.ipynb`: análise executada com agregados.
+- `src/data/`: scripts reutilizáveis; `notebooks/GS_Classificacao_MLP_Completo.ipynb`: análise executada com agregados.
 - `reports/tables/`: auditoria, mapeamento, distribuições, perdas e amostragem; `tests/test_integridade.py`: testes independentes.
 
 Verificação automatizada: **{tests['executados']} testes executados; {tests['falhas']} falhas; {tests['erros']} erros**. Inclui conservação por SHA256, recorte/período/rótulos contra todas as linhas da fonte, unicidade, esquema permitido, reconciliação de unidades, alinhamento e cotas amostrais. Os testes falham com saída diferente de zero, sem ocultar problemas.
@@ -209,34 +209,9 @@ def figure(attrs):
     fig.savefig(ROOT/'reports/figures/painel_exploratorio.png',dpi=150);plt.close(fig)
 
 def notebook(reporttext):
-    cells=[]
-    def mark(s): cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(keepends=True)})
-    def code(s): cells.append({'cell_type':'code','execution_count':None,'metadata':{},'outputs':[],'source':s.splitlines(keepends=True)})
-    mark('# Etapa 1 — Auditoria e exploração\n\nFIAP Global Solution 2026.2. Classificação de ocorrências com MLP. Esta etapa não treina modelos nem prevê crimes futuros. Fontes: os três XLSX CelularesSubtraidos_2023/2024/2025, fornecidos em D:/, com metodologia e dicionário próprios. Os originais não são carregados neste notebook. Proveniência completa em `../docs/decisoes.md`.')
-    code("from pathlib import Path\nimport csv, json\nROOT = Path.cwd()\nif not (ROOT / 'reports').exists(): ROOT = ROOT.parent\nassert (ROOT / 'reports/inventario.json').exists(), 'Execute o pipeline antes do notebook'\ndef tabela(nome):\n    with (ROOT / f'reports/tables/{nome}.csv').open(encoding='utf-8-sig', newline='') as f:\n        rows=list(csv.reader(f))\n    for row in rows: print(' | '.join(row))\n")
-    mark('## Estrutura e proveniência\n\n55 colunas por ano; 3 abas por XLSX. Em 2025, os campos de mês/ano passam a ser explicitamente do registro. Não os interpretar como data do fato. As tabelas completas de esquema e dicionário ficam em reports/tables.')
-    code("inventory=json.loads((ROOT/'reports/inventario.json').read_text(encoding='utf-8'))\nfor f in inventory:\n    print(Path(f['path']).name, 'linhas:', f['rows'], 'colunas:',len(f['columns']), 'SHA256:',f['sha256'])\n")
-    mark('## Geografia e granularidade\n\nFiltro pelo município de circunscrição, com código IBGE corroborativo. Município de registro não define o local do fato. Cada linha original representa um vínculo; a unidade consolidada é a tupla de delegacia, ano e número do BO. Naturezas, datas ou geografia incompatíveis levam à segregação, com rastreabilidade local.')
-    code("tabela('recorte_linhas')\ntabela('granularidade')\ntabela('decisoes_boletins')\n")
-    mark('## Classes e período\n\n0=FURTO (rubrica exata art. 155), 1=ROUBO (rubrica exata art. 157). Outras naturezas e classes conflitantes não são rotuladas por substring. O ano deriva da data do fato. A base não constitui a estatística oficial da SSP.')
-    code("tabela('classes_total')\ntabela('classes_por_ano')\ntabela('datas_data_ocorrencia_bo')\n")
-    mark('## Exploração e qualidade\n\nHá desbalanceamento moderado, mudança da proporção entre anos e ausências elevadas de hora/período. Bairro tem alta cardinalidade e grafias livres. Essas constatações orientam inspeção e engenharia; utilidade preditiva não foi medida. As tabelas de qualidade temporal permitem inspecionar a ausência complementar, sem imputar horas arbitrárias.')
-    code("attrs=json.loads((ROOT/'reports/perfil_atributos.json').read_text(encoding='utf-8'))\nfor a in attrs: print(a)\ntabela('qualidade_temporal_atributos')\n")
-    mark('![Painel exploratório](../reports/figures/painel_exploratorio.png)')
-    mark('## Preparação e integridade\n\nA base de modelagem tem apenas cinco candidatos contextuais e alvo. Hora e período brutos foram excluídos como entradas separadas, porque o padrão de preenchimento varia fortemente entre classes. O período harmonizado usa a convenção 00–05 madrugada, 06–11 manhã, 12–17 tarde e 18–23 noite, ou o período declarado na ausência de hora; “Em hora incerta” é INCERTO. As faixas são uma decisão operacional, não uma definição confirmada da SSP. Não existe indicador de qual campo veio preenchido. Chaves, data completa e município estão em metadados alinhados por índice. Não há natureza como entrada, endereço, coordenada precisa ou identificadores administrativos. Nenhum imputador, codificador ou escalonador foi ajustado. Os testes confrontam os resultados com as linhas originais e conferem os hashes.')
-    code("print((ROOT/'reports/testes_integridade.json').read_text(encoding='utf-8'))\nprint((ROOT/'data/processed/esquema_modelagem.json').read_text(encoding='utf-8'))\n")
-    mark('## Cenários e próximos passos\n\nA amostra de 20 mil BOs preserva proporções por ano/mês/classe com cotas de maior resto e semente determinística. A base ampliada melhora cobertura, com maior custo e sem promessa de maior acurácia. Proposta ainda não fixada: 2023 treino, 2024 validação, 2025 teste. Ajustar transformadores e categorias raras somente no treino; manter BOs indivisos.\n\nRevisar com o usuário: exclusão de outras naturezas associadas, bairros de alta cardinalidade, representação conjunta hora/período e a divisão temporal. Ver o relatório completo em `../reports/relatorio_etapa1.md`. O trabalho termina nesta etapa.')
-    namespace={'__name__':'__main__'}; count=0
-    for c in cells:
-        if c['cell_type']!='code':continue
-        count+=1; buf=io.StringIO()
-        with contextlib.redirect_stdout(buf):exec(''.join(c['source']),namespace)
-        c['execution_count']=count
-        c['outputs']=[{'output_type':'stream','name':'stdout','text':buf.getvalue().splitlines(keepends=True)}]
-    nb={'cells':cells,'metadata':{'kernelspec':{'display_name':'Python 3','language':'python','name':'python3'},'language_info':{'name':'python','version':sys.version.split()[0]}},'nbformat':4,'nbformat_minor':5}
-    import uuid
-    for c in cells:c['id']=uuid.uuid5(uuid.NAMESPACE_URL,''.join(c['source'])).hex[:12]
-    (ROOT/'notebooks').mkdir(exist_ok=True)
-    (ROOT/'notebooks/01_auditoria_exploracao.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf-8')
+    """Navegação atual; a reprodução original permanece no histórico Git."""
+    path = ROOT/'notebooks/GS_Classificacao_MLP_Completo.ipynb'
+    print('Notebook acadêmico consolidado:', path)
+    return path
 
 if __name__=='__main__':report()

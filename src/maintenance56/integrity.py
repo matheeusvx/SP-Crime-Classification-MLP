@@ -13,8 +13,11 @@ SNAPSHOT = 'snapshot-pos-auditoria-antes-correcoes'
 
 
 def verify_history(manifest):
+    from maintenance56.documentation import verify_documentation_revision
     revisions = json.loads((OUT/'revisoes_autorizadas.json').read_text(encoding='utf-8'))['files']
     for name, expected in manifest.items():
+        if verify_documentation_revision(ROOT, name, expected, revisions.get(name)):
+            continue
         actual = sha256(ROOT/name)
         if actual == expected:
             continue

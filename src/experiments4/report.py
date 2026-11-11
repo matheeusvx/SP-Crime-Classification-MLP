@@ -231,7 +231,7 @@ python -m experiments4.run_tests
 python -m experiments4.report
 ```
 
-Execuções válidas em cache não são retreinadas. O notebook `notebooks/04_experimentos_arquiteturas.ipynb` lê resultados e gráficos, sem disparar a bateria. As decisões são salvas entre blocos, antes do próximo nível. Ao reproduzir A, a revisão qualitativa do recall descrita no protocolo é aplicada de forma explícita e registrada.
+Execuções válidas em cache não são retreinadas. O notebook `notebooks/GS_Classificacao_MLP_Completo.ipynb` lê resultados e gráficos, sem disparar a bateria. As decisões são salvas entre blocos, antes do próximo nível. Ao reproduzir A, a revisão qualitativa do recall descrita no protocolo é aplicada de forma explícita e registrada.
 
 ## G. Candidatas para a Etapa5 — sem seleção definitiva
 
@@ -244,29 +244,9 @@ O resultado acadêmico é uma comparação controlada com **benefício limitado 
     (ROOT/'reports/relatorio_etapa4.md').write_text(text,encoding='utf-8');notebook();preserve();print(text,flush=True)
 
 def notebook():
-    cells=[]
-    def md(s):cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(keepends=True)})
-    def code(s):cells.append({'cell_type':'code','metadata':{},'execution_count':None,'outputs':[],'source':s.splitlines(keepends=True)})
-    md('# Etapa4 — Experimentos controlados de MLP\n\nBOs de celulares subtraídos da capital. 0=FURTO, 1=ROUBO. Dados usados: 2023 e2024; 2025 reservado. Este notebook lê os treinamentos já executados e não dispara a bateria automaticamente. Baseline histórico e documentos anteriores preservados.')
-    code("from pathlib import Path\nimport csv,json\nROOT=Path.cwd()\nif not (ROOT/'reports').exists():ROOT=ROOT.parent\nOUT=ROOT/'reports/etapa4'\ndef show(name,columns):\n    with (OUT/(name+'.csv')).open(encoding='utf-8-sig') as f:\n        for r in csv.DictReader(f):print({k:r[k] for k in columns})\nprint((OUT/'divisao_interna.json').read_text(encoding='utf-8'))\n")
-    md('## Metodologia\n\nJan–Set/2023 ajusta os transformadores e treina; Out–Dez/2023 orienta atributos, arquiteturas, regularização e épocas. Depois, reajuste completo de2023 com três épocas fixas e avaliação única em2024 por configuração/semente. Não há EarlyStopping em2024 nem calibrador. Meses Q4 não aparecem no treino interno; seus dummies não aprendem efeitos, limitação registrada. Matriz e protocolo foram salvos antes de treinar.')
-    md('## Bloco A\n\nA0 referência; A1 sem local; A2 sem bairro; A3 sem mês; A4 frequências10/100 contra50; A5 equivalência unívoca de acento de local. Não agrupa OUTROS com ausente. A5 reutiliza A0 após provar matrizes iguais. A3 ganhou pouco em Macro F1 e perdeu3,88pp de recall; a revisão qualitativa antes de B manteve os quatro atributos. Ver o desvio do desempate mecânico no protocolo.')
-    code("show('comparacao_atributos',['id','input_dimension','retained_bairros','macro_f1','recall_roubo','delta_macro_f1_pp'])\nprint((OUT/'decisao_representacao.json').read_text(encoding='utf-8'))\n")
-    md('![Atributos](../reports/etapa4/figuras/comparacao_atributos.png)\n\n## Bloco B\n\nMesma representação A5: One-Hot dos quatro atributos e frequência50, sem variáveis proibidas. Redes32,64,64→32 comparadas com BCE, Adam0,001, batch256 e threshold0,5. Tabela abaixo é2024, semente42; as curvas com validação são internas de2023.')
-    code("show('comparacao_arquiteturas',['id','parameters','epochs','accuracy','macro_f1','balanced_accuracy','precision_roubo','recall_roubo','precision_furto','recall_furto','brier','log_loss'])\n")
-    md('![Curvas](../reports/etapa4/figuras/curvas_arquiteturas.png)\n![Comparação](../reports/etapa4/figuras/comparacao_arquiteturas.png)\n![Matrizes](../reports/etapa4/figuras/matrizes_2024.png)\n\n## Bloco C\n\nDropout0,1 e L2=0,0001 testados isoladamente; nenhum melhorou a Macro F1 interna. L2 reduz gap sem melhorar a BCE de validação. Não se acionou o gatilho prévio para LR menor. B64 e64→32 foram avaliadas com sementes42/7/123; a ordem dos lotes permaneceu RNG42.')
-    code("show('comparacao_regularizacao',['id','macro_f1','recall_roubo','log_loss','gap_bce'])\nshow('resumo_validacao_2024',['id','n_seeds','macro_f1_mean','macro_f1_sd','recall_roubo_mean','macro_delta_historico_pp'])\n")
-    md('![Regularização](../reports/etapa4/figuras/regularizacao.png)\n![Estabilidade](../reports/etapa4/figuras/estabilidade_sementes.png)\n\n## Erros e interpretação\n\nMais profundidade aumentou recall de roubo e FP, sem ganho consistente de Macro F1. Baseline histórico usou EarlyStopping em2024 e época5; comparação nova usa épocas fixas escolhidas internamente. Pequenas diferenças não demonstram avanço comprovado. Ausências/raros/novos continuam problemáticos e as diferenças não são causalidade criminal ou ranking de segurança.')
-    code("show('erros_vs_historico',['id','fp','fn','high_conf_errors','brier','log_loss'])\nprint((OUT/'testes.json').read_text(encoding='utf-8'))\nprint((OUT/'recomendacao_candidatos.json').read_text(encoding='utf-8'))\n")
-    md('## Limitações e Etapa5\n\nCandidata principal experimental:64, com estabilidade em três sementes. A profunda é alternativa se priorizar recall; a compacta32 usa metade dos parâmetros e tem métrica próxima, mas apenas uma semente completa. Não há seleção definitiva nem calibração. Antes de2025, congelar arquitetura, orçamento, pré-processador, threshold e eventual protocolo de calibração. Ver `../docs/recomendacoes_etapa5.md` e `../reports/relatorio_etapa4.md`. Nenhuma aplicação web foi criada.')
-    ns={};count=0
-    for c in cells:
-        c['id']=uuid.uuid5(uuid.NAMESPACE_URL,''.join(c['source'])).hex[:12]
-        if c['cell_type']=='code':
-            count+=1;buf=io.StringIO()
-            with contextlib.redirect_stdout(buf):exec(''.join(c['source']),ns)
-            c['execution_count']=count;c['outputs']=[{'output_type':'stream','name':'stdout','text':buf.getvalue().splitlines(keepends=True)}]
-    nb={'cells':cells,'metadata':{'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'},'language_info':{'name':'python','version':'3.12.14'}},'nbformat':4,'nbformat_minor':5}
-    (ROOT/'notebooks/04_experimentos_arquiteturas.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf-8')
+    """Navegação atual; a reprodução original permanece no histórico Git."""
+    path = ROOT/'notebooks/GS_Classificacao_MLP_Completo.ipynb'
+    print('Notebook acadêmico consolidado:', path)
+    return path
 
 if __name__=='__main__':generate()

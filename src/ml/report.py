@@ -172,7 +172,7 @@ Mesmo boa otimização não recupera informação ausente: muitos BOs têm os me
 - `models/arquitetura_mlp.json`: arquitetura legível separada.
 - `models/preprocessador.joblib`: normalização e vocabulário/frequências ajustados em 2023.
 - `models/config_modelo.json`: entradas, tipos, rótulos, hiperparâmetros, execução, versões e proveniência.
-- `notebooks/02_mlp_baseline.ipynb`: notebook executado, com interpretação, resultados e exemplo real de recarga.
+- `notebooks/GS_Classificacao_MLP_Completo.ipynb`: notebook executado, com interpretação, resultados e exemplo real de recarga.
 - `src/ml/`: dataset, pré-processamento, treinamento, avaliação e interface Python de inferência.
 - `reports/tables/metricas_baseline.csv` e `metricas_baseline_por_classe.csv`; figuras acima e diagnósticos em `reports/etapa2/`.
 - `docs/etapa2_reproducao.md` e `requirements-ml.txt`: comandos e dependências.
@@ -208,32 +208,9 @@ Critérios atendidos: pré-processamento funcional; separação temporal; MLP tr
     print(text,flush=True)
 
 def notebook(config,metrics,pre):
-    cells=[]
-    def mark(s):cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(keepends=True)})
-    def code(s):cells.append({'cell_type':'code','metadata':{},'execution_count':None,'outputs':[],'source':s.splitlines(keepends=True)})
-    mark('# Etapa 2 — MLP inicial\n\nClassificação de BOs envolvendo celulares subtraídos em São Paulo capital. 0=FURTO, 1=ROUBO. O modelo classifica características de uma ocorrência; não prevê crimes futuros. Esta única arquitetura usa treino em 2023 e validação em 2024. O teste de 2025 permanece sem avaliação. O notebook consome os resultados do treinamento real, sem duplicar o pipeline pesado.')
-    code("from pathlib import Path\nimport sys,json,csv\nROOT=Path.cwd()\nif not (ROOT/'models').exists(): ROOT=ROOT.parent\nsys.path.insert(0,str(ROOT/'src'))\nfrom ml.runtime import OUT,FEATURES\nconfig=json.loads((ROOT/'models/config_modelo.json').read_text(encoding='utf-8'))\nprint('Atributos:', FEATURES)\nprint('Treino:',config['train_rows'],'de 2023; validação:',config['validation_rows'],'de 2024')\nprint('2025 isolado:',config['test_rows_isolated'])\n")
-    mark('## Integridade e escolha de atributos\n\nO índice e a chave dos metadados são confrontados com os valores da base analítica, antes de dividir por data do fato. Não há sobreposição de boletins. Tuplas de atributos iguais podem pertencer a BOs distintos; não foram eliminadas. `periodo_fato`, hora e indicadores de preenchimento são excluídos por risco de proxy administrativo. Nenhum campo jurídico ou identificador entra na rede.')
-    code("validation=json.loads((OUT/'validacao_dados.json').read_text(encoding='utf-8'))\nprint(validation['checks'])\nprint(validation['duplicidade_contextos'])\n")
-    mark('## Pré-processamento\n\nOne-Hot nominal para as quatro entradas. Vocabulários e frequências vêm apenas de 2023. Bairros com menos de 50 observações formam um bucket estatístico de raros, também usado para bairros novos. Tipos de local novos usam a representação de ausente. Só equivalências explícitas de acentuação verificadas no treino são unificadas. Ausências não removem linhas. CSR float32 é densificado apenas por lote de 256. Não há balanceamento nem escalonamento.')
-    code("prep=json.loads((OUT/'preprocessamento.json').read_text(encoding='utf-8'))\nfor name,stats in prep.items():print(name,stats)\n")
-    mark('## Arquitetura e execução\n\nUma camada Dense de 64 neurônios ReLU e saída sigmoid. Binary Cross-Entropy, Adam 0,001, batch 256, máximo 30 épocas, Early Stopping val_loss com paciência 5 e melhores pesos restaurados; semente 42. O comando de reprodução é `python -m ml.train`, com PYTHONPATH=src e dependências de requirements-ml.txt. Não há busca de hiperparâmetros neste notebook.')
-    code("for name in ['input_dimension','trainable_parameters','epochs_ran','best_epoch','stop_reason','training_seconds','tensorflow_devices','dependencies']:\n    print(name,':',config[name])\n")
-    mark('![Curvas reais de treino](../reports/figures/curvas_mlp_baseline.png)\n\nA validação escolhe a melhor época. A diferença entre treino e validação pode reunir sobreajuste e mudança temporal; ela não prova isoladamente uma das causas. Contextos idênticos com duas classes também limitam o desempenho possível com as entradas disponíveis.')
-    mark('## Métricas e referência\n\nA referência sempre prevê a classe majoritária observada em 2023. Precision, recall e F1 do resumo têm ROUBO como classe positiva. Macro F1 e balanced accuracy ponderam igualmente as classes. As métricas por classe e a matriz evidenciam erros que uma acurácia isolada pode esconder.')
-    code("with (ROOT/'reports/tables/metricas_baseline.csv').open(encoding='utf-8-sig') as f:\n    for row in csv.DictReader(f):print(row)\nwith (ROOT/'reports/tables/metricas_baseline_por_classe.csv').open(encoding='utf-8-sig') as f:\n    for row in csv.DictReader(f):\n        if row['ano']=='2024':print(row)\n")
-    mark('![Matriz de confusão — 2024](../reports/figures/matriz_confusao_baseline.png)')
-    mark('## Recarga e inferência Python\n\nO exemplo abaixo é hipotético e usa o artefato salvo. Retorna as duas probabilidades estimadas, sem afirmar calibração. Modelos e joblib devem ser locais e confiáveis. Nenhuma chamada usa dados de 2025.')
-    code("from ml.inference import ClassificadorOcorrencias\nclassificador=ClassificadorOcorrencias()\nprint(classificador.classificar(mes=5,dia_semana=2,tipo_local='VIA PÚBLICA',bairro='BELA VISTA'))\nprint((OUT/'consistencia_recarga.json').read_text(encoding='utf-8'))\nprint((OUT/'testes_etapa2.json').read_text(encoding='utf-8'))\n")
-    mark('## Limitações e próxima etapa\n\nO domínio é de celulares subtraídos e BOs elegíveis com natureza não ambígua; não há generalização demonstrada para todos os crimes. Local/bairro podem refletir práticas de registro, apesar de não revelarem diretamente a natureza. Investigar grupos de erro, raridade, estabilidade temporal e calibração em desenvolvimento, mantendo 2025 fechado. Não se inicia comparação de arquiteturas nem aplicação web. Ver o relatório completo em `../reports/relatorio_etapa2.md` e a reprodução em `../docs/etapa2_reproducao.md`.')
-    count=0;ns={'__name__':'__main__'}
-    for cell in cells:
-        cell['id']=uuid.uuid5(uuid.NAMESPACE_URL,''.join(cell['source'])).hex[:12]
-        if cell['cell_type']!='code':continue
-        count+=1;stream=io.StringIO()
-        with contextlib.redirect_stdout(stream):exec(''.join(cell['source']),ns)
-        cell['execution_count']=count;cell['outputs']=[{'output_type':'stream','name':'stdout','text':stream.getvalue().splitlines(keepends=True)}]
-    nb={'cells':cells,'metadata':{'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'},'language_info':{'name':'python','version':sys.version.split()[0]}},'nbformat':4,'nbformat_minor':5}
-    (ROOT/'notebooks/02_mlp_baseline.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf-8')
+    """Navegação atual; a reprodução original permanece no histórico Git."""
+    path = ROOT/'notebooks/GS_Classificacao_MLP_Completo.ipynb'
+    print('Notebook acadêmico consolidado:', path)
+    return path
 
 if __name__=='__main__':report()

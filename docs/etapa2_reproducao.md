@@ -76,6 +76,11 @@ Uma primeira sondagem ocorreu enquanto o pip ainda copiava pacotes para `.runtim
 
 ## Entrega
 
-Resultados e análise A–I em `reports/relatorio_etapa2.md`, notebook executado em `notebooks/02_mlp_baseline.ipynb`, modelo e pré-processador em `models/`. O notebook lê os resultados e executa inferência do artefato salvo; não reexecuta o treinamento automaticamente. Para abrir em Jupyter, instale Jupyter no ambiente de ML, caso necessário.
+Resultados e análise A–I em `reports/relatorio_etapa2.md`, notebook executado em `notebooks/GS_Classificacao_MLP_Completo.ipynb`, modelo e pré-processador em `models/`. O notebook consolidado lê agregados e código-fonte; não executa treinamento ou inferência automaticamente. O exemplo de recarga do baseline é preservado como resultado histórico. Para abrir em Jupyter, instale Jupyter no ambiente de ML, caso necessário.
 
 Arquivos binários de modelo, pré-processador, runtimes e previsões individuais de validação ficam ignorados pelo Git. A documentação, o código, os agregados, os gráficos e as configurações podem integrar a entrega acadêmica. Não publique dados brutos, bases volumosas ou identificadores de boletins. Esta etapa termina após a primeira MLP; não inclui experimentos sistemáticos ou desenvolvimento web.
+
+
+## Navegação atual — 11/11/2026
+
+O notebook único consolida as cinco etapas e não executa inferência ou treinamento automaticamente. Os comandos acima são históricos: para reprodução, use uma cópia histórica separada conforme o notebook. Os resultados originais permanecem nos relatórios. Consulte [o mapa de consolidação](consolidacao_academica.md).

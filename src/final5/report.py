@@ -210,7 +210,7 @@ O registro final contém timestamps, hashes de modelo/preprocessador/manifesto/r
 - **Não há calibrador final**, pois o candidato foi rejeitado pelos critérios prévios.
 - `src/final5/pipeline.py`: inferência reutilizável; `protocol.py`, `prepare.py`, `evaluate.py`, `metrics.py`, `run_tests.py` e `report.py`: processo reproduzível.
 - `reports/etapa5/metricas_2025.json`, matriz, métricas por classe, IC, comparação temporal e diagnósticos agregados.
-- `notebooks/05_avaliacao_final.ipynb`: notebook executado, sem treino, seleção ou nova inferência2025.
+- `notebooks/GS_Classificacao_MLP_Completo.ipynb`: notebook executado, sem treino, seleção ou nova inferência2025.
 - `docs/decisao_modelo_final.md`, `protocolo_teste_final.md`, `contrato_inferencia.md` e `recomendacoes_etapa6.md`.
 - `requirements-final.txt`: dependências fixadas de inferência; o ambiente completo anterior permanece disponível.
 
@@ -240,28 +240,9 @@ Referência metodológica: [calibração — documentação oficial scikit-learn
     (ROOT/'reports/relatorio_etapa5.md').write_text(text,encoding='utf-8');notebook();verify_manifest();preserve();print(text,flush=True)
 
 def notebook():
-    cells=[]
-    def md(s):cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(keepends=True)})
-    def code(s):cells.append({'cell_type':'code','metadata':{},'execution_count':None,'outputs':[],'source':s.splitlines(keepends=True)})
-    md('# Etapa5 — Avaliação final da Dense64\n\nClassificação de BOs de celulares subtraídos em São Paulo capital:0=FURTO,1=ROUBO. Dense32/64/64→32 foram comparadas na Etapa4. Dense64, semente42, foi fixada antes do teste por estabilidade e simplicidade relativa. O notebook lê os resultados da única avaliação final de2025, sem treinar, selecionar ou reinferir.')
-    code("from pathlib import Path\nimport json,csv\nROOT=Path.cwd()\nif not (ROOT/'models/final').exists():ROOT=ROOT.parent\nOUT=ROOT/'reports/etapa5'\nmanifest=json.loads((ROOT/'models/final/manifesto.json').read_text(encoding='utf-8'))\nprint('Versão:',manifest['model_id'],'Congelamento UTC:',manifest['frozen_at'])\nprint(manifest['architecture'],manifest['features_order'])\nprint('Hashes:',manifest['frozen_files'])\n")
-    md('## Decisão antes do teste\n\nArtefato B64_full_s42, 299 entradas,64 ReLU→1 sigmoid,19.265 parâmetros, Adam0,001, BCE, batch256,3 épocas, threshold0,5, sem dropout/L2. O pré-processador original usa frequência50 e alias de local. Platt foi ajustado em H1/2024 e avaliado em H2/2024; critérios registrados antes. Melhorou Brier/Log Loss, mas perdeu3,49pp de recall, acima do limite1pp. Portanto não foi adotado. 2024 já foi usado em seleção e não é independente de todas as decisões.')
-    code("decision=json.loads((OUT/'decisao_calibracao.json').read_text(encoding='utf-8'))\nprint('Calibração adotada:',decision['adopted'],'Critérios:',decision['checks'])\nprint('Data da decisão UTC:',decision['decided_at'])\nprint((OUT/'avaliacao_unica.json').read_text(encoding='utf-8'))\n")
-    md('![Calibração de desenvolvimento](../reports/etapa5/calibracao_desenvolvimento_2024.png)\n\n## Teste independente\n\nSomente após hashes e75 testes prévios aprovados, os156.168 BOs de2025 foram avaliados uma vez. Nenhuma arquitetura alternativa, calibrador ou threshold foi comparado no teste. A referência usa a classe majoritária do treino2023. Os IC95% usam10.000 réplicas IID da distribuição conjunta(y,pred), seed12345; condicionais ao modelo e sem incerteza de treinamento ou drift.')
-    code("print((OUT/'metricas_2025.json').read_text(encoding='utf-8'))\nprint((OUT/'intervalos_confianca_2025.json').read_text(encoding='utf-8'))\nprint((OUT/'referencia_majoritaria_2025.json').read_text(encoding='utf-8'))\n")
-    md('![Matriz final](../reports/etapa5/matriz_confusao_2025.png)\n![Classes](../reports/etapa5/desempenho_por_classe.png)\n\n## Generalização\n\nAcurácia subiu levemente, mas Macro F1 e precision de roubo caíram. A prevalência de roubo diminuiu. ECE10 subiu de2,71% para8,10%, embora Brier/Log Loss tenham ficado ligeiramente menores; essas medidas não isolam calibração. Padrões de preenchimento de local também mudaram. São hipóteses de mudança de distribuição, não causalidade.')
-    code("with (OUT/'comparacao_metricas.csv').open(encoding='utf-8-sig') as f:\n    for row in csv.DictReader(f):print(row)\nprint((OUT/'categorias_2025.json').read_text(encoding='utf-8'))\n")
-    md('![Probabilidades](../reports/etapa5/avaliacao_probabilidades.png)\n![Meses](../reports/etapa5/desempenho_mensal_2025.png)\n\n## Erros e robustez\n\nPersistem erros nos locais majoritariamente classificados como furto e nos buckets raros/novos. Suportes acompanham as taxas; local ausente tem apenas68 exemplos no teste, sem suporte para generalização. As probabilidades não calibradas não representam risco de crime futuro. Não há rankings de segurança por bairro.')
-    code("with (OUT/'metricas_grupos_2025.csv').open(encoding='utf-8-sig') as f:\n    for row in csv.DictReader(f):\n        if row['grupo'] in ['condicao_bairro','presenca_local']:print(row)\nfor file in ['testes_previos.json','testes_posteriores.json']:\n    print(file,(OUT/file).read_text(encoding='utf-8'))\n")
-    md('## Artefato de inferência e conclusão\n\nFinalPipeline aceita exatamente mês, dia, tipo de local e bairro, com as mesmas transformações e avisos estruturados para ausências/raros/novos. A versão consta do manifesto; nenhuma classificação de2025 é recalculada neste notebook. Ver `../docs/contrato_inferencia.md`.\n\nDomínio histórico restrito a celulares subtraídos da capital; não determina natureza jurídica, não prevê crimes, não é sistema oficial e não foi validado para uso policial/operacional. Os resultados finais não alteraram o pipeline. Ver `../reports/relatorio_etapa5.md` e `../docs/recomendacoes_etapa6.md`. Nenhuma aplicação web foi desenvolvida.')
-    count=0;ns={}
-    for c in cells:
-        c['id']=uuid.uuid5(uuid.NAMESPACE_URL,''.join(c['source'])).hex[:12]
-        if c['cell_type']=='code':
-            count+=1;buf=io.StringIO()
-            with contextlib.redirect_stdout(buf):exec(''.join(c['source']),ns)
-            c['execution_count']=count;c['outputs']=[{'output_type':'stream','name':'stdout','text':buf.getvalue().splitlines(keepends=True)}]
-    nb={'cells':cells,'metadata':{'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'},'language_info':{'name':'python','version':'3.12.14'}},'nbformat':4,'nbformat_minor':5}
-    (ROOT/'notebooks/05_avaliacao_final.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf-8')
+    """Navegação atual; a reprodução original permanece no histórico Git."""
+    path = ROOT/'notebooks/GS_Classificacao_MLP_Completo.ipynb'
+    print('Notebook acadêmico consolidado:', path)
+    return path
 
 if __name__=='__main__':generate()

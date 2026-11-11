@@ -2,6 +2,8 @@
 
 Interface React e API FastAPI em torno da MLP congelada `gs-celulares-sp-dense64-v1.0.0`. Toda classificação passa por `final5.validation.SafeClassifier` (contrato seguro 1.1.0). Demonstração acadêmica: não é sistema oficial da SSP-SP e não prevê crimes.
 
+[Demonstração pública](https://spcrimeclassification.vercel.app/) — health, opções e classificação real confirmados em 11/11/2026. [Apresentação do projeto](../README.md) · [Notebook acadêmico único](../notebooks/GS_Classificacao_MLP_Completo.ipynb).
+
 ## Executar no Windows
 
 Requisitos: Python 3.12 e Node 22 no PATH. Os artefatos locais em `models/final/` precisam estar presentes (não são versionados). Os comandos abaixo partem da raiz do projeto.

@@ -187,7 +187,7 @@ python -m diagnostics.run_tests
 python -m diagnostics.report
 ```
 
-As repetições são opcionais ao apenas rever o relatório existente; reexecutar o comando treina novamente somente os três checkpoints experimentais. Dependências existentes em `requirements-ml.txt`. Notebook executado: `notebooks/03_diagnostico_mlp.ipynb`; scripts: `src/diagnostics/`. As tabelas são agregadas; não há novas previsões individuais exportadas nem frontend/API/dashboard.
+As repetições são opcionais ao apenas rever o relatório existente; reexecutar o comando treina novamente somente os três checkpoints experimentais. Dependências existentes em `requirements-ml.txt`. Notebook executado: `notebooks/GS_Classificacao_MLP_Completo.ipynb`; scripts: `src/diagnostics/`. As tabelas são agregadas; não há novas previsões individuais exportadas nem frontend/API/dashboard.
 
 ## I. Recomendações priorizadas para a Etapa 4
 
@@ -203,30 +203,9 @@ O diagnóstico se restringe a BOs elegíveis de **celulares subtraídos da capit
     notebook();preserve();print(text,flush=True)
 
 def notebook():
-    cells=[]
-    def md(s):cells.append({'cell_type':'markdown','metadata':{},'source':s.splitlines(keepends=True)})
-    def code(s):cells.append({'cell_type':'code','metadata':{},'execution_count':None,'outputs':[],'source':s.splitlines(keepends=True)})
-    md('# Etapa 3 — Diagnóstico e robustez da primeira MLP\n\nModelo congelado para BOs envolvendo celulares subtraídos da capital. 0=FURTO, 1=ROUBO. Não prevê crimes futuros. Somente 2023/2024; 2025 permanece sem avaliação. O notebook lê agregados dos scripts reproduzíveis, sem repetir treinos automaticamente.')
-    code("from pathlib import Path\nimport json,csv\nROOT=Path.cwd()\nif not (ROOT/'reports').exists():ROOT=ROOT.parent\nOUT=ROOT/'reports/etapa3'\ndef show(name,attribute=None):\n    with (OUT/(name+'.csv')).open(encoding='utf-8-sig') as f:\n        for row in csv.DictReader(f):\n            if attribute is None or row.get('atributo')==attribute:print(row)\nprint(json.loads((OUT/'resumo.json').read_text(encoding='utf-8')))\n")
-    md('## Erros e condições de bairro\n\nMatriz reproduzida: TN=68.328, FP=23.727, FN=25.962, TP=40.878. Destaques exigem n≥200 e pelo menos 30 exemplos por classe. Taxas altas com prevalências diferentes não são diretamente comparáveis. Bairros não são classificados em níveis de segurança.')
-    code("show('metricas_grupos','condicao_bairro')\nshow('metricas_grupos','presenca_local')\n")
-    md('![Erros por classe](../reports/etapa3/figures/erros_por_classe.png)\n\n## Generalização\n\nA ausência de local se associa ao rótulo em ambos os anos; OUTROS muda de 12 para 7.706 registros. Isso é sinal para investigar preenchimento ou recodificação, não prova de vazamento. A piora de val_loss após a época 5 é compatível com sobreajuste incremental, mas o drift também contribui ao gap. Não há evidência suficiente para concluir underfitting por capacidade.')
-    code("show('ausencias_ano_classe','tipo_local')\nshow('drift_atributos')\nshow('ambiguidade_contextos')\n")
-    md('![Métricas por mês](../reports/etapa3/figures/desempenho_temporal.png)\n\n## Influência preditiva\n\nPermutação de atributos originais, amostra fixa de 30 mil BOs de 2024, cinco repetições. Bairro e local dominam. Importância marginal quebra dependências e não mede causalidade; DP não é IC populacional. Nenhum atributo foi removido.')
-    code("show('importancia_atributos')\n")
-    md('![Importância](../reports/etapa3/figures/importancia_atributos.png)\n\n## Probabilidades\n\nBrier e Log Loss combinam discriminação e confiabilidade. ECE usa 10 e 20 bins de largura uniforme, com último incluindo 1. ECE global pode esconder problemas de subgrupos. Não foi ajustado calibrador, e o threshold permanece 0,5.')
-    code("show('confianca')\n")
-    md('![Confiança](../reports/etapa3/figures/distribuicao_confianca.png)\n![Calibração](../reports/etapa3/figures/curva_calibracao.png)\n![Limiares](../reports/etapa3/figures/precision_recall_limiares.png)\n\n## Robustez e estabilidade\n\nCaixa/espaços e aliases de bairro são consistentes, mas local sem acento pode cair no fallback de ausente. Mês/dia None não tiveram exemplos de treino. Essas limitações foram documentadas sem modificar o baseline. Controle 42 e duas sementes adicionais mantêm arquitetura, hiperparâmetros e pré-processador. Nenhum vencedor foi escolhido.')
-    code("show('estabilidade_sementes')\nshow('sondagens_inferencia')\nprint((OUT/'testes.json').read_text(encoding='utf-8'))\n")
-    md('## Recomendações e limites\n\nPriorizar ablação controlada de tipo de local, raridade de bairros, validação temporal e contrato da inferência. Comparar regularização com hipótese de sobreajuste, sem presumir ganhos por aumentar camadas. Reservar dados próprios para calibração/threshold; os mesmos dados não podem avaliar imparcialmente a escolha. Ver `../docs/recomendacoes_etapa4.md` e `../reports/relatorio_etapa3.md`. Nenhuma Etapa 4 foi iniciada.')
-    ns={};count=0
-    for c in cells:
-        c['id']=uuid.uuid5(uuid.NAMESPACE_URL,''.join(c['source'])).hex[:12]
-        if c['cell_type']=='code':
-            count+=1;buf=io.StringIO()
-            with contextlib.redirect_stdout(buf):exec(''.join(c['source']),ns)
-            c['execution_count']=count;c['outputs']=[{'output_type':'stream','name':'stdout','text':buf.getvalue().splitlines(keepends=True)}]
-    nb={'cells':cells,'metadata':{'kernelspec':{'name':'python3','display_name':'Python 3','language':'python'},'language_info':{'name':'python','version':'3.12.14'}},'nbformat':4,'nbformat_minor':5}
-    (ROOT/'notebooks/03_diagnostico_mlp.ipynb').write_text(json.dumps(nb,ensure_ascii=False,indent=1),encoding='utf-8')
+    """Navegação atual; a reprodução original permanece no histórico Git."""
+    path = ROOT/'notebooks/GS_Classificacao_MLP_Completo.ipynb'
+    print('Notebook acadêmico consolidado:', path)
+    return path
 
 if __name__=='__main__':generate()
